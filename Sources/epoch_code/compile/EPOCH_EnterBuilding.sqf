@@ -13,5 +13,6 @@
     https://github.com/EpochModTeam/Epoch/tree/release/Sources/epoch_code/compile/EPOCH_EnterBuilding.sqf
 */
 if !(isNull _this) then{
-	[player,_this,Epoch_personalToken] remoteExec ["EPOCH_server_teleportPlayer",2];
+	//[player,_this,Epoch_personalToken] remoteExec ["EPOCH_server_teleportPlayer",2];
+	[] execVM "addons\halv_spawn\opendialog.sqf";//SpawnSelection
 };

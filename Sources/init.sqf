@@ -1,0 +1,1 @@
+[] execVM "addons\halv_spawn\init.sqf";

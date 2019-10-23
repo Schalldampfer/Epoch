@@ -1,2 +1,6 @@
 // Epoch Survival Gamemode
 #include "epoch_config\sandbox_config.hpp"
+
+//addons
+#include "addons\halv_spawn\Halv_defines.hpp"
+#include "addons\halv_spawn\spawndialog.hpp"
