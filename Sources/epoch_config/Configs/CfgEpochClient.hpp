@@ -320,7 +320,7 @@ class CfgEpochSoldier
 {
     unitTypes[] = {"I_Soldier_EPOCH", "I_Soldier2_EPOCH", "I_Soldier3_EPOCH"};//Selects from randomly
     minAISkill = 0.2; //Minumum AI Skill. Skills are chosen randomly between this minimum overall AI skill value and the following max AI skill values, for each of the next skills:
-    maxAimingAccuracy = 0.2;
+    maxAimingAccuracy = 0.7;
     maxAimingShake = 0.9;
     maxAimingSpeed = 0.6;
     maxEndurance = 0.4;
@@ -333,7 +333,7 @@ class CfgEpochSoldier
 };
 class CfgEpochSapper
 {
-    detonateDistMax = 4; //Random distance between 3m and this number at which sapper detonates. Min value = 4
+    detonateDistMax = 8; //Random distance between 3m and this number at which sapper detonates. Min value = 4
     groanTrig = 16; //Percentage chance of a groan. Min value = 4
     sRange = 300; //Distance from target over which sapper will dispose. Range within which sapper code will be aware of targets. Distance up to which sapper will attempt to find a spot to hide in. Min Value = 150.
     smellDist = 24; //Distance up to which sapper can smell. Used to decide if sapper can see target when deciding to charge and influences target selection. Is influenced by wind direction. Min Value = 8.
