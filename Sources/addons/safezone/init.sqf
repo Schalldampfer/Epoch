@@ -12,12 +12,15 @@ _SafeZones = switch(toLower worldName)do{
 
 //Create Markers
 {
-	_marker = createMarkerLocal [_x select 2, _x select 0];
-	_marker setMarkerColorLocal "ColorGreen";
-	_marker setMarkerShapeLocal "ELLIPSE";
-	_marker setMarkerBrushLocal "Cross";
-	_marker setMarkerSizeLocal [_x select 1, _x select 1];
-	_marker setMarkerTextLocal (_x select 2);
+	_mPos = _x select 0;
+	_mName = _x select 2;
+	_mShape = "ELLIPSE";
+	createMarkerLocal [_mName, _mPos];
+	_mName setMarkerColorLocal "ColorGreen";
+	_mName setMarkerShapeLocal _mShape;
+	_mName setMarkerBrushLocal "Cross";
+	_mName setMarkerSizeLocal [_x select 1, _x select 1];
+	_mName setMarkerTextLocal _mName;
 } forEach _SafeZones;
 
 //Safezone Loop
