@@ -15,7 +15,7 @@
 //UID's for lvl 1 gear
 _level1UIDs = [];
 //UID's for lvl 2 gear
-_level2UIDs = [];
+_level2UIDs = ["76561198155787911"];
 //this is to allow lvl 2 to use any lvl 1 gear, comment out to seperate the two
 _level1UIDs = _level1UIDs + _level2UIDs;
 
@@ -32,8 +32,7 @@ _geararr = [
 	[
 //this is the array of primary weapons the player can choose from, this has to be "weapon" type items
 		[
-			"SMG_01_F","SMG_02_F","hgun_PDW2000_F","Rollins_F","speargun_epoch","m16_EPOCH","m16Red_EPOCH","AKM_EPOCH","sr25_epoch",
-			"l85a2_epoch","l85a2_pink_epoch","l85a2_ugl_epoch"
+			"a2_leeenfield_epoch","Rollins_F","speargun_epoch","AKM_EPOCH","a2_G36_C_epoch"
 		],
 //this is how many magazines is added for primary weapon
 		3
@@ -49,23 +48,21 @@ _geararr = [
 //this is the array of "weapon" items the player can choose from, this has to be "weapon" type items
 	[
 		[
-			"EpochRadio0","EpochRadio1","EpochRadio2","EpochRadio3","EpochRadio4","EpochRadio5","EpochRadio6","EpochRadio7","EpochRadio8","EpochRadio9",
-			"ItemCompass","ItemWatch","Binocular","ItemMap","NVG_EPOCH","ItemGPS"
+			"ItemCompass","ItemWatch","Binocular","ItemMap","NVG_EPOCH"
 		],
 //this is how many "weapon" items the player is allowed to choose
-		3
+		2
 	],
 	[
 		[
 //this is the array of "magazines" items the player can choose from, this has to be "magazine" type items
 			"Chemlight_green","Chemlight_red","Chemlight_yellow","Chemlight_blue","EnergyPack","SmokeShellOrange","SmokeShellBlue","SmokeShellPurple","SmokeShellYellow",
 			"SmokeShellGreen","SmokeShellRed","SmokeShell","lighter_epoch","ItemSodaRbull","meatballs_epoch","WhiskeyNoodle","ItemSodaOrangeSherbet","sweetcorn_epoch",
-			"scam_epoch","HeatPack","ColdPack","SheepCarcass_EPOCH","GoatCarcass_EPOCH","Pelt_EPOCH","ChickenCarcass_EPOCH","RabbitCarcass_EPOCH","Venom_EPOCH",
-			"SnakeCarcass_EPOCH","ItemKiloHemp","ItemScraps","ItemCoolerE","ItemSodaPurple","ItemSodaMocha","ItemSodaBurst","FoodWalkNSons","honey_epoch",
+			"scam_epoch","HeatPack","ColdPack","ItemScraps","ItemCoolerE","ItemSodaPurple","ItemSodaMocha","ItemSodaBurst","FoodWalkNSons","honey_epoch",
 			"emptyjar_epoch","FoodBioMeat","sardines_epoch","FoodSnooter","Towelette"
 		],
 //this is how many "magazines" items the player is allowed to choose
-		4
+		3
 	],
 	[
 //this is the array of headgear the player can choose from
@@ -74,8 +71,7 @@ _geararr = [
 		"H_59_EPOCH","H_60_EPOCH","H_61_EPOCH","H_62_EPOCH","H_63_EPOCH","H_64_EPOCH","H_65_EPOCH","H_66_EPOCH","H_67_EPOCH","H_68_EPOCH",
 		"H_69_EPOCH","H_70_EPOCH","H_74_EPOCH","H_75_EPOCH","H_76_EPOCH","H_77_EPOCH","H_78_EPOCH","H_79_EPOCH","H_80_EPOCH","H_81_EPOCH",
 		"H_82_EPOCH","H_83_EPOCH","H_84_EPOCH","H_85_EPOCH","H_86_EPOCH","H_87_EPOCH","H_88_EPOCH","H_89_EPOCH","H_90_EPOCH","H_91_EPOCH",
-		"H_92_EPOCH","H_11_EPOCH","H_28_EPOCH","H_34_EPOCH","H_71_EPOCH","H_72_EPOCH","H_73_EPOCH","H_104_EPOCH",
-		"wolf_mask_epoch","pkin_mask_epoch"
+		"H_92_EPOCH","H_11_EPOCH","H_28_EPOCH","H_34_EPOCH","H_71_EPOCH","H_72_EPOCH","H_73_EPOCH","H_104_EPOCH"
 	],
 	[
 //this is the array of vests the player can choose from
@@ -116,11 +112,11 @@ _geararr = [
 
 //if you want an item locked for lvl 1 donor, add it to this array
 _lvl1items = [
-	"U_O_CombatUniform_ocamo","B_Parachute","wolf_mask_epoch","pkin_mask_epoch","U_B_Survival_Uniform","EnergyPack","m16_EPOCH","AKM_EPOCH","ItemSodaPurple",
+	"U_O_CombatUniform_ocamo","B_Parachute","wolf_mask_epoch","pkin_mask_epoch","U_B_Survival_Uniform","EnergyPack","m4a3_EPOCH","a2_AK107_EPOCH","ItemSodaPurple",
 	"ItemSodaMocha","EpochRadio8","honey_epoch"
 ];
 
 //if you want an item locked for lvl 2 donor, add it to this array
 _lvl2items = [
-	"NVG_EPOCH","l85a2_pink_epoch","m16Red_EPOCH","EpochRadio9"
+	"arifle_SDAR_F","arifle_MXM_DMS_F","srifle_LRR_LRPS_F"
 ];
