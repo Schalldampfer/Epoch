@@ -65,7 +65,7 @@ class CfgLootTable
 		items[] = {
 				{ { "ItemCompass", "item" }, 20 },
 				{ { "ItemGeigerCounter_EPOCH", "item" }, 1 },
-				{ { "ItemGPS", "item" }, 9 },
+				{ { "ItemGPS", "item" }, 6 },
 				{ { "EpochRadio0", "item" }, 3 },
 				{ { "EpochRadio1", "item" }, 3 },
 				{ { "EpochRadio2", "item" }, 3 },
@@ -76,36 +76,36 @@ class CfgLootTable
 				{ { "EpochRadio7", "item" }, 1 },
 				{ { "EpochRadio8", "item" }, 1 },
 				{ { "EpochRadio9", "item" }, 1 },
-				{ { "ItemWatch", "item" }, 30 },
-				{ { "FAK", "magazine" }, 20 }
+				{ { "ItemWatch", "item" }, 20 },
+				{ { "FAK", "magazine" }, 10 }
 		};
 	};
 	class Safes
 	{
 		items[] = {
-				{ { "ItemSafe", "magazine" }, 1 },
-//				{ { "ItemSafe_s", "magazine" }, 1 },	// Variant with less Load than the normal Safe
+//				{ { "ItemSafe", "magazine" }, 1 },
+				{ { "ItemSafe_s", "magazine" }, 1 },	// Variant with less Load than the normal Safe
 				{ { "ItemGunSafe", "magazine" }, 1 }
 		};
 	};
 	class Repairs
 	{
 		items[] = {
-				{ { "VehicleRepair", "magazine" }, 30 },
+				{ { "VehicleRepair", "magazine" }, 20 },
 				{ { "SpareTire", "magazine" }, 10 },
-				{ { "EngineParts", "magazine" }, 10 },
-				{ { "EngineBlock", "magazine" }, 10 },
-				{ { "ItemGlass", "magazine" }, 15 },
+				{ { "EngineParts", "magazine" }, 5 },
+				{ { "EngineBlock", "magazine" }, 5 },
+				{ { "ItemGlass", "magazine" }, 5 },
 				{ { "ItemDuctTape", "magazine" }, 20 },
-				{ { "FuelTank", "magazine" }, 4 },
-				{ { "ItemRotor", "magazine" }, 5 }
+				{ { "FuelTank", "magazine" }, 3 },
+				{ { "ItemRotor", "magazine" }, 2 }
 		};
 	};
 	class VehicleDocs
 	{
 		items[] = {
-				{ { "ItemVehDoc1", "magazine" }, 20 },
-				{ { "ItemVehDoc2", "magazine" }, 15 },
+				{ { "ItemVehDoc1", "magazine" }, 10 },
+				{ { "ItemVehDoc2", "magazine" }, 6 },
 				{ { "ItemVehDoc3", "magazine" }, 4 },
 				{ { "ItemVehDoc4", "magazine" }, 2 }
 		};
@@ -113,14 +113,14 @@ class CfgLootTable
 	class Equipment
 	{
 		items[] = {
-				{ { "Rangefinder", "weapon" }, 15 },
+				{ { "Rangefinder", "weapon" }, 5 },
 				{ { "Binocular", "item" }, 40 },
 				{ { "NVG_EPOCH", "item" }, 5 },
 				{ { "acc_flashlight", "item" }, 15 },
 				{ { "acc_flashlight_pistol", "item" }, 10 },
-				{ { "acc_pointer_IR", "item" }, 5 },
+				{ { "acc_pointer_IR", "item" }, 2 },
 				// Marksman DLC
-				{ { "Bipods", "CfgLootTable" }, 5 }
+				{ { "Bipods", "CfgLootTable" }, 10 }
 
 		};
 	};
@@ -128,16 +128,16 @@ class CfgLootTable
 	class SniperRifle
 	{
 		items[] = {
-				{ { "SniperRiflem107", "CfgLootTable" }, 8 },
+				{ { "SniperRiflem107", "CfgLootTable" }, 2 },
 
 				// Marksman DLC
-				{ { "SniperRifleMarkDLC", "CfgLootTable" }, 10 },
+				{ { "SniperRifleMarkDLC", "CfgLootTable" }, 1 },
 
-				{ { "srifle_LRR_F", "weapon" }, 11 },
-				{ { "srifle_GM6_F", "weapon" }, 16 },
-				{ { "srifle_DMR_01_F", "weapon" }, 17 },
-				{ { "SniperRifleM14", "CfgLootTable" }, 18 },
-				{ { "srifle_EBR_F", "weapon" }, 20 }
+				{ { "srifle_LRR_F", "weapon" }, 4 },
+				{ { "srifle_GM6_F", "weapon" }, 2 },
+				{ { "srifle_DMR_01_F", "weapon" }, 4 },
+				{ { "SniperRifleM14", "CfgLootTable" }, 10 },
+				{ { "srifle_EBR_F", "weapon" }, 4 }
 		};
 	};
 	// All Marksman DLC weapons without attachments
@@ -329,13 +329,13 @@ class CfgLootTable
 	{
 		items[] = {
 				{ { "VehicleDocs", "CfgLootTable" }, 4 },
-				{ { "MortarBucket", "magazine" }, 16 },
-				{ { "CinderBlocks", "magazine" }, 17 },
+				{ { "MortarBucket", "magazine" }, 7 },
+				{ { "CinderBlocks", "magazine" }, 6 },
 				{ { "Repairs", "CfgLootTable" }, 16 },
-				{ { "CircuitParts", "magazine" }, 17 },
-				{ { "ItemCorrugated", "magazine" }, 17 },
+				{ { "CircuitParts", "magazine" }, 8 },
+				{ { "ItemCorrugated", "magazine" }, 10 },
 				{ { "ItemBulb", "magazine" }, 2 },
-				{ { "ItemSolar", "magazine" }, 5 },
+				{ { "ItemSolar", "magazine" }, 7 },
 				{ { "ItemBattery", "magazine" }, 5 },
 				{ { "ItemCables", "magazine" }, 5 },
 				{ { "ItemPipe", "magazine" }, 5 },
@@ -354,13 +354,13 @@ class CfgLootTable
 				{ { "ItemLockbox", "magazine" }, 4 },
 				{ { "jerrycan_epoch", "magazine" }, 5 },
 				{ { "CircuitParts", "magazine" }, 6 },
-				{ { "MortarBucket", "magazine" }, 9 },
+				{ { "MortarBucket", "magazine" }, 6 },
 				{ { "Repairs", "CfgLootTable" }, 10 },
 				{ { "ItemCorrugated", "magazine" }, 11 },
 				{ { "ItemBulb", "magazine" }, 2 },
-				{ { "CinderBlocks", "magazine" }, 12 },
+				{ { "CinderBlocks", "magazine" }, 8 },
 				{ { "JackKit", "magazine" }, 8 },
-				{ { "ItemCoolerE", "magazine" }, 13 },
+				{ { "ItemCoolerE", "magazine" }, 8 },
 				{ { "ItemScraps", "magazine" }, 13 },
 				{ { "lighter_epoch", "magazine" }, 1 },
 				{ { "ItemSolar", "magazine" }, 3 },
@@ -373,22 +373,22 @@ class CfgLootTable
 	class Rifle
 	{
 		items[] = {
-				{ { "AKM_EPOCH", "weapon" }, 3 },
-				{ { "sr25_epoch", "weapon" }, 4 },
-				{ { "Rifle_arifle_Katiba_F", "CfgLootTable" }, 5 },
-				{ { "Rifle_arifle_MX_GL_F", "CfgLootTable" }, 6 },
-				{ { "Rifle_l85a2_epoch", "CfgLootTable" }, 6 },
-				{ { "m4a3_EPOCH", "weapon" }, 7 },
-				{ { "Rifle_m16_EPOCH", "CfgLootTable" }, 7 },
-				{ { "Rifle_arifle_Mk20_F", "CfgLootTable" }, 8 },
-				{ { "Rifle_arifle_TRG21_F", "CfgLootTable" }, 8 },
-				{ { "arifle_SDAR_F", "weapon" }, 9 },
+				{ { "AKM_EPOCH", "weapon" }, 10 },
+				{ { "sr25_epoch", "weapon" }, 1 },
+				{ { "Rifle_arifle_Katiba_F", "CfgLootTable" }, 1 },
+				{ { "Rifle_arifle_MX_GL_F", "CfgLootTable" }, 1 },
+				{ { "Rifle_l85a2_epoch", "CfgLootTable" }, 1 },
+				{ { "m4a3_EPOCH", "weapon" }, 2 },
+				{ { "Rifle_m16_EPOCH", "CfgLootTable" },8 },
+				{ { "Rifle_arifle_Mk20_F", "CfgLootTable" }, 3 },
+				{ { "Rifle_arifle_TRG21_F", "CfgLootTable" }, 3 },
+				{ { "arifle_SDAR_F", "weapon" }, 2 },
 				{ { "Rollins_F", "weapon" }, 9 },
 				{ { "SMG_01_F", "weapon" }, 9 },
 				{ { "SMG_02_F", "weapon" }, 9 },
-				{ { "Rifle_SMG_03", "CfgLootTable" }, 9 },
-				{ { "hgun_PDW2000_F", "weapon" }, 10 },
-				{ { "A2_Rifles", "CfgLootTable" }, 15 }
+				{ { "Rifle_SMG_03", "CfgLootTable" }, 4 },
+				{ { "hgun_PDW2000_F", "weapon" }, 4 },
+				{ { "A2_Rifles", "CfgLootTable" }, 5 }
 		};
 	};
 	class A2_Rifles
@@ -396,25 +396,25 @@ class CfgLootTable
 		items[] = {
 				{ { "a2_ak47s_gold_EPOCH", "weapon" }, 1 },
 				{ { "a2_AK107_EPOCH", "weapon" }, 1 },
-				{ { "a2_bizon_epoch", "weapon" }, 1 },
+				{ { "a2_bizon_epoch", "weapon" }, 5 },
 				{ { "a2_dmr_epoch", "weapon" }, 1 },
 				{ { "a2_dmr_epoch_scoped", "weapon" }, 1 },
-				{ { "a2_fnfal_epoch", "weapon" }, 1 },
-				{ { "a2_G36_C_epoch", "weapon" }, 1 },
+				{ { "a2_fnfal_epoch", "weapon" }, 5 },
+				{ { "a2_G36_C_epoch", "weapon" }, 3 },
 				{ { "a2_Mg36_epoch", "weapon" }, 1 },
-				{ { "a2_leeenfield_epoch", "weapon" }, 1 },
+				{ { "a2_leeenfield_epoch", "weapon" }, 10 },
 				{ { "a2_m110_epoch", "weapon" }, 1 },
 				{ { "a2_mk16_epoch", "weapon" }, 1 },
 				{ { "a2_mk17_epoch", "weapon" }, 1 },
 				{ { "a2_svd_epoch", "weapon" }, 1 },
 				{ { "a2_VSS_vintorez_epoch", "weapon" }, 1 },
-				{ { "a2_aks74un_EPOCH", "weapon" }, 1 }
+				{ { "a2_aks74un_EPOCH", "weapon" }, 4 }
 		};
 	};
 	class Rifle_l85a2_epoch
 	{
 		items[] = {
-				{ { "l85a2_epoch", "weapon" }, 1 },
+				{ { "l85a2_epoch", "weapon" }, 5 },
 				{ { "l85a2_pink_epoch", "weapon" }, 1 },
 				{ { "l85a2_ugl_epoch", "weapon" }, 1 }
 		};
@@ -445,7 +445,7 @@ class CfgLootTable
 	class Rifle_arifle_TRG21_F
 	{
 		items[] = {
-				{ { "arifle_TRG21_GL_F", "weapon" }, 2 },
+				{ { "arifle_TRG21_GL_F", "weapon" }, 1 },
 				{ { "arifle_TRG21_F", "weapon" }, 3 },
 				{ { "arifle_TRG20_F", "weapon" }, 5 }
 		};
@@ -454,7 +454,7 @@ class CfgLootTable
 	class Rifle_arifle_Katiba_F
 	{
 		items[] = {
-				{ { "arifle_Katiba_GL_F", "weapon" }, 2 },
+				{ { "arifle_Katiba_GL_F", "weapon" }, 1 },
 				{ { "arifle_Katiba_C_F", "weapon" }, 3 },
 				{ { "arifle_Katiba_F", "weapon" }, 5 }
 		};
@@ -463,8 +463,8 @@ class CfgLootTable
 	class Rifle_arifle_Mk20_F
 	{
 		items[] = {
-				{ { "arifle_Mk20_GL_F", "weapon" }, 12 },
-				{ { "arifle_Mk20_GL_plain_F", "weapon" }, 12 },
+				{ { "arifle_Mk20_GL_F", "weapon" }, 2 },
+				{ { "arifle_Mk20_GL_plain_F", "weapon" }, 2 },
 				{ { "arifle_Mk20C_F", "weapon" }, 16 },
 				{ { "arifle_Mk20C_plain_F", "weapon" }, 18 },
 				{ { "arifle_Mk20_F", "weapon" }, 20 },
@@ -475,7 +475,7 @@ class CfgLootTable
 	class Rifle_m16_EPOCH
 	{
 		items[] = {
-				{ { "m16_EPOCH", "weapon" }, 2 },
+				{ { "m16_EPOCH", "weapon" }, 5 },
 				{ { "m16Red_EPOCH", "weapon" }, 1 }
 		};
 	};
@@ -483,8 +483,8 @@ class CfgLootTable
 	class Rifle_arifle_MX_GL_F
 	{
 		items[] = {
-				{ { "arifle_MX_GL_F", "weapon" }, 3 },
-				{ { "arifle_MX_GL_Black_F", "weapon" }, 2 },
+				{ { "arifle_MX_GL_F", "weapon" }, 1 },
+				{ { "arifle_MX_GL_Black_F", "weapon" }, 1 },
 				{ { "arifle_MXM_Black_F", "weapon" }, 2 },
 				{ { "arifle_MXC_Black_F", "weapon" }, 3 },
 				{ { "arifle_MX_Black_F", "weapon" }, 2 },
@@ -498,10 +498,10 @@ class CfgLootTable
 	{
 		items[] = {
 				{ { "Rollins_F", "weapon" }, 10 },
-				{ { "SMG_02_F", "weapon" }, 12 },
-				{ { "SMG_01_F", "weapon" }, 16 },
-				{ { "hgun_PDW2000_F", "weapon" }, 18 },
-				{ { "arifle_SDAR_F", "weapon" }, 20 },
+				//{ { "SMG_02_F", "weapon" }, 12 },
+				//{ { "SMG_01_F", "weapon" }, 16 },
+				//{ { "hgun_PDW2000_F", "weapon" }, 18 },
+				{ { "arifle_SDAR_F", "weapon" }, 5 },
 				{ { "speargun_epoch", "weapon" }, 22 }
 		};
 	};
@@ -509,8 +509,8 @@ class CfgLootTable
 	class RifleAmmoBoat
 	{
 		items[] = {
-				{ { "30Rnd_9x21_Mag", "magazine" }, 10 },
-				{ { "16Rnd_9x21_Mag", "magazine" }, 15 },
+				//{ { "30Rnd_9x21_Mag", "magazine" }, 10 },
+				//{ { "16Rnd_9x21_Mag", "magazine" }, 15 },
 				{ { "spear_magazine", "magazine" }, 20 },
 				{ { "20Rnd_556x45_UW_mag", "magazine" }, 25 },
 				{ { "5Rnd_rollins_mag", "magazine" }, 30 }
@@ -520,12 +520,12 @@ class CfgLootTable
 	class RifleAmmo
 	{
 		items[] = {
-				{ { "30Rnd_762x39_Mag", "magazine" }, 8 },
-				{ { "RifleAmmo_30Rnd_65x39_caseless_mag", "CfgLootTable" }, 14 },
-				{ { "20Rnd_556x45_UW_mag", "magazine" }, 12 },
-				{ { "RifleAmmo_30Rnd_556x45_Stanag", "CfgLootTable" }, 13 },
-				{ { "RifleAmmo_30Rnd_45ACP_Mag_SMG_01", "CfgLootTable" }, 16 },
-				{ { "30Rnd_9x21_Mag", "magazine" }, 17 },
+				{ { "30Rnd_762x39_Mag", "magazine" }, 20 },
+				{ { "RifleAmmo_30Rnd_65x39_caseless_mag", "CfgLootTable" }, 4 },
+				{ { "20Rnd_556x45_UW_mag", "magazine" }, 6 },
+				{ { "RifleAmmo_30Rnd_556x45_Stanag", "CfgLootTable" }, 20 },
+				{ { "RifleAmmo_30Rnd_45ACP_Mag_SMG_01", "CfgLootTable" }, 15 },
+				{ { "30Rnd_9x21_Mag", "magazine" }, 15 },
 				{ { "5Rnd_rollins_mag", "magazine" }, 20 },
 				{ { "50Rnd_570x28_SMG_03", "magazine" }, 10 },
 				{ { "RifleAmmo_A2", "CfgLootTable" }, 10 }
@@ -535,13 +535,13 @@ class CfgLootTable
 	{
 		items[] = {
 				{ { "Bizon_64Rnd_9x18", "magazine" }, 2 },
-				{ { "20Rnd_762x51_DMR", "magazine" }, 2 },
+				{ { "20Rnd_762x51_DMR", "magazine" }, 1 },
 				{ { "20Rnd_762x51_FNFAL", "magazine" }, 2 },
 				{ { "30Rnd_556x45_G36", "magazine" }, 2 },
 				{ { "10Rnd_303", "magazine" }, 2 },
-				{ { "100Rnd_556x45_BetaCMag", "magazine" }, 2 },
+				{ { "100Rnd_556x45_BetaCMag", "magazine" }, 1 },
 				{ { "10Rnd_762x54_SVD", "magazine" }, 2 },
-				{ { "10Rnd_9x39_SP5_VSS", "magazine" }, 2 }
+				{ { "10Rnd_9x39_SP5_VSS", "magazine" }, 1 }
 		};
 	};
 	class RifleAmmo_30Rnd_556x45_Stanag
@@ -626,10 +626,10 @@ class CfgLootTable
 	class Machinegun
 	{
 		items[] = {
-				{ { "LMG_Zafir_F", "weapon" }, 1 },
-				{ { "Machinegun_arifle_MX_SW_F", "CfgLootTable" }, 2 },
-				{ { "LMG_Mk200_F", "weapon" }, 3 },
-				{ { "Machinegun_m249_EPOCH", "CfgLootTable" }, 3 },
+				{ { "LMG_Zafir_F", "weapon" }, 2 },
+				{ { "Machinegun_arifle_MX_SW_F", "CfgLootTable" }, 1 },
+				{ { "LMG_Mk200_F", "weapon" }, 1 },
+				{ { "Machinegun_m249_EPOCH", "CfgLootTable" }, 2 },
 				{ { "MMG_MarkDLC_EPOCH", "CfgLootTable" }, 1 }
 		};
 	};
@@ -648,7 +648,7 @@ class CfgLootTable
 	class Machinegun_m249_EPOCH
 	{
 		items[] = {
-				{ { "m249_EPOCH", "weapon" }, 1 },
+				{ { "m249_EPOCH", "weapon" }, 2 },
 				{ { "m249Tan_EPOCH", "weapon" }, 1 }
 		};
 	};
@@ -663,27 +663,27 @@ class CfgLootTable
 	class MachinegunAmmo
 	{
 		items[] = {
-				{ { "MachinegunAmmo_200Rnd_65x39_cased_Box", "CfgLootTable" }, 8 },
-				{ { "130Rnd_338_Mag", "magazine" }, 6 },
-				{ { "MachinegunAmmo_150Rnd_762x54_Box", "CfgLootTable" }, 10 },
-				{ { "MachinegunAmmo_100Rnd_65x39_caseless_mag", "CfgLootTable" }, 22 },
-				{ { "200Rnd_556x45_M249", "magazine" }, 19 },
-				{ { "150Rnd_93x64_Mag", "magazine" }, 10 },
-				{ { "MachinegunAmmo_30Rnd_65x39_caseless_mag", "CfgLootTable" }, 29 }
+				{ { "MachinegunAmmo_200Rnd_65x39_cased_Box", "CfgLootTable" }, 2 },
+				{ { "130Rnd_338_Mag", "magazine" }, 2 },
+				{ { "MachinegunAmmo_150Rnd_762x54_Box", "CfgLootTable" }, 4 },
+				{ { "MachinegunAmmo_100Rnd_65x39_caseless_mag", "CfgLootTable" }, 2 },
+				{ { "200Rnd_556x45_M249", "magazine" }, 3 },
+				{ { "150Rnd_93x64_Mag", "magazine" }, 2 },
+				{ { "MachinegunAmmo_30Rnd_65x39_caseless_mag", "CfgLootTable" }, 2 }
 		};
 	};
 	class MachinegunAmmo_30Rnd_65x39_caseless_mag
 	{
 		items[] = {
-				{ { "30Rnd_65x39_caseless_mag", "magazine" }, 2 },
-				{ { "30Rnd_65x39_caseless_mag_Tracer", "magazine" }, 1 }
+				{ { "30Rnd_65x39_caseless_mag", "magazine" }, 1 },
+				{ { "30Rnd_65x39_caseless_mag_Tracer", "magazine" }, 2 }
 		};
 	};
 	class MachinegunAmmo_200Rnd_65x39_cased_Box
 	{
 		items[] = {
-				{ { "200Rnd_65x39_cased_Box", "magazine" }, 2 },
-				{ { "200Rnd_65x39_cased_Box_Tracer", "magazine" }, 1 }
+				{ { "200Rnd_65x39_cased_Box", "magazine" }, 1 },
+				{ { "200Rnd_65x39_cased_Box_Tracer", "magazine" }, 2 }
 		};
 	};
 	/*
@@ -698,15 +698,15 @@ class CfgLootTable
 	class MachinegunAmmo_150Rnd_762x54_Box
 	{
 		items[] = {
-				{ { "150Rnd_762x54_Box", "magazine" }, 2 },
-				{ { "150Rnd_762x54_Box_Tracer", "magazine" }, 1 }
+				{ { "150Rnd_762x54_Box", "magazine" }, 1 },
+				{ { "150Rnd_762x54_Box_Tracer", "magazine" }, 2 }
 		};
 	};
 	class MachinegunAmmo_100Rnd_65x39_caseless_mag
 	{
 		items[] = {
-				{ { "100Rnd_65x39_caseless_mag", "magazine" }, 2 },
-				{ { "100Rnd_65x39_caseless_mag_Tracer", "magazine" }, 1 }
+				{ { "100Rnd_65x39_caseless_mag", "magazine" }, 1 },
+				{ { "100Rnd_65x39_caseless_mag_Tracer", "magazine" }, 2 }
 		};
 	};
 
@@ -764,15 +764,15 @@ class CfgLootTable
 				{ { "optic_LRPS", "item" }, 2 },
 
 				// Marksman DLC
-				{ { "ScopeAMSMarkDLC", "CfgLootTable" }, 2 },
-				{ { "ScopeKHSMarkDLC", "CfgLootTable" }, 2 },
+				{ { "ScopeAMSMarkDLC", "CfgLootTable" }, 1 },
+				{ { "ScopeKHSMarkDLC", "CfgLootTable" }, 1 },
 
 				{ { "optic_DMS", "item" }, 3 },
-				{ { "optic_Arco", "item" }, 4 },
-				{ { "optic_Hamr", "item" }, 5 },
+				{ { "optic_Arco", "item" }, 2 },
+				{ { "optic_Hamr", "item" }, 2 },
 				{ { "Elcan_epoch", "item" }, 5 },
 				{ { "Elcan_reflex_epoch", "item" }, 5 },
-				{ { "optic_MRCO", "item" }, 6 },
+				{ { "optic_MRCO", "item" }, 3 },
 				{ { "optic_Holosight", "item" }, 6 },
 				{ { "optic_Holosight_smg", "item" }, 6 },
 				{ { "optic_Aco", "item" }, 7 },
@@ -877,8 +877,8 @@ class CfgLootTable
 				{ { "Food", "CfgLootTable" }, 26 },
 				{ { "Backpack", "CfgLootTable" }, 10 },
 				{ { "Uniforms", "CfgLootTable" }, 13 },
-				{ { "Explosives", "CfgLootTable" }, 10 },
-				{ { "Hand", "CfgLootTable" }, 10 },
+				{ { "Explosives", "CfgLootTable" }, 1 },
+				{ { "Hand", "CfgLootTable" }, 4 },
 				{ { "Vests", "CfgLootTable" }, 10 }
 		};
 	};
@@ -897,11 +897,11 @@ class CfgLootTable
 	class Gems
 	{
 		items[] = {
-				{ { "ItemJade", "magazine" }, 5 },
-				{ { "ItemRuby", "magazine" }, 8 },
-				{ { "ItemSapphire", "magazine" }, 9 },
-				{ { "ItemTopaz", "magazine" }, 10 },
-				{ { "ItemOnyx", "magazine" }, 10 },
+				{ { "ItemJade", "magazine" }, 2 },
+				{ { "ItemRuby", "magazine" }, 4 },
+				{ { "ItemSapphire", "magazine" }, 6 },
+				{ { "ItemTopaz", "magazine" }, 8 },
+				{ { "ItemOnyx", "magazine" }, 8 },
 				{ { "ItemAmethyst", "magazine" }, 10 },
 				{ { "ItemEmerald", "magazine" }, 10 },
 				{ { "ItemCitrine", "magazine" }, 10 },
@@ -912,7 +912,7 @@ class CfgLootTable
 	class Mine
 	{
 		items[] = {
-				{ { "Gems", "CfgLootTable" }, 15 },
+				{ { "Gems", "CfgLootTable" }, 10 },
 				{ { "PartOreGold", "magazine" }, 20 },
 				{ { "PartOreSilver", "magazine" }, 30 },
 				{ { "PartOre", "magazine" }, 35 }
@@ -921,7 +921,7 @@ class CfgLootTable
 	class CopperMine
 	{
 		items[] = {
-				{ { "Gems", "CfgLootTable" }, 15 },
+				{ { "Gems", "CfgLootTable" }, 10 },
 				{ { "PartOreGold", "magazine" }, 20 },
 				{ { "PartOreSilver", "magazine" }, 30 },
 				{ { "PartOre", "magazine" }, 35 }
@@ -930,7 +930,7 @@ class CfgLootTable
 	class SilverMine
 	{
 		items[] = {
-				{ { "Gems", "CfgLootTable" }, 15 },
+				{ { "Gems", "CfgLootTable" }, 10 },
 				{ { "PartOreGold", "magazine" }, 20 },
 				{ { "PartOreSilver", "magazine" }, 35 },
 				{ { "PartOre", "magazine" }, 30 }
@@ -939,7 +939,7 @@ class CfgLootTable
 	class GoldMine
 	{
 		items[] = {
-				{ { "Gems", "CfgLootTable" }, 20 },
+				{ { "Gems", "CfgLootTable" }, 10 },
 				{ { "PartOreGold", "magazine" }, 35 },
 				{ { "PartOreSilver", "magazine" }, 20 },
 				{ { "PartOre", "magazine" }, 25 }
@@ -974,7 +974,7 @@ class CfgLootTable
 	{
 		items[] = {
 				{ { "ItemDefibrillator", "magazine" }, 1 },
-				{ { "FAK", "magazine" }, 50 },
+				{ { "FAK", "magazine" }, 20 },
 				{ { "Soap_Epoch", "magazine" }, 3 },
 				{ { "Heal_EPOCH", "item" }, 2 },
 				{ { "Defib_EPOCH", "item" }, 1 },
@@ -1002,11 +1002,11 @@ class CfgLootTable
 				{ { "KitWoodStairs", "magazine" }, 9 },
 				{ { "KitWoodTower", "magazine" }, 5 },
 				{ { "KitWoodRamp", "magazine" }, 5 },
-				{ { "KitTankTrap", "magazine" }, 2 },
+				{ { "KitTankTrap", "magazine" }, 1 },
 				{ { "KitHesco3", "magazine" }, 1 },
 				{ { "KitWoodLadder", "magazine" }, 5 },
 				{ { "KitFirePlace", "magazine" }, 8 },
-				{ { "KitCinderWall", "magazine" }, 5 },
+				{ { "KitCinderWall", "magazine" }, 4 },
 				{ { "KitFoundation", "magazine" }, 5 },
 				{ { "KitWoodFoundation", "magazine" }, 14 },
 				{ { "Safes", "CfgLootTable" }, 1 }
@@ -1016,7 +1016,7 @@ class CfgLootTable
 	class Mission_Payout1
 	{
 		items[] = {
-				{ { "Gems", "CfgLootTable" }, 8 },
+				{ { "Gems", "CfgLootTable" }, 4 },
 				{ { "Sodas", "CfgLootTable" }, 6 },
 				{ { "CanFood", "CfgLootTable" }, 8 },
 				{ { "BaseBuilding", "CfgLootTable" }, 20 },
@@ -1193,9 +1193,9 @@ class CfgLootTable
 	class Explosives
 	{
 		items[] = {
-				{ { "HandGrenade", "magazine" }, 25 },
+				{ { "HandGrenade", "magazine" }, 15 },
 				{ { "MiniGrenade", "magazine" }, 25 },
-				{ { "3Rnd_HE_Grenade_shell", "magazine" }, 15 },
+				{ { "3Rnd_HE_Grenade_shell", "magazine" }, 5 },
 				{ { "HighExplosives", "CfgLootTable" }, 35 }
 		};
 	};
@@ -1284,7 +1284,7 @@ class CfgLootTable
 	{
 		items[] = {
 				{ { "U_O_CombatUniform_ocamo", "item" }, 1 },
-				{ { "U_O_GhillieSuit", "item" }, 1 },
+				//{ { "U_O_GhillieSuit", "item" }, 1 },
 				{ { "U_O_PilotCoveralls", "item" }, 1 },
 				{ { "U_O_Wetsuit", "item" }, 1 },
 				{ { "MaleUniforms_OG_Guerilla", "CfgLootTable" }, 1 },
@@ -1295,7 +1295,7 @@ class CfgLootTable
 				{ { "U_C_Scientist", "item" }, 1 },
 				{ { "U_OrestesBody", "item" }, 1 },
 				{ { "DLCUniforms", "CfgLootTable" }, 1 },
-				{ { "MaleUniforms_FullGhillieMarkDLC", "CfgLootTable" }, 1 },
+				//{ { "MaleUniforms_FullGhillieMarkDLC", "CfgLootTable" }, 1 },
 				{ { "U_RadiationSuit_M_uniform", "item" }, 1 },
 
 				// new uniforms
@@ -1319,36 +1319,36 @@ class CfgLootTable
 				{ { "U_OG_Guerrilla_6_1", "item" }, 1 },
 				{ { "U_I_CombatUniform", "item" }, 1 },
 				{ { "U_I_CombatUniform_shortsleeve", "item" }, 1 },
-				{ { "U_I_HeliPilotCoveralls", "item" }, 1 },
-				{ { "U_I_pilotCoveralls", "item" }, 1 },
-				{ { "U_I_OfficerUniform", "item" }, 1 },
+				//{ { "U_I_HeliPilotCoveralls", "item" }, 1 },
+				//{ { "U_I_pilotCoveralls", "item" }, 1 },
+				//{ { "U_I_OfficerUniform", "item" }, 1 },
 				{ { "U_I_Wetsuit", "item" }, 1 },
-				{ { "U_I_GhillieSuit", "item" }, 1 },
+				//{ { "U_I_GhillieSuit", "item" }, 1 },
 				{ { "U_I_CombatUniform_tshirt", "item" }, 1 },
-				{ { "U_O_OfficerUniform_ocamo", "item" }, 1 },
-				{ { "U_O_SpecopsUniform_ocamo", "item" }, 1 },
+				//{ { "U_O_OfficerUniform_ocamo", "item" }, 1 },
+				//{ { "U_O_SpecopsUniform_ocamo", "item" }, 1 },
 				{ { "U_O_CombatUniform_oucamo", "item" }, 1 },
-				{ { "U_Marshal", "item" }, 1 },
-				{ { "U_I_FullGhillie_lsh", "item" }, 1 },
-				{ { "U_I_FullGhillie_sard", "item" }, 1 },
-				{ { "U_I_FullGhillie_ard", "item" }, 1 },
-				{ { "U_I_C_Soldier_Para_1_F", "item" }, 1 },
-				{ { "U_I_C_Soldier_Para_2_F", "item" }, 1 },
-				{ { "U_I_C_Soldier_Para_3_F", "item" }, 1 },
-				{ { "U_I_C_Soldier_Para_4_F", "item" }, 1 },
-				{ { "U_I_C_Soldier_Para_5_F", "item" }, 1 },
-				{ { "U_I_C_Soldier_Bandit_1_F", "item" }, 1 },
-				{ { "U_I_C_Soldier_Bandit_2_F", "item" }, 1 },
-				{ { "U_I_C_Soldier_Bandit_3_F", "item" }, 1 },
-				{ { "U_I_C_Soldier_Bandit_4_F", "item" }, 1 },
-				{ { "U_I_C_Soldier_Bandit_5_F", "item" }, 1 },
-				{ { "U_I_C_Soldier_Camo_F", "item" }, 1 },
-				{ { "U_O_T_Soldier_F", "item" }, 1 },
-				{ { "U_O_T_Officer_F", "item" }, 1 },
-				{ { "U_O_T_Sniper_F", "item" }, 1 },
-				{ { "U_O_T_FullGhillie_tna_F", "item" }, 1 },
-				{ { "U_O_V_Soldier_Viper_F", "item" }, 1 },
-				{ { "U_O_V_Soldier_Viper_hex_F", "item" }, 1 },
+				//{ { "U_Marshal", "item" }, 1 },
+				//{ { "U_I_FullGhillie_lsh", "item" }, 1 },
+				//{ { "U_I_FullGhillie_sard", "item" }, 1 },
+				//{ { "U_I_FullGhillie_ard", "item" }, 1 },
+				//{ { "U_I_C_Soldier_Para_1_F", "item" }, 1 },
+				//{ { "U_I_C_Soldier_Para_2_F", "item" }, 1 },
+				//{ { "U_I_C_Soldier_Para_3_F", "item" }, 1 },
+				//{ { "U_I_C_Soldier_Para_4_F", "item" }, 1 },
+				//{ { "U_I_C_Soldier_Para_5_F", "item" }, 1 },
+				//{ { "U_I_C_Soldier_Bandit_1_F", "item" }, 1 },
+				//{ { "U_I_C_Soldier_Bandit_2_F", "item" }, 1 },
+				//{ { "U_I_C_Soldier_Bandit_3_F", "item" }, 1 },
+				//{ { "U_I_C_Soldier_Bandit_4_F", "item" }, 1 },
+				//{ { "U_I_C_Soldier_Bandit_5_F", "item" }, 1 },
+				//{ { "U_I_C_Soldier_Camo_F", "item" }, 1 },
+				//{ { "U_O_T_Soldier_F", "item" }, 1 },
+				//{ { "U_O_T_Officer_F", "item" }, 1 },
+				//{ { "U_O_T_Sniper_F", "item" }, 1 },
+				//{ { "U_O_T_FullGhillie_tna_F", "item" }, 1 },
+				//{ { "U_O_V_Soldier_Viper_F", "item" }, 1 },
+				//{ { "U_O_V_Soldier_Viper_hex_F", "item" }, 1 },
 				{ { "U_C_man_sport_1_F", "item" }, 1 },
 				{ { "U_C_man_sport_2_F", "item" }, 1 },
 				{ { "U_C_man_sport_3_F", "item" }, 1 },
