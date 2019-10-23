@@ -8,15 +8,15 @@
 //UID's for lvl 1 spawn's
 _level1UIDs = [];
 //UID's for lvl 2 spawn's
-_level2UIDs = [];
+_level2UIDs = ["76561198155787911"];
 //this is to allow any lvl 2 to spawn on lvl 1, comment out to seperate the two
 _level1UIDs = _level1UIDs + _level2UIDs;
 
 //Spawn area radius, setting this low might make bis_fnc_findsafepos fail and place the player in the middle of the map
-_area = 750;
+_area = 1200;
 
 //force halo jump or ground spawn 0 = user choice, 1 = forced HALO, 2 = forced Ground
-_HALV_forcespawnMode = 0;
+_HALV_forcespawnMode = 1;
 _jumpheight = 1000;
 
 //this is the distance (in meters) it will check for the players dead bodys, set to -1 to disable
@@ -50,5 +50,5 @@ _addmap = true;
 //if true adds paintshop colours on spawn, if below var is set correct as in your paintshop settings
 _addcolours = true;
 //set this the same as you have in your paintshop settings or it will not work
-_servername = "Your Server Name Here";
+_servername = "Epoch Mod";
 //////////////////////////paintshop settings//////////////////////////
