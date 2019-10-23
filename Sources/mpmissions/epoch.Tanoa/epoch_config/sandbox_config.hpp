@@ -9,7 +9,7 @@
     Github:
     https://github.com/EpochModTeam/Epoch/tree/release/Sources/epoch_config/config.hpp
 */
-author = "Epoch Mod Team";
+author = "Epoch Mod Team + Schalldampfer";
 class Header
 {
  gameType = Survive;
@@ -23,7 +23,7 @@ respawnButton = 0;
 respawnOnStart = -1;
 onPauseScript = "epoch_code\gui\scripts\Epoch_onPause.sqf";
 onLoadMission= "Epoch";
-OnLoadIntro = "Welcome to Epoch Mod";
+OnLoadIntro = "Somewhere on Tanoa";
 loadScreen = "\x\addons\a3_epoch_assets\pictures\loadScreen_ca.paa";
 OnLoadIntroTime = 0;
 OnLoadMissionTime = 0;
@@ -41,13 +41,13 @@ saving = 0;
 
 corpseManagerMode = 1;
 corpseLimit = 10;
-corpseRemovalMinTime = 1200;
+corpseRemovalMinTime = 2400;
 corpseRemovalMaxTime = 3600;
 
 wreckManagerMode = 1;
-wreckLimit = 2;
-wreckRemovalMinTime = 60;
-wreckRemovalMaxTime = 360;
+wreckLimit = 10;
+wreckRemovalMinTime = 600;
+wreckRemovalMaxTime = 1200;
 
 disableRandomization[] = {"All"};
 
