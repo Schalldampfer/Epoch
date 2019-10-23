@@ -27,7 +27,7 @@ _bodyCheckDist = -1;
 _script = "addons\halv_spawn\credits.sqf";
 
 //start screen 0 = start on select gear screen, anything else will start it on select map screen
-_halv_spawn_startmode = 0;
+_halv_spawn_startmode = 1;
 
 //if false then gear select screen/button is disabled
 _halv_allowgearselect = false;
