@@ -111,15 +111,15 @@ class CfgEpochClient
 
 	antagonistChances[] = {
 		// {"type", chance}
-		"Epoch_Cloak_F",0.06,
-		"GreatWhite_F",0,
-		"Epoch_Sapper_F",0.12,
-		"Epoch_SapperG_F",0.06,
-		"Epoch_SapperB_F",0.03,
-		"I_UAV_01_F",0.12,
-		"PHANTOM",0.03,
+		"Epoch_Cloak_F",0,
+		"GreatWhite_F",0.5,
+		"Epoch_Sapper_F",0,
+		"Epoch_SapperG_F",0,
+		"Epoch_SapperB_F",0,
+		"I_UAV_01_F",0,
+		"PHANTOM",0,
 		"B_Heli_Transport_01_F",0,
-		"EPOCH_RyanZombie_1",0.12,
+		"EPOCH_RyanZombie_1",0,
 		"I_Soldier_EPOCH",0
 	};
 
@@ -320,7 +320,7 @@ class CfgEpochSoldier
 {
     unitTypes[] = {"I_Soldier_EPOCH", "I_Soldier2_EPOCH", "I_Soldier3_EPOCH"};//Selects from randomly
     minAISkill = 0.2; //Minumum AI Skill. Skills are chosen randomly between this minimum overall AI skill value and the following max AI skill values, for each of the next skills:
-    maxAimingAccuracy = 0.7;
+    maxAimingAccuracy = 0.2;
     maxAimingShake = 0.9;
     maxAimingSpeed = 0.6;
     maxEndurance = 0.4;
@@ -333,7 +333,7 @@ class CfgEpochSoldier
 };
 class CfgEpochSapper
 {
-    detonateDistMax = 8; //Random distance between 3m and this number at which sapper detonates. Min value = 4
+    detonateDistMax = 4; //Random distance between 3m and this number at which sapper detonates. Min value = 4
     groanTrig = 16; //Percentage chance of a groan. Min value = 4
     sRange = 300; //Distance from target over which sapper will dispose. Range within which sapper code will be aware of targets. Distance up to which sapper will attempt to find a spot to hide in. Min Value = 150.
     smellDist = 24; //Distance up to which sapper can smell. Used to decide if sapper can see target when deciding to charge and influences target selection. Is influenced by wind direction. Min Value = 8.
