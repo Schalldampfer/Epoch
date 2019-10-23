@@ -9,7 +9,7 @@
     Github:
     https://github.com/EpochModTeam/Epoch/tree/release/Sources/epoch_config/config.hpp
 */
-author = "https://discord.gg/czZr3xW";
+author = "https://discord.gg/0k4ynDDCsnMzkxk7";
 class Header
 {
  gameType = Survive;
