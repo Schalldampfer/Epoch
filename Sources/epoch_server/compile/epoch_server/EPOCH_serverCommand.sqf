@@ -36,7 +36,7 @@ switch (_command) do {
 			_playerUID = getPlayerUID _playerUID;
 		};
 		if !(_playerUID isEqualTo '') then{
-			'epochserver' callExtension format['921|%1|%2|%3', _playerUID, _param2, _param3];
+			'epochserver' callExtension format['911|%1|%2|%3', _playerUID, _param2, _param3];//921 to ban
 		};
 	};
 };
