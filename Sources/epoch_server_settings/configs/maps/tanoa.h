@@ -220,7 +220,6 @@ class Tanoa : Default
 	};
 	propsPos[] = {
 		// Temple Trader
-        { "PlotPole_XXL_EPOCH", {11071,8474.64,32.5631}, {{0,0.999543,0.0302331},{-0.185304,-0.0297262,0.982231}}, true },
         { "Transport_EPOCH", {11068.167,8479.7549,0}, {{-0.000149552,1,0},{0,0,1}}, true },
         { "ProtectionZone_Invisible_F", {11068.813,8473.416,0}, {{-0.000149552,1,0},{0,0,1}}, true },
         { "ProtectionZone_Invisible_F", {10986.084,8502.8975,0}, {{-0,6.2830358,0},{0,0,1}}, true },
