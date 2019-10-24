@@ -13,22 +13,8 @@ _alltext = [
 		"#71C700", //green light
 		[
 			//Sub Text(s)
-			"   Halv's",
-			"- Epoch Warfare Server -"
-		]
-	],
-	[
-		"Teamspeak ]I[ Server :",
-		"#c77000", //orange rust
-		[
-			"halv.ddns.net:9995"
-		]
-	],
-	[
-		"Server Admins :",
-		"#25B25B", //Green
-		[
-			"Halv"," ","Deathstroke"
+			"   Epoch Mod",
+			"- Tanoa Server -"
 		]
 	],
 	[
@@ -42,31 +28,8 @@ _alltext = [
 		"Server Mods :",
 		"#0096ff", //Blue Light
 		[
-			"AI + Missions","Call In Airdrops","Capture Points","Earplugs (+/-)","HALO Eject A2 Style","Select Gear / HALO Spawn",
-			"Special (no limit) Traders","Lift and Tow","No DLC Locked Vehicles","Repair/Re-Arm Stations","Vehicle/Uniform/Bag Paint Shops",
-
+			"Respawn selection","AI patrols","AI cities",
 			"And Much more ..."
-		]
-	],
-	[
-		"Server Scripted by :",
-		"#C80000", //Red dark
-		[
-			"- Halv -"
-		]
-	],
-	[
-		"Awsome translations by:",
-		"#c77000", //orange rust
-		[
-			"alden",
-			"Matez31cz",
-			"Kerozen",
-			"Suppe",
-			"W4lly",
-			"Tophi",
-			"",
-			"And many others i forgot to mention ..."
 		]
 	],
 	[
@@ -75,20 +38,6 @@ _alltext = [
 		[
 			"4 Hour Schedule"," "," (not set times)"
 			//"00:00","04:00","08:00","12:00","16:00","20:00","GMT + 1"
-		]
-	],
-	[
-		"Support / Help / Donor Info:",
-		"#71C700", //green light
-		[
-			"All Found on","Halv's Blog"," ","halv.ddns.net"," ","or Ts3:"," ","halv.ddns.net:9995"
-		]
-	],
-	[
-		"Intro Song:",
-		"#322CE6", //Blue Dark
-		[
-			"Sick Bubblegum"," ","- by Rob Zombie -"
 		]
 	]
 ];
