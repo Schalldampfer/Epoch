@@ -112,7 +112,7 @@ class CfgItemInteractions
     };
     class FoodBioMeat : Food_TinCan_base
     {
-        interactAttributes[] = {{"Hunger",1000},{"Toxicity",7},{"Radiation",2,1}};
+        interactAttributes[] = {{"Hunger",2000},{"Toxicity",12},{"Radiation",2,1}};
     };
     class TacticalBacon : Food_TinCan_base
     {
