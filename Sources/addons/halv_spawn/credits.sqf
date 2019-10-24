@@ -21,14 +21,21 @@ _alltext = [
 		"Main Rules :",
 		"#C80000", //Red dark
 		[
-			"No Shooting Into SafeZones!"," ","Play fair!"," ","Dont be a douche!"
+			"No Shooting in/to SafeZones!"," ","Play fair!"," ","Dont be a douche!"
+		]
+	],
+	[
+		"Main Rules :",
+		"#0096ff", //Blue Light
+		[
+			"[F10] to open your smartphone"
 		]
 	],
 	[
 		"Server Mods :",
 		"#0096ff", //Blue Light
 		[
-			"Respawn selection","AI patrols","AI cities","Teleport from Trader",
+			"Respawn selection","AI patrols","AI cities","Teleport from Trader","Bank ATM at Trader","",
 			"And Much more ..."
 		]
 	],
