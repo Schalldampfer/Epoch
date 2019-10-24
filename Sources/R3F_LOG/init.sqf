@@ -332,7 +332,7 @@
 		 * Seuls les joueurs et les IA commandées par les joueurs (locales) seront protégés.
 		 * Les IA n'étant pas commandées par un joueur ne seront pas protégées, ce qui est un moindre mal.
 		 */
-		execVM "R3F_LOG\systeme_protection_blessures.sqf";
+		//execVM "R3F_LOG\systeme_protection_blessures.sqf";
 	};
 	
 	R3F_LOG_active = true;
