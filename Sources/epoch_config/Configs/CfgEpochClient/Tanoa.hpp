@@ -13,7 +13,10 @@
     https://github.com/EpochModTeam/Epoch/tree/release/Sources/epoch_config/Configs/CfgEpochClient/Tanoa.hpp
 */
 class Tanoa {
-	blockedArea[] = {};
+	blockedArea[] = { //[POS],radius
+			{ {10986.084,8502.8975,0}, 1000 }, //Temple
+			{ {7036.1,9717.01,0}, 1000 } //Shrine
+	};
 	// main config
 	TrashClasses[] = { "Trash", "TrashSmall", "TrashVehicle", "PumpkinPatch", "TrashFood", "HempFiber" };
 };
