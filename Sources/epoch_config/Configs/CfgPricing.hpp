@@ -8,6 +8,10 @@
 */
 class CfgPricing
 {
+ 	class Land_CanOpener_F 
+	{
+		price = 10;
+	};
     class ItemEmptyTin
     {
         price = 1;
@@ -4801,6 +4805,7 @@ class CfgPricing
 	class B_G_Offroad_01_armed_EPOCH2: B_G_Offroad_01_armed_EPOCH{};
 	class B_G_Offroad_01_armed_EPOCH3: B_G_Offroad_01_armed_EPOCH{};
 	class B_G_Offroad_01_armed_EPOCH4: B_G_Offroad_01_armed_EPOCH{};
+    class I_C_Offroad_02_LMG_F: B_G_Offroad_01_armed_EPOCH{};
     class B_Truck_01_mover_EPOCH
     {
         price = 10000;
@@ -5277,6 +5282,16 @@ class CfgPricing
     {
         price = 4400;
 		tax = 0.9;
+    };
+    class B_LSV_01_armed_black_F
+    {
+        price = 6400;
+		tax = 0.1;
+    };
+    class B_LSV_01_armed_F
+    {
+        price = 6400;
+		tax = 0.1;
     };
     class O_LSV_02_unarmed_F
     {
