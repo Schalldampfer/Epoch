@@ -181,12 +181,12 @@ class CfgMainTable
 				{ "Food", 4 },
 				{ "Generic", 6 },
 				{ "GenericAuto", 6 },
-				{ "Machinegun", 4 },
-				{ "MachinegunAmmo", 4 },
-				{ "Rifle", 5 },
-				{ "RifleAmmo", 4 },
-				{ "SniperRifle", 3 },
-				{ "SniperRifleAmmo", 4 },
+				{ "Machinegun", 1 },
+				{ "MachinegunAmmo", 2 },
+				{ "Rifle", 6 },
+				{ "RifleAmmo", 5 },
+				{ "SniperRifle", 1 },
+				{ "SniperRifleAmmo", 2 },
 				{ "Hand", 4 },
 				{ "Grenades", 2 },
 				{ "Backpack", 4 }
@@ -235,9 +235,9 @@ class CfgMainTable
 				{ "Equipment", 8 },
 				{ "Pistols", 4 },
 				{ "PistolAmmo", 5 },
-				{ "Rifle", 4 },
-				{ "SniperRifle", 2 },
-				{ "MachinegunAmmo", 6 },
+				{ "Rifle", 2 },
+				{ "SniperRifle", 1 },
+				{ "MachinegunAmmo", 1 },
 				{ "RifleAmmo", 6 },
 				{ "Grenades", 5 },
 				{ "Uniforms", 6 },
@@ -247,7 +247,7 @@ class CfgMainTable
 				{ "Generic", 11 },
 				{ "GenericBed", 6 },
 				{ "Backpack", 8 },
-				{ "HighExplosives", 5 }
+				{ "HighExplosives", 1 }
 		};
 	};
 	class cooker_epoch : Default
@@ -302,17 +302,17 @@ class CfgMainTable
 				{ "Equipment", 5 },
 				{ "Pistols", 6 },
 				{ "PistolAmmo", 8 },
-				{ "MachinegunAmmo", 5 },
-				{ "RifleAmmo", 8 },
-				{ "SniperRifleAmmo", 5 },
-				{ "Scopes", 4 },
-				{ "Muzzles", 5 },
+				{ "MachinegunAmmo", 1 },
+				{ "RifleAmmo", 4 },
+				{ "SniperRifleAmmo", 1 },
+				{ "Scopes", 2 },
+				{ "Muzzles", 3 },
 				{ "Uniforms", 4 },
 				{ "Vests", 5 },
 				{ "Headgear", 5 },
 				{ "Rifle", 3 },
 				{ "Hand", 4 },
-				{ "Explosives", 8 },
+				{ "Explosives", 2 },
 				{ "Generic", 10 },
 				{ "Food", 6 },
 				{ "Backpack", 2 }
@@ -342,12 +342,12 @@ class CfgMainTable
 		LootMax = 4;
 		tables[] = {
 				{ "Pistols", 10 },
-				{ "Scopes", 10 },
-				{ "Muzzles", 10 },
-				{ "Machinegun", 10 },
+				{ "Scopes", 5 },
+				{ "Muzzles", 4 },
+				{ "Machinegun", 2 },
 				{ "Rifle", 21 },
-				{ "SniperRifle", 15 },
-				{ "Explosives", 22 }
+				{ "SniperRifle", 1 },
+				{ "Explosives", 10 }
 		};
 	};
 	class Bed_EPOCH : Default
@@ -356,20 +356,20 @@ class CfgMainTable
 		LootMax = 6;
 		tables[] = {
 				{ "Rifle", 3 },
-				{ "SniperRifle", 2 },
+				{ "SniperRifle", 1 },
 				{ "Items", 5 },
 				{ "Equipment", 7},
 				{ "Pistols", 4 },
 				{ "PistolAmmo", 5 },
-				{ "Scopes", 3 },
-				{ "Muzzles", 3 },
+				{ "Scopes", 2 },
+				{ "Muzzles", 2 },
 				{ "Uniforms", 5 },
 				{ "Vests", 5 },
 				{ "Headgear", 6 },
 				{ "Food", 7 },
 				{ "RifleAmmo", 7 },
-				{ "MachinegunAmmo", 3 },
-				{ "SniperRifleAmmo", 2 },
+				{ "MachinegunAmmo", 1 },
+				{ "SniperRifleAmmo", 1 },
 				{ "Hand", 5 },
 				{ "Generic", 5 },
 				{ "GenericBed", 8 },
@@ -423,7 +423,7 @@ class CfgMainTable
 				{ "Headgear", 6 },
 				{ "Food", 8 },
 				{ "RifleAmmo", 8 },
-				{ "MachinegunAmmo", 6 },
+				{ "MachinegunAmmo", 1 },
 				{ "Hand", 6 },
 				{ "Generic", 10 }
 		};
@@ -436,8 +436,8 @@ class CfgMainTable
 				{ "PistolAmmo", 16 },
 				{ "Food", 20 },
 				{ "RifleAmmo", 16 },
-				{ "MachinegunAmmo", 16 },
-				{ "SniperRifleAmmo", 16 },
+				{ "MachinegunAmmo", 2 },
+				{ "SniperRifleAmmo", 3 },
 				{ "Hand", 16 }
 		};
 	};
@@ -456,8 +456,8 @@ class CfgMainTable
 				{ "Headgear", 6 },
 				{ "Food", 8 },
 				{ "RifleAmmo", 7 },
-				{ "SniperRifleAmmo", 6 },
-				{ "MachinegunAmmo", 7 },
+				{ "SniperRifleAmmo", 1 },
+				{ "MachinegunAmmo", 2 },
 				{ "Hand", 8 },
 				{ "Generic", 10 }
 		};
@@ -477,8 +477,8 @@ class CfgMainTable
 				{ "Headgear", 6 },
 				{ "Food", 8 },
 				{ "RifleAmmo", 7 },
-				{ "SniperRifleAmmo", 6 },
-				{ "MachinegunAmmo", 7 },
+				{ "SniperRifleAmmo", 2 },
+				{ "MachinegunAmmo", 1 },
 				{ "Hand", 8 },
 				{ "Generic", 10 }
 		};
@@ -489,7 +489,7 @@ class CfgMainTable
 		LootMax = 6;
 		tables[] = {
 				{ "Rifle", 3 },
-				{ "SniperRifle", 2 },
+				{ "SniperRifle", 1 },
 				{ "Items", 7 },
 				{ "Equipment", 7 },
 				{ "Pistols", 5 },
@@ -499,8 +499,8 @@ class CfgMainTable
 				{ "Vests", 4 },
 				{ "Headgear", 4 },
 				{ "RifleAmmo", 7 },
-				{ "SniperRifleAmmo", 3 },
-				{ "MachinegunAmmo", 4 },
+				{ "SniperRifleAmmo", 2 },
+				{ "MachinegunAmmo", 3 },
 				{ "Hand", 7 },
 				{ "Generic", 10 },
 				{ "Tools", 15 }
@@ -542,8 +542,8 @@ class CfgMainTable
 				{ "Headgear", 5 },
 				{ "Food", 9 },
 				{ "RifleAmmo", 5 },
-				{ "MachinegunAmmo", 3 },
-				{ "SniperRifleAmmo", 2 },
+				{ "MachinegunAmmo", 1 },
+				{ "SniperRifleAmmo", 1 },
 				{ "Hand", 10 },
 				{ "Generic", 10 },
 				{ "Grenades", 2 }
@@ -568,9 +568,9 @@ class CfgMainTable
 		tables[] = {
 				{ "GenericLarge", 60 },
 				{ "GenericAuto", 30 },
-				{ "Machinegun", 3 },
+				{ "Machinegun", 1 },
 				{ "Rifle", 5 },
-				{ "SniperRifle", 2 }
+				{ "SniperRifle", 1 }
 		};
 	};
 	class AirDrop_Payout1
@@ -613,18 +613,18 @@ class CfgMainTable
 			{ "BaseBuilding", 6 },
 			{ "Food", 11 },
 			{ "Equipment", 5 },
-			{ "SniperRifle", 5 },
-			{ "SniperRifleAmmo", 6 },
+			{ "SniperRifle", 1 },
+			{ "SniperRifleAmmo", 3 },
 			{ "Rifle", 6 },
 			{ "RifleAmmo", 8 },
-			{ "Machinegun", 6 },
-			{ "MachinegunAmmo", 8 },
+			{ "Machinegun", 2 },
+			{ "MachinegunAmmo", 4 },
 			{ "Pistols", 5 },
 			{ "PistolAmmo", 7 },
-			{ "Scopes", 8 },
+			{ "Scopes", 5 },
 			{ "Muzzles", 5 },
 			{ "Hand", 10 },
-			{ "Explosives", 5 },
+			{ "Explosives", 3 },
 			{ "Backpack", 7 },
 			{ "Uniforms", 7 },
 			{ "Vests", 7 },
@@ -641,18 +641,18 @@ class CfgMainTable
 			{ "BaseBuilding", 6 },
 			{ "Food", 11 },
 			{ "Equipment", 5 },
-			{ "SniperRifle", 5 },
-			{ "SniperRifleAmmo", 6 },
+			{ "SniperRifle", 2 },
+			{ "SniperRifleAmmo", 3 },
 			{ "Rifle", 6 },
 			{ "RifleAmmo", 8 },
-			{ "Machinegun", 6 },
-			{ "MachinegunAmmo", 8 },
+			{ "Machinegun", 1 },
+			{ "MachinegunAmmo", 3 },
 			{ "Pistols", 5 },
 			{ "PistolAmmo", 7 },
 			{ "Scopes", 8 },
 			{ "Muzzles", 5 },
 			{ "Hand", 10 },
-			{ "Explosives", 5 },
+			{ "Explosives", 2 },
 			{ "Backpack", 7 },
 			{ "Uniforms", 7 },
 			{ "Vests", 7 },
