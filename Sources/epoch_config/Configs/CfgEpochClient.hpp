@@ -231,7 +231,7 @@ class CfgEpochClient
     playerLocationMarkerGPSOnly = 1; // Map marker toggle in map dyna menu with assigned GPS only
     playerDeathMarkerGPSOnly = 1; // Map marker toggle in map dyna menu on death with assigned GPS only
     mapOnZoomSetMarkerSize = 1; // When in map markers will change to larger size as player zooms in
-    bankTransferTime[] = {0.0006,1.2,0.06};
+    bankTransferTime[] = {0.0002,0.3,0.02};
 	
 	// Player (Building) Energy
 	energyPowerSources[]	= {				// Add PowerCapacity and PowerType in CfgBaseBuilding, if you add something here!
@@ -257,7 +257,7 @@ class CfgEpochClient
 
 	// Vehicle Settings
 	DisallowSellOnDamage = "false";										// Prevent from selling Vehicles with one or more fully damaged wheel or engine
-	MaxVehTradeDist = 30;												// Max distance where Players can sell Vehicles to Traders
+	MaxVehTradeDist = 50;												// Max distance where Players can sell Vehicles to Traders
 	UseAdvancedVehicleRepair = "true";									// Switch On / Off Advanced Vehicle Repair (Does not effect SuppressedCraftingItems !)
 	EnableRemoveParts = "true";											// Enable removing Tires / Engines from Vehicles
 	SuppressedCraftingItems[] = {										// These Items can not be crafted (but can be used in recipe)
@@ -320,7 +320,7 @@ class CfgEpochSoldier
 {
     unitTypes[] = {"I_Soldier_EPOCH", "I_Soldier2_EPOCH", "I_Soldier3_EPOCH"};//Selects from randomly
     minAISkill = 0.2; //Minumum AI Skill. Skills are chosen randomly between this minimum overall AI skill value and the following max AI skill values, for each of the next skills:
-    maxAimingAccuracy = 0.7;
+    maxAimingAccuracy = 0.3;
     maxAimingShake = 0.9;
     maxAimingSpeed = 0.6;
     maxEndurance = 0.4;
