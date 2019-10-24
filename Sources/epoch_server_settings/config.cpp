@@ -171,8 +171,8 @@ class CfgEpoch
 		// HeliCrashes and Loot Box Spawner
 		HeliCrashesEnabled = 1; // 0 = OFF
 		debugHeliCrashes = 0; // 1 = ON
-		showHeliCrashMarkers = 1;
-		maxSpawnedHeliCrashes = 4;
+		showHeliCrashMarkers = 0;
+		maxSpawnedHeliCrashes = 6;
 		distFromOtherHeliCrashes = 2000;
 		heliCrashDecayMarkerColor = "ColorBrown"; // decay changes icon (_markers select 2)
 		heliCrashCompromisedColor = "ColorRed"; // compromised changes active surround (_markers select 0)
