@@ -20,7 +20,7 @@ _tradercount = 0;
 //min distance from other traders in meters, dont go to higher than _spawnarea/(_tradercount+1) or script will just revert back to this amount to avoid problems 
 _mindist = 4000;
 //marker text for traders
-_markertext = "";
+_markertext = "Safe zone";
 //texture on the flag (has to be 200x200), "" to disable
 _flagtexture = "\A3\Data_F\Flags\flag_armex_CO.paa"; //"trader\dkflagpole.jpg";
 //texture on the sign, "" to disable
@@ -31,7 +31,8 @@ _sigtexture = "trader\trader.jpg";
 switch(toLower worldName)do{
 	case "tanoa":{
 		_staticCoords = [
-			[[10983.977,8501.3359,0],231.841,true]
+			[[10983.977,8501.3359,0],231.841,true],
+			[[7033.4590,9713.6484,0],19.4830,true]
 		];
 		_blacklistedAreas = [[[0,0,0],0]];
 		_spawnarea = 12500;
