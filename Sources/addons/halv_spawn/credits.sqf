@@ -28,7 +28,7 @@ _alltext = [
 		"Server Mods :",
 		"#0096ff", //Blue Light
 		[
-			"Respawn selection","AI patrols","AI cities",
+			"Respawn selection","AI patrols","AI cities","Teleport from Trader",
 			"And Much more ..."
 		]
 	],
