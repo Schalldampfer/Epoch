@@ -38,6 +38,10 @@ _notForSale = [
 "Item_smallbackpack_teal",
 "Item_smallbackpack_pink",
 "ItemSafe_s"
+,"KitPlotPole_L"
+,"KitPlotPole_XL"
+,"KitPlotPole_XXL"
+,"KitSolarChargerXL"
 ,"acc_pointer_IR"
 ,"l85a2_epoch"
 ,"l85a2_pink_epoch"
