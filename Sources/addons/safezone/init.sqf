@@ -4,7 +4,8 @@ private ["_zone","_SafeZones","_in"];
 _SafeZones = switch(toLower worldName)do{
 	case "tanoa":{
 		[
-			[[11044.957,8471.4209],150,"Temple"]
+			[[11044.957,8471.4209],250,"Temple"],
+			[[9019.5,13265.2,0],100,"Pillbox"]
 		]
 	};
 	default{[]};
