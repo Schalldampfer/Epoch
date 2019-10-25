@@ -212,6 +212,16 @@ for "_i" from 1 to _maxVehicleLimit do {
 							_vehicle setPlateNumber _plateNumber;
 						};
 
+						{
+							if (_vehicle distance (_x select 0) < (_x select 1)) then {
+								_vehicle lock false;
+								diag_log format["Vehicle %1 left in trader unlocked @ %2", _class, _x select 2];
+							};
+						} forEach [
+							[[11044.957,8471.4209],250,"Temple"],
+							[[7039.79,9711.28,0],100,"Shrine"]
+						];
+
 						if (_allowDamage) then {
 							_vehicle allowDamage true;
 						};
