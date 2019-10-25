@@ -23,7 +23,7 @@ class Tanoa : Default
 		{"NameCity",2},
 		{"NameVillage",1},
 		{"NameCityCapital",4},
-		{"Airport",5}
+		{"Airport",4}
 	};
 
 	allowedVehiclesList[] = {
@@ -41,7 +41,7 @@ class Tanoa : Default
 		//{"C_Boat_Civil_01_EPOCH",5},
 		//{"C_Boat_Civil_01_police_EPOCH",3},
 		//{"C_Boat_Civil_01_rescue_EPOCH",3},
-		//{"B_Heli_Light_01_EPOCH",2},
+		{"B_Heli_Light_01_EPOCH",2},
 		//{"B_SDV_01_EPOCH",2},
 		{"B_MRAP_01_EPOCH",3},
 		{"I_MRAP_03_EPOCH", 3},
@@ -53,14 +53,14 @@ class Tanoa : Default
 		{"O_Truck_02_transport_EPOCH",1},
 		{"O_Truck_03_covered_EPOCH",1},
 		{"O_Truck_02_box_EPOCH",1},
-		//{"I_Heli_light_03_unarmed_EPOCH",1},
-		//{"O_Heli_Light_02_unarmed_EPOCH",1},
-		//{"I_Heli_Transport_02_EPOCH",1},
-		//{"O_Heli_Transport_04_EPOCH",1},
-		//{"O_Heli_Transport_04_bench_EPOCH",1},
-		//{"O_Heli_Transport_04_box_EPOCH",1},
-		//{"O_Heli_Transport_04_covered_EPOCH",1},
-		//{"B_Heli_Transport_03_unarmed_EPOCH",1},
+		{"I_Heli_light_03_unarmed_EPOCH",1},
+		{"O_Heli_Light_02_unarmed_EPOCH",1},
+		{"I_Heli_Transport_02_EPOCH",1},
+		{"O_Heli_Transport_04_EPOCH",1},
+		{"O_Heli_Transport_04_bench_EPOCH",1},
+		{"O_Heli_Transport_04_box_EPOCH",1},
+		{"O_Heli_Transport_04_covered_EPOCH",1},
+		{"B_Heli_Transport_03_unarmed_EPOCH",1},
 		//{"jetski_epoch",5},
 		{"K01",1},
 		{"K02",1},
@@ -68,7 +68,7 @@ class Tanoa : Default
 		{"K04",1},
 		{"ebike_epoch",5},
 		{"mosquito_epoch",4},
-		//{"C_Heli_Light_01_civil_EPOCH",3},
+		{"C_Heli_Light_01_civil_EPOCH",3},
 		// apex
 		//{"C_Boat_Transport_02_F",1},
 		{"C_Scooter_Transport_01_F",3},
@@ -81,8 +81,8 @@ class Tanoa : Default
 		{"C_Plane_Civil_01_racing_F",1},
 		{"B_CTRG_LSV_01_light_F",2},
 		{"B_LSV_01_unarmed_F",2},
-		//{"B_T_VTOL_01_infantry_F",1},
-		//{"B_T_VTOL_01_vehicle_F",1}
+		{"B_T_VTOL_01_infantry_F",1},
+		{"B_T_VTOL_01_vehicle_F",1},
 
 		{"MBK_01_EPOCH",2},
 		{"hoverboard_epoch_1",1},
