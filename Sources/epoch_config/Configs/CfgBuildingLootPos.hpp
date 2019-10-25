@@ -5477,6 +5477,36 @@ class CfgBuildingLootPos
     class bunker_epoch_13_p3d : bunker_epoch_13 {};
     class bunker_epoch_14_p3d : bunker_epoch_14 {};
     class bunker_epoch_15_p3d : bunker_epoch_15 {};
+	class Land_PillboxBunker_01_hex_F : Default {
+		lootBias = 50;
+		lootType = "mil";
+	    pelicanPos[] = {
+	        { {{-2.96631,-1.45508,-0.692844}, 30} }
+	    };
+	    cabinetPos[] = {
+	        { {{-2.92432,1.44922,-0.692822}, -30} }
+	    };
+	};
+	class Land_PillboxBunker_01_hex_F : Default {
+		lootBias = 50;
+		lootType = "mil";
+	    pelicanPos[] = {
+	        { {{-2.8584,6.88379,-0.636112}, -20} }
+	    };
+	    cabinetPos[] = {
+	        { {{2.68164,6.84644,-0.636116}, 45}, {{0.0732422,1.43237,1.57259}, 90} }
+	    };
+	};
+	class Land_PillboxBunker_01_rectangle_F : Default {
+		lootBias = 50;
+		lootType = "mil";
+	    pelicanPos[] = {
+	        { {{-3.02246,-2.47461,0.370506}, 0} }
+	    };
+	    cabinetPos[] = {
+	        { {{-0.808594,-0.686523,0.318466}, 0} }
+	    };
+	};
 };
 
 /*[[[end]]]*/
