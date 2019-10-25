@@ -28,14 +28,14 @@ _alltext = [
 		"Main Rules :",
 		"#0096ff", //Blue Light
 		[
-			"[F10] to open your smartphone"
+			"[F10] to open your smartphone","Keep pressing [Space] to open 'Dyna Menu'"
 		]
 	],
 	[
 		"Server Mods :",
 		"#0096ff", //Blue Light
 		[
-			"Respawn selection","AI patrols","AI cities","Teleport from Trader","Bank ATM at Trader","",
+			"Respawn selection","Deploy Bike ([Space] -> 'Deploy Bike')","Teleport from Trader","Bank ATM at Trader","AI patrols","AI cities","",
 			"And Much more ..."
 		]
 	],

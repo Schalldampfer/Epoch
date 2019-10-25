@@ -145,6 +145,10 @@ class CfgServerFunctions
 			class server_handle_sapperObjs {};
 			class server_triggerAntagonist{};
 		};
+		class deploy_vehicle {
+			class Deploy_server_SpawnVehicle {};
+			class Deploy_server_PackVehicle {};
+		};
 	};
 };
 class CfgServerVersion

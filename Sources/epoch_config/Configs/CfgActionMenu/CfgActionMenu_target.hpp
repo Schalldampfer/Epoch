@@ -608,4 +608,10 @@ class Defuse_Bomb
 	tooltip = "Defuse Bomb";
 };
 
-
+class Deploy_pack
+{
+	condition = "(dyna_cursorTarget iskindof 'MBK_01_EPOCH') && ((crew dyna_cursorTarget) isEqualTo [])";
+	action = "Deploy_PackVehicle = [player,dyna_cursorTarget]; publicVariableServer 'Deploy_PackVehicle';";
+	icon = "x\addons\a3_epoch_code\Data\UI\buttons\repair.paa";
+	tooltip = "Pack Vehicle";
+};

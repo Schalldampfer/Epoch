@@ -499,3 +499,7 @@ if (EPOCH_enableUnitTestOnStart isEqualTo 1) then {
     call EPOCH_fnc_server_hiveUnitTest;
     EPOCH_enableUnitTestOnStart = nil;
 };
+
+//custom
+"Deploy_SpawnVehicle" addPublicVariableEventHandler{(_this select 1) call Epoch_Deploy_server_SpawnVehicle};
+"Deploy_PackVehicle"  addPublicVariableEventHandler{(_this select 1) call Epoch_Deploy_server_PackVehicle};
