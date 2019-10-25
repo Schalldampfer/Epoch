@@ -106,19 +106,19 @@ class CfgEpochClient
 
     EPOCH_news[] = {"Word is that Sappers have a new boss.","Dogs will often lure them monsters away.","My dog was blown up. I miss him.."};
     deathMorphClass[] = {"Epoch_Sapper_F","Epoch_SapperG_F","Epoch_SapperB_F","I_UAV_01_F","Epoch_Cloak_F"}; //Random selection of these classes when player morphs after death. Currently available: Epoch_Cloak_F, Epoch_SapperB_F, Epoch_Sapper_F, I_UAV_01_F
-    niteLight[] = {1,1.88,22}; // 0 = disabled or 1 = enabled, Set ambient lighting at night: {Brightness of light,Height of light}. Default (Low Ambient): {1.88,22} | Twilight: {7.2,88} | Distant: {12.8,142}
+    niteLight[] = {1,1.5,50}; // 0 = disabled or 1 = enabled, Set ambient lighting at night: {Brightness of light,Height of light}. Default (Low Ambient): {1.88,22} | Twilight: {7.2,88} | Distant: {12.8,142}
     ryanZombiesEnabled = "true";
 
 	antagonistChances[] = {
 		// {"type", chance}
 		"Epoch_Cloak_F",0,
-		"GreatWhite_F",0.5,
+		"GreatWhite_F",1.0,
 		"Epoch_Sapper_F",0,
 		"Epoch_SapperG_F",0,
 		"Epoch_SapperB_F",0,
-		"I_UAV_01_F",0,
+		"I_UAV_01_F",0.02,
 		"PHANTOM",0,
-		"B_Heli_Transport_01_F",0,
+		"B_Heli_Transport_01_F",0.01,
 		"EPOCH_RyanZombie_1",0,
 		"I_Soldier_EPOCH",0
 	};
