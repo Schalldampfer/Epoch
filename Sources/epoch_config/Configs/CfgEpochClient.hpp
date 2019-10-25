@@ -36,7 +36,7 @@ class CfgEpochClient
 
     buildingNearbyMilitary = 0; //1 to allow building nearby
     buildingNearbyMilitaryRange = 400; //Define radius of blocked area
-    buildingNearbyMilitaryClasses[] = {"Cargo_Tower_base_F","Cargo_HQ_base_F","Cargo_Patrol_base_F","Cargo_House_base_F","Land_PillboxBunker_01_big_F","Land_PillboxBunker_01_hex_F","Land_PillboxBunker_01_rectangle_F"};
+    buildingNearbyMilitaryClasses[] = {"Cargo_Tower_base_F","Cargo_HQ_base_F","Cargo_Patrol_base_F","Cargo_House_base_F","BagBunker_base_F"};
     restrictedLocations[] = {"NameCityCapital", "NameCity", "Airport"};
     restrictedLocationsRange = 500;
     buildingRequireJammer = 1;		//1 = require jammer to build
