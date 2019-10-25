@@ -116,8 +116,8 @@ class CfgLootTable
 				{ { "Rangefinder", "weapon" }, 5 },
 				{ { "Binocular", "item" }, 40 },
 				{ { "NVG_EPOCH", "item" }, 5 },
-				{ { "acc_flashlight", "item" }, 15 },
-				{ { "acc_flashlight_pistol", "item" }, 10 },
+				{ { "acc_flashlight", "item" }, 8 },
+				{ { "acc_flashlight_pistol", "item" }, 15 },
 				{ { "acc_pointer_IR", "item" }, 2 },
 				// Marksman DLC
 				{ { "Bipods", "CfgLootTable" }, 10 }
@@ -128,16 +128,16 @@ class CfgLootTable
 	class SniperRifle
 	{
 		items[] = {
-				{ { "SniperRiflem107", "CfgLootTable" }, 2 },
+				{ { "SniperRiflem107", "CfgLootTable" }, 1 },
 
 				// Marksman DLC
 				{ { "SniperRifleMarkDLC", "CfgLootTable" }, 1 },
 
-				{ { "srifle_LRR_F", "weapon" }, 4 },
+				{ { "srifle_LRR_F", "weapon" }, 3 },
 				{ { "srifle_GM6_F", "weapon" }, 2 },
-				{ { "srifle_DMR_01_F", "weapon" }, 4 },
+				{ { "srifle_DMR_01_F", "weapon" }, 3 },
 				{ { "SniperRifleM14", "CfgLootTable" }, 10 },
-				{ { "srifle_EBR_F", "weapon" }, 4 }
+				{ { "srifle_EBR_F", "weapon" }, 3 }
 		};
 	};
 	// All Marksman DLC weapons without attachments
@@ -758,16 +758,16 @@ class CfgLootTable
 	{
 		items[] = {
 				{ { "optic_NVS", "item" }, 1 },
-				{ { "optic_tws", "item" }, 1 },
-				{ { "optic_tws_mg", "item" }, 1 },
-				{ { "optic_SOS", "item" }, 2 },
-				{ { "optic_LRPS", "item" }, 2 },
+				//{ { "optic_tws", "item" }, 1 },
+				//{ { "optic_tws_mg", "item" }, 1 },
+				//{ { "optic_SOS", "item" }, 2 },
+				//{ { "optic_LRPS", "item" }, 2 },
 
 				// Marksman DLC
-				{ { "ScopeAMSMarkDLC", "CfgLootTable" }, 1 },
-				{ { "ScopeKHSMarkDLC", "CfgLootTable" }, 1 },
+				//{ { "ScopeAMSMarkDLC", "CfgLootTable" }, 1 },
+				//{ { "ScopeKHSMarkDLC", "CfgLootTable" }, 1 },
 
-				{ { "optic_DMS", "item" }, 3 },
+				//{ { "optic_DMS", "item" }, 3 },
 				{ { "optic_Arco", "item" }, 2 },
 				{ { "optic_Hamr", "item" }, 2 },
 				{ { "Elcan_epoch", "item" }, 5 },
@@ -818,17 +818,17 @@ class CfgLootTable
 	class Muzzles
 	{
 		items[] = {
-				{ { "muzzle_sr25S_epoch", "item" }, 1 },
-				{ { "muzzle_snds_H", "item" }, 1 },
+				//{ { "muzzle_sr25S_epoch", "item" }, 1 },
+				//{ { "muzzle_snds_H", "item" }, 1 },
 				{ { "muzzle_snds_M", "item" }, 1 },
 				{ { "muzzle_snds_L", "item" }, 1 },
-				{ { "muzzle_snds_B", "item" }, 1 },
-				{ { "muzzle_snds_H_MG", "item" }, 1 },
+				//{ { "muzzle_snds_B", "item" }, 1 },
+				//{ { "muzzle_snds_H_MG", "item" }, 1 },
 				{ { "muzzle_snds_acp", "item" }, 1 },
-				{ { "Muzzles_MultiGun", "CfgLootTable" }, 1 },
+				{ { "Muzzles_MultiGun", "CfgLootTable" }, 2 },
 				// Marksman DLC
-				{ { "Muzzles_338MarkDLC", "CfgLootTable" }, 1 },
-				{ { "Muzzles_93mmgMarkDLC", "CfgLootTable" }, 1 },
+				//{ { "Muzzles_338MarkDLC", "CfgLootTable" }, 1 },
+				//{ { "Muzzles_93mmgMarkDLC", "CfgLootTable" }, 1 },
 				{ { "muzzle_snds_570", "item" }, 1 }
 		};
 	};
@@ -854,8 +854,8 @@ class CfgLootTable
 	class Muzzles_MultiGun
 	{
 		items[] = {
-				{ { "Heal_EPOCH", "item" }, 1 },
-				{ { "Defib_EPOCH", "item" }, 1 },
+				{ { "Heal_EPOCH", "item" }, 2 },
+				{ { "Defib_EPOCH", "item" }, 2 },
 				{ { "Repair_EPOCH", "item" }, 1 }
 		};
 	};
@@ -1437,9 +1437,9 @@ class CfgLootTable
 				{ { "U_CamoBrn_uniform", "item" }, 1 },
 				{ { "U_CamoBlue_uniform", "item" }, 1 },
 				{ { "U_Camo_uniform", "item" }, 1 },
-				{ { "U_ghillie1_uniform", "item" }, 1 },
-				{ { "U_ghillie2_uniform", "item" }, 1 },
-				{ { "U_ghillie3_uniform", "item" }, 1 },
+				//{ { "U_ghillie1_uniform", "item" }, 1 },
+				//{ { "U_ghillie2_uniform", "item" }, 1 },
+				//{ { "U_ghillie3_uniform", "item" }, 1 },
 				{ { "U_RadiationSuit_F_uniform", "item" }, 1 },
 
 				{ { "U_JeansPatched1_uniform", "item" }, 1 },
@@ -1549,9 +1549,9 @@ class CfgLootTable
 				{ { "V_4_EPOCH", "item" }, 5 },
 				{ { "V_5_EPOCH", "item" }, 5 },
 				{ { "V_6_EPOCH", "item" }, 1 },
-				{ { "V_7_EPOCH", "item" }, 1 },
-				{ { "V_8_EPOCH", "item" }, 1 },
-				{ { "V_9_EPOCH", "item" }, 1 },
+				//{ { "V_7_EPOCH", "item" }, 1 },
+				//{ { "V_8_EPOCH", "item" }, 1 },
+				//{ { "V_9_EPOCH", "item" }, 1 },
 				{ { "V_10_EPOCH", "item" }, 2 },
 				{ { "V_11_EPOCH", "item" }, 2 },
 				{ { "V_12_EPOCH", "item" }, 2 },
@@ -1565,10 +1565,10 @@ class CfgLootTable
 				{ { "V_20_EPOCH", "item" }, 2 },
 				{ { "V_21_EPOCH", "item" }, 4 },
 				{ { "V_22_EPOCH", "item" }, 2 },
-				{ { "V_23_EPOCH", "item" }, 2 },
+				//{ { "V_23_EPOCH", "item" }, 2 },
 				{ { "V_24_EPOCH", "item" }, 3 },
 				{ { "V_25_EPOCH", "item" }, 2 },
-				{ { "V_26_EPOCH", "item" }, 2 },
+				//{ { "V_26_EPOCH", "item" }, 2 },
 				{ { "V_27_EPOCH", "item" }, 2 },
 				{ { "V_28_EPOCH", "item" }, 3 },
 				{ { "V_29_EPOCH", "item" }, 3 },
@@ -1576,19 +1576,19 @@ class CfgLootTable
 				{ { "V_31_EPOCH", "item" }, 1 },
 				{ { "V_32_EPOCH", "item" }, 1 },
 				{ { "V_33_EPOCH", "item" }, 2 },
-				{ { "V_34_EPOCH", "item" }, 2 },
-				{ { "V_35_EPOCH", "item" }, 2 },
+				//{ { "V_34_EPOCH", "item" }, 2 },
+				//{ { "V_35_EPOCH", "item" }, 2 },
 				{ { "V_36_EPOCH", "item" }, 2 },
-				{ { "V_37_EPOCH", "item" }, 2 },
+				//{ { "V_37_EPOCH", "item" }, 2 },
 				{ { "V_38_EPOCH", "item" }, 2 },
-				{ { "V_39_EPOCH", "item" }, 2 },
+				//{ { "V_39_EPOCH", "item" }, 2 },
 				{ { "V_40_EPOCH", "item" }, 2 }
 		};
 	};
 	class Headgear
 	{
 		items[] = {
-				{ { "HeadgearArmored", "CfgLootTable" }, 1 },
+				//{ { "HeadgearArmored", "CfgLootTable" }, 1 },
 				{ { "HeadgearNoArmor", "CfgLootTable" }, 9 }
 		};
 	};
