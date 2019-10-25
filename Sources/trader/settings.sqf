@@ -38,6 +38,7 @@ _notForSale = [
 "Item_smallbackpack_teal",
 "Item_smallbackpack_pink",
 "ItemSafe_s"
+,"KitPlotPole_M"
 ,"KitPlotPole_L"
 ,"KitPlotPole_XL"
 ,"KitPlotPole_XXL"
@@ -551,7 +552,6 @@ _notForSale = [
 	"KitShelf",
 	"KitWoodFoundation",
 	"KitFoundation",
-	"KitPlotPole",
 	"KitCinderWall",
 	"honey_epoch",
 	"Pelt_EPOCH",
