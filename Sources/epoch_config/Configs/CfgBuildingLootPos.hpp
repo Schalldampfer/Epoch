@@ -5487,7 +5487,7 @@ class CfgBuildingLootPos
 	        { {{-2.92432,1.44922,-0.692822}, -30} }
 	    };
 	};
-	class Land_PillboxBunker_01_hex_F : Default {
+	class Land_PillboxBunker_01_big_F : Default {
 		lootBias = 50;
 		lootType = "mil";
 	    pelicanPos[] = {
