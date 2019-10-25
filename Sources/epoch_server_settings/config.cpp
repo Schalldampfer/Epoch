@@ -55,6 +55,7 @@ class CfgEpoch
 		vehicleSpawnTypes[] = {
 			{"FlatAreaCity",1},
 			{"FlatAreaCitySmall",1},
+			{"NameLocal",1},
 			{"NameCity",2},
 			{"NameVillage",1},
 			{"NameCityCapital",4},
@@ -62,7 +63,7 @@ class CfgEpoch
 		};
 		
 		// Radiation System
-		radioactiveLocations[] = {"NameCityCapital", "NameCity", "Airport"};
+		radioactiveLocations[] = {"NameCityCapital", "NameCity", "Airport", "NameLocal"};
 		radioactiveLocationsCount = 3;
 		
 		// BlackList radioactive locations spawn by object and distance
@@ -79,7 +80,7 @@ class CfgEpoch
 		// Traders
 		traderBlds[] = {"Building"};
 		traderHomes[] = {"Building"};
-		traderUniforms[] = {"U_OG_leader", "U_C_Poloshirt_stripped", "U_C_Poloshirt_blue", "U_C_Poloshirt_burgundy", "U_C_Poloshirt_tricolour", "U_C_Poloshirt_salmon", "U_C_Poloshirt_redwhite", "U_C_Poor_1", "U_C_WorkerCoveralls", "U_C_Journalist", "U_C_Scientist", "U_OrestesBody", "U_Chav_EPOCH"};
+		traderUniforms[] = {"C_man_polo_2_F_asia","C_man_p_fugitive_F_asia","C_man_shorts_1_F_asia","C_man_hunter_1_F","C_man_shorts_4_F_asia"};
 //		TraderMinDistance = 1500;		// Min distance between Traders. If not defined, Server will calculate it by MapSize
 		traderblockblds[] = {"pier","bridge","fireescape","medevac_house","pillboxbunker","containerine"};		// If a building include this chars in the classname (tolower!!!) they will be blocked for Traders
 		
@@ -121,7 +122,7 @@ class CfgEpoch
 
 		// Carnival and Loot Box Spawner
 		debugCarnivalSpawner = 0;
-		showCarnivalMarkers = 1;
+		showCarnivalMarkers = 0;
 		maxCarnivalSpawns = 2;
 		distFromOtherCarnivals = 5000;
 		carnivalDecayTime = 3600;
@@ -131,7 +132,7 @@ class CfgEpoch
 		
 		// EarthQuake and Mineral Deposit Spawner
 		debugEarthquakeSpawner = 0;
-		showEarthquakeMarkers = 1;
+		showEarthquakeMarkers = 0;
 		maxEarthquakeSpawns = 3;
 		distFromOtherEarthquakes = 1500;
 		earthquakeDecayTime = 2400;
@@ -141,7 +142,7 @@ class CfgEpoch
 
 		// MoneyDrop
 		debugMoneyDrop = 0;
-		showMoneyMarkers = 1;
+		showMoneyMarkers = 0;
 		maxMoneyDrops = 3;
 		distFromOtherMoneyDrops = 1500;
 		MoneyDropDecayTime = 2400;
@@ -151,7 +152,7 @@ class CfgEpoch
 
 		// Container Spawner
 		debugContainerSpawner = 0;
-		showContainerMarkers = 1;
+		showContainerMarkers = 0;
 		maxContainerSpawns = 5;
 		distFromOtherContainers = 3500;
 		containerDecayTime = 1200;
