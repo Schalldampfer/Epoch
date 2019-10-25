@@ -14,7 +14,7 @@
 */
 class Tanoa : Default
 {
-	worldSize = 0; // 0 = default to worldSize command
+	worldSize = 5600; // 0 = default to worldSize command
 	plantLimit = 10;
 	// vehicles - Max vehicle slots is calculated from per vehicle limits below. Warning! Higher the number lower the performance.
 	vehicleSpawnTypes[] = {

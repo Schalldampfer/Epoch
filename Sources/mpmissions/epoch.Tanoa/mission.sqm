@@ -67,9 +67,11 @@ class Mission
 		class Item0
 		{
 			dataType="Marker";
-			position[]={7708.6831,6.9953003,7519.856};
+			position[]={9285.3633,42.627197,10110.916};
 			name="center";
 			type="Empty";
+			a=5600;
+			b=5600;
 			id=0;
 		};
 		class Item1
