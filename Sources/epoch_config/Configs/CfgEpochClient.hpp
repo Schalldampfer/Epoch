@@ -18,11 +18,11 @@ class CfgEpochClient
     ArmAVersion = 176;
 	debug = "true";  // true = enable extra rpt debug lines, false to disable
 
-	antagonistRngChance = 100; // increase number to reduce chances and reduce to increase. Default 100
+	antagonistRngChance = 200; // increase number to reduce chances and reduce to increase. Default 100
 	NuisanceMulti = 0.5;		// Multi for Nuisance increase on shooting - higher Nuisance effect at least antagonist spawn change. (0-1, default 0.5)
 
 	outOfBoundsRadiation = 10; // how much rads per tick (10sec), when outside play area.
-	radioactiveLocations[] = {"NameCityCapital", "NameCity", "Airport"}; // used for random radioactive locations and to suppress animal spawns within cities.
+	radioactiveLocations[] = {"NameCityCapital", "NameCity", "Airport", "NameLocal"}; // used for random radioactive locations and to suppress animal spawns within cities.
 	radiatedObjMaxFalloutDist = 125; // max distance radiated object can affect player (number in meters)
 	geigerCounterEnergyUsage = 10; // default loss of 10 energy every 10sec of use
 	radiationEffectsThreshold = 10; // default level for screen effects to indicate a player's rad dosage (0-100)
@@ -30,18 +30,18 @@ class CfgEpochClient
 	baseRadiationLoss = -1; //default radiation loss every 1 minute, calculated from total immunity. No immunity no reduction.
 	baseRadiationLossImmunityPenalty = -1; //immunity is reduced as a penalty for radiation loss effect
 	
-    baseHungerLoss = 2; // increase number to speed up rate of Hunger loss
-    baseThirstLoss = 2; // increase number to speed up rate of Thirst loss
+    baseHungerLoss = 1.3; // increase number to speed up rate of Hunger loss
+    baseThirstLoss = 1.3; // increase number to speed up rate of Thirst loss
 	accelerateHTALoss = "true"; // use server's time acceleration to increase the rate of Hunger, Thirst and Alcohol loss
 
     buildingNearbyMilitary = 0; //1 to allow building nearby
-    buildingNearbyMilitaryRange = 300; //Define radius of blocked area
-    buildingNearbyMilitaryClasses[] = {"Cargo_Tower_base_F","Cargo_HQ_base_F","Cargo_Patrol_base_F","Cargo_House_base_F"};
-    restrictedLocations[] = {"NameCityCapital"};
-    restrictedLocationsRange = 300;
+    buildingNearbyMilitaryRange = 400; //Define radius of blocked area
+    buildingNearbyMilitaryClasses[] = {"Cargo_Tower_base_F","Cargo_HQ_base_F","Cargo_Patrol_base_F","Cargo_House_base_F","Land_PillboxBunker_01_big_F","Land_PillboxBunker_01_hex_F","Land_PillboxBunker_01_rectangle_F"};
+    restrictedLocations[] = {"NameCityCapital", "NameCity", "Airport"};
+    restrictedLocationsRange = 500;
     buildingRequireJammer = 1;		//1 = require jammer to build
 	buildingJammerRange = 125; 		// Unused by Epoch, but leave it to prevent issues with custom scripts (should be set to the max possible JammerRange from cfgJammers)
-    jammerPerGroup = 1;				// allowed number of jammers per group.
+    jammerPerGroup = 2;				// allowed number of jammers per group.
     jammerGLOnly = 1;               // allow only group leader to place Jammer
     minJammerDistance = 650;		// min distance to next Jammer
     maxBuildingHeight = 100;		// Max Height, building is allowed.
@@ -51,9 +51,9 @@ class CfgEpochClient
 	class CfgJammers {
 		class PlotPole_EPOCH 					// Jammer Classname
 		{
-			buildingJammerRange = 		75;		// jammer range in meters
-			buildingCountLimit = 		200;	// Max Building Elements per Base
-			storageCountLimit = 		100;	// Max Storage Elements per Base
+			buildingJammerRange = 		50;		// jammer range in meters
+			buildingCountLimit = 		75;	// Max Building Elements per Base
+			storageCountLimit = 		25;	// Max Storage Elements per Base
 			buildingCountPerMember = 	5;		// Additional Building elements per Member
 			storageCountPerMember = 	5;		// Additional Storage elements per Member
 			maxdoors = 					10;		// Max Doors per Base
@@ -62,27 +62,27 @@ class CfgEpochClient
 		};
 		class PlotPole_M_EPOCH : PlotPole_EPOCH	// inherits from "PlotPole_EPOCH" (not defined values will be taken from PlotPole_EPOCH)
 		{
-			buildingJammerRange = 		100;	// jammer range in meters
-			buildingCountLimit = 		215;	// Max Building Elements per Base
-			storageCountLimit = 		115;	// Max Storage Elements per Base
+			buildingJammerRange = 		75;	// jammer range in meters
+			buildingCountLimit = 		100;	// Max Building Elements per Base
+			storageCountLimit = 		50;	// Max Storage Elements per Base
 		};
 		class PlotPole_L_EPOCH : PlotPole_M_EPOCH
 		{
-			buildingJammerRange = 		125;	// jammer range in meters
-			buildingCountLimit = 		230;	// Max Building Elements per Base
-			storageCountLimit = 		130;	// Max Storage Elements per Base
+			buildingJammerRange = 		100;	// jammer range in meters
+			buildingCountLimit = 		125;	// Max Building Elements per Base
+			storageCountLimit = 		75;	// Max Storage Elements per Base
 		};
 		class PlotPole_XL_EPOCH : PlotPole_L_EPOCH
 		{
-			buildingJammerRange = 		150;	// jammer range in meters
-			buildingCountLimit = 		245;	// Max Building Elements per Base
-			storageCountLimit = 		145;	// Max Storage Elements per Base
+			buildingJammerRange = 		125;	// jammer range in meters
+			buildingCountLimit = 		175;	// Max Building Elements per Base
+			storageCountLimit = 		100;	// Max Storage Elements per Base
 		};
 		class PlotPole_XXL_EPOCH : PlotPole_XL_EPOCH
 		{
-			buildingJammerRange = 		175;	// jammer range in meters
-			buildingCountLimit = 		260;	// Max Building Elements per Base
-			storageCountLimit = 		160;	// Max Storage Elements per Base
+			buildingJammerRange = 		150;	// jammer range in meters
+			buildingCountLimit = 		200;	// Max Building Elements per Base
+			storageCountLimit = 		125;	// Max Storage Elements per Base
 		};
 	};
 	StorageClasses[] = {"Buildable_Storage","Buildable_Storage_SIM","Buildable_Storage_Ghost","Constructions_lockedstatic_F","Secure_Storage_Temp"};
