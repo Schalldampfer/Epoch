@@ -21,7 +21,7 @@ A3EAI_client_radioSounds = true;
 --------------------------------------------------------------------------------------------------------------------*/	
 
 //AI kill message
-A3EAI_client_killMessage0 = "%1 was killed"; //%1: AI corpse name
+A3EAI_client_killMessage0 = "You killed %1"; //%1: AI corpse name
 
 //AI radio static message
 A3EAI_client_radioMessage0 = "[RADIO] Your radio is picking up a signal nearby.";	//Message displayed when radio sound transmitted without AI dialogue.
