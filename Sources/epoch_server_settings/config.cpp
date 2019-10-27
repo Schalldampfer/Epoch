@@ -152,7 +152,7 @@ class CfgEpoch
 
 		// Container Spawner
 		debugContainerSpawner = 0;
-		showContainerMarkers = 0;
+		showContainerMarkers = 1;
 		maxContainerSpawns = 5;
 		distFromOtherContainers = 3500;
 		containerDecayTime = 1200;
