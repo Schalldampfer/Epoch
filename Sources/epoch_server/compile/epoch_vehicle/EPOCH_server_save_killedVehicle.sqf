@@ -26,5 +26,9 @@ if (!isNull _vehicle) then {
 		missionNamespace setVariable ['EPOCH_VehicleSlotCount', count EPOCH_VehicleSlots, true];
 
 		['VehicleKilled', format["%1 was killed by %2 at %3", typeOf _vehicle, _killer, getPosATL _vehicle]] call EPOCH_fnc_server_hiveLog;
+
+		//crashLoot
+		_pos = getPos _vehicle;
+		[("groundWeaponHolder" createVehicle [_pos select 0, _pos select 1, 0]), (_vehicle getVariable ["InventoryData",[]])] call EPOCH_server_CargoFill;
 	};
 };
