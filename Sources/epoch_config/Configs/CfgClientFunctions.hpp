@@ -138,6 +138,9 @@ class CfgClientFunctions
 			class fnc_playerFired {
 				customHeader = 1;
 			};
+			class fnc_playerHandleDamage {
+				customHeader = 1;
+			};
 			class fnc_isInsideBuilding {};
 			class fnc_findSafePos {};
 			class fnc_addItemOverflow {};

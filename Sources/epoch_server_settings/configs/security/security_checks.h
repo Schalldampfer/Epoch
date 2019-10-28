@@ -80,7 +80,7 @@ class CfgSecConf
     };
 
     class addEventHandler {
-        checks[] = {"Fired","InventoryClosed","InventoryOpened","Killed","HandleDamage","HandleHeal","Dammaged","Hit","HitPart"};
+        checks[] = {"Fired","InventoryClosed","InventoryOpened","Killed","HandleHeal","Dammaged","Hit","HitPart"};
     };
 
     class variables {
