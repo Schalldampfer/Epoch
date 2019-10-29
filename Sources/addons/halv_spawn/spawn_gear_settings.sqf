@@ -48,7 +48,7 @@ _geararr = [
 //this is the array of "weapon" items the player can choose from, this has to be "weapon" type items
 	[
 		[
-			"ItemCompass","ItemWatch","Binocular","ItemMap","NVG_EPOCH"
+			"ItemCompass","ItemWatch","Binocular","NVG_EPOCH"
 		],
 //this is how many "weapon" items the player is allowed to choose
 		2
