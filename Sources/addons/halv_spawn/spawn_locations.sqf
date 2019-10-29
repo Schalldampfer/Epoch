@@ -132,44 +132,44 @@ Halv_spawns = switch(toLower worldName)do{
 	case "tanoa":{
 		[
 			//SE
-			[[11122.5,5342.93],0,'Moddergat Harcourt'],	//NameCity
-			[[9407.35,4133.13],0,'Moddergat '],	//NameCity
-			[[12861.9,4691.10],0,'Moddergat Doodstil'],	//NameCity
-			[[13069.4,2117.94],0,'Moddergat Rereki'],	//NameVillage
-			[[10255.9,2738.07],0,'Moddergat Blerick'],	//NameVillage
-			[[12715.1,3309.17],0,'Moddergat Port-Boise'],	//NameVillage
+			[[11122.5,5342.93],0,'M. Harcourt'],	//NameCity
+			[[9407.35,4133.13],0,'M. Moddergat'],	//NameCity
+			[[12861.9,4691.10],0,'M. Doodstil'],	//NameCity
+			[[13069.4,2117.94],0,'M. Rereki'],	//NameVillage
+			[[10255.9,2738.07],0,'M. Blerick'],	//NameVillage
+			[[12715.1,3309.17],0,'M. Port-Boise'],	//NameVillage
 			//SW
-			[[5684.68,3993.67],0,'Katkoula '],	//NameCity
-			[[1347.24,2968.37],0,'Katkoula Koumac'],	//NameVillage
-			[[3627.54,2208.85],0,'Katkoula Lailai'],	//NameVillage
-			[[2131.95,4589.63],0,'Katkoula Cerebu'],	//NameVillage
+			[[5684.68,3993.67],0,'K. Katkoula'],	//NameCity
+			[[1347.24,2968.37],0,'K. Koumac'],	//NameVillage
+			[[3627.54,2208.85],0,'K. Lailai'],	//NameVillage
+			[[2131.95,4589.63],0,'K. Cerebu'],	//NameVillage
 			//West
-			[[2677.42,7441.56],0,'Balavu '],	//NameCity
-			[[974.490,7654.05],0,'Balavu Tavu'],	//NameVillage
-			[[2824.25,5700.17],0,'Balavu Namuvaka'],	//NameVillage
+			[[2677.42,7441.56],0,'B. Balavu'],	//NameCity
+			[[974.490,7654.05],0,'B. Tavu'],	//NameVillage
+			[[2824.25,5700.17],0,'B. Namuvaka'],	//NameVillage
 			//NW
-			[[1579.49,11937.8],0,'Tuvanaka '],	//NameCity
-			[[3132.55,10977.1],0,'Tuvanaka Belfort'],	//NameVillage
-			[[1954.62,10727.0],0,'Tuvanaka Nani'],	//NameVillage
+			[[1579.49,11937.8],0,'Tu. Tuvanaka'],	//NameCity
+			[[3132.55,10977.1],0,'Tu. Belfort'],	//NameVillage
+			[[1954.62,10727.0],0,'Tu. Nani'],	//NameVillage
 			//main island
-			[[5808.60,11213.3],0,'Tanoa Saint-Julien'], //City
-			[[6164.67,12864.7],0,'Tanoa Nicolet'],
-			[[7080.21,8004.08],0,'Tanoa Lifou'],
-			[[9014.23,10214.2],0,'Tanoa Tanouka'],
-			[[12984.3,7321.96],0,'Tanoa Oumere'],
-			[[9549.78,13673.4],0,'Tanoa La Rochelle'],
-			[[4919.70,8728.68],0,'Tanoa Regina'], //Village
-			[[8939.47,6627.97],0,'Tanoa cocoa plantations'],
-			[[14040.9,8308.29],0,'Tanoa Luganville'],
-			[[14057.4,9955.55],0,'Tanoa Vatukoulo'],
-			[[14295.2,11680.3],0,'Tanoa Ba'],
-			[[12401.7,12787.8],0,'Tanoa Ovau'],
-			[[7829.41,13599.8],0,'Tanoa Saint-Paul'],
-			[[10974.5,6232.58],0,'Tanoa Kotomo'],
-			[[8114.07,11957.2],0,'Tanoa Galili'],
-			[[10487.6,10613.7],0,'Tanoa Imone'],
-			[[9213.60,8741.29],0,'Tanoa Lakatoro'],
-			[[5396.22,10334.7],0,'Tanoa Georgetown'] //Capital
+			[[5808.60,11213.3],0,'Ta. Saint-Julien'], //City
+			[[6164.67,12864.7],0,'Ta. Nicolet'],
+			[[7080.21,8004.08],0,'Ta. Lifou'],
+			[[9014.23,10214.2],0,'Ta. Tanouka'],
+			[[12984.3,7321.96],0,'Ta. Oumere'],
+			[[9549.78,13673.4],0,'Ta. La Rochelle'],
+			[[4919.70,8728.68],0,'Ta. Regina'], //Village
+			[[8939.47,6627.97],0,'Ta. cocoa plantations'],
+			[[14040.9,8308.29],0,'Ta. Luganville'],
+			[[14057.4,9955.55],0,'Ta. Vatukoulo'],
+			[[14295.2,11680.3],0,'Ta. Ba'],
+			[[12401.7,12787.8],0,'Ta. Ovau'],
+			[[7829.41,13599.8],0,'Ta. Saint-Paul'],
+			[[10974.5,6232.58],0,'Ta. Kotomo'],
+			[[8114.07,11957.2],0,'Ta. Galili'],
+			[[10487.6,10613.7],0,'Ta. Imone'],
+			[[9213.60,8741.29],0,'Ta. Lakatoro'],
+			[[5396.22,10334.7],0,'Ta. Georgetown'] //Capital
 		]
 	};
 	case "lythium":{
