@@ -506,53 +506,28 @@ if (EPOCH_enableUnitTestOnStart isEqualTo 1) then {
 
 //Loop
 [] spawn {
-	private ["_warnDist","_warnMessage","_warnedPlayers","_closePlayers","_nAllPlayers","_veh","_target","_dist"];
+	private ["_vehicles","_veh","_target","_dist"];
 	//CrashLoot - save once
 	{
 		_x setVariable ["InventoryData",_x call EPOCH_server_CargoSave,false];
 	} forEach EPOCH_allVehicles;
-	
-	//PlayerWarning - initialize
-	_warnedPlayers = [];
-	_warnDist = 600;
-	_warnMessage = format["Other player is within %1 m", _warnDist];
+	_vehicles = [];
 	
 	//Main Loop
 	while {true} do {
-		_nAllPlayers = count allPlayers;
-		_closePlayers = [];
 		{
 			if (alive _x) then {
 				_veh = vehicle _x;
-				
-				//CrashLoot - save player vehicle (not gear-touched ones)
+				//Add vehicles in array
 				if (_veh != _x) then {
-					_x setVariable ["InventoryData",_x call EPOCH_server_CargoSave,false];
-				};
-				
-				//PlayerWarning - check players
-				for "_i" from (_forEachIndex + 1) to _nAllPlayers do {
-					_target = allPlayers select _i;
-					
-					//check alive player
-					if !(isNil "_target") then {
-						if (alive _target) then {
-							_dist = _x distance _target;
-							if (_dist < _warnDist) then {
-								if !(_x in _warnedPlayers) then {[_warnMessage,5] remoteExec ["Epoch_Message",_x]; _warnedPlayers pushBack _x;};
-								if !(_target in _warnedPlayers) then {[_warnMessage,5] remoteExec ["Epoch_Message",_target]; _warnedPlayers pushBack _target;};
-								_closePlayers pushBackUnique _x;
-								_closePlayers pushBackUnique _target;
-							};
-						};
-					};
-				};
-				//PlayerWarning - reset warning array
-				if !(_x in _closePlayers) then {
-					_warnedPlayers = _warnedPlayers - [_x];
+					_vehicles pushBackUnique _veh;
 				};
 			};
 		} forEach allPlayers;
+		//CrashLoot - vehicles
+		{
+			_x setVariable ["InventoryData",_x call EPOCH_server_CargoSave,false];
+		} forEach _vehicles;
 		sleep 5;
 	};
 };
