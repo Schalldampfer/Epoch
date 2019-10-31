@@ -27,20 +27,20 @@ _bodyCheckDist = -1;
 _script = "addons\halv_spawn\credits.sqf";
 
 //start screen 0 = start on select gear screen, anything else will start it on select map screen
-_halv_spawn_startmode = 0;
+_halv_spawn_startmode = 1;
 
 //if false then gear select screen/button is disabled
-_halv_allowgearselect = true;
+_halv_allowgearselect = false;
 
 //if false, this disables adding gear, so no gear is added 
 //if gear select is disabled and this is false, no random gear is added to player on spawn
 //to add random gear from the arrays, set this to true and disable gear selection
-_addgear = true;
+_addgear = false;
 
 //this is to clear all gear, before adding the new gear
 //best to keep this true, if you allow gear selection
 //if you do not allow gear selection, set this to false, or player will start with nothing
-_removedefault = true;
+_removedefault = false;
 
 //if true, it will always adds a map to the player on spawn (else player will not have a map, if not added to list)
 _addmap = true;
@@ -53,6 +53,7 @@ _addcolours = false;
 _servername = "Epoch Mod";
 //////////////////////////paintshop settings//////////////////////////
 if(player distance (getMarkerPos "respawn_west") > 35) then {
+	systemChat "teleport now";
 	_halv_spawn_startmode = 1;
 	_halv_allowgearselect = false;
 	_addgear = false;
