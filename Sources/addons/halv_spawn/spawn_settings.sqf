@@ -52,7 +52,7 @@ _addcolours = false;
 //set this the same as you have in your paintshop settings or it will not work
 _servername = "Epoch Mod";
 //////////////////////////paintshop settings//////////////////////////
-if(player distance _rspawnw > 35) then {
+if(player distance (getMarkerPos "respawn_west") > 35) then {
 	_halv_spawn_startmode = 1;
 	_halv_allowgearselect = false;
 	_addgear = false;
