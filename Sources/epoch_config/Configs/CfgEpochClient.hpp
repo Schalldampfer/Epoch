@@ -155,7 +155,7 @@ class CfgEpochClient
 		{"Immunity",0,{100,0}},
 		{"Toxicity",0,{100,0,35,55,-1,-1}},
 		{"Stamina",100,{"EPOCH_playerStaminaMax",0}},
-		{"Crypto",0,{250000,0}},
+		{"Crypto",0,{1000000,0}},
 		{"HitPoints",{0,0,0,0},{1,0,0.5,1,-1,-1}}, // limits here only used for HUD.
 		{"BloodP",100,{190,0,120,140,70,50}},
 		{"SpawnArray",{},{}},
@@ -296,7 +296,7 @@ class CfgEpochClient
     nonJammerAI[] = {"B_Heli_Transport_01_F","PHANTOM","EPOCH_Sapper_F","Epoch_SapperG_F","Epoch_SapperB_F","I_UAV_01_F","EPOCH_RyanZombie_1"};
     nonTraderAI[] = {"B_Heli_Transport_01_F","PHANTOM","EPOCH_Sapper_F","Epoch_SapperG_F","Epoch_SapperB_F","I_UAV_01_F","Epoch_Cloak_F","GreatWhite_F","EPOCH_RyanZombie_1"};
     nonTraderAIRange = 50;
-    fishLoots[] = {"ItemTuna","ItemSeaBass","ItemSeaBass","ItemSeaBass","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout"}; // Fishing loots
+    fishLoots[] = {"ItemTuna","ItemSeaBass","ItemSeaBass","ItemSeaBass","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemTrout","ItemCanteen_Empty","ItemBottlePlastic_Empty"}; // Fishing loots
     animalAiTables[] = {"Sheep_random_EPOCH","Sheep_random_EPOCH","Goat_random_EPOCH","Goat_random_EPOCH","Goat_random_EPOCH",{"Cock_random_EPOCH","Hen_random_EPOCH"},{"Cock_random_EPOCH","Hen_random_EPOCH"},"Rabbit_EPOCH","Rabbit_EPOCH","Rabbit_EPOCH","Snake_random_EPOCH","Snake2_random_EPOCH",{"Fin_random_EPOCH","Alsatian_Random_EPOCH"}}; // Animal spawn table
     playerDeathScreen = "TapOut";
     playerKilledScreen = "TapOut2";
@@ -316,9 +316,9 @@ class CfgEpochClient
 		"Land_Wreck_Satellite_EPOCH"
 	};
 	energyRange				= 75;			// Range to check for energy sources
-	energyRegenMax			= 5;			// Max energy increase value (every 10 seconds) 
+	energyRegenMax			= 10;			// Max energy increase value (every 10 seconds) 
 	energyCostNV			= 3;			// Energy loss value by using nightvision (every 10 seconds)
-	energyRegenInVeh 		= 5;			// Energy increase value in Vehicles with Engine On (every 10 seconds)
+	energyRegenInVeh 		= 20;			// Energy increase value in Vehicles with Engine On (every 10 seconds)
 
 	// Favorite Bar
 	Fav_enableFavoriteBar = "true";			// If disabled, players will not be able to use favorite bar
@@ -335,15 +335,15 @@ class CfgEpochClient
 	UseAdvancedVehicleRepair = "true";									// Switch On / Off Advanced Vehicle Repair (Does not effect SuppressedCraftingItems !)
 	EnableRemoveParts = "true";											// Enable removing Tires / Engines from Vehicles
 	SuppressedCraftingItems[] = {										// These Items can not be crafted (but can be used in recipe)
-			"VehicleRepairLg",			// Supressed for Advanced Vehicle Repair (no longer needed)
-			"KitMetalQuarterFloor",		// Item is Upgradeable, but you can remove it here to make it also Craftable
-			"KitMetalHalfFloor",		// Item is Upgradeable, but you can remove it here to make it also Craftable
-			"KitMetalFloor",			// Item is Upgradeable, but you can remove it here to make it also Craftable
-			"KitMetalTower",			// Item is Upgradeable, but you can remove it here to make it also Craftable
-			"KitCinderQuarterFloor",	// Item is Upgradeable, but you can remove it here to make it also Craftable
-			"KitCinderHalfFloor",		// Item is Upgradeable, but you can remove it here to make it also Craftable
-			"KitCinderFloor",			// Item is Upgradeable, but you can remove it here to make it also Craftable
-			"KitCinderTower"			// Item is Upgradeable, but you can remove it here to make it also Craftable
+			"VehicleRepairLg"			// Supressed for Advanced Vehicle Repair (no longer needed)
+			//"KitMetalQuarterFloor",		// Item is Upgradeable, but you can remove it here to make it also Craftable
+			//"KitMetalHalfFloor",		// Item is Upgradeable, but you can remove it here to make it also Craftable
+			//"KitMetalFloor",			// Item is Upgradeable, but you can remove it here to make it also Craftable
+			//"KitMetalTower",			// Item is Upgradeable, but you can remove it here to make it also Craftable
+			//"KitCinderQuarterFloor",	// Item is Upgradeable, but you can remove it here to make it also Craftable
+			//"KitCinderHalfFloor",		// Item is Upgradeable, but you can remove it here to make it also Craftable
+			//"KitCinderFloor",			// Item is Upgradeable, but you can remove it here to make it also Craftable
+			//"KitCinderTower"			// Item is Upgradeable, but you can remove it here to make it also Craftable
 	};
 	VehicleRepairs[] = {												// {Hitpoint, dmg to repair, dmg to replace, mat to repair, mat to replace}
 		{"HitHull",0.33,0.66,"ItemScraps","ItemCorrugated"},
@@ -365,8 +365,8 @@ class CfgEpochClient
 		{"HitLBWheel",0.33,1,"VehicleRepair","SpareTire"},
 		{"HitRBWheel",0.33,1,"VehicleRepair","SpareTire"},
 		// Mountainbike wheels
-		{"HitFWheel",0.33,0.91,"",""},
-		{"HitBWheel",0.33,0.91,"",""}
+		{"HitFWheel",0.33,0.91,"ItemDuctTape","VehicleRepair"},
+		{"HitBWheel",0.33,0.91,"ItemDuctTape","VehicleRepair"}
 	};
 
 /*	// Lower difficult VehicleRepairs example	

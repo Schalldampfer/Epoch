@@ -19,7 +19,7 @@ class CfgLootTable
 	{
 		items[] = {
 				{ { "Scopes_Vanilla", "CfgLootTable" }, 5 },
-				{ { "Scopes_MarkDLC", "CfgLootTable" }, 1 },
+				{ { "Scopes_MarkDLC", "CfgLootTable" }, 0 },
 				{ { "Scopes_CUP", "CfgLootTable" }, 0 }
 		};
 	};
@@ -34,7 +34,7 @@ class CfgLootTable
 	{
 		items[] = {
 				{ { "Muzzles_Vanilla", "CfgLootTable" }, 15 },
-				{ { "Muzzles_MarkDLC", "CfgLootTable" }, 8 },
+				{ { "Muzzles_MarkDLC", "CfgLootTable" }, 0 },
 				{ { "Muzzles_CUP", "CfgLootTable" }, 0 },
 				{ { "Muzzles_MultiGun", "CfgLootTable" }, 1 }
 		};
@@ -129,7 +129,7 @@ class CfgLootTable
 		items[] = {
 				{ { "Uniforms_Male_Mil_Vanilla", "CfgLootTable" }, 8 },
 				{ { "Uniforms_Male_WetSuit", "CfgLootTable" }, 1 },
-				{ { "Uniforms_Male_MarksDLC", "CfgLootTable" }, 1 },
+				{ { "Uniforms_Male_MarksDLC", "CfgLootTable" }, 0 },
 				{ { "Uniforms_Male_ApexDLC", "CfgLootTable" }, 1 }
 		};
 	};
@@ -157,7 +157,7 @@ class CfgLootTable
 		items[] = {
 				{ { "Vests_High_Vanilla", "CfgLootTable" }, 8 },
 				{ { "Vests_Rebreather_Epoch", "CfgLootTable" }, 1 },
-				{ { "Vests_ApexDLC", "CfgLootTable" }, 1 }
+				{ { "Vests_ApexDLC", "CfgLootTable" }, 0 }
 		};
 	};
 	class BackPacks_Low
@@ -204,15 +204,14 @@ class CfgLootTable
 				{ { "H_59_EPOCH", "item" }, 1 },
 				{ { "H_60_EPOCH", "item" }, 1 },
 				{ { "H_61_EPOCH", "item" }, 1 },
-				{ { "H_62_EPOCH", "item" }, 1 },
-				{ { "H_63_EPOCH", "item" }, 1 },
-				{ { "H_64_EPOCH", "item" }, 1 },
-				{ { "H_65_EPOCH", "item" }, 1 },
-				{ { "H_66_EPOCH", "item" }, 1 },
-				{ { "H_67_EPOCH", "item" }, 1 },
-				{ { "H_68_EPOCH", "item" }, 1 },
-				{ { "H_69_EPOCH", "item" }, 1 },
-				{ { "H_70_EPOCH", "item" }, 1 },
+				{ { "H_62_EPOCH", "item" }, 1, {"getDate", 2, "==", 1} },
+				{ { "H_63_EPOCH", "item" }, 1, {"getDate", 2, "==", 3} },
+				{ { "H_64_EPOCH", "item" }, 1, {"getDate", 2, "==", 5} },
+				{ { "H_65_EPOCH", "item" }, 1, {"getDate", 2, "==", 7} },
+				{ { "H_66_EPOCH", "item" }, 1, {"getDate", 2, "==", 9} },
+				{ { "H_67_EPOCH", "item" }, 1, {"getDate", 2, "==", 11} },
+				{ { "H_68_EPOCH", "item" }, 1, {"getDate", 2, "==", 13} },
+				{ { "H_69_EPOCH", "item" }, 1, {"getDate", 2, "==", 15} },
 				{ { "H_71_EPOCH", "item" }, 1 },
 				{ { "H_72_EPOCH", "item" }, 1 },
 				{ { "H_73_EPOCH", "item" }, 1 },
@@ -237,8 +236,8 @@ class CfgLootTable
 				{ { "H_92_EPOCH", "item" }, 1 },
 				{ { "H_104_EPOCH", "item" }, 1 },
                 { { "H_105_EPOCH", "item" }, 1 },
-				{ { "thor_mask_epoch", "item" }, 1, },
-				{ { "iron_mask_epoch", "item" }, 1, },
+				{ { "thor_mask_epoch", "item" }, 1, {"getDate", 1, "==", 12} },
+				{ { "iron_mask_epoch", "item" }, 1, {"getDate", 1, "==", 12} },
 				{ { "wolf_mask_epoch", "item" }, 1, {"getDate", 1, "==", 10} }, // only available in october
 				{ { "pkin_mask_epoch", "item" }, 1, {"getDate", 1, "==", 10} }, // only available in october
 				{ { "clown_mask_epoch", "item" }, 1, {"getDate", 1, "==", 10} }, // only available in october
@@ -288,17 +287,17 @@ class CfgLootTable
 				{ { "H_36_EPOCH", "item" }, 2 },
 				{ { "H_37_EPOCH", "item" }, 2 },
 				{ { "H_38_EPOCH", "item" }, 2 },
-				{ { "H_93_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_94_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_95_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_96_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_97_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_98_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_99_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_100_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_101_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_102_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_103_EPOCH", "item" }, 1 }		// Race Hemlet
+				{ { "H_93_EPOCH", "item" }, 1, {"getDate", 2, "==", 2} },		// Race Hemlet
+				{ { "H_94_EPOCH", "item" }, 1, {"getDate", 2, "==", 4} },		// Race Hemlet
+				{ { "H_95_EPOCH", "item" }, 1, {"getDate", 2, "==", 6} },		// Race Hemlet
+				{ { "H_96_EPOCH", "item" }, 1, {"getDate", 2, "==", 8} },		// Race Hemlet
+				{ { "H_97_EPOCH", "item" }, 1, {"getDate", 2, "==", 10} },		// Race Hemlet
+				{ { "H_98_EPOCH", "item" }, 1, {"getDate", 2, "==", 12} },		// Race Hemlet
+				{ { "H_99_EPOCH", "item" }, 1, {"getDate", 2, "==", 14} },		// Race Hemlet
+				{ { "H_100_EPOCH", "item" }, 1, {"getDate", 2, "==", 16} },		// Race Hemlet
+				{ { "H_101_EPOCH", "item" }, 1, {"getDate", 2, "==", 18} },		// Race Hemlet
+				{ { "H_102_EPOCH", "item" }, 1, {"getDate", 2, "==", 20} },		// Race Hemlet
+				{ { "H_103_EPOCH", "item" }, 1, {"getDate", 2, "==", 22} }		// Race Hemlet
 		};
 	};
 	class Primitive
@@ -365,8 +364,8 @@ class CfgLootTable
 				{ { "KitTentA", "magazine" }, 10 },
 				{ { "KitTentDome", "magazine" }, 10 },
 				{ { "ItemLockbox", "magazine" }, 10 },
-				{ { "ItemSafe", "magazine" }, 6 },
-//				{ { "ItemSafe_s", "magazine" }, 4 },	// Variant with less Load than the normal Safe
+//				{ { "ItemSafe", "magazine" }, 6 },
+				{ { "ItemSafe_s", "magazine" }, 4 },	// Variant with less Load than the normal Safe
 				{ { "ItemGunSafe", "magazine" }, 4 }
 		};
 	};
@@ -427,8 +426,8 @@ class CfgLootTable
 				{ { "ItemDocument", "magazine" }, 20 },
 				{ { "ItemVehDoc1", "magazine" }, 20 },
 				{ { "ItemVehDoc2", "magazine" }, 15 },
-				{ { "ItemVehDoc3", "magazine" }, 5 },
-				{ { "ItemVehDoc4", "magazine" }, 2 }
+				{ { "ItemVehDoc3", "magazine" }, 8 },
+				{ { "ItemVehDoc4", "magazine" }, 5 }
 		};
 	};
 	class Seeds
@@ -496,7 +495,7 @@ class CfgLootTable
 	{
 		items[] = {
 				{ { "ItemDefibrillator", "magazine" }, 1 },
-				{ { "FAK", "magazine" }, 50 },
+				{ { "FAK", "magazine" }, 20 },
 				{ { "Soap_Epoch", "magazine" }, 3 },
 				{ { "atropine_epoch", "magazine" }, 6 },
 				{ { "adrenaline_epoch", "magazine" }, 5 },
@@ -594,9 +593,9 @@ class CfgLootTable
 				{ { "SLAMDirectionalMine_Wire_Mag", "magazine" }, 3 },
 				{ { "DemoCharge_Remote_Mag", "magazine" }, 6 },
 				{ { "ClaymoreDirectionalMine_Remote_Mag", "magazine" }, 10 },
-				{ { "APERSBoundingMine_Range_Mag", "magazine" }, 21 },
-				{ { "APERSTripMine_Wire_Mag", "magazine" }, 20 },
-				{ { "APERSMine_Range_Mag", "magazine" }, 20 }
+				{ { "APERSBoundingMine_Range_Mag", "magazine" }, 11 },
+				{ { "APERSTripMine_Wire_Mag", "magazine" }, 10 },
+				{ { "APERSMine_Range_Mag", "magazine" }, 10 }
 		};
 	};
 	class ShellFlares
@@ -646,12 +645,12 @@ class CfgLootTable
 	class Scopes_Vanilla
 	{
 		items[] = {
-				{ { "optic_NVS", "item" }, 1 },
-				{ { "optic_tws", "item" }, 1 },
-				{ { "optic_tws_mg", "item" }, 1 },
-				{ { "optic_SOS", "item" }, 2 },
-				{ { "optic_LRPS", "item" }, 2 },
-				{ { "optic_DMS", "item" }, 3 },
+				{ { "optic_NVS", "item" }, 0 },
+				{ { "optic_tws", "item" }, 0 },
+				{ { "optic_tws_mg", "item" }, 0 },
+				{ { "optic_SOS", "item" }, 0 },
+				{ { "optic_LRPS", "item" }, 0 },
+				{ { "optic_DMS", "item" }, 1 },
 				{ { "optic_Arco", "item" }, 4 },
 				{ { "optic_Hamr", "item" }, 5 },
 				{ { "Elcan_epoch", "item" }, 5 },
@@ -670,6 +669,9 @@ class CfgLootTable
 	class Scopes_MarkDLC
 	{
 		items[] = {
+				{ { "optic_SOS", "item" }, 2 },
+				{ { "optic_LRPS", "item" }, 2 },
+				{ { "optic_DMS", "item" }, 2 },
 				{ { "optic_AMS", "item" }, 2 },
 				{ { "optic_AMS_khk", "item" }, 1 },
 				{ { "optic_AMS_snd", "item" }, 1 },
@@ -918,14 +920,14 @@ class CfgLootTable
 	{
 		items[] = {
 				{ { "AKM_EPOCH", "weapon" }, 3 },
-				{ { "sr25_epoch", "weapon" }, 4 },
+				{ { "sr25_epoch", "weapon" }, 0 },
 
-				{ { "arifle_Katiba_GL_F", "weapon" }, 2 },
+				{ { "arifle_Katiba_GL_F", "weapon" }, 0 },
 				{ { "arifle_Katiba_C_F", "weapon" }, 3 },
 				{ { "arifle_Katiba_F", "weapon" }, 5 },
 
-				{ { "arifle_MX_GL_F", "weapon" }, 3 },
-				{ { "arifle_MX_GL_Black_F", "weapon" }, 2 },
+				{ { "arifle_MX_GL_F", "weapon" }, 0 },
+				{ { "arifle_MX_GL_Black_F", "weapon" }, 0 },
 				{ { "arifle_MXM_Black_F", "weapon" }, 2 },
 				{ { "arifle_MXC_Black_F", "weapon" }, 3 },
 				{ { "arifle_MX_Black_F", "weapon" }, 2 },
@@ -934,26 +936,26 @@ class CfgLootTable
 				{ { "arifle_MX_F", "weapon" }, 3 },
 
 				{ { "l85a2_epoch", "weapon" }, 1 },
-				{ { "l85a2_pink_epoch", "weapon" }, 1 },
-				{ { "l85a2_ugl_epoch", "weapon" }, 1 },
+				{ { "l85a2_pink_epoch", "weapon" }, 0 },
+				{ { "l85a2_ugl_epoch", "weapon" }, 0 },
 
 				{ { "m4a3_EPOCH", "weapon" }, 7 },
 
 				{ { "m16_EPOCH", "weapon" }, 2 },
-				{ { "m16Red_EPOCH", "weapon" }, 1 },
+				{ { "m16Red_EPOCH", "weapon" }, 0 },
 
-				{ { "arifle_Mk20_GL_F", "weapon" }, 12 },
-				{ { "arifle_Mk20_GL_plain_F", "weapon" }, 12 },
+				{ { "arifle_Mk20_GL_F", "weapon" }, 0 },
+				{ { "arifle_Mk20_GL_plain_F", "weapon" }, 0 },
 				{ { "arifle_Mk20C_F", "weapon" }, 16 },
 				{ { "arifle_Mk20C_plain_F", "weapon" }, 18 },
 				{ { "arifle_Mk20_F", "weapon" }, 20 },
 				{ { "arifle_Mk20_plain_F", "weapon" }, 22 },
 
-				{ { "arifle_TRG21_GL_F", "weapon" }, 2 },
+				{ { "arifle_TRG21_GL_F", "weapon" }, 0 },
 				{ { "arifle_TRG21_F", "weapon" }, 3 },
 				{ { "arifle_TRG20_F", "weapon" }, 5 },
 
-				{ { "arifle_SDAR_F", "weapon" }, 9 },
+				{ { "arifle_SDAR_F", "weapon" }, 4 },
 				{ { "Rollins_F", "weapon" }, 9 },
 				{ { "SMG_01_F", "weapon" }, 9 },
 				{ { "SMG_02_F", "weapon" }, 9 },
@@ -1023,16 +1025,16 @@ class CfgLootTable
 				{ { "a2_AK107_EPOCH", "weapon" }, 1 },
 				{ { "a2_bizon_epoch", "weapon" }, 1 },
 				{ { "a2_dmr_epoch", "weapon" }, 1 },
-				{ { "a2_dmr_epoch_scoped", "weapon" }, 1 },
+				{ { "a2_dmr_epoch_scoped", "weapon" }, 0 },
 				{ { "a2_fnfal_epoch", "weapon" }, 1 },
 				{ { "a2_G36_C_epoch", "weapon" }, 1 },
 				{ { "a2_Mg36_epoch", "weapon" }, 1 },
 				{ { "a2_leeenfield_epoch", "weapon" }, 1 },
-				{ { "a2_m110_epoch", "weapon" }, 1 },
+				{ { "a2_m110_epoch", "weapon" }, 0 },
 				{ { "a2_mk16_epoch", "weapon" }, 1 },
 				{ { "a2_mk17_epoch", "weapon" }, 1 },
 				{ { "a2_svd_epoch", "weapon" }, 1 },
-				{ { "a2_VSS_vintorez_epoch", "weapon" }, 1 },
+				{ { "a2_VSS_vintorez_epoch", "weapon" }, 0 },
 				{ { "a2_aks74un_EPOCH", "weapon" }, 1 }
 		};
 	};
@@ -1230,11 +1232,11 @@ class CfgLootTable
 	class SniperRifle_Vanilla
 	{
 		items[] = {
-				{ { "m107_EPOCH", "weapon" }, 1 },
-				{ { "m107Tan_EPOCH", "weapon" }, 1 },
+				{ { "m107_EPOCH", "weapon" }, 0 },
+				{ { "m107Tan_EPOCH", "weapon" }, 0 },
 
 				{ { "srifle_LRR_F", "weapon" }, 11 },
-				{ { "srifle_GM6_F", "weapon" }, 16 },
+				{ { "srifle_GM6_F", "weapon" }, 0 },
 
 				{ { "M14_EPOCH", "weapon" }, 1 },
 				{ { "M14Grn_EPOCH", "weapon" }, 1 },
@@ -1258,18 +1260,18 @@ class CfgLootTable
 	{
 		items[] = {
 				{ { "srifle_DMR_02_F", "weapon" }, 1 },
-				{ { "srifle_DMR_02_camo_F", "weapon" }, 1 },
-				{ { "srifle_DMR_02_sniper_F", "weapon" }, 1 },
+				{ { "srifle_DMR_02_camo_F", "weapon" }, 0 },
+				{ { "srifle_DMR_02_sniper_F", "weapon" }, 0 },
 				{ { "srifle_DMR_03_F", "weapon" }, 1 },
 				{ { "srifle_DMR_03_khaki_F", "weapon" }, 1 },
 				{ { "srifle_DMR_03_tan_F", "weapon" }, 1 },
 				{ { "srifle_DMR_03_multicam_F", "weapon" }, 1 },
 				{ { "srifle_DMR_03_woodland_F", "weapon" }, 1 },
-				{ { "srifle_DMR_04_F", "weapon" }, 1 },
-				{ { "srifle_DMR_04_Tan_F", "weapon" }, 1 },
+				{ { "srifle_DMR_04_F", "weapon" }, 0 },
+				{ { "srifle_DMR_04_Tan_F", "weapon" }, 0 },
 				{ { "srifle_DMR_05_blk_F", "weapon" }, 1 },
-				{ { "srifle_DMR_05_hex_F", "weapon" }, 1 },
-				{ { "srifle_DMR_05_tan_f", "weapon" }, 1 },
+				{ { "srifle_DMR_05_hex_F", "weapon" }, 0 },
+				{ { "srifle_DMR_05_tan_f", "weapon" }, 0 },
 				{ { "srifle_DMR_06_camo_F", "weapon" }, 1 },
 				{ { "srifle_DMR_06_olive_F", "weapon" }, 1 }
 		};
@@ -1277,7 +1279,7 @@ class CfgLootTable
 	class SniperRifleAmmoMarkDLC
 	{
 		items[] = {
-				{ { "10Rnd_338_Mag", "magazine" }, 1 },				// DMR_02
+				{ { "10Rnd_338_Mag", "magazine" }, 2 },				// DMR_02
 				{ { "10Rnd_127x54_Mag", "magazine" }, 1 },			// DMR_04
 				{ { "10Rnd_93x64_DMR_05_Mag", "magazine" }, 1 }		// DMR_05
 				
@@ -1350,15 +1352,15 @@ class CfgLootTable
 	class Machinegun_Vanilla
 	{
 		items[] = {
-				{ { "LMG_Zafir_F", "weapon" }, 2 },
+				{ { "LMG_Zafir_F", "weapon" }, 1 },
 
 				{ { "arifle_MX_SW_F", "weapon" }, 4 },
 				{ { "arifle_MX_SW_Black_F", "weapon" }, 2 },
 
-				{ { "LMG_Mk200_F", "weapon" }, 6 },
+				{ { "LMG_Mk200_F", "weapon" }, 2 },
 
 				{ { "m249_EPOCH", "weapon" }, 1 },
-				{ { "m249Tan_EPOCH", "weapon" }, 1 }
+				{ { "m249Tan_EPOCH", "weapon" }, 0 }
 		};
 	};
 	class MachinegunAmmo_Vanilla
@@ -1379,11 +1381,11 @@ class CfgLootTable
 	class MachinegunMarkDLC
 	{
 		items[] = {
-				{ { "MMG_01_hex_F", "weapon" }, 1 },
+				{ { "MMG_01_hex_F", "weapon" }, 0 },
 				{ { "MMG_01_tan_F", "weapon" }, 1 },
-				{ { "MMG_02_camo_F", "weapon" }, 1 },
+				{ { "MMG_02_camo_F", "weapon" }, 0 },
 				{ { "MMG_02_black_F", "weapon" }, 1 },
-				{ { "MMG_02_sand_F", "weapon" }, 1 }
+				{ { "MMG_02_sand_F", "weapon" }, 0 }
 		};
 	};
 	class MachinegunAmmoMarkDLC
@@ -1494,7 +1496,7 @@ class CfgLootTable
 				{ { "U_OG_Guerilla3_2", "item" }, 1 },
 				{ { "U_OG_leader", "item" }, 1 },
 				{ { "U_O_CombatUniform_ocamo", "item" }, 1 },
-				{ { "U_O_GhillieSuit", "item" }, 1 },
+				{ { "U_O_GhillieSuit", "item" }, 0 },
 				{ { "U_O_PilotCoveralls", "item" }, 1 },
 				{ { "U_IG_Guerilla1_1", "item" }, 1 },
 				{ { "U_IG_leader", "item" }, 1 },
@@ -1509,7 +1511,7 @@ class CfgLootTable
 				{ { "U_I_HeliPilotCoveralls", "item" }, 1 },
 				{ { "U_I_pilotCoveralls", "item" }, 1 },
 				{ { "U_I_OfficerUniform", "item" }, 1 },
-				{ { "U_I_GhillieSuit", "item" }, 1 },
+				{ { "U_I_GhillieSuit", "item" }, 0 },
 				{ { "U_I_CombatUniform_tshirt", "item" }, 1 },
 				{ { "U_O_OfficerUniform_ocamo", "item" }, 1 },
 				{ { "U_O_SpecopsUniform_ocamo", "item" }, 1 },
@@ -1698,9 +1700,9 @@ class CfgLootTable
 				{ { "U_CamoBrn_uniform", "item" }, 1 },
 				{ { "U_CamoBlue_uniform", "item" }, 1 },
 				{ { "U_Camo_uniform", "item" }, 1 },
-				{ { "U_ghillie1_uniform", "item" }, 1 },
-				{ { "U_ghillie2_uniform", "item" }, 1 },
-				{ { "U_ghillie3_uniform", "item" }, 1 },
+				{ { "U_ghillie1_uniform", "item" }, 0 },
+				{ { "U_ghillie2_uniform", "item" }, 0 },
+				{ { "U_ghillie3_uniform", "item" }, 0 },
 				{ { "U_RadiationSuit_F_uniform", "item" }, 1 }
 		};
 	};
@@ -1714,31 +1716,36 @@ class CfgLootTable
 				{ { "V_3_EPOCH", "item" }, 1 },
 				{ { "V_4_EPOCH", "item" }, 1 },
 				{ { "V_5_EPOCH", "item" }, 1 },
+				{ { "V_10_EPOCH", "item" }, 1 },
+				{ { "V_11_EPOCH", "item" }, 1 },
+				{ { "V_12_EPOCH", "item" }, 1 },
+				{ { "V_17_EPOCH", "item" }, 1 },
+				{ { "V_18_EPOCH", "item" }, 1 },
+				{ { "V_21_EPOCH", "item" }, 1 },
+				{ { "V_24_EPOCH", "item" }, 1 },
+				{ { "V_29_EPOCH", "item" }, 1 },
+				{ { "V_30_EPOCH", "item" }, 1 },
+				{ { "V_31_EPOCH", "item" }, 1 },
+				{ { "V_32_EPOCH", "item" }, 1 }
+		};
+	};
+	class Vests_High_Vanilla
+	{
+		items[] = {
 				{ { "V_6_EPOCH", "item" }, 1 },
 				{ { "V_7_EPOCH", "item" }, 1 },
 				{ { "V_8_EPOCH", "item" }, 1 },
 				{ { "V_9_EPOCH", "item" }, 1 },
-				{ { "V_10_EPOCH", "item" }, 1 },
-				{ { "V_11_EPOCH", "item" }, 1 },
-				{ { "V_12_EPOCH", "item" }, 1 },
 				{ { "V_13_EPOCH", "item" }, 1 },
 				{ { "V_14_EPOCH", "item" }, 1 },
 				{ { "V_15_EPOCH", "item" }, 1 },
 				{ { "V_16_EPOCH", "item" }, 1 },
-				{ { "V_17_EPOCH", "item" }, 1 },
-				{ { "V_18_EPOCH", "item" }, 1 },
-				{ { "V_21_EPOCH", "item" }, 1 },
 				{ { "V_22_EPOCH", "item" }, 1 },
 				{ { "V_23_EPOCH", "item" }, 1 },
-				{ { "V_24_EPOCH", "item" }, 1 },
 				{ { "V_25_EPOCH", "item" }, 1 },
 				{ { "V_26_EPOCH", "item" }, 1 },
 				{ { "V_27_EPOCH", "item" }, 1 },
 				{ { "V_28_EPOCH", "item" }, 1 },
-				{ { "V_29_EPOCH", "item" }, 1 },
-				{ { "V_30_EPOCH", "item" }, 1 },
-				{ { "V_31_EPOCH", "item" }, 1 },
-				{ { "V_32_EPOCH", "item" }, 1 },
 				{ { "V_33_EPOCH", "item" }, 1 },
 				{ { "V_34_EPOCH", "item" }, 1 },
 				{ { "V_35_EPOCH", "item" }, 1 },
@@ -1746,18 +1753,13 @@ class CfgLootTable
 				{ { "V_38_EPOCH", "item" }, 1 },
 				{ { "V_39_EPOCH", "item" }, 1 },
 				{ { "V_40_EPOCH", "item" }, 1 }
-		};
-	};
-	class Vests_High_Vanilla
-	{
-		items[] = {
-				{ { "V_PlateCarrier1_tna_F", "item" }, 1 },
-				{ { "V_PlateCarrierSpec_tna_F", "item" }, 1 },
-				{ { "V_PlateCarrierSpec_blk", "item" }, 1 },
-				{ { "V_HarnessO_ghex_F", "item" }, 1 },
-				{ { "V_HarnessOGL_ghex_F", "item" }, 1 },
-				{ { "V_PlateCarroer2_tna_F", "item" }, 1 },
-				{ { "V_PlateCarrierGL_tna_F", "item" }, 1 }
+				//{ { "V_PlateCarrier1_tna_F", "item" }, 1 },
+				//{ { "V_PlateCarrierSpec_tna_F", "item" }, 1 },
+				//{ { "V_PlateCarrierSpec_blk", "item" }, 1 },
+				//{ { "V_HarnessO_ghex_F", "item" }, 1 },
+				//{ { "V_HarnessOGL_ghex_F", "item" }, 1 },
+				//{ { "V_PlateCarroer2_tna_F", "item" }, 1 },
+				//{ { "V_PlateCarrierGL_tna_F", "item" }, 1 }
 		};
 	};
 	class Vests_Rebreather_Epoch
