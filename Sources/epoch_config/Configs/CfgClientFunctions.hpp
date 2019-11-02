@@ -54,6 +54,8 @@ class CfgClientFunctions
 			class DefibrillatorUse {};
 			class CamUse {};
 			class DefuseBomb {};
+			class PlayerStatsDialog {};
+			class ServerStatsDialog {};
 		};
 		class building
 		{
@@ -101,6 +103,7 @@ class CfgClientFunctions
 		{
 			class getInMan {};
 			class getOutMan {};
+			class HandleDamage {};
 			class InventoryClosed {};
 			class InventoryOpened {};
 		};
@@ -175,6 +178,7 @@ class CfgClientFunctions
 			class fnc_createLocalMarkerSet {};
 			class fnc_deleteLocalMarkerSet {};
 			class fnc_AnimateScheduled {};
+			class fnc_SetFinalDir {};
 		};
 		class environment
 		{
@@ -197,6 +201,7 @@ class CfgClientFunctions
 			class vehicle_checkTurretAmmo {};
 			class vehicle_removeTurretAmmo {};
 			class vehicle_ChangeLicensePlate {};
+			class vehicle_Paintgarage {};
 		};
 		class missions
 		{
@@ -215,10 +220,18 @@ class CfgClientFunctions
 			class maxArmorInit {};
 			class initUI {};
 			class refeshUI {};
-			class equip {};
+			class equip {
+				customHeader = 1;
+			};
 			class itemTypeSlot {};
 			class usedItemRepack {};
 			class CryptoButtons {};
+			class SetUnitLoadout {
+				customHeader = 1;
+			};
+			class ReloadLoadout {
+				customHeader = 1;
+			};
 		};
 		class servicepoint
 		{
@@ -235,6 +248,7 @@ class CfgClientFunctions
 			class custom_EH_FiredNear {};
 			class custom_EH_GetInMan {};
 			class custom_EH_GetOutMan {};
+			class custom_EH_HandleDamage {};
 			class custom_EH_Hit {};
 			class custom_EH_InventoryClosed {};
 			class custom_EH_InventoryOpened {};
@@ -255,10 +269,6 @@ class CfgClientFunctions
 			class message_stack {};
 			class message_old1 {};
 			class message_old2 {};
-		};
-		class looting
-		{
-			class spawnLoot {};
 		};
 		class gui
 		{
