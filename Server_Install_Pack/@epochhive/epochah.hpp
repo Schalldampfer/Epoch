@@ -7,7 +7,7 @@ antihack_PVSPrefix = "EPAH_"; // used to help whitelist pveh variables in BE wit
 antihack_cfgPatchesMode[] = {2}; // 0 == BAN - 1 = LOG, 2 = KICK
 antihack_ahInitAuthCfg[] = {0,180}; // 0 == BAN - 1 = LOG, 60 = ban or log if anti hack is not started in 180 seconds
 antihack_whitelistedCfgPatches[] = {}; //
-antihack_banReason = "EpochMod Autoban";
+antihack_banReason = "EpochMod Autobahn";
 antihack_kickReason = "EpochMod Autokick";
 antihack_banReasons[] = {
 	"Mod mismatch, check that the mods you have enabled match server."
@@ -22,9 +22,10 @@ antihack_checkFilesNew[] = { //script check, leave it blank to disable it
 	{"epoch_code\compile\setup\EPOCH_client_rejectPlayer.sqf", "EPOCH_client_rejectPlayer"},
 	{"epoch_code\compile\setup\EPOCH_clientRespawn.sqf", "EPOCH_clientRespawn"}
 };
-antihack_addActionCheck = "true"; // false to disable addAction checks
-antihack_antiTeleportCheck = "true"; // false to disable antiTeleport checks
-adminMenu_Owner[] = {};
+antihack_addActionCheck = "false"; // false to disable addAction checks
+antihack_antiTeleportCheck = "false"; // false to disable antiTeleport checks
+adminMenu_Owner[] = {{"76561198155787911","Schalldampfer"}};
+//adminMenu_Owner[] = {};
 adminMenu_OwnerSetting[] = {
 	"ESP-PLAYER",
 	"ESP-VEHICLE",
