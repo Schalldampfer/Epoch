@@ -37,6 +37,13 @@ switch(toLower worldName)do{
 		_blacklistedAreas = [[[0,0,0],0]];
 		_spawnarea = 12500;
 	};
+	case "malden":{
+		_staticCoords = [
+			[[5545.04,7861.76,3.0629],117.591,true]
+		];
+		_blacklistedAreas = [[[0,0,0],0]];
+		_spawnarea = 12500;
+	};
 	case "altis":{
 		_staticCoords = [
 /*

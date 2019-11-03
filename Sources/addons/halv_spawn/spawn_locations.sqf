@@ -129,6 +129,27 @@ Halv_spawns = switch(toLower worldName)do{
 			[[2884.57,17167.5],1]	//Vang
 		]
 	};
+	case "malden":{
+		[
+			[[6012.54,8627.26,0],0,'Larche'], //NameCity
+			[[3115.53,6330.82,0],0,'La Pessagne'], //NameCity
+			[[5835.55,3529.72,0],0,'Chapoi'], //NameCity
+			[[5537.25,6983.24,0],0,'Arudy'], //NameVillage
+			[[7121.48,6074.55,0],0,'Houdan'], //NameVillage
+			[[7035.72,7108.35,0],0,'Dourdan'], //NameVillage
+			[[5546.52,4232.86,0],0,'Sainte Marie'], //NameVillage
+			[[3068.50,6835.06,0],0,'Vigny'], //NameVillage
+			[[3584.88,8520.04,0],0,'Goisse'], //NameVillage
+			[[7143.06,8968.49,0],0,'Saint Louis'], //NameVillage
+			[[5404.27,2796.07,0],0,'Cancon'], //NameVillage
+			[[3731.48,3257.96,0],0,'La Riviere'], //NameVillage
+			[[8192.56,3117.11,0],0,'Le Port'], //NameVillage
+			[[8172.59,10113.5,0],0,'Airport'], //NameVillage
+			[[5567.41,11187.5,0],0,'Lolisse'], //NameVillage
+			[[883.140,11987.7,0],0,'Moray'], //NameVillage
+			[[7263.75,7931.26,0],0,'La Trinite'] //NameCityCapital
+		]
+	};
 	case "tanoa":{
 		[
 			//SE
