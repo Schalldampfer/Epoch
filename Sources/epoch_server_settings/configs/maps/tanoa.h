@@ -20,6 +20,7 @@ class Tanoa : Default
 	vehicleSpawnTypes[] = {
 		{"FlatAreaCity",1},
 		{"FlatAreaCitySmall",1},
+		{"NameLocal",1},
 		{"NameCity",2},
 		{"NameVillage",1},
 		{"NameCityCapital",4},
