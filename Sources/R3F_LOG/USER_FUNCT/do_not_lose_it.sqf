@@ -36,7 +36,7 @@ if (!isNull _objet) then
 	
 	if (R3F_LOG_active) then
 	{
-		//_objet addEventHandler ["HandleDamage", {0}];
+		_objet addEventHandler ["HandleDamage", {0}];
 		
 		if (isServer) then
 		{
