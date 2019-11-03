@@ -111,7 +111,7 @@ class CfgEpoch
 		// Shipwrecks Loot Box Spawner
 		shipwreckLootEnabled = 1; // 0 = OFF
 		debugShipwreckLoot = 0; // 1 = ON
-		showBoatLootMarkers = 1;
+		showBoatLootMarkers = 0;
 		maxSpawnedShipwrecks = 12;
 		distFromOtherShipwrecks = 750;
 		shipwreckDecayMarkerColor = "ColorBrown"; // decay changes icon (_markers select 2)
@@ -121,7 +121,7 @@ class CfgEpoch
 		
 		// Plant Spawner
 		debugPlantSpawner = 0;
-		showPlantMarkers = 1;
+		showPlantMarkers = 0;
 		maxPlantSpawns = 5;
 		distFromOtherPlants = 2500;
 		plantDecayTime = 1200; //Half this time results in decayMarkerColor marker
@@ -161,7 +161,7 @@ class CfgEpoch
 
 		// Container Spawner
 		debugContainerSpawner = 0;
-		showContainerMarkers = 1;
+		showContainerMarkers = 0;
 		maxContainerSpawns = 5;
 		distFromOtherContainers = 3500;
 		containerDecayTime = 1200;
@@ -170,7 +170,7 @@ class CfgEpoch
 		
 		// Satellite Crash Spawner
 		debugSatelliteSpawner = 0;
-		showSatelliteMarkers = 1;
+		showSatelliteMarkers = 0;
 		maxSatelliteSpawns = 5;
 		distFromOtherSatellites = 2500;
 		satelliteDecayTime = 2700;
