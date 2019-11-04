@@ -228,7 +228,8 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 	DEBUG_VEH = "false"; 				// DEBUG ONLY used to debug spawing of vehicles
 
 // Hive Related
-	vehicleLockTime = "3600"; 			// Controls how many seconds it takes to allow another person/group to unlock vehicle.
+	vehicleLockTime = "14400"; 			// Controls how many seconds it takes to allow another person/group to unlock vehicle.
+	vehicleLockTimeHome = "604800";		// Controls how many seconds it takes to allow another person/group to unlock vehicle (inside your own PlotPole Range).
 	expiresBuilding = "1209600";  		// expiration date in seconds for buildings
 	expiresPlayer = "7776000";  		// expiration date in seconds for players
 	expiresBank = "7776000";  			// expiration date in seconds for players bank
