@@ -42,8 +42,8 @@ class CfgEpochClient
 
     buildingNearbyMilitary = 0; //1 to allow building nearby
     buildingNearbyMilitaryRange = 400; //Define radius of blocked area
-    buildingNearbyMilitaryClasses[] = {"Cargo_Tower_base_F","Cargo_HQ_base_F","Cargo_Patrol_base_F","Cargo_House_base_F","BagBunker_base_F"};
-    restrictedLocations[] = {"NameCityCapital", "NameCity", "Airport"};
+    buildingNearbyMilitaryClasses[] = {"Cargo_Tower_base_F","Cargo_HQ_base_F","Cargo_Patrol_base_F","Cargo_House_base_F","BagBunker_base_F","Land_Bunker_01_HQ_F","Land_Bunker_01_small_F","Land_Bunker_01_tall_F","Land_Bunker_01_big_F"};
+    restrictedLocations[] = {"NameCityCapital", "NameCity", "Airport", "NameLocal"};
     restrictedLocationsRange = 500;
     buildingRequireJammer = 1;		//1 = require jammer to build
 	buildingJammerRange = 125; 		// Unused by Epoch, but leave it to prevent issues with custom scripts (should be set to the max possible JammerRange from cfgJammers)
@@ -53,7 +53,7 @@ class CfgEpochClient
     maxBuildingHeight = 100;		// Max Height, building is allowed.
     splitCountLimits = 0;			//1 = distinguish buildingCountLimit from storageCountLimit (ex.: buildingCountLimit=100, storageCountLimit=100 >> you can build 100 baseparts AND additional 100 storage objects like safes, lockboxes...)
 	MaxBuildingTilt = 180;			// Max degrees players can tilt building elements
-	EnablePhysicsOnBuild = "true";	// Building parts need Snap (hold) points to not fall on the ground while building
+	EnablePhysicsOnBuild = "false";	// Building parts need Snap (hold) points to not fall on the ground while building
 	
 	class CfgJammers {
 		class PlotPole_EPOCH 					// Jammer Classname
