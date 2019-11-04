@@ -267,8 +267,8 @@ class e_pad_config
 			Icon = "";
 			color[] = {1,1,1,1};
 			colortoggled[] = {0,1,0,1};
-			action = "[250,1000] call compile preprocessfilelinenumbers 'epoch_code\customs\E_Pad\traderDiag_nearVehicles.sqf'";
-			Tooltip = "Scan for near Vehicles (costs 250 energy)";
+			action = "[50,1000] call compile preprocessfilelinenumbers 'epoch_code\customs\E_Pad\traderDiag_nearVehicles.sqf'";
+			Tooltip = "Scan for near Vehicles (costs 50 energy)";
 			ToggleVar = "";
 			ToggleAble = "false";
 		};
