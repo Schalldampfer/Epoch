@@ -7,3 +7,4 @@
 #include "addons\A3EAI_Client\A3EAI_initclient.sqf";
 [] execVM "addons\blckClient.sqf";
 [] execVM "addons\safezone\showplayer.sqf";
+[] execVM "scarCODE\VGS\functions_VGS\fn_vgsInitClient.sqf";
