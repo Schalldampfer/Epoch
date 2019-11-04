@@ -8,7 +8,7 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 
 // Loot (Check CfgBuildingLootPos.hpp in mission file for more settings)
 	lootMultiplier 		= 0.6; 			// 1 = max loot bias. This controls how much loot can payout per Epoch loot container.
-	UseLootHelper		= "true";		// GroundLoot will get a visible sphere for better loot identification
+	UseLootHelper		= "false";		// GroundLoot will get a visible sphere for better loot identification
 
 // Events
 	WeatherChances[] = {
@@ -18,17 +18,19 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 		0.01								// Rain+
 	};
 	events[] = {
-		//{
-		//	3600, // SECOND <scalar>,
-		//	"CarnivalSpawner", // EVENT <string>
-		//	0, //INIT <scalar> 1 = run script at startup or 0 normal delay
-		//	2, //PREPOSTFIX <scalar> 1 = (epoch_settings pbo) 2 = (epoch_events pbo) 0 = use full file path
-		//	-1, //RUNNUMTIMES <scalar> -1 infinite
-		//	{}, //execVM payload <array>
-		//	{"VR"} //disallowed worlds <array>
-		//}, 
+		{
+			3600, // SECOND <scalar>,
+			"CarnivalSpawner", // EVENT <string>
+			0, //INIT <scalar> 1 = run script at startup or 0 normal delay
+			2, //PREPOSTFIX <scalar> 1 = (epoch_settings pbo) 2 = (epoch_events pbo) 0 = use full file path
+			-1, //RUNNUMTIMES <scalar> -1 infinite
+			{}, //execVM payload <array>
+			{"VR"} //disallowed worlds <array>
+		}, 
 		{ 1800, "PaydayEvent", 0, 2},
 		{ 1200, "MessageServer", 0, 2},
+		{ 120, "FastNights", 0 , 2, -1, {24,4} ,{"VR"}},			// TimeMulti Nighttime = 48 / TimeMulti Daytime = 4
+		{ 1200, "HeliCrash", 0 , 2, -1, {} ,{"VR"}},
 		{ 3600, "AirDrop", 0 , 2, -1, {} ,{"VR"}},
 		{ 2700, "EarthQuake", 0 , 2, -1, {} ,{"VR"}},
 		{ 3600, "Satellite", 0 , 2, -1, {} ,{"VR"}},
@@ -68,14 +70,14 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 		"", 					// "EpochRadio0" through "EpochRadio9"
 		"", 							// "ItemCompass"
 		"", 							// "ItemWatch"
-		""  							// "NVG_EPOCH" or "radiation_mask_epoch"
+		"NVG_EPOCH"  							// "NVG_EPOCH" or "radiation_mask_epoch"
 	};
 
 	UseCustomTextures = "true";		// if true, Vehicles and Building parts textures will be saved and loaded to the DB (Paintshop)
 
 // vehicles - Max vehicle slots is calculated from per vehicle limits below. Warning! Higher the number lower the performance.
 	immuneIfStartInBase = "true";			// Protect vehicles from damage in bases until first unlocked after restart
-	ReservedVehSlots = 50;				// Reserved Vehicle Slots (only needed, if you manually spawn in additional Vehicles - AdminTool / Blackmarket...)
+	ReservedVehSlots = 100;				// Reserved Vehicle Slots (only needed, if you manually spawn in additional Vehicles - AdminTool / Blackmarket...)
 	disableAutoRefuel = "false"; 		// Removes auto refuel from all buildings at server startup.
 	disableFuelNearPlots = "false";		// Removes auto refuel in PlotPole-Ranges at server startup.
 	VehLockMessages = "true";			// Give players a hint, that the Vehicle is locked / unlocked
@@ -90,7 +92,7 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 	};
 	disableVehicleTIE = "false";
 	ReplaceCarService = "true";		// Replace all "Land_CarService_F" with "paintshop" on the Map on Server Start
-	PaintShopIcons = "true";		// Create MapIcons for PaintShops
+	PaintShopIcons = "false";		// Create MapIcons for PaintShops
 
 // BaseBuilding
 	StorageSlotsLimit 	= 1500; 		// Max storage slots allowed. Warning! Higher the number lower performance.
@@ -221,7 +223,7 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 	showSatellites = "false"; 			// show crashed Satellites
 	showShippingContainers = "false";	// Show location of events based loots (plants, shipping container, Carnival)
 	SHOW_TRADERS = "true"; 				// Show locations of traders
-	SHOW_JAMMERS = "false"; 			// Shows location of base jammers
+	SHOW_JAMMERS = "true"; 			// Shows location of base jammers
 	SHOW_BOATLOOT = "false"; 			// Shows the location of shipwreck loot
 	DEBUG_VEH = "false"; 				// DEBUG ONLY used to debug spawing of vehicles
 
