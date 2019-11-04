@@ -26,6 +26,7 @@ if !([_playerObj, _playerKey] in (uiNamespace getVariable "EPOCH_vgsKeys"))exitW
 
 if (_slot isEqualTo -1) exitWith {diag_log format["[EPOCH VGS]: ReadFromGarage Error - slot number is -1 - data:%1", _slot]};
 
+_persistentVics = "persistentVehicles" call VGS_fnc_vgsGetServerSetting;
 _slots = "maxGarageSlots" call VGS_fnc_vgsGetServerSetting;
 if !(_slot < _slots) exitWith {diag_log format["[EPOCH VGS]: ReadFromGarage Error - slot not less than max slots - data:%1", [_slot, _slots]]};
 
@@ -67,7 +68,14 @@ if ((_response select 0) isEqualTo 1) then
 			[_veh,_gear] call EPOCH_server_CargoFill;
 			_veh setOwner (owner _playerObj);
 			
-			// apply persistent textures
+			if (_persistentVics == 1) then {
+				_veh call EPOCH_server_setVToken;
+				_epochslot = if(EPOCH_VehicleSlots isEqualTo[])then{ str(count EPOCH_VehicleSlots) } else { EPOCH_VehicleSlots select 0 };
+				EPOCH_VehicleSlots = EPOCH_VehicleSlots - [_epochslot];
+				missionNamespace setVariable ['EPOCH_VehicleSlotCount', count EPOCH_VehicleSlots, true];
+				_veh setVariable['VEHICLE_SLOT',_epochslot,true];
+			};
+			
 			_cfgEpochVehicles = 'CfgEpochVehicles' call EPOCH_returnConfig;
 			_availableColorsConfig = (_cfgEpochVehicles >> _vehClass >> "availableColors");
 			if (isArray(_availableColorsConfig)) then {
@@ -135,6 +143,11 @@ if ((_response select 0) isEqualTo 1) then
 						_veh setHitIndex [_forEachIndex, _dmg];
 					} forEach _actualHitpoints;
 				};
+			};
+		
+			if (_persistentVics == 1) then {
+				_veh call EPOCH_server_save_vehicle;
+				_veh call EPOCH_server_vehicleInit;			// apply persistent textures
 			};
 			
 			// Refetch the vehicles from db and send it to Client
