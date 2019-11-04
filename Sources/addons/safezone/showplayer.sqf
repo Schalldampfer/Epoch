@@ -1,6 +1,6 @@
-private ["_group","_vehname","_index","_players","_count","_unitGroup","_veh","_mName","_mPos"];
+private ["_vehname","_index","_players","_count","_unitGroup","_veh","_mName","_mPos"];
 
-if (isDedicated) exitWith {};
+if (!hasInterface) exitWith {};
 
 _players = +(allPlayers);
 _count = count _players;
@@ -24,10 +24,9 @@ while {true} do {
 		_count = count _players;
 
 		//create marker
-		_group = units group player;
 		{
 			_veh = vehicle _x;
-			if ((alive _x) && !(_x in _group) && (effectiveCommander _veh == _x)) then {
+			if ((alive _x) && (effectiveCommander _veh == _x)) then {
 				// Set group name
 				if (_veh == _x) then {
 					_vehname = name _x;
