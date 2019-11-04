@@ -43,7 +43,7 @@ _skn_viewDistanceObects = [_cfg_quality >> _skn_perfMode, "viewDistanceObects", 
 _skn_terrainGrid		= [_cfg_quality >> _skn_perfMode, "terrainGrid", 10] call EPOCH_fnc_returnConfigEntry;
 
 _cfg_blacklistConfig  = (_config >> "blacklist");
-_skn_badDisplaysArray = [_cfg_blacklistConfig, "badDisplays", [-1337,17,19,30,32,45,59,69,71,125,132,155,156,157,162,165,166,167,312,1320,1321,2727,2928,2929,316000]] call EPOCH_fnc_returnConfigEntry;
+_skn_badDisplaysArray = [_cfg_blacklistConfig, "badDisplays", [-1337,17,19,30,32,45,59,69,71,125,132,155,156,157,165,166,167,312,1320,1321,2727,2928,2929,316000]] call EPOCH_fnc_returnConfigEntry;
 _skn_badAnimations	= [_cfg_blacklistConfig, "animations", ['AmovPercMstpSnonWnonDnon_exerciseKata','AmovPercMstpSnonWnonDnon_exercisePushup','GestureSpasm1','GestureSpasm4','GestureNod']] call EPOCH_fnc_returnConfigEntry;
 
 _cfg_variablesConfig  = (_config >> "variables");
