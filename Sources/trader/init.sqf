@@ -331,7 +331,8 @@ if(isServer) then{
 			};
 		}forEach _objects;
 		diag_log "[HSBlackmarket]: HSBlackmarket Creating a Marker";
-		_marker = createMarker [format["HSBlackmarket_%1",_i], _coords];
+		//_marker = createMarker [format["HSBlackmarket_%1",_i], _coords];
+		_marker = (["StaticTrader",_coords] call EPOCH_server_createGlobalMarkerSet) select 0;
 		_marker setMarkerShape "ICON";
 		_marker setMarkerType "hd_dot";
 		_marker setMarkerText _markertext;
@@ -357,7 +358,8 @@ if(isServer) then{
 		_units pushBack _unit;
 		if(_createmarker)then{
 			diag_log "[HSBlackmarket]: HSBlackmarket Creating a Marker";
-			_marker = createMarker [format["HSBlackmarket_%1",(count _units)], _pos];
+			//_marker = createMarker [format["HSBlackmarket_%1",(count _units)], _pos];
+			_marker = (["StaticTrader",_pos] call EPOCH_server_createGlobalMarkerSet) select 0;
 			_marker setMarkerShape "ICON";
 			_marker setMarkerType "hd_dot";
 			_marker setMarkerText _markertext;
