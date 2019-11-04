@@ -34,8 +34,14 @@ if ((_response select 0) isEqualTo 1) then
 	if (typeName (_response select 1) isEqualTo "ARRAY") then
 	{
 		_vehsFriendly = _response select 1 select 0;
+		if (!isNil "_vehsFriendly") then {
+			_vehsFriendly = [];
+		};
 		_vehsFriendly set [_slot, []];
 		_vehsRaw = _response select 1 select 1;
+		if (!isNil "_vehsRaw") then {
+			_vehsRaw = [];
+		};
 		_vehsRaw set [_slot, []];
 		[format["EPOCH_vgsOwnedVehs_%1", _playerUID], _playerUID, [_vehsFriendly, _vehsRaw]] call EPOCH_fnc_server_hiveSET;
 		if not(isNull _playerObj) then
