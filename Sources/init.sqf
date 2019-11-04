@@ -7,9 +7,9 @@
 #include "addons\A3EAI_Client\A3EAI_initclient.sqf";
 [] execVM "addons\blckClient.sqf";
 
-if (!(hasInterface)) exitWith {};
 [] execVM "addons\safezone\showplayer.sqf";
 //player marker
+if (true) exitWith {};
 addMissionEventHandler ['Draw3D', {
 	private ["_vehname","_veh"];
 	if ("ItemGPS" in (assignedItems player)) exitWith {
