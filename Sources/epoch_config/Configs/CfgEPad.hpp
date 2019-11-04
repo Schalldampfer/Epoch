@@ -275,12 +275,12 @@ class e_pad_config
 		class players
 		{
 			ButtonText = "Player";
-			Description = "Near Player";
+			Description = "Near Humans";
 			Icon = "";
 			color[] = {1,1,1,1};
 			colortoggled[] = {0,1,0,1};
-			action = "[250,250] call compile preprocessfilelinenumbers 'epoch_code\customs\E_Pad\traderDiag_nearPlayers.sqf'";
-			Tooltip = "Scan for near Players (costs 250 energy)";
+			action = "[50,500] call compile preprocessfilelinenumbers 'epoch_code\customs\E_Pad\traderDiag_nearPlayers.sqf'";
+			Tooltip = "Scan for near Players (costs 50 energy)";
 			ToggleVar = "";
 			ToggleAble = "false";
 		};

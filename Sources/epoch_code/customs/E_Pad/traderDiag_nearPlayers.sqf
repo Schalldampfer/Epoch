@@ -10,7 +10,7 @@ _radius spawn {
 	["Scanning for near Players... Please wait...", 10,[[0,0,0,0.5],[1,0.5,0,1]]] call Epoch_message;
 	uisleep (5 + random 3);
 	_trdrMsg = "";
-	_plyrs = (player nearEntities _this) select {isplayer _x};
+	_plyrs = player nearEntities ['Man',_this];
 	if (count _plyrs < 2) then {
 		_trdrMsg = format["Apart from you %1. %2",name player, selectRandom ["I haven't seen any round these parts for a long while.","It has been very quiet around here,","There is not much to report !"]];
 	} else {
