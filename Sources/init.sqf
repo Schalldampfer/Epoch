@@ -8,3 +8,4 @@
 [] execVM "addons\blckClient.sqf";
 [] execVM "addons\safezone\showplayer.sqf";
 [] execVM "scarCODE\VGS\functions_VGS\fn_vgsInitClient.sqf";
+[] execVM "addons\statusbar\fn_statusBar.sqf";

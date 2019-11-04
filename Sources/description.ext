@@ -9,3 +9,7 @@
 #include "trader\tradedialog.hpp"
 #include "scarCODE\VGS\global.hpp"
 #include "scarCODE\VGS\main_VGS.hpp"
+
+class RscTitles {
+	#include "addons\statusbar\statusBar.hpp"
+};
