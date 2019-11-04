@@ -283,3 +283,10 @@ class Deploy_deploy
 	icon = "x\addons\a3_epoch_code\Data\UI\buttons\repair.paa";
 	tooltip = "Deploy Bike";
 };
+class VirtualGarage
+{
+	condition = "call SC_fnc_dynaMenuCondition";
+	action = "createDialog 'SC_vgsDiag'";
+	icon =  "a3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa";
+	tooltip = "Virtual Garage";
+};
