@@ -1496,7 +1496,7 @@ class CfgLootTable
 				{ { "U_OG_Guerilla3_2", "item" }, 1 },
 				{ { "U_OG_leader", "item" }, 1 },
 				{ { "U_O_CombatUniform_ocamo", "item" }, 1 },
-				{ { "U_O_GhillieSuit", "item" }, 0 },
+				//{ { "U_O_GhillieSuit", "item" }, 0 },
 				{ { "U_O_PilotCoveralls", "item" }, 1 },
 				{ { "U_IG_Guerilla1_1", "item" }, 1 },
 				{ { "U_IG_leader", "item" }, 1 },
@@ -1511,7 +1511,7 @@ class CfgLootTable
 				{ { "U_I_HeliPilotCoveralls", "item" }, 1 },
 				{ { "U_I_pilotCoveralls", "item" }, 1 },
 				{ { "U_I_OfficerUniform", "item" }, 1 },
-				{ { "U_I_GhillieSuit", "item" }, 0 },
+				//{ { "U_I_GhillieSuit", "item" }, 0 },
 				{ { "U_I_CombatUniform_tshirt", "item" }, 1 },
 				{ { "U_O_OfficerUniform_ocamo", "item" }, 1 },
 				{ { "U_O_SpecopsUniform_ocamo", "item" }, 1 },
@@ -1700,9 +1700,9 @@ class CfgLootTable
 				{ { "U_CamoBrn_uniform", "item" }, 1 },
 				{ { "U_CamoBlue_uniform", "item" }, 1 },
 				{ { "U_Camo_uniform", "item" }, 1 },
-				{ { "U_ghillie1_uniform", "item" }, 0 },
-				{ { "U_ghillie2_uniform", "item" }, 0 },
-				{ { "U_ghillie3_uniform", "item" }, 0 },
+				//{ { "U_ghillie1_uniform", "item" }, 0 },
+				//{ { "U_ghillie2_uniform", "item" }, 0 },
+				//{ { "U_ghillie3_uniform", "item" }, 0 },
 				{ { "U_RadiationSuit_F_uniform", "item" }, 1 }
 		};
 	};
@@ -1837,22 +1837,22 @@ class CfgLootTable
 				{ { "B_TacticalPack_rgr", "backpack" }, 2 },			// 480
 				{ { "ALICE_Pack_Epoch", "backpack" }, 2 },				// 480
 
-				{ { "US_Backpack_Epoch", "backpack" }, 2 },				// 500
+				//{ { "US_Backpack_Epoch", "backpack" }, 2 },				// 500
 
-				{ { "B_Kitbag_cbr", "backpack" }, 2 },					// 520
-				{ { "B_Kitbag_mcamo", "backpack" }, 2 },				// 520
-				{ { "B_Kitbag_rgr", "backpack" }, 2 },					// 520
-				{ { "B_Kitbag_sgg", "backpack" }, 2 },					// 520
-				{ { "CZ_Backpack_Epoch", "backpack" }, 1 },				// 520
+				//{ { "B_Kitbag_cbr", "backpack" }, 2 },					// 520
+				//{ { "B_Kitbag_mcamo", "backpack" }, 2 },				// 520
+				//{ { "B_Kitbag_rgr", "backpack" }, 2 },					// 520
+				//{ { "B_Kitbag_sgg", "backpack" }, 2 },					// 520
+				//{ { "CZ_Backpack_Epoch", "backpack" }, 1 },				// 520
 
-				{ { "B_Carryall_cbr", "backpack" }, 1 },				// 550
-				{ { "B_Carryall_khk", "backpack" }, 1 },				// 550
-				{ { "B_Carryall_mcamo", "backpack" }, 1 },				// 550
-				{ { "B_Carryall_ocamo", "backpack" }, 1 },				// 550
-				{ { "B_Carryall_oli", "backpack" }, 1 },				// 550
-				{ { "B_Carryall_oucamo", "backpack" }, 1 },				// 550
+				//{ { "B_Carryall_cbr", "backpack" }, 1 },				// 550
+				//{ { "B_Carryall_khk", "backpack" }, 1 },				// 550
+				//{ { "B_Carryall_mcamo", "backpack" }, 1 },				// 550
+				//{ { "B_Carryall_ocamo", "backpack" }, 1 },				// 550
+				//{ { "B_Carryall_oli", "backpack" }, 1 },				// 550
+				//{ { "B_Carryall_oucamo", "backpack" }, 1 },				// 550
 				
-				{ { "L_Gunbag_Epoch", "backpack" }, 3 },				// 580
+				//{ { "L_Gunbag_Epoch", "backpack" }, 3 },				// 580
 				
 				{ { "B_Parachute", "backpack" }, 1 }
 		};
