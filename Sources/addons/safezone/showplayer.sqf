@@ -1,9 +1,10 @@
-private ["_vehname","_index","_players","_count","_unitGroup","_veh","_mName","_mPos"];
+private ["_vehname","_index","_players","_count","_unitGroup","_veh","_mName","_mPos","_warned"];
 
 if (!hasInterface) exitWith {};
 
 _players = +(allPlayers);
 _count = count _players;
+_warned = false;
 
 while {true} do {
 	//delete marker
@@ -49,6 +50,15 @@ while {true} do {
 				_marker setMarkerTextLocal _vehname;
 			};
 		} forEach _players;
+		
+		if ({(alive _x) && (player distance _x < viewDistance)} count _players > 0) then {
+			if (!_warned) then {
+				_warned = true;
+				["Another player is in your view range.",5] call Epoch_message;
+			};
+		} else {
+			_warned = false;
+		};
 	};
 
 	sleep 5;
