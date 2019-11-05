@@ -623,3 +623,11 @@ class Deploy_pack
 	icon = "x\addons\a3_epoch_code\Data\UI\buttons\repair.paa";
 	tooltip = "Pack Vehicle";
 };
+
+class HStrader
+{
+	condition = "dyna_cursorTarget in HSPV_HSBlackmarket";
+	action = "HS_SWITCH = false;createDialog 'HS_trader_dialog';call HS_trader_menu;";
+	icon = "x\addons\a3_epoch_code\Data\UI\buttons\krypto.paa";
+	tooltip = "Black Market";
+};

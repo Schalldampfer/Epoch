@@ -406,7 +406,9 @@ if(hasInterface)then{
 			call HS_trader_menu;
 		},_x, -9, true, true, "", "player distance _target < 5"];
 	}forEach HSPV_HSBlackmarket;
+	/*
 	HSPV_HSBlackmarket = nil;
+	*/
 	call compile preprocessFileLineNumbers "trader\tradermenu.sqf";
 	diag_log "[HSBlackmarket]: Client Done ...";
 };
