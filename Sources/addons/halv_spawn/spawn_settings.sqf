@@ -50,7 +50,7 @@ _addmap = true;
 //if true adds paintshop colours on spawn, if below var is set correct as in your paintshop settings
 _addcolours = false;
 //set this the same as you have in your paintshop settings or it will not work
-_servername = "Epoch Mod";
+_servername = format["Epoch Mod %1",getText(configFile >> "CfgMods" >> "Epoch" >> "version")];
 //////////////////////////paintshop settings//////////////////////////
 if(player distance (getMarkerPos "respawn_west") > 35) then {
 	systemChat "teleport now";
