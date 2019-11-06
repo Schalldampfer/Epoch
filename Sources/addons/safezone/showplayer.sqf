@@ -51,6 +51,7 @@ while {true} do {
 			};
 		} forEach _players;
 		
+		_players = _players - [player];
 		if ({(alive _x) && (player distance _x < viewDistance)} count _players > 0) then {
 			if (!_warned) then {
 				_warned = true;
