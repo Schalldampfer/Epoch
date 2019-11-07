@@ -1,12 +1,12 @@
-private ["_vehname","_index","_count","_unitGroup","_veh","_markername","_mName","_mPos","_warned"];
+private ["_vehname","_index","_count","_unitGroup","_veh","_markername","_warned"];
 
 if (!hasInterface) exitWith {};
 
-EP_players = [];
 _count = 0;
+_markername = "playerMarker%1";
 _warned = false;
 EP_hasGPS = false;
-_markername = "playerMarker%1";
+EP_players = [];
 
 //3D marker
 addMissionEventHandler ['Draw3D', {
@@ -21,7 +21,7 @@ addMissionEventHandler ['Draw3D', {
 while {true} do {
 	//delete marker
 	for "_index" from 0 to (_count - 1) do {
-		deleteMarkerLocal format[_markername,_index];
+		[format[_markername,_index]] call EPOCH_removeMarker;
 	};
 
 	EP_hasGPS = "ItemGPS" in (assignedItems player);
@@ -40,7 +40,7 @@ while {true} do {
 		//create marker
 		{
 			// Set group name
-			if (effectiveCommander _x == _x) then {
+			if (_x == effectiveCommander _x) then {
 				_vehname = name _x;
 			} else {
 				// Get vehicle name
@@ -54,15 +54,10 @@ while {true} do {
 			_x setVariable["EP_playerName",_vehname,false];
 
 			// Add Marker
-			_mName = format[_markername,_forEachIndex];
-			_mPos = getpos _x;
-			_marker = createMarkerLocal [_mName, _mPos];
-			_marker setMarkerColorLocal "ColorGreen";
-			_marker setMarkerTypeLocal "b_inf";
-			_marker setMarkerTextLocal _vehname;
+			[_x,getpos _x,"ICON","b_inf","ColorGreen",[1,1],"",0,_vehname,1,format[_markername,_forEachIndex]] call EPOCH_makeMarker;
 		} forEach EP_players;
 		
-		if ({(alive _x) && (player distance _x < viewDistance)} count EP_players > 0) then {
+		if ({(player distance _x) < viewDistance} count EP_players > 0) then {
 			if (!_warned) then {
 				_warned = true;
 				["Another player is in your view range.",5] call Epoch_message;
