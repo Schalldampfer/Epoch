@@ -30,11 +30,10 @@ while {true} do {
 		EP_players = [];
 		{
 			_veh = vehicle _x;
-			if ((alive _x) && (effectiveCommander _veh == _x)) then {
+			if ((alive _x) && (effectiveCommander _veh == _x) && (_x != player)) then {
 				EP_players pushBack _veh;
 			};
 		} forEach allPlayers;
-		EP_players = EP_players - [player];
 		_count = count EP_players;
 
 		//create marker
