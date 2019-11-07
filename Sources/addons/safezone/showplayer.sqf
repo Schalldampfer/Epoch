@@ -1,20 +1,19 @@
-private ["_vehname","_index","_count","_unitGroup","_veh","_markername","_warned"];
+private ["_players","_vehname","_index","_count","_unitGroup","_veh","_markername","_warned"];
 
 if (!hasInterface) exitWith {};
 
 _count = 0;
 _markername = "playerMarker%1";
+_players = []; //list of alive & commander player's vehicles
 _warned = false;
 EP_hasGPS = false;
-EP_players = [];
+EP_players = []; //list of player vehicles in view range
 
 //3D marker
 addMissionEventHandler ['Draw3D', {
-	if (EP_hasGPS) exitWith {
-		{
-			drawIcon3D ["\A3\ui_f\data\map\markers\nato\b_inf.paa", [0.2,1.0,0.2,1], ASLToAGL getPosASL _x, 0.35, 0.35, 0, _x getVariable["EP_playerName","Player"], 0, 0.05, "PuristaMedium"];
-		} foreach EP_players;
-	};
+	{
+		drawIcon3D ["\A3\ui_f\data\map\markers\nato\b_inf.paa", [0.2,1.0,0.2,1], ASLToAGL getPosASL _x, 0.35, 0.35, 0, _x getVariable["EP_playerName","Player"], 0, 0.05, "PuristaMedium"];
+	} foreach EP_players;
 }];
 
 //Marker and updates
@@ -25,16 +24,18 @@ while {true} do {
 	};
 
 	EP_hasGPS = "ItemGPS" in (assignedItems player);
+	EP_players = [];
+	_players = [];
 	if (EP_hasGPS) then {
 		//set alive & commander player list
-		EP_players = [];
 		{
 			_veh = vehicle _x;
-			if ((alive _x) && (effectiveCommander _veh == _x) && (_x != player)) then {
-				EP_players pushBack _veh;
+			if ((alive _x) && (effectiveCommander _veh == _x)) then {
+				_players pushBack _veh;
 			};
 		} forEach allPlayers;
-		_count = count EP_players;
+		_players = _players - [vehicle player];
+		_count = count _players;
 
 		//create marker
 		{
@@ -54,9 +55,14 @@ while {true} do {
 
 			// Add Marker
 			[_x,getpos _x,"ICON","b_inf","ColorGreen",[1,1],"",0,_vehname,1,format[_markername,_forEachIndex]] call EPOCH_makeMarker;
-		} forEach EP_players;
+			
+			//check distance
+			if ((player distance _x) < viewDistance) then {
+				EP_players pushBack _x;
+			};
+		} forEach _players;
 		
-		if ({(player distance _x) < viewDistance} count EP_players > 0) then {
+		if (count EP_players > 0) then {
 			if (!_warned) then {
 				_warned = true;
 				["Another player is in your view range.",5] call Epoch_message;
