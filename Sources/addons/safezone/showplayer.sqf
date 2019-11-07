@@ -1,4 +1,4 @@
-private ["_players","_vehname","_index","_count","_unitGroup","_veh","_markername","_warned"];
+private ["_players","_vehname","_index","_count","_markername","_warned"];
 
 if (!hasInterface) exitWith {};
 
@@ -29,9 +29,8 @@ while {true} do {
 	if (EP_hasGPS) then {
 		//set alive & commander player list
 		{
-			_veh = vehicle _x;
-			if ((alive _x) && (effectiveCommander _veh == _x)) then {
-				_players pushBack _veh;
+			if (alive _x) then {
+				_players pushBackUnique (vehicle _x);
 			};
 		} forEach allPlayers;
 		_players = _players - [vehicle player];
