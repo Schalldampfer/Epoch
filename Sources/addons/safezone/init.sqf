@@ -13,15 +13,7 @@ _SafeZones = switch(toLower worldName)do{
 
 //Create Markers
 {
-	_mPos = _x select 0;
-	_mName = _x select 2;
-	_mShape = "ELLIPSE";
-	createMarkerLocal [_mName, _mPos];
-	_mName setMarkerColorLocal "ColorGreen";
-	_mName setMarkerShapeLocal _mShape;
-	_mName setMarkerBrushLocal "Cross";
-	_mName setMarkerSizeLocal [_x select 1, _x select 1];
-	_mName setMarkerTextLocal _mName;
+	[_x select 0,_x select 0,"ELLIPSE","mil_dot","ColorGreen",[_x select 1, _x select 1],"Cross",0,_x select 2,1,_x select 2] call EPOCH_makeMarker;
 } forEach _SafeZones;
 
 //Safezone Loop
