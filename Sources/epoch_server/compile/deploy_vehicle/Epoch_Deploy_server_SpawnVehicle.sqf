@@ -38,7 +38,7 @@ if (_isOk) then {
 	clearBackpackCargoGlobal  _vehObj;
 	clearItemCargoGlobal	  _vehObj;
 	
-	_vehObj setFuel ((random 1 max 0.1) min 0.9);//fuel
+	_vehObj setFuel ((random 1 max 0.4) min 0.9);//fuel
 	
 	//complete spawning
 	_vehObj allowDamage true;
