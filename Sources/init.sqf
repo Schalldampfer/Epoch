@@ -10,3 +10,4 @@
 if(hasInterface) then{
 	execVM "IgiLoad\IgiLoadInit.sqf";
 };
+Deploy_Type="hoverboard_epoch_1";

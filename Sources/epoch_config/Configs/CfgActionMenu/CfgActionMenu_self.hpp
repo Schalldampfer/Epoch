@@ -279,7 +279,7 @@ class Epad
 class Deploy_deploy
 {
 	condition = "!dyna_inVehicle";
-	action = "Deploy_SpawnVehicle = [player,'MBK_01_EPOCH']; publicVariableServer 'Deploy_SpawnVehicle';";
+	action = "Deploy_SpawnVehicle = [player]; publicVariableServer 'Deploy_SpawnVehicle';";
 	icon = "x\addons\a3_epoch_code\Data\UI\buttons\repair.paa";
 	tooltip = "Deploy Bike";
 };

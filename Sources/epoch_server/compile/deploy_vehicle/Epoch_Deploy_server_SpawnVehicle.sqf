@@ -7,7 +7,7 @@ _player = _this select 0;
 _puid = getPlayerUID _player;
 _owner = owner _player;
 _position = getPos _player;
-_vehClass = "MBK_01_EPOCH";
+_vehClass = Deploy_Type;
 
 diag_log format["[DeployBike] Try spawning %1 by %2",_vehClass,_player];
 
