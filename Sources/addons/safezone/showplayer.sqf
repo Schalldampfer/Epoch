@@ -25,8 +25,9 @@ while {true} do {
 
 	EP_hasGPS = "ItemGPS" in (assignedItems player);
 	EP_players = [];
-	_players = [];
+	_count = 0;
 	if (EP_hasGPS) then {
+		_players = [];
 		//set alive & commander player list
 		{
 			if (alive _x) then {
