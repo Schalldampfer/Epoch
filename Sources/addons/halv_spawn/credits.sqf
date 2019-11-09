@@ -14,7 +14,7 @@ _alltext = [
 		[
 			//Sub Text(s)
 			"   Epoch Mod",
-			"- Tanoa Server -"
+			"- " + (worldName) + " Server -"
 		]
 	],
 	[
