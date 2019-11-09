@@ -631,3 +631,10 @@ class HStrader
 	icon = "x\addons\a3_epoch_code\Data\UI\buttons\krypto.paa";
 	tooltip = "Black Market";
 };
+class ATM_jammer
+{
+	condition = "dyna_cursorTargetType in (call EPOCH_JammerClasses) && (damage dyna_cursorTarget < 1)";
+	action = "[player, [], Epoch_personalToken] remoteExec ['EPOCH_server_storeCrypto',2];closeDialog 0;createDialog 'InteractBank';lbClear 21500;{_index = lbAdd[21500, name _x];lbSetData[21500, _index, netId _x];} forEach(allPlayers - [player]);";
+	icon = "x\addons\a3_epoch_code\Data\UI\buttons\krypto.paa";
+	tooltip = "ATM";
+};
