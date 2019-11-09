@@ -6,8 +6,7 @@
 [] execVM "addons\blckClient.sqf";
 [] execVM "scarCODE\VGS\functions_VGS\fn_vgsInitClient.sqf";
 [] execVM "addons\statusbar\fn_statusBar.sqf";
+[] execVM "addons\safezone\init.sqf";
 if(hasInterface) then{
-	execVM "addons\safezone\init.sqf";
-	execVM "addons\safezone\showplayer.sqf";
 	execVM "IgiLoad\IgiLoadInit.sqf";
 };
