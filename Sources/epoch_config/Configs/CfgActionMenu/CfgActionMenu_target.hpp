@@ -616,6 +616,7 @@ class Defuse_Bomb
 	tooltip = "Defuse Bomb";
 };
 
+//custom
 class Deploy_pack
 {
 	condition = "(dyna_cursorTarget iskindof 'MBK_01_EPOCH') && ((crew dyna_cursorTarget) isEqualTo [])";
@@ -623,7 +624,6 @@ class Deploy_pack
 	icon = "x\addons\a3_epoch_code\Data\UI\buttons\repair.paa";
 	tooltip = "Pack Vehicle";
 };
-
 class HStrader
 {
 	condition = "dyna_cursorTarget in HSPV_HSBlackmarket";
