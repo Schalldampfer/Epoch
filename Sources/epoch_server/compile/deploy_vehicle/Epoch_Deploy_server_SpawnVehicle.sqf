@@ -43,6 +43,7 @@ if (_isOk) then {
 	//complete spawning
 	_vehObj allowDamage true;
 	format["You've deployed a %1!", _vehClass] remoteExec ["Epoch_message",_player];
+	[_vehObj, "mbk_bell"] remoteExec ["say3D",_player];
 };
 
 _vehObj
