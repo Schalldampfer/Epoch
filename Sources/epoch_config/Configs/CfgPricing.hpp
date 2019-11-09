@@ -358,43 +358,43 @@ class CfgPricing
 	};
     class EpochRadio0
     {
-        price = 2;
+        price = 200;
     };
     class EpochRadio1
     {
-        price = 4;
+        price = 400;
     };
     class EpochRadio2
     {
-        price = 6;
+        price = 600;
     };
     class EpochRadio3
     {
-        price = 8;
+        price = 800;
     };
     class EpochRadio4
     {
-        price = 10;
+        price = 1000;
     };
     class EpochRadio5
     {
-        price = 12;
+        price = 1200;
     };
     class EpochRadio6
     {
-        price = 14;
+        price = 1400;
     };
     class EpochRadio7
     {
-        price = 16;
+        price = 1600;
     };
     class EpochRadio8
     {
-        price = 18;
+        price = 1800;
     };
     class EpochRadio9
     {
-        price = 20;
+        price = 2000;
     };
     class VehicleRepair
     {
@@ -3229,43 +3229,43 @@ class CfgPricing
     };
     class ItemTopaz
     {
-        price = 25;
+        price = 2500;
     };
     class ItemOnyx
     {
-        price = 30;
+        price = 3000;
     };
     class ItemSapphire
     {
-        price = 50;
+        price = 5000;
     };
     class ItemAmethyst
     {
-        price = 25;
+        price = 2500;
     };
     class ItemEmerald
     {
-        price = 25;
+        price = 2500;
     };
     class ItemCitrine
     {
-        price = 25;
+        price = 2500;
     };
     class ItemRuby
     {
-        price = 75;
+        price = 7500;
     };
     class ItemQuartz
     {
-        price = 5;
+        price = 500;
     };
     class ItemJade
     {
-        price = 100;
+        price = 10000;
     };
     class ItemGarnet
     {
-        price = 25;
+        price = 2500;
     };
 	class ItemCanvas
 	{
