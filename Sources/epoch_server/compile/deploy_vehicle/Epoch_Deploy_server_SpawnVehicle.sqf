@@ -24,6 +24,7 @@ if (_isOk) then {
 	_vehObj allowDamage false;
 	
 	//init
+	_vehObj setDir (getDir _player);
 	_vehObj setVectorUp (surfaceNormal (getPos _vehObj));
 	_vehObj setVelocity [0,0,.1];
 	_vehObj call EPOCH_server_setVToken;
