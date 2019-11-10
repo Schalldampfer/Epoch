@@ -52,7 +52,7 @@ if ((_response select 0) isEqualTo 1) then
 			_vehsRaw set [_slot, []];
 			_expiresVG = "expiresVirtualGarage" call VGS_fnc_vgsGetServerSetting;
 			_return = ["VirtualGarage", _playerUID, _expiresVG, [_vehsFriendly, _vehsRaw]] call EPOCH_fnc_server_hiveSETEX;
-			_veh = createVehicle [_vehClass, _pos select 0, [], 0, "CAN_COLLIDE"];
+			_veh = _vehClass createVehicle (position _playerObj);
 			//if(_veh isKindOf 'SHIP')then{
 			//	_safePOS = [_pos select 0,1,80,10,1,20,1] call BIS_fnc_findSafePos;
 			//};
