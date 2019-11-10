@@ -1,11 +1,13 @@
-private ["_zone","_SafeZones","_in","_players","_vehname","_index","_count","_markername","_warned"];
+private ["_zone","_SafeZones","_in","_players","_vehname","_index","_count","_markername","_warned","_warnedAI","_distanceAI"];
 
 if (!hasInterface) exitWith {};
 
+_distanceAI = 300;
 _count = 0;
 _markername = "playerMarker%1";
 _players = []; //list of alive & commander player's vehicles
 _warned = false;
+_warnedAI = false;
 EP_hasGPS = false;
 EP_players = []; //list of player vehicles in view range
 
@@ -108,6 +110,14 @@ while {true} do {
 			};
 		} else {
 			_warned = false;
+		};
+		if (count (player nearEntities ["I_Soldier_EPOCH", _distanceAI]) > 0) then {
+			if (!_warnedAI) then {
+				_warnedAI = true;
+				[format["Someone is within %1m around you",_distanceAI],4] call Epoch_message;
+			};
+		} else {
+			_warnedAI = false;
 		};
 	};
 
