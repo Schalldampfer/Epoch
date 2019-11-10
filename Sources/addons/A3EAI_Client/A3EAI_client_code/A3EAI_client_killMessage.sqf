@@ -2,7 +2,7 @@ private ["_message"];
 
 _message = _this;
 if ((typeName _message) isEqualTo "STRING") then {
-	systemChat format[A3EAI_client_killMessage0,_message];
+	[format[A3EAI_client_killMessage0,_message],4] call Epoch_message;
 } else {
 	diag_log format ["A3EAI Error: Kill message is non-string %1",_message];
 };

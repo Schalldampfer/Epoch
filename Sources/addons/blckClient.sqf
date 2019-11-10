@@ -135,9 +135,11 @@ if !(isServer) then
 	blck_useTitleText = false;
 	blck_useDynamic = true;
 	blck_useToast = false;  // Exile only
-	blck_aiKilluseSystemChat = true;
+	blck_useMessage = false; //Epoch only
+	blck_aiKilluseSystemChat = false;
 	blck_aiKilluseDynamic = false;
 	blck_aiKilluseTitleText = false;
+	blck_aiKilluseMessage = true; //Epoch only
 	blck_processingMsg = -1;
 	blck_processingKill = -1;
 	blck_message = "";
@@ -213,7 +215,10 @@ if !(isServer) then
 		if (blck_useToast) then
 		{
 			["InfoTitleAndText", [_mission, _message]] call ExileClient_gui_toaster_addTemplateToast;
-		};		
+		};
+		if (blck_useMessage) then {
+			[_message,7] call Epoch_message;
+		};
 		//diag_log format["_fn_missionNotification ====]  Paremeters _event %1  _message %2 _mission %3",_event,_message,_mission];
 	};	
 	fn_dynamicNotification = {
@@ -263,6 +268,9 @@ if !(isServer) then
 			["InfoTitleAndText", [_mission, _message]] call ExileClient_gui_toaster_addTemplateToast;
 		};		
 		//diag_log format["_fn_missionNotification ====]  Paremeters _event %1  _message %2 _mission %3",_event,_message,_mission];
+		if (blck_useMessage) then {
+			[_message,8] call Epoch_message;
+		};
 	};
 
 	fn_AI_KilledNotification = {
@@ -282,6 +290,9 @@ if !(isServer) then
 			["   "+ _text,_xcoord,_ycoord,_screentime] spawn BIS_fnc_dynamicText;
 			uiSleep 3;
 			blck_processingKill = -1;
+		};
+		if (blck_aiKilluseMessage) then {
+			[_message,4] call Epoch_message;
 		};
 	};
 	
