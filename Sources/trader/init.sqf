@@ -20,7 +20,7 @@ _tradercount = 0;
 //min distance from other traders in meters, dont go to higher than _spawnarea/(_tradercount+1) or script will just revert back to this amount to avoid problems 
 _mindist = 4000;
 //marker text for traders
-_markertext = "Safe zone";
+_markertext = "Trader zone";
 //texture on the flag (has to be 200x200), "" to disable
 _flagtexture = "\A3\Data_F\Flags\flag_armex_CO.paa"; //"trader\dkflagpole.jpg";
 //texture on the sign, "" to disable
@@ -39,6 +39,8 @@ switch(toLower worldName)do{
 	};
 	case "malden":{
 		_staticCoords = [
+			[[6271.24,4746.91,0.249207],0,true],
+			[[2542.69,5694.09,0.264511],102.835,true],
 			[[5545.04,7861.76,3.0629],117.591,true]
 		];
 		_blacklistedAreas = [[[0,0,0],0]];
