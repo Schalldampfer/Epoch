@@ -15,13 +15,13 @@ class osefStatusBar {
 		class statusBarText {
 			idc = 1000;
 			x = safezoneX + safezoneW - 1.80;
-			y = safezoneY + safezoneH - 0.07;
-			w = 1.50;
-			h = 0.07;
+			y = safezoneY + safezoneH - 0.06;
+			w = 1.75;
+			h = 0.06;
 			shadow = 1;
 			colorBackground[] = { 0, 0.3, 1, 0.0 };
 			font = "PuristaSemibold";
-			size = 0.06;
+			size = 0.05;
 			type = 13;
 			style = 0;
 			text="Loading statusBar...";
