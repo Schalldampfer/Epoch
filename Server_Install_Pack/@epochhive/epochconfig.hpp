@@ -7,7 +7,7 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 	timeMultiplier 		= 6; 			// Sets a time multiplier for in-game time. The command range is now capped at 0.1 - 120 to avoid performance problems.
 
 // Loot (Check CfgBuildingLootPos.hpp in mission file for more settings)
-	lootMultiplier 		= 0.6; 			// 1 = max loot bias. This controls how much loot can payout per Epoch loot container.
+	lootMultiplier 		= 0.4; 			// 1 = max loot bias. This controls how much loot can payout per Epoch loot container.
 	UseLootHelper		= "false";		// GroundLoot will get a visible sphere for better loot identification
 
 // Events
@@ -66,8 +66,8 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 	defaultassignedItems[] =	{};		// {"Rangefinder","","","",{},{},""}
 	defaultlinkedItems[] =		{
 		"ItemMap", 						// "ItemMap"
-		"", 							// "ItemGPS" or "ItemGeigerCounter_EPOCH",
-		"", 					// "EpochRadio0" through "EpochRadio9"
+		"ItemGPS", 							// "ItemGPS" or "ItemGeigerCounter_EPOCH",
+		"EpochRadio0", 					// "EpochRadio0" through "EpochRadio9"
 		"", 							// "ItemCompass"
 		"", 							// "ItemWatch"
 		"NVG_EPOCH"  							// "NVG_EPOCH" or "radiation_mask_epoch"
@@ -173,7 +173,7 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 		{"ItemStick",5}
 	};
 
-	NPCSlotsLimit = 7; 				// Max number of traders static or dynamic. Warning! Higher the number lower performance.
+	NPCSlotsLimit = 4; 				// Max number of traders static or dynamic. Warning! Higher the number lower performance.
 	forceStaticTraders = "false"; 		// disables traders moving from work to home
 	TraderGodMode = "true";			// If true, Trader can not be killed by Players
 	storedVehicleLimit = 4;			// Vehicles more than x stored in ALL Traders will automatically be deleted on Restart. 
