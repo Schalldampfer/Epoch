@@ -30,7 +30,7 @@ _SafeZones = switch(toLower worldName)do{
 //3D marker
 addMissionEventHandler ['Draw3D', {
 	{
-		drawIcon3D ["\A3\ui_f\data\map\markers\nato\b_inf.paa", [0.2,1.0,0.2,1], ASLToAGL getPosASL _x, 0.35, 0.35, 0, _x getVariable["EP_playerName","Player"], 0, 0.05, "PuristaMedium"];
+		drawIcon3D ["\A3\ui_f\data\map\markers\nato\b_inf.paa", [0.2,1.0,0.2,1], ASLToAGL getPosASL _x, 0.35, 0.35, 0, _x getVariable["EP_playerName","Player"], 0, 0.03, "PuristaMedium"];
 	} foreach EP_players;
 }];
 
