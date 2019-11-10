@@ -19,7 +19,7 @@ if (((diag_tickTime - (missionNamespace getVariable ["A3EAI_client_lastRadioMess
 		""
 	};
 	if !(_dialogueTextFormat isEqualTo "") then {
-		systemChat _dialogueTextFormat;
+		[_dialogueTextFormat,6] call Epoch_message;
 		if (A3EAI_client_radioSounds) then {
 			playSound [format ["UAV_0%1",(floor (random 5) + 1)],false];
 		};
