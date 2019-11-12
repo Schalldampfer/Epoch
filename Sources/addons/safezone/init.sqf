@@ -1,16 +1,5 @@
 private ["_zone","_SafeZones","_in","_players","_vehname","_index","_count","_markername","_warned","_warnedAI","_distanceAI"];
 
-if (!hasInterface) exitWith {};
-
-_distanceAI = 300;
-_count = 0;
-_markername = "playerMarker%1";
-_players = []; //list of alive & commander player's vehicles
-_warned = false;
-_warnedAI = false;
-EP_hasGPS = false;
-EP_players = []; //list of player vehicles in view range
-
 //Define Safezone position and area
 _SafeZones = switch(toLower worldName)do{
 	case "tanoa":{
@@ -21,6 +10,17 @@ _SafeZones = switch(toLower worldName)do{
 	};
 	default{[]};
 };
+
+if (!hasInterface) exitWith {};
+
+_distanceAI = 300;
+_count = 0;
+_markername = "playerMarker%1";
+_players = []; //list of alive & commander player's vehicles
+_warned = false;
+_warnedAI = false;
+EP_hasGPS = false;
+EP_players = []; //list of player vehicles in view range
 
 //Create Markers
 {
