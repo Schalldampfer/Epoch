@@ -1733,6 +1733,9 @@ class CfgBaseBuilding
         removeParts[] = {};
     };
     class snowman_Ghost_EPOCH : snowman_SIM_EPOCH {};
+	
+	#include "EB4E_BaseBuilding.hpp"
+
 };
 
 /*[[[end]]]*/

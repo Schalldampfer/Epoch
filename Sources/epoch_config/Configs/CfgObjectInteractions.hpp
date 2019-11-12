@@ -316,6 +316,9 @@ class CfgObjectInteractions
     {
         interactMode = 4;
     };
+	
+	#include "EB4E_ObjectInteractions.hpp"
+
 };
 
 /*[[[end]]]*/

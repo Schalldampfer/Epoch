@@ -1105,5 +1105,7 @@ class CfgItemInteractions
     {
         buildClass = "PlyThirdWall_EPOCH";
     };
+	#include "EB4E_ItemInteractions.hpp"
+
 };
 /*[[[end]]]*/
