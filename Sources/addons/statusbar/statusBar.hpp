@@ -24,7 +24,7 @@ class osefStatusBar {
 			size = 0.05;
 			type = 13;
 			style = 0;
-			text="Loading statusBar...";
+			text="Loading player stats ...";
 			class Attributes {
 				align="right";
 				color = "#58FAAC";
