@@ -270,6 +270,14 @@ class CfgEpoch
 			{"A2_Vodnik_EPOCH",3},
 			{"A2_Volha_EPOCH",3},
 
+			{"Land_Pod_Heli_Transport_04_bench_F",1},
+			{"Land_Pod_Heli_Transport_04_covered_F",1},
+			{"Land_Pod_Heli_Transport_04_medevac_F",1},
+			{"Land_Pod_Heli_Transport_04_box_F",1},
+			{"Land_Pod_Heli_Transport_04_fuel_F",1},
+			{"Land_Pod_Heli_Transport_04_repair_F",1},
+			{"Land_Pod_Heli_Transport_04_ammo_F",1},
+
 			{"a2_mi8_EPOCH",1},
 			{"a2_ch47f_EPOCH",1},
 			{"a2_ch47f_armed_EPOCH",1},
