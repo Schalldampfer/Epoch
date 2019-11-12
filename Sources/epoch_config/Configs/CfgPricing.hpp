@@ -6475,6 +6475,15 @@ class CfgPricing
     class H_MM_Buzzard_Gasmask_01           { price = 65; };
     class H_MM_Helmet_01                    { price = 75; };
     class V_MM_Vest_01                      { price = 20; };
+
+    class Land_Pod_Heli_Transport_04_bench_F   { price = 2000; };
+    class Land_Pod_Heli_Transport_04_covered_F { price = 3000; };
+    class Land_Pod_Heli_Transport_04_medevac_F { price = 5000; };
+    class Land_Pod_Heli_Transport_04_box_F     { price = 3000; };
+    class Land_Pod_Heli_Transport_04_fuel_F    { price = 10000; };
+    class Land_Pod_Heli_Transport_04_repair_F  { price = 7500; };
+    class Land_Pod_Heli_Transport_04_ammo_F    { price = 10000; };
+
 };
 
 /*[[[end]]]*/
