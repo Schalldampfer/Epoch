@@ -16,13 +16,13 @@ systemChat format["statusBar Loading player info...", _rscLayer];
 [] spawn {
 	sleep 5;
 	while {true} do {
-		sleep 2;
+		sleep 2.5;
 		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format[
 			"DAMAGE: %1 | Body Temp. %2°C | HUNGER: %3 | THIRST: %4 | Crypto: %5 | FPS: %6",
-			damage player,
+			(round ((damage player) * 100))/100,
 			EPOCH_playerTemp call EPOCH_convertTemp,
-			EPOCH_playerHunger,
-			EPOCH_playerThirst,
+			round EPOCH_playerHunger,
+			round EPOCH_playerThirst,
 			EPOCH_playerCrypto,
 			round diag_fps
 		];
