@@ -11,6 +11,16 @@ _SafeZones = switch(toLower worldName)do{
 	default{[]};
 };
 
+if (isServer) then {
+	private ["_pos","_dist"];
+	{
+		_pos = _x select 0;
+		_dist = _x select 1;
+		{
+			_x lock false;
+		} forEach (_pos nearObjects ["AllVehicles", _dist]);
+	} forEach _SafeZones;
+};
 if (!hasInterface) exitWith {};
 
 _distanceAI = 300;
