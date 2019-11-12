@@ -1,1 +1,1 @@
-5 "" !="EPAH_[a-z]{5,10}" !="BIS_fnc_objectVar_obj2_[0-9]{1,10}" !="bis_fnc_sharedObjectives_serverUpdate" !="PLAYER_REJECT_ServerVersion"
+5 "" !="EPAH_[a-z]{5,10}" !="BIS_fnc_objectVar_obj2_[0-9]{1,10}" !="bis_fnc_sharedObjectives_serverUpdate" !="PLAYER_REJECT_ServerVersion" !="BIS_fnc_objectVar_obj2_1288" !="HALV_takegive" !="HSPV_traderrequest"  !="Deploy_SpawnVehicle" !="Deploy_PackVehicle" !="IL_S[a-zA-Z_]{5,12}" !=HALVPV_SAVEPOD"
