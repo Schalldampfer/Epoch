@@ -17,11 +17,11 @@ class osefStatusBar {
 			x = safezoneX + safezoneW - 1.80;
 			y = safezoneY + safezoneH - 0.06;
 			w = 1.75;
-			h = 0.06;
+			h = 0.0330033 * safezoneH;
 			shadow = 1;
 			colorBackground[] = { 0, 0.3, 1, 0.0 };
 			font = "PuristaSemibold";
-			size = 0.05;
+			size = "0.02 * safezoneH";
 			type = 13;
 			style = 0;
 			text="Loading player stats ...";
