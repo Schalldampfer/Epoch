@@ -638,3 +638,10 @@ class ATM_jammer
 	icon = "x\addons\a3_epoch_code\Data\UI\buttons\krypto.paa";
 	tooltip = "ATM Menu";
 };
+class Bank_menu
+{
+	condition = "dyna_isTrader || dyna_cursorTarget in HSPV_HSBlackmarket";
+	action = "[player, [], Epoch_personalToken] remoteExec ['EPOCH_server_storeCrypto',2];closeDialog 0;createDialog 'InteractBank';lbClear 21500;{_index = lbAdd[21500, name _x];lbSetData[21500, _index, netId _x];} forEach(allPlayers - [player]);";
+	icon = "x\addons\a3_epoch_code\Data\UI\buttons\krypto.paa";
+	tooltip = "Bank teller Menu";
+};
