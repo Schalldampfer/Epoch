@@ -29,6 +29,6 @@ if (!isNull _vehicle) then {
 
 		//crashLoot
 		_pos = getPos _vehicle;
-		[("groundWeaponHolder" createVehicle [_pos select 0, _pos select 1, 0]), (_vehicle getVariable ["InventoryData",[]])] call EPOCH_server_CargoFill;
+		[("groundWeaponHolder" createVehicle [_pos select 0, _pos select 1, 0]), ([_vehicle] call EPOCH_server_CargoSave)] call EPOCH_server_CargoFill;
 	};
 };

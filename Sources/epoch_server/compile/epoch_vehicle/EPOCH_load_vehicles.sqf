@@ -263,6 +263,5 @@ for "_i" from 1 to _maxVehicleLimit do {
 };
 // add all spawned vehicles to remains collector.
 addToRemainsCollector _allVehicles;
-EPOCH_allVehicles = _allVehicles;
 diag_log format ["Epoch: Loaded %1 Vehicles in %2 seconds - Free Slots: %3", count _allVehicles, diag_tickTime - _diag, _maxVehicleLimit - count _allVehicles];
 true

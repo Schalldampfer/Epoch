@@ -524,30 +524,3 @@ if (EPOCH_enableUnitTestOnStart isEqualTo 1) then {
 "Deploy_SpawnVehicle" addPublicVariableEventHandler{(_this select 1) call Epoch_Deploy_server_SpawnVehicle};
 "Deploy_PackVehicle"  addPublicVariableEventHandler{(_this select 1) call Epoch_Deploy_server_PackVehicle};
 
-//Loop
-[] spawn {
-	private ["_vehicles","_veh","_target","_dist"];
-	//CrashLoot - save once
-	{
-		_x setVariable ["InventoryData",_x call EPOCH_server_CargoSave,false];
-	} forEach EPOCH_allVehicles;
-	_vehicles = [];
-	
-	//Main Loop
-	while {true} do {
-		{
-			if (alive _x) then {
-				_veh = vehicle _x;
-				//Add vehicles in array
-				if (_veh != _x) then {
-					_vehicles pushBackUnique _veh;
-				};
-			};
-		} forEach allPlayers;
-		//CrashLoot - vehicles
-		{
-			_x setVariable ["InventoryData",_x call EPOCH_server_CargoSave,false];
-		} forEach _vehicles;
-		sleep 5;
-	};
-};
