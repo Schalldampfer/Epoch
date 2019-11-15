@@ -28,7 +28,9 @@ if (!isNull _vehicle) then {
 		['VehicleKilled', format["%1 was killed by %2 at %3", typeOf _vehicle, _killer, getPosATL _vehicle]] call EPOCH_fnc_server_hiveLog;
 
 		//crashLoot
-		_pos = getPos _vehicle;
-		[("groundWeaponHolder" createVehicle [_pos select 0, _pos select 1, 0]), ([_vehicle] call EPOCH_server_CargoSave)] call EPOCH_server_CargoFill;
+		if !("VGSMoveIn_" in _killer) then {
+			_pos = getPos _vehicle;
+			[("groundWeaponHolder" createVehicle [_pos select 0, _pos select 1, 0]), ([_vehicle] call EPOCH_server_CargoSave)] call EPOCH_server_CargoFill;
+		};
 	};
 };
