@@ -399,11 +399,6 @@ if(hasInterface)then{
 	{
 		_x addAction ["<img size='1.5'image='\a3\Ui_f\data\gui\Rsc\RscDisplayArcadeMap\icon_layout_ca.paa'/> <t color='#0096ff'>HS Trader Menu</t>",
 		{
-			/*
-			systemChat "WARNING:";
-			systemChat "This trader is NOT finished yet ...";
-			systemChat "... you might loose items and / or crypto trading here!";
-			*/
 			HS_SWITCH = false;
 			createDialog "HS_trader_dialog";
 			call HS_trader_menu;
