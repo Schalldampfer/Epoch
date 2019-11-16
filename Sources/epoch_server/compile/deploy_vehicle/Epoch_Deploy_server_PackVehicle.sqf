@@ -13,6 +13,7 @@ _vehClass = typeOf _vehObj;
 if ((_vehObj getVariable ["EPOCH_DeployOwner","-1"]) == _puid) then {//check owner
 	Deploy_DeployedPlayer = Deploy_DeployedPlayer - [_puid];//remove from array
 	deleteVehicle _vehObj;//remove vehicle
+	[_player, "vehicle_repair"] remoteExec ["say3D", _player];
 	format["You've packed a %1!", _vehClass] remoteExec ["Epoch_message",_player];
 };
 

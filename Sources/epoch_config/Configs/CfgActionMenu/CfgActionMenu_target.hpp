@@ -620,7 +620,7 @@ class Defuse_Bomb
 class Deploy_pack
 {
 	condition = "(dyna_cursorTargetType isEqualTo Deploy_Type) && ((crew dyna_cursorTarget) isEqualTo [])";
-	action = "Deploy_PackVehicle = [player,dyna_cursorTarget]; publicVariableServer 'Deploy_PackVehicle';";
+	action = "Deploy_PackVehicle = [player,dyna_cursorTarget]; publicVariableServer 'Deploy_PackVehicle'; player playMove 'AinvPknlMstpSnonWrflDnon_medic0'; player playMove 'AinvPknlMstpSnonWrflDnon_medicEnd';";
 	icon = "x\addons\a3_epoch_code\Data\UI\buttons\repair.paa";
 	tooltip = "Pack Vehicle";
 };
