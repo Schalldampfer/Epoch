@@ -1,4 +1,6 @@
 private ["_zone","_SafeZones","_in","_players","_vehname","_index","_count","_markername","_warned","_warnedAI","_distanceAI"];
+/* Safezone, Player Marker and Warning */
+/* Created by Schalldampfer */
 
 //Define Safezone position and area
 _SafeZones = switch(toLower worldName)do{
@@ -8,9 +10,17 @@ _SafeZones = switch(toLower worldName)do{
 			[[7039.79,9711.28,0],100,"Shrine"]
 		]
 	};
+	case "malden":{
+		[
+			[[5551.48,7882.33,0],100,"Main Trader"],
+			[[2538.51,5710.60,0],50,"Trader"],
+			[[6262.85,4745.89,0],50,"Trader"]
+		]
+	};
 	default{[]};
 };
 
+//Unlock vehicles in
 if (isServer) then {
 	private ["_pos","_dist"];
 	{
