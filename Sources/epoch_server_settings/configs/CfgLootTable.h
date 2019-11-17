@@ -589,13 +589,13 @@ class CfgLootTable
 	{
 		items[] = {
 				{ { "SatchelCharge_Remote_Mag", "magazine" }, 15 },
-				{ { "ATMine_Range_Mag", "magazine" }, 5 },
-				{ { "SLAMDirectionalMine_Wire_Mag", "magazine" }, 3 },
+				{ { "ATMine_Range_Mag", "magazine" }, 0 },
+				{ { "SLAMDirectionalMine_Wire_Mag", "magazine" }, 0 },
 				{ { "DemoCharge_Remote_Mag", "magazine" }, 6 },
-				{ { "ClaymoreDirectionalMine_Remote_Mag", "magazine" }, 10 },
-				{ { "APERSBoundingMine_Range_Mag", "magazine" }, 11 },
-				{ { "APERSTripMine_Wire_Mag", "magazine" }, 10 },
-				{ { "APERSMine_Range_Mag", "magazine" }, 10 }
+				{ { "ClaymoreDirectionalMine_Remote_Mag", "magazine" }, 0 },
+				{ { "APERSBoundingMine_Range_Mag", "magazine" }, 0 },
+				{ { "APERSTripMine_Wire_Mag", "magazine" }, 0 },
+				{ { "APERSMine_Range_Mag", "magazine" }, 0 }
 		};
 	};
 	class ShellFlares
