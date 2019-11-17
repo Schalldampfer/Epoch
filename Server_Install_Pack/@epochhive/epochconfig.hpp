@@ -7,7 +7,7 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 	timeMultiplier 		= 6; 			// Sets a time multiplier for in-game time. The command range is now capped at 0.1 - 120 to avoid performance problems.
 
 // Loot (Check CfgBuildingLootPos.hpp in mission file for more settings)
-	lootMultiplier 		= 0.4; 			// 1 = max loot bias. This controls how much loot can payout per Epoch loot container.
+	lootMultiplier 		= 0.5; 			// 1 = max loot bias. This controls how much loot can payout per Epoch loot container.
 	UseLootHelper		= "false";		// GroundLoot will get a visible sphere for better loot identification
 
 // Events
@@ -57,11 +57,11 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 	defaultGoggles =			"";
 	defaultHeadgear =			"H_62_EPOCH";
 	defaultBackpack =			"";
-	defaultprimaryWeapon[] =	{"Rollins_F","","","optic_ACO_grn_smg",{"5Rnd_rollins_mag",5},{},""};		// {"arifle_MX_pointer_F","","acc_pointer_IR","",{"30Rnd_65x39_caseless_mag",29},{},""};
+	defaultprimaryWeapon[] =	{"AKM_EPOCH","","","optic_ACO_grn_smg",{"30Rnd_762x39_Mag",29},{},""};		// {"arifle_MX_pointer_F","","acc_pointer_IR","",{"30Rnd_65x39_caseless_mag",29},{},""};
 	defaultsecondaryWeapon[] = 	{};		// {"launch_NLAW_F","","","",{"NLAW_F",1},{},""};
 	defaulthandgunWeapon[] =	{};		// {"hgun_P07_F","","","",{"16Rnd_9x21_Mag",16},{},""};
-	defaultuniformItems[] =		{{"5Rnd_rollins_mag",6,5},{"Chemlight_blue",1,1}};		// {{"FAK",1},{"30Rnd_65x39_caseless_mag",2,30},{"Chemlight_green",1,1}};
-	defaultvestItems[] =		{{"ItemBottlePlastic_Clean",1},{"sweetcorn_epoch",2},{"FAK",2}};		// {{"30Rnd_65x39_caseless_mag",3,30},{"16Rnd_9x21_Mag",2,16},{"SmokeShell",1,1},{"SmokeShellGreen",1,1},{"SmokeShellBlue",1,1},{"SmokeShellOrange",1,1},{"Chemlight_green",1,1}};
+	defaultuniformItems[] =		{{"30Rnd_762x39_Mag",1,29}};		// {{"FAK",1},{"30Rnd_65x39_caseless_mag",2,30},{"Chemlight_green",1,1}};
+	defaultvestItems[] =		{{"ItemSodaBurst",1},{"sweetcorn_epoch",2},{"FAK",1}};		// {{"30Rnd_65x39_caseless_mag",3,30},{"16Rnd_9x21_Mag",2,16},{"SmokeShell",1,1},{"SmokeShellGreen",1,1},{"SmokeShellBlue",1,1},{"SmokeShellOrange",1,1},{"Chemlight_green",1,1}};
 	defaultbackpackItems[] =	{};		// {{"Medikit",1},{"FAK",10},{{"hgun_P07_F","","","",{"16Rnd_9x21_Mag",16},{},""},1}};
 	defaultassignedItems[] =	{};		// {"Rangefinder","","","",{},{},""}
 	defaultlinkedItems[] =		{
@@ -91,8 +91,8 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 		//{"200Rnd_40mm_G_belt",{0}}
 	};
 	disableVehicleTIE = "false";
-	ReplaceCarService = "true";		// Replace all "Land_CarService_F" with "paintshop" on the Map on Server Start
-	PaintShopIcons = "false";		// Create MapIcons for PaintShops
+	ReplaceCarService = "false";		// Replace all "Land_CarService_F" with "paintshop" on the Map on Server Start
+	PaintShopIcons = "true";		// Create MapIcons for PaintShops
 
 // BaseBuilding
 	StorageSlotsLimit 	= 1500; 		// Max storage slots allowed. Warning! Higher the number lower performance.
@@ -103,6 +103,10 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 										"Constructions_static_F",
 										"Buildable_Storage",
 										"PlotPole_EPOCH",
+										"PlotPole_M_EPOCH",
+										"PlotPole_L_EPOCH",
+										"PlotPole_XL_EPOCH",
+										"PlotPole_XXL_EPOCH",
 										"LockBox_EPOCH",
 										"Safe_EPOCH"
 									};
@@ -117,8 +121,10 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 	UseDeSimulateObjects	=	"true";	// Disable Simulation for specifed Base Objects
 	DeSimulateObjects[] =	{			// Base Objects to disable Simulation. Can be Names or Classes
 								"PlotPole_EPOCH",
+								"PlotPole_M_EPOCH",
 								"PlotPole_L_EPOCH",
 								"PlotPole_XL_EPOCH",
+								"PlotPole_XXL_EPOCH",
 								"WoodFoundation_EPOCH","Foundation_EPOCH",
 								"WoodQuarterFloor_EPOCH","WoodHalfFloor_EPOCH","WoodFloor_EPOCH",
 								"MetalQuarterFloor_EPOCH","MetalHalfFloor_EPOCH","MetalFloor_EPOCH",
@@ -160,11 +166,14 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 	};
 */
 	starterTraderItems[] = { 			// Starter Items for fresh spawned trader (old / above variant is also still working!)
+		{"A2_UAZ_Open_EPOCH",2},
+		{"A2_Lada_EPOCH",2},
+		{"A2_Golf_EPOCH",2},
+		{"C_Heli_Light_01_civil_EPOCH",5},
 		{"ItemSodaBurst",15},
 		{"meatballs_epoch",15},
 		{"MortarBucket",5},
-		//{"CinderBlocks",5},
-		{"VehicleRepair",5},
+		{"VehicleRepair",15},
 		{"CircuitParts",5},
 		{"ItemCorrugated",5},
 		{"PartPlankPack",5},
@@ -173,7 +182,7 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 		{"ItemStick",5}
 	};
 
-	NPCSlotsLimit = 4; 				// Max number of traders static or dynamic. Warning! Higher the number lower performance.
+	NPCSlotsLimit = 2; 				// Max number of traders static or dynamic. Warning! Higher the number lower performance.
 	forceStaticTraders = "false"; 		// disables traders moving from work to home
 	TraderGodMode = "true";			// If true, Trader can not be killed by Players
 	storedVehicleLimit = 4;			// Vehicles more than x stored in ALL Traders will automatically be deleted on Restart. 
@@ -181,7 +190,6 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 	DynamicTraderRespawnCount = 80;	// If a dynamic Trader have more than x different Items, he will respawn on another Spot (with start Items)
 	TraderItemCountPerItem[] = {30,20};	// If the Trader has more than x pieces of an Item, it will be reduced to y pieces (on Restart)
 	TraderItemsDeleteInstant[] = {		// List of Items, that will be deleted from Trader instant after sell
-		"EpochRadio0",
 		"EpochRadio1",
 		"EpochRadio2",
 		"EpochRadio3",
@@ -191,12 +199,12 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 		"EpochRadio7",
 		"EpochRadio8",
 		"EpochRadio9",
-		"ItemGoldBar",
-		"ItemSilverBar",
-		"ItemGoldBar10oz",
-		"ItemSilverBar10oz",
-		"ItemBriefcaseGold100oz",
-		"ItemBriefcaseSilver100oz",
+		"ATMine",
+		"APERSMine",
+		"APERSBoundingMine",
+		"SLAMDirectionalMine",
+		"APERSTripMine",
+		"Claymore_F",
 		"ItemHotwire"
 	};
 	TraderItemsDeleteRestart[] = {		// List of Items, that will be deleted from Trader on Restart
@@ -228,13 +236,13 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 	DEBUG_VEH = "false"; 				// DEBUG ONLY used to debug spawing of vehicles
 
 // Hive Related
-	vehicleLockTime = "14400"; 			// Controls how many seconds it takes to allow another person/group to unlock vehicle.
+	vehicleLockTime = "86400"; 			// Controls how many seconds it takes to allow another person/group to unlock vehicle.
 	vehicleLockTimeHome = "604800";		// Controls how many seconds it takes to allow another person/group to unlock vehicle (inside your own PlotPole Range).
-	expiresBuilding = "1209600";  		// expiration date in seconds for buildings
+	expiresBuilding = "1814400";  		// expiration date in seconds for buildings
 	expiresPlayer = "7776000";  		// expiration date in seconds for players
 	expiresBank = "7776000";  			// expiration date in seconds for players bank
 	expiresVehicle = "1209600";  		// expiration date in seconds for vehicles
-	expiresAIdata = "2592000";  		// expiration date in seconds for NPC Trader inventory
+	expiresAIdata = "1209600";  		// expiration date in seconds for NPC Trader inventory
 	expiresCommunityStats = "7776000";	// expiration date in seconds for players community stats
 	expiresPlayerTopStats = "864000";	// expiration date in seconds for players listed in TopStats - remove inactive players from TopStats, but will get in again on next login
 
