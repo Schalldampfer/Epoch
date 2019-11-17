@@ -5351,6 +5351,11 @@ class CfgPricing
         price = 5000;
 		tax = 0.9;
     };
+    class I_C_Plane_Civil_01_F
+    {
+        price = 5000;
+		tax = 0.9;
+    };
     class C_Plane_Civil_01_racing_F
     {
         price = 5000;
@@ -6484,6 +6489,113 @@ class CfgPricing
     class Land_Pod_Heli_Transport_04_repair_F  { price = 7500; };
     class Land_Pod_Heli_Transport_04_ammo_F    { price = 10000; };
 
+	class B_APC_Tracked_01_rcws_F
+	{
+		price = 30000;
+		tax = 1;
+	};
+	class O_APC_Wheeled_02_rcws_F
+	{
+		price = 30000;
+		tax = 1;
+	};
+
+	class B_APC_Tracked_01_CRV_F
+	{
+		price = 25000;
+		tax = 1;
+	};
+
+	class B_APC_Wheeled_01_cannon_F
+	{
+		price = 40000;
+		tax = 1;
+	};
+	class I_APC_tracked_03_cannon_F
+	{
+		price = 40000;
+		tax = 1;
+	};
+
+	class B_APC_Wheeled_03_cannon_F
+	{
+		price = 50000;
+		tax = 1;
+	};
+	class O_APC_Tracked_02_cannon_F
+	{
+		price = 50000;
+		tax = 1;
+	};
+	class I_APC_Wheeled_03_cannon_F
+	{
+		price = 50000;
+		tax = 1;
+	};
+
+	class B_APC_Tracked_01_AA_F
+	{
+		price = 75000;
+		tax = 1;
+	};
+	class O_APC_Tracked_02_AA_F
+	{
+		price = 75000;
+		tax = 1;
+	};
+
+	class B_MBT_01_cannon_F
+	{
+		price = 75000;
+		tax = 1;
+	};
+	class B_MBT_01_TUSK_F
+	{
+		price = 77500;
+		tax = 1;
+	};
+	class O_MBT_02_cannon_F
+	{
+		price = 77500;
+		tax = 1;
+	};
+	class I_MBT_03_cannon_F
+	{
+		price = 77500;
+		tax = 1;
+	};
+
+	class B_MBT_01_arty_F
+	{
+		price = 500000;
+		tax = 1;
+	};
+	class O_MBT_02_arty_F
+	{
+		price = 500000;
+		tax = 1;
+	};
+	class B_MBT_01_mlrs_F
+	{
+		price = 500000;
+		tax = 1;
+	};
+
+	class B_Plane_CAS_01_dynamicLoadout_F
+	{
+		price = 25000;
+		tax = 1;
+	};
+	class O_Plane_CAS_02_dynamicLoadout_F
+	{
+		price = 25000;
+		tax = 1;
+	};
+	class I_Plane_Fighter_03_dynamicLoadout_F
+	{
+		price = 25000;
+		tax = 1;
+	};
 };
 
 /*[[[end]]]*/

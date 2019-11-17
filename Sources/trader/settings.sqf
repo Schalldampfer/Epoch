@@ -7,335 +7,338 @@
 */
 //this is to blacklist items you do not want in the blackmarket
 _blacklist = [
-	"srifle_DMR_03_spotter_F","13Rnd_mas_9x19_Mag","25Rnd_mas_9x21_Mag","B_mas_HMMWV_SOV_M2","CUP_arifle_M16A4GL","CUP_arifle_ksvk_PSO3","CUP_srifle_M15_Aim",
-	"CUP_optic_AN_PVS_4","CUP_optic_AN_PVS_10","CUP_optic_CWS","CUP_optic_AN_PAS_13c1","CUP_optic_AN_PAS_13c2","CUP_optic_GOSHAWK","CUP_optic_NSPU","optic_Nightstalker",
-	"optic_NVS","CUP_SMAW_HEAA_M",
+	"B_mas_HMMWV_SOV_M2","CUP_arifle_M16A4GL","CUP_arifle_ksvk_PSO3","CUP_srifle_M15_Aim",
+	"CUP_optic_AN_PVS_4","CUP_optic_AN_PVS_10","CUP_optic_CWS","CUP_optic_AN_PAS_13c1","CUP_optic_AN_PAS_13c2","CUP_optic_GOSHAWK","CUP_optic_NSPU","CUP_SMAW_HEAA_M",
 	"I_MRAP_03_gmg_F","O_MRAP_02_gmg_F","B_MRAP_01_gmg_F","I_C_Offroad_02_LMG_F","B_T_LSV_01_armed_sand_F","B_T_LSV_01_armed_olive_F","B_T_LSV_01_armed_olive_F",
 	"B_T_LSV_01_armed_black_F","B_LSV_01_armed_F","B_G_Offroad_01_armed_EPOCH","B_G_Offroad_01_armed_F","O_G_Offroad_01_armed_F","I_G_Offroad_01_armed_f",
-	"B_APC_Tracked_01_rcws_F","B_APC_Tracked_01_CRV_F","O_APC_Wheeled_02_rcws_F","I_MRAP_03_gmg_F","O_MRAP_02_gmg_F","B_MRAP_01_gmg_F","I_APC_tracked_03_cannon_F",
-	"O_Heli_Attack_02_black_F","O_Heli_Attack_02_F","O_Heli_Light_02_F","B_Heli_Attack_01_F","O_Heli_Light_02_v2_F","B_APC_Wheeled_01_cannon_F","O_APC_Tracked_02_cannon_F",
-	"I_APC_Wheeled_03_cannon_F","B_Plane_CAS_01_F","I_Plane_Fighter_03_AA_F","I_Plane_Fighter_03_CAS_F","O_Plane_CAS_02_F","B_Heli_Light_01_armed_F"
+	"O_Heli_Attack_02_black_F","O_Heli_Attack_02_F","O_Heli_Light_02_F","B_Heli_Attack_01_F","O_Heli_Light_02_v2_F","B_Heli_Light_01_armed_F",
+	"B_Plane_CAS_01_F","I_Plane_Fighter_03_AA_F","I_Plane_Fighter_03_CAS_F","O_Plane_CAS_02_F",
+	"B_APC_Tracked_01_rcws_F","O_APC_Wheeled_02_rcws_F","B_APC_Tracked_01_CRV_F","B_APC_Wheeled_01_cannon_F","I_APC_tracked_03_cannon_F",
+	"B_APC_Wheeled_03_cannon_F","O_APC_Tracked_02_cannon_F","I_APC_Wheeled_03_cannon_F",
+	"B_APC_Tracked_01_AA_F","O_APC_Tracked_02_AA_F",
+	"B_MBT_01_cannon_F","B_MBT_01_TUSK_F","O_MBT_02_cannon_F","I_MBT_03_cannon_F",
+	"B_MBT_01_arty_F","O_MBT_02_arty_F","B_MBT_01_mlrs_F",
+	"B_Plane_CAS_01_dynamicLoadout_F","O_Plane_CAS_02_dynamicLoadout_F","I_Plane_Fighter_03_dynamicLoadout_F"
 ];
 
 _notForSale = [
-"Item_FieldPack_blk",
-"Item_FieldPack_cbr",
-"Item_FieldPack_khk",
-"Item_FieldPack_ocamo",
-"Item_FieldPack_oli",
-"Item_FieldPack_oucamo",
-"Item_Kitbag_cbr",
-"Item_Kitbag_mcamo",
-"Item_Kitbag_rgr",
-"Item_Kitbag_sgg",
-"Item_TacticalPack_blk",
-"Item_TacticalPack_mcamo",
-"Item_TacticalPack_ocamo",
-"Item_TacticalPack_oli",
-"Item_TacticalPack_rgr",
-"Item_smallbackpack_red",
-"Item_smallbackpack_green",
-"Item_smallbackpack_teal",
-"Item_smallbackpack_pink",
-"ItemSafe_s"
-,"KitPlotPole_M"
-,"KitPlotPole_L"
-,"KitPlotPole_XL"
-,"KitPlotPole_XXL"
-,"KitSolarChargerXL"
-,"acc_pointer_IR"
-,"l85a2_epoch"
-,"l85a2_pink_epoch"
-,"l85a2_ugl_epoch"
-,"arifle_SDAR_F"
-,"arifle_TRG21_F"
-,"arifle_TRG20_F"
-,"arifle_TRG21_GL_F"
-,"arifle_Mk20_F"
-,"arifle_Mk20C_F"
-,"arifle_Mk20_GL_F"
-,"arifle_Mk20_plain_F"
-,"arifle_Mk20C_plain_F"
-,"arifle_Mk20_GL_plain_F"
-,"SMG_03_TR_black"
-,"SMG_03_TR_camo"
-,"SMG_03_TR_khaki"
-,"SMG_03_TR_hex"
-,"SMG_03C_TR_black"
-,"SMG_03C_TR_camo"
-,"SMG_03C_TR_khaki"
-,"SMG_03C_TR_hex"
-,"SMG_03_black"
-,"SMG_03_camo"
-,"SMG_03_khaki"
-,"SMG_03_hex"
-,"SMG_03C_black"
-,"SMG_03C_camo"
-,"SMG_03C_khaki"
-,"SMG_03C_hex"
-,"m16_EPOCH"
-,"m16Red_EPOCH"
-,"M14_EPOCH"
-,"M14Grn_EPOCH"
-,"m4a3_EPOCH"
-,"a2_ak47s_gold_EPOCH"
-,"a2_AK107_EPOCH"
-,"a2_dmr_epoch"
-,"a2_dmr_epoch_scoped"
-,"a2_Mg36_epoch"
-,"a2_m110_epoch"
-,"a2_mk16_epoch"
-,"a2_mk17_epoch"
-,"a2_svd_epoch"
-,"a2_VSS_vintorez_epoch"
-,"a2_aks74un_EPOCH"
-,"200Rnd_556x45_M249"
-,"20Rnd_762x51_DMR"
-,"20Rnd_762x51_FNFAL"
-,"30Rnd_556x45_G36"
-,"100Rnd_556x45_BetaCMag"
-,"10Rnd_762x54_SVD"
-,"10Rnd_9x39_SP5_VSS"
-,"B_AssaultPack_cbr"
-,"B_AssaultPack_dgtl"
-,"B_AssaultPack_khk"
-,"B_AssaultPack_mcamo"
-,"B_AssaultPack_ocamo"
-,"B_AssaultPack_rgr"
-,"B_AssaultPack_sgg"
-,"B_AssaultPack_blk"
-,"B_FieldPack_blk"
-,"B_FieldPack_cbr"
-,"B_FieldPack_khk"
-,"B_FieldPack_ocamo"
-,"B_FieldPack_oli"
-,"B_FieldPack_oucamo"
-,"B_Kitbag_cbr"
-,"B_Kitbag_mcamo"
-,"B_Kitbag_rgr"
-,"B_Kitbag_sgg"
-,"B_TacticalPack_blk"
-,"B_TacticalPack_mcamo"
-,"B_TacticalPack_ocamo"
-,"B_TacticalPack_oli"
-,"B_TacticalPack_rgr"
-,"smallbackpack_red_epoch"
-,"smallbackpack_green_epoch"
-,"smallbackpack_teal_epoch"
-,"smallbackpack_pink_epoch"
-,"I_UAV_01_backpack_F"
-,"U_RadiationSuit_M_uniform"
-,"U_RadiationSuit_F_uniform"
-,"C_Offroad_01_EPOCH"
-,"C_Offroad_01_EPOCH1"
-,"C_Offroad_01_EPOCH2"
-,"C_Offroad_01_EPOCH3"
-,"C_Offroad_01_EPOCH4"
-,"C_Offroad_01_EPOCH5"
-,"C_Quadbike_01_EPOCH"
-,"C_Hatchback_01_EPOCH"
-,"C_Hatchback_01_EPOCH1"
-,"C_Hatchback_01_EPOCH2"
-,"C_Hatchback_01_EPOCH3"
-,"C_Hatchback_01_EPOCH4"
-,"C_Hatchback_02_EPOCH"
-,"C_Hatchback_02_EPOCH1"
-,"C_Hatchback_02_EPOCH2"
-,"C_Hatchback_02_EPOCH3"
-,"C_Hatchback_02_EPOCH4"
-,"C_SUV_01_EPOCH"
-,"C_SUV_01_EPOCH1"
-,"C_SUV_01_EPOCH2"
-,"C_SUV_01_EPOCH3"
-,"C_SUV_01_EPOCH4"
-,"A2_Golf_EPOCH"
-,"A2_HMMWV_EPOCH"
-,"A2_HMMWV_load_EPOCH"
-,"A2_Lada_EPOCH"
-,"A2_SUV_EPOCH"
-,"A2_SUV_load_EPOCH"
-,"A2_SUV_armed_EPOCH"
-,"A2_UAZ_EPOCH"
-,"A2_UAZ_Open_EPOCH"
-,"A2_Ural_EPOCH"
-,"A2_Vodnik_EPOCH"
-,"A2_Volha_EPOCH"
-,"C_Rubberboat_EPOCH"
-,"C_Rubberboat_02_EPOCH"
-,"C_Rubberboat_03_EPOCH"
-,"C_Rubberboat_04_EPOCH"
-,"C_Van_01_box_EPOCH"
-,"C_Van_01_box_EPOCH1"
-,"C_Van_01_box_EPOCH2"
-,"C_Van_01_box_EPOCH3"
-,"C_Van_01_box_EPOCH4"
-,"C_Van_01_transport_EPOCH"
-,"C_Van_01_transport_EPOCH1"
-,"C_Van_01_transport_EPOCH2"
-,"C_Van_01_transport_EPOCH3"
-,"C_Van_01_transport_EPOCH4"
-,"C_Boat_Civil_01_EPOCH"
-,"C_Boat_Civil_01_police_EPOCH"
-,"C_Boat_Civil_01_rescue_EPOCH"
-,"B_Heli_Light_01_EPOCH"
-,"B_SDV_01_EPOCH"
-,"B_MRAP_01_EPOCH"
-,"B_MRAP_01_EPOCH1"
-,"B_MRAP_01_EPOCH2"
-,"B_MRAP_01_EPOCH3"
-,"B_MRAP_01_EPOCH4"
-,"O_MRAP_02_EPOCH"
-,"O_MRAP_02_EPOCH1"
-,"O_MRAP_02_EPOCH2"
-,"O_MRAP_02_EPOCH3"
-,"O_MRAP_02_EPOCH4"
-,"I_MRAP_03_EPOCH"
-,"I_MRAP_03_EPOCH1"
-,"I_MRAP_03_EPOCH2"
-,"I_MRAP_03_EPOCH3"
-,"I_MRAP_03_EPOCH4"
-,"B_G_Offroad_01_armed_EPOCH1"
-,"B_G_Offroad_01_armed_EPOCH2"
-,"B_G_Offroad_01_armed_EPOCH3"
-,"B_G_Offroad_01_armed_EPOCH4"
-,"B_Truck_01_mover_EPOCH"
-,"B_Truck_01_mover_EPOCH1"
-,"B_Truck_01_mover_EPOCH2"
-,"B_Truck_01_mover_EPOCH3"
-,"B_Truck_01_mover_EPOCH4"
-,"B_Truck_01_transport_EPOCH"
-,"B_Truck_01_transport_EPOCH1"
-,"B_Truck_01_transport_EPOCH2"
-,"B_Truck_01_transport_EPOCH3"
-,"B_Truck_01_transport_EPOCH4"
-,"B_Truck_01_covered_EPOCH"
-,"B_Truck_01_covered_EPOCH1"
-,"B_Truck_01_covered_EPOCH2"
-,"B_Truck_01_covered_EPOCH3"
-,"B_Truck_01_covered_EPOCH4"
-,"B_Truck_01_box_EPOCH"
-,"B_Truck_01_box_EPOCH1"
-,"B_Truck_01_box_EPOCH2"
-,"B_Truck_01_box_EPOCH3"
-,"B_Truck_01_box_EPOCH4"
-,"O_Truck_02_transport_EPOCH"
-,"O_Truck_02_transport_EPOCH1"
-,"O_Truck_02_transport_EPOCH2"
-,"O_Truck_02_transport_EPOCH3"
-,"O_Truck_02_transport_EPOCH4"
-,"O_Truck_02_covered_EPOCH"
-,"O_Truck_02_covered_EPOCH1"
-,"O_Truck_02_covered_EPOCH2"
-,"O_Truck_02_covered_EPOCH3"
-,"O_Truck_02_covered_EPOCH4"
-,"O_Truck_02_box_EPOCH"
-,"O_Truck_02_box_EPOCH1"
-,"O_Truck_02_box_EPOCH2"
-,"O_Truck_02_box_EPOCH3"
-,"O_Truck_02_box_EPOCH4"
-,"O_Truck_03_transport_EPOCH"
-,"O_Truck_03_transport_EPOCH1"
-,"O_Truck_03_transport_EPOCH2"
-,"O_Truck_03_transport_EPOCH3"
-,"O_Truck_03_transport_EPOCH4"
-,"O_Truck_03_covered_EPOCH"
-,"O_Truck_03_covered_EPOCH1"
-,"O_Truck_03_covered_EPOCH2"
-,"O_Truck_03_covered_EPOCH3"
-,"O_Truck_03_covered_EPOCH4"
-,"uh1h_Epoch"
-,"uh1h_armed_EPOCH"
-,"uh1h_armed_plus_EPOCH"
-,"a2_mi8_EPOCH"
-,"a2_ch47f_EPOCH"
-,"a2_ch47f_armed_EPOCH"
-,"a2_ch47f_armed_plus_EPOCH"
-,"C_Heli_Light_01_armed_EPOCH"
-,"C_Heli_Light_01_armed_plus_EPOCH"
-,"O_Heli_Light_02_unarmed_EPOCH"
-,"I_Heli_Transport_02_EPOCH"
-,"I_Heli_light_03_unarmed_EPOCH"
-,"C_Heli_Light_01_civil_EPOCH"
-,"C_Heli_Light_01_civil_2seat_EPOCH"
-,"C_Heli_Light_01_civil_4seat_EPOCH"
-,"O_Heli_Transport_04_EPOCH"
-,"O_Heli_Transport_04_bench_EPOCH"
-,"O_Heli_Transport_04_box_EPOCH"
-,"O_Heli_Transport_04_covered_EPOCH"
-,"B_Heli_Transport_03_unarmed_EPOCH"
-,"I_UAV_01_F"
-,"jetski_epoch"
-,"mosquito_epoch"
-,"C_Boat_Transport_02_F"
-,"C_Scooter_Transport_01_F"
-,"C_Offroad_02_unarmed_F"
-,"I_C_Offroad_02_unarmed_F"
-,"B_T_LSV_01_unarmed_F"
-,"B_LSV_01_armed_black_F"
-,"O_LSV_02_unarmed_F"
-,"O_T_LSV_02_unarmed_F"
-,"C_Plane_Civil_01_F"
-,"C_Plane_Civil_01_racing_F"
-,"B_CTRG_LSV_01_light_F"
-,"B_LSV_01_unarmed_F"
-,"B_T_VTOL_01_vehicle_blue_EPOCH"
-,"B_T_VTOL_01_infantry_olive_EPOCH"
-,"O_T_VTOL_02_infantry_EPOCH"
-,"O_T_VTOL_02_vehicle_grey_EPOCH"
-,"B_UavTerminal"
-,"O_UavTerminal"
-,"arifle_AKM_F"
-,"arifle_AKM_FL_F"
-,"arifle_CTAR_blk_F"
-,"arifle_CTAR_hex_F"
-,"arifle_CTAR_ghex_F"
-,"arifle_CTAR_GL_blk_F"
-,"arifle_CTARS_blk_F"
-,"arifle_CTARS_ghex_F"
-,"arifle_CTARS_hex_F"
-,"arifle_SPAR_01_blk_F"
-,"arifle_SPAR_01_khk_F"
-,"arifle_SPAR_01_snd_F"
-,"arifle_SPAR_01_GL_blk_F"
-,"arifle_SPAR_01_GL_khk_F"
-,"arifle_SPAR_01_GL_snd_F"
-,"arifle_SPAR_02_blk_F"
-,"arifle_SPAR_02_khk_F"
-,"arifle_SPAR_02_snd_F"
-,"muzzle_snds_H_khk_F"
-,"muzzle_snds_H_snd_F"
-,"muzzle_snds_58_blk_F"
-,"muzzle_snds_m_khk_F"
-,"muzzle_snds_m_snd_F"
-,"muzzle_snds_B_khk_F"
-,"muzzle_snds_B_snd_F"
-,"muzzle_snds_58_wdm_F"
-,"muzzle_snds_65_TI_blk_F"
-,"muzzle_snds_65_TI_hex_F"
-,"muzzle_snds_65_TI_ghex_F"
-,"muzzle_snds_H_MG_blk_F"
-,"muzzle_snds_H_MG_khk_F"
-,"optic_Arco_blk_F"
-,"optic_Arco_ghex_F"
-,"optic_DMS_ghex_F"
-,"optic_Hamr_khk_F"
-,"optic_ERCO_blk_F"
-,"optic_ERCO_khk_F"
-,"optic_ERCO_snd_F"
-,"optic_Holosight_blk_F"
-,"optic_Holosight_khk_F"
-,"optic_Holosight_smg_blk_F"
-,"100Rnd_580x42_Mag_F"
-,"100Rnd_580x42_Mag_Tracer_F"
-,"150Rnd_556x45_Drum_Mag_F"
-,"150Rnd_556x45_Drum_Mag_Tracer_F"
-,"200Rnd_556x45_Box_F"
-,"200Rnd_556x45_Box_Red_F"
-,"200Rnd_556x45_Box_Tracer_F"
-,"200Rnd_556x45_Box_Tracer_Red_F"
-,"B_AssaultPack_tna_F"
-,"B_FieldPack_ghex_F"
-,
+	"Item_FieldPack_blk",
+	"Item_FieldPack_cbr",
+	"Item_FieldPack_khk",
+	"Item_FieldPack_ocamo",
+	"Item_FieldPack_oli",
+	"Item_FieldPack_oucamo",
+	"Item_Kitbag_cbr",
+	"Item_Kitbag_mcamo",
+	"Item_Kitbag_rgr",
+	"Item_Kitbag_sgg",
+	"Item_TacticalPack_blk",
+	"Item_TacticalPack_mcamo",
+	"Item_TacticalPack_ocamo",
+	"Item_TacticalPack_oli",
+	"Item_TacticalPack_rgr",
+	"Item_smallbackpack_red",
+	"Item_smallbackpack_green",
+	"Item_smallbackpack_teal",
+	"Item_smallbackpack_pink",
+	"ItemSafe_s",
+	"KitPlotPole_M",
+	"KitPlotPole_L",
+	"KitPlotPole_XL",
+	"KitPlotPole_XXL",
+	"KitSolarChargerXL",
+	"acc_pointer_IR",
+	"l85a2_epoch",
+	"l85a2_pink_epoch",
+	"l85a2_ugl_epoch",
+	//"arifle_SDAR_F",
+	"arifle_TRG21_F",
+	"arifle_TRG20_F",
+	"arifle_TRG21_GL_F",
+	"arifle_Mk20_F",
+	"arifle_Mk20C_F",
+	"arifle_Mk20_GL_F",
+	"arifle_Mk20_plain_F",
+	"arifle_Mk20C_plain_F",
+	"arifle_Mk20_GL_plain_F",
+	"SMG_03_TR_black",
+	"SMG_03_TR_camo",
+	"SMG_03_TR_khaki",
+	"SMG_03_TR_hex",
+	"SMG_03C_TR_black",
+	"SMG_03C_TR_camo",
+	"SMG_03C_TR_khaki",
+	"SMG_03C_TR_hex",
+	"SMG_03_black",
+	"SMG_03_camo",
+	"SMG_03_khaki",
+	"SMG_03_hex",
+	//"SMG_03C_black",
+	"SMG_03C_camo",
+	"SMG_03C_khaki",
+	"SMG_03C_hex",
+	//"m16_EPOCH",
+	"m16Red_EPOCH",
+	"M14_EPOCH",
+	"M14Grn_EPOCH",
+	"m4a3_EPOCH",
+	"a2_ak47s_gold_EPOCH",
+	"a2_AK107_EPOCH",
+	"a2_dmr_epoch",
+	"a2_dmr_epoch_scoped",
+	"a2_Mg36_epoch",
+	"a2_m110_epoch",
+	"a2_mk16_epoch",
+	"a2_mk17_epoch",
+	"a2_svd_epoch",
+	"a2_VSS_vintorez_epoch",
+	"a2_aks74un_EPOCH",
+	"200Rnd_556x45_M249",
+	"20Rnd_762x51_DMR",
+	"20Rnd_762x51_FNFAL",
+	"30Rnd_556x45_G36",
+	"100Rnd_556x45_BetaCMag",
+	"10Rnd_762x54_SVD",
+	"10Rnd_9x39_SP5_VSS",
+	"B_AssaultPack_cbr",
+	"B_AssaultPack_dgtl",
+	"B_AssaultPack_khk",
+	"B_AssaultPack_mcamo",
+	"B_AssaultPack_ocamo",
+	"B_AssaultPack_rgr",
+	"B_AssaultPack_sgg",
+	"B_AssaultPack_blk",
+	"B_FieldPack_blk",
+	"B_FieldPack_cbr",
+	"B_FieldPack_khk",
+	"B_FieldPack_ocamo",
+	"B_FieldPack_oli",
+	"B_FieldPack_oucamo",
+	"B_Kitbag_cbr",
+	"B_Kitbag_mcamo",
+	"B_Kitbag_rgr",
+	"B_Kitbag_sgg",
+	"B_TacticalPack_blk",
+	"B_TacticalPack_mcamo",
+	"B_TacticalPack_ocamo",
+	"B_TacticalPack_oli",
+	"B_TacticalPack_rgr",
+	"smallbackpack_red_epoch",
+	"smallbackpack_green_epoch",
+	"smallbackpack_teal_epoch",
+	"smallbackpack_pink_epoch",
+	"I_UAV_01_backpack_F",
+	"U_RadiationSuit_M_uniform",
+	"U_RadiationSuit_F_uniform",
+	"C_Offroad_01_EPOCH",
+	"C_Offroad_01_EPOCH1",
+	"C_Offroad_01_EPOCH2",
+	"C_Offroad_01_EPOCH3",
+	"C_Offroad_01_EPOCH4",
+	"C_Offroad_01_EPOCH5",
+	"C_Quadbike_01_EPOCH",
+	"C_Hatchback_01_EPOCH",
+	"C_Hatchback_01_EPOCH1",
+	"C_Hatchback_01_EPOCH2",
+	"C_Hatchback_01_EPOCH3",
+	"C_Hatchback_01_EPOCH4",
+	"C_Hatchback_02_EPOCH",
+	"C_Hatchback_02_EPOCH1",
+	"C_Hatchback_02_EPOCH2",
+	"C_Hatchback_02_EPOCH3",
+	"C_Hatchback_02_EPOCH4",
+	"C_SUV_01_EPOCH",
+	"C_SUV_01_EPOCH1",
+	"C_SUV_01_EPOCH2",
+	"C_SUV_01_EPOCH3",
+	"C_SUV_01_EPOCH4",
+	"A2_Golf_EPOCH",
+	"A2_HMMWV_EPOCH",
+	"A2_HMMWV_load_EPOCH",
+	"A2_Lada_EPOCH",
+	"A2_SUV_EPOCH",
+	"A2_SUV_load_EPOCH",
+	"A2_SUV_armed_EPOCH",
+	"A2_UAZ_EPOCH",
+	"A2_UAZ_Open_EPOCH",
+	"A2_Ural_EPOCH",
+	"A2_Vodnik_EPOCH",
+	"A2_Volha_EPOCH",
+	"C_Rubberboat_EPOCH",
+	"C_Rubberboat_02_EPOCH",
+	"C_Rubberboat_03_EPOCH",
+	"C_Rubberboat_04_EPOCH",
+	"C_Van_01_box_EPOCH",
+	"C_Van_01_box_EPOCH1",
+	"C_Van_01_box_EPOCH2",
+	"C_Van_01_box_EPOCH3",
+	"C_Van_01_box_EPOCH4",
+	"C_Van_01_transport_EPOCH",
+	"C_Van_01_transport_EPOCH1",
+	"C_Van_01_transport_EPOCH2",
+	"C_Van_01_transport_EPOCH3",
+	"C_Van_01_transport_EPOCH4",
+	"C_Boat_Civil_01_EPOCH",
+	"C_Boat_Civil_01_police_EPOCH",
+	"C_Boat_Civil_01_rescue_EPOCH",
+	"B_Heli_Light_01_EPOCH",
+	"B_SDV_01_EPOCH",
+	"B_MRAP_01_EPOCH",
+	"B_MRAP_01_EPOCH1",
+	"B_MRAP_01_EPOCH2",
+	"B_MRAP_01_EPOCH3",
+	"B_MRAP_01_EPOCH4",
+	"O_MRAP_02_EPOCH",
+	"O_MRAP_02_EPOCH1",
+	"O_MRAP_02_EPOCH2",
+	"O_MRAP_02_EPOCH3",
+	"O_MRAP_02_EPOCH4",
+	"I_MRAP_03_EPOCH",
+	"I_MRAP_03_EPOCH1",
+	"I_MRAP_03_EPOCH2",
+	"I_MRAP_03_EPOCH3",
+	"I_MRAP_03_EPOCH4",
+	"B_G_Offroad_01_armed_EPOCH1",
+	"B_G_Offroad_01_armed_EPOCH2",
+	"B_G_Offroad_01_armed_EPOCH3",
+	"B_G_Offroad_01_armed_EPOCH4",
+	"B_Truck_01_mover_EPOCH",
+	"B_Truck_01_mover_EPOCH1",
+	"B_Truck_01_mover_EPOCH2",
+	"B_Truck_01_mover_EPOCH3",
+	"B_Truck_01_mover_EPOCH4",
+	"B_Truck_01_transport_EPOCH",
+	"B_Truck_01_transport_EPOCH1",
+	"B_Truck_01_transport_EPOCH2",
+	"B_Truck_01_transport_EPOCH3",
+	"B_Truck_01_transport_EPOCH4",
+	"B_Truck_01_covered_EPOCH",
+	"B_Truck_01_covered_EPOCH1",
+	"B_Truck_01_covered_EPOCH2",
+	"B_Truck_01_covered_EPOCH3",
+	"B_Truck_01_covered_EPOCH4",
+	"B_Truck_01_box_EPOCH",
+	"B_Truck_01_box_EPOCH1",
+	"B_Truck_01_box_EPOCH2",
+	"B_Truck_01_box_EPOCH3",
+	"B_Truck_01_box_EPOCH4",
+	"O_Truck_02_transport_EPOCH",
+	"O_Truck_02_transport_EPOCH1",
+	"O_Truck_02_transport_EPOCH2",
+	"O_Truck_02_transport_EPOCH3",
+	"O_Truck_02_transport_EPOCH4",
+	"O_Truck_02_covered_EPOCH",
+	"O_Truck_02_covered_EPOCH1",
+	"O_Truck_02_covered_EPOCH2",
+	"O_Truck_02_covered_EPOCH3",
+	"O_Truck_02_covered_EPOCH4",
+	"O_Truck_02_box_EPOCH",
+	"O_Truck_02_box_EPOCH1",
+	"O_Truck_02_box_EPOCH2",
+	"O_Truck_02_box_EPOCH3",
+	"O_Truck_02_box_EPOCH4",
+	"O_Truck_03_transport_EPOCH",
+	"O_Truck_03_transport_EPOCH1",
+	"O_Truck_03_transport_EPOCH2",
+	"O_Truck_03_transport_EPOCH3",
+	"O_Truck_03_transport_EPOCH4",
+	"O_Truck_03_covered_EPOCH",
+	"O_Truck_03_covered_EPOCH1",
+	"O_Truck_03_covered_EPOCH2",
+	"O_Truck_03_covered_EPOCH3",
+	"O_Truck_03_covered_EPOCH4",
+	"uh1h_Epoch",
+	"uh1h_armed_EPOCH",
+	"uh1h_armed_plus_EPOCH",
+	"a2_mi8_EPOCH",
+	"a2_ch47f_EPOCH",
+	"a2_ch47f_armed_EPOCH",
+	"a2_ch47f_armed_plus_EPOCH",
+	"C_Heli_Light_01_armed_EPOCH",
+	"C_Heli_Light_01_armed_plus_EPOCH",
+	"O_Heli_Light_02_unarmed_EPOCH",
+	"I_Heli_Transport_02_EPOCH",
+	"I_Heli_light_03_unarmed_EPOCH",
+	"C_Heli_Light_01_civil_EPOCH",
+	"C_Heli_Light_01_civil_2seat_EPOCH",
+	"C_Heli_Light_01_civil_4seat_EPOCH",
+	"O_Heli_Transport_04_EPOCH",
+	"O_Heli_Transport_04_bench_EPOCH",
+	"O_Heli_Transport_04_box_EPOCH",
+	"O_Heli_Transport_04_covered_EPOCH",
+	"B_Heli_Transport_03_unarmed_EPOCH",
+	"I_UAV_01_F",
+	"jetski_epoch",
+	//"mosquito_epoch",
+	"C_Boat_Transport_02_F",
+	"C_Scooter_Transport_01_F",
+	"C_Offroad_02_unarmed_F",
+	"I_C_Offroad_02_unarmed_F",
+	"B_T_LSV_01_unarmed_F",
+	"B_LSV_01_armed_black_F",
+	"O_LSV_02_unarmed_F",
+	"O_T_LSV_02_unarmed_F",
+	"C_Plane_Civil_01_F",
+	"C_Plane_Civil_01_racing_F",
+	"B_CTRG_LSV_01_light_F",
+	"B_LSV_01_unarmed_F",
+	"B_T_VTOL_01_vehicle_blue_EPOCH",
+	"B_T_VTOL_01_infantry_olive_EPOCH",
+	"O_T_VTOL_02_infantry_EPOCH",
+	"O_T_VTOL_02_vehicle_grey_EPOCH",
+	"B_UavTerminal",
+	"O_UavTerminal",
+	"arifle_AKM_F",
+	"arifle_AKM_FL_F",
+	"arifle_CTAR_blk_F",
+	"arifle_CTAR_hex_F",
+	"arifle_CTAR_ghex_F",
+	"arifle_CTAR_GL_blk_F",
+	"arifle_CTARS_blk_F",
+	"arifle_CTARS_ghex_F",
+	"arifle_CTARS_hex_F",
+	"arifle_SPAR_01_blk_F",
+	"arifle_SPAR_01_khk_F",
+	"arifle_SPAR_01_snd_F",
+	"arifle_SPAR_01_GL_blk_F",
+	"arifle_SPAR_01_GL_khk_F",
+	"arifle_SPAR_01_GL_snd_F",
+	"arifle_SPAR_02_blk_F",
+	"arifle_SPAR_02_khk_F",
+	"arifle_SPAR_02_snd_F",
+	"muzzle_snds_H_khk_F",
+	"muzzle_snds_H_snd_F",
+	"muzzle_snds_58_blk_F",
+	"muzzle_snds_m_khk_F",
+	"muzzle_snds_m_snd_F",
+	"muzzle_snds_B_khk_F",
+	"muzzle_snds_B_snd_F",
+	"muzzle_snds_58_wdm_F",
+	"muzzle_snds_65_TI_blk_F",
+	"muzzle_snds_65_TI_hex_F",
+	"muzzle_snds_65_TI_ghex_F",
+	"muzzle_snds_H_MG_blk_F",
+	"muzzle_snds_H_MG_khk_F",
+	"optic_Arco_blk_F",
+	"optic_Arco_ghex_F",
+	"optic_DMS_ghex_F",
+	"optic_Hamr_khk_F",
+	"optic_ERCO_blk_F",
+	"optic_ERCO_khk_F",
+	"optic_ERCO_snd_F",
+	"optic_Holosight_blk_F",
+	"optic_Holosight_khk_F",
+	"optic_Holosight_smg_blk_F",
+	"100Rnd_580x42_Mag_F",
+	"100Rnd_580x42_Mag_Tracer_F",
+	"150Rnd_556x45_Drum_Mag_F",
+	"150Rnd_556x45_Drum_Mag_Tracer_F",
+	"200Rnd_556x45_Box_F",
+	"200Rnd_556x45_Box_Red_F",
+	"200Rnd_556x45_Box_Tracer_F",
+	"200Rnd_556x45_Box_Tracer_Red_F",
+	"B_AssaultPack_tna_F",
+	"B_FieldPack_ghex_F",
 	"CircuitParts",
 	"ItemCoolerE",
 	"JackKit",
@@ -411,8 +414,8 @@ _notForSale = [
 	"30Rnd_556x45_Stanag_Tracer_Red",
 	"30Rnd_556x45_Stanag_Tracer_Green",
 	"30Rnd_556x45_Stanag_Tracer_Yellow",
-	"30Rnd_45ACP_Mag_SMG_01",
-	"30Rnd_45ACP_Mag_SMG_01_Tracer_Green",
+	//"30Rnd_45ACP_Mag_SMG_01",
+	//"30Rnd_45ACP_Mag_SMG_01_Tracer_Green",
 	"5Rnd_rollins_mag",
 	"UGL_FlareWhite_F",
 	"UGL_FlareGreen_F",
