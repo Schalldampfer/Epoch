@@ -238,10 +238,10 @@ forceRestartTime      = 14400; 			// 4 hour restarts
 // Hive Related
 	vehicleLockTime = "86400"; 			// Controls how many seconds it takes to allow another person/group to unlock vehicle.
 	vehicleLockTimeHome = "604800";		// Controls how many seconds it takes to allow another person/group to unlock vehicle (inside your own PlotPole Range).
-	expiresBuilding = "1814400";  		// expiration date in seconds for buildings
+	expiresBuilding = "1728000";  		// expiration date in seconds for buildings
 	expiresPlayer = "7776000";  		// expiration date in seconds for players
 	expiresBank = "7776000";  			// expiration date in seconds for players bank
-	expiresVehicle = "1209600";  		// expiration date in seconds for vehicles
+	expiresVehicle = "864000";  		// expiration date in seconds for vehicles
 	expiresAIdata = "1209600";  		// expiration date in seconds for NPC Trader inventory
 	expiresCommunityStats = "7776000";	// expiration date in seconds for players community stats
 	expiresPlayerTopStats = "864000";	// expiration date in seconds for players listed in TopStats - remove inactive players from TopStats, but will get in again on next login
