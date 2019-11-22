@@ -496,6 +496,11 @@ class CfgPricing
         price = 4;
         tax = 0.9;
     };
+    class 10Rnd_762x51_Mag
+    {
+        price = 2;
+        tax = 0.9;
+    };
     class 10Rnd_762x54_Mag
     {
         price = 2;
