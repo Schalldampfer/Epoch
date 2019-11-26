@@ -378,7 +378,7 @@ class CfgLootTable
 				{ { "ItemGPS", "item" }, 9 },
 				{ { "B_UavTerminal", "item" }, 5 },
 				{ { "NVG_EPOCH", "item" }, 5 },
-				{ { "Rangefinder", "weapon" }, 2 },
+				{ { "Rangefinder", "weapon" }, 1 },
 				{ { "EpochRadio0", "item" }, 2 },
 				{ { "EpochRadio1", "item" }, 2 },
 				{ { "EpochRadio2", "item" }, 2 },
