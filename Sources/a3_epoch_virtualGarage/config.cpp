@@ -11,7 +11,7 @@ class cfgVGS
 	maxGarageSlots = 7; // Self-explenatory, right?
 	persistentVehicles = 1; // Are vehicles read from the garage made persistent on the server?
 	vehBlacklist[] = {"MBK_01_EPOCH"}; // Put classnames of disallowed vehicles in here
-	expiresVirtualGarage = 604800; // time is in seconds
+	expiresVirtualGarage = 2592000; // time is in seconds
 };
 
 class CfgPatches
