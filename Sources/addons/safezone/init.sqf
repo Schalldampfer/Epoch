@@ -139,6 +139,10 @@ while {true} do {
 		} else {
 			_warnedAI = false;
 		};
+
+		//Player marker
+		[format[_markername,-1]] call EPOCH_removeMarker;
+		[player,getpos player,"ICON","b_inf","ColorGreen",[1,1],"",0,name player,1,format[_markername,-1]] call EPOCH_makeMarker;
 	};
 
 	sleep 5;
