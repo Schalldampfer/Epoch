@@ -20,6 +20,11 @@ _SafeZones = switch(toLower worldName)do{
 	default{[]};
 };
 
+//Settings
+_distanceAI = 300; //Notify if AIs are in this range
+EPOCH_PlayerMarkerOn = true; //Turn on player marker
+EPOCH_DeathMarkerOn = true; //Turn on dead body marker
+
 //Unlock vehicles in
 if (isServer) then {
 	private ["_pos","_dist"];
@@ -33,7 +38,6 @@ if (isServer) then {
 };
 if (!hasInterface) exitWith {};
 
-_distanceAI = 300;
 _count = 0;
 _markername = "playerMarker%1";
 _players = []; //list of alive & commander player's vehicles
@@ -140,9 +144,6 @@ while {true} do {
 			_warnedAI = false;
 		};
 
-		//Player marker
-		[format[_markername,-1]] call EPOCH_removeMarker;
-		[player,getpos player,"ICON","b_inf","ColorGreen",[1,1],"",0,name player,1,format[_markername,-1]] call EPOCH_makeMarker;
 	};
 
 	sleep 5;
