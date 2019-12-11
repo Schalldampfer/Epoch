@@ -60,8 +60,8 @@ EPOCH_lastFiredLocation = [];
 EPOCH_IsAutoRunning = false;
 EPOCH_Earplugsin = false;
 EPOCH_LastAutoRunKeyPressed = diag_ticktime;
-EPOCH_PlayerMarkerOn = false;
-EPOCH_DeathMarkerOn = false;
+EPOCH_PlayerMarkerOn = true;
+EPOCH_DeathMarkerOn = true;
 
 //Radiation
 EPOCH_geiger_shown = false;
