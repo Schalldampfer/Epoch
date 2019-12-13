@@ -50,31 +50,31 @@ class CfgSecConf
         {
             viewDistance = 1800; // Standard Preset = 1600
             viewDistanceObects = 1500; // Standard Preset = 1300
-            terrainGrid = 12.5; // Standard Preset = 25
+            terrainGrid = 50; // Standard Preset = 25
         };
         class High
         {
             viewDistance = 2200; // High Preset = 2200
             viewDistanceObects = 2000; // High Preset = 1800
-			terrainGrid = 12.5; // High Preset = 12.5
+			terrainGrid = 25; // High Preset = 12.5
         };
         class VeryHigh
         {
             viewDistance = 3000; // Very High Preset = 3000
             viewDistanceObects = 2800; // Very High Preset = 2600
-			terrainGrid = 10; // Very High Preset = 6.25
+			terrainGrid = 12.5; // Very High Preset = 6.25
         };
         class Ultra
         {
             viewDistance = 3800; // Ultra Preset = 3800
             viewDistanceObects = 3600; // Ultra Preset = 3200
-			terrainGrid = 10; // Ultra Preset = 3.125
+			terrainGrid = 6.25; // Ultra Preset = 3.125
         };
         class Custom
         {
             viewDistance = 2500; // High+
             viewDistanceObects = 2200; // High+
-			terrainGrid = 12.5; // Default in MP: 10
+			terrainGrid = 50; // Default in MP: 10
         };
         mode = "Standard";
     };
