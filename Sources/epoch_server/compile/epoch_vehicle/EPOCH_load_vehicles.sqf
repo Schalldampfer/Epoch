@@ -116,7 +116,7 @@ for "_i" from 1 to _maxVehicleLimit do {
 							_vehicle setposWorld _location;
 						}
 						else {
-							if (_location select 2 < 0) then {_location set [2,0];};
+							if ((ASLToATL _location) select 2 < 0 || _location select 2 < 0) then {_location set [2,0];};
 							_vehicle setposATL _location;
 						};
 						// set fuel level
