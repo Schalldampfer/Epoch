@@ -31,8 +31,8 @@ _slots = "maxGarageSlots" call VGS_fnc_vgsGetServerSetting;
 if !(_slot < _slots) exitWith {diag_log format["[EPOCH VGS]: ReadFromGarage Error - slot not less than max slots - data:%1", [_slot, _slots]]};
 
 _playerUID = getPlayerUID _playerObj;
-_response = ["VirtualGarage", _playerUID] call EPOCH_fnc_server_hiveGETRANGE;
-if((_response select 1) isEqualTo []) exitWith {diag_log format["[EPOCH VGS]: WriteToGarage Client DB entry error - data:%1m", _response]};
+_response = [format["EPOCH_vgsOwnedVehs_%1", _playerUID], _playerUID] call EPOCH_fnc_server_hiveGET;
+diag_log format["[EPOCH VGS]: ReadFromGarage VG response:%1", _response];
 if ((_response select 0) isEqualTo 1) then
 {
 	if (typeName (_response select 1) isEqualTo "ARRAY") then
@@ -51,7 +51,7 @@ if ((_response select 0) isEqualTo 1) then
 			_vehsFriendly set [_slot, []]; // Remove the vehicle from garage slot
 			_vehsRaw set [_slot, []];
 			_expiresVG = "expiresVirtualGarage" call VGS_fnc_vgsGetServerSetting;
-			_return = ["VirtualGarage", _playerUID, _expiresVG, [_vehsFriendly, _vehsRaw]] call EPOCH_fnc_server_hiveSETEX;
+			_return = [format["EPOCH_vgsOwnedVehs_%1", _playerUID], _playerUID, [_vehsFriendly, _vehsRaw]] call EPOCH_fnc_server_hiveSET;
 			_veh = _vehClass createVehicle (position _playerObj);
 			//if(_veh isKindOf 'SHIP')then{
 			//	_safePOS = [_pos select 0,1,80,10,1,20,1] call BIS_fnc_findSafePos;
@@ -151,7 +151,7 @@ if ((_response select 0) isEqualTo 1) then
 			};
 			
 			// Refetch the vehicles from db and send it to Client
-			_response2 = ["VirtualGarage", _playerUID] call EPOCH_fnc_server_hiveGETRANGE;
+			_response2 = [format["EPOCH_vgsOwnedVehs_%1", _playerUID], _playerUID] call EPOCH_fnc_server_hiveGET;
 			if ((_response2 select 0) isEqualTo 1) then
 			{
 				if (typeName (_response2 select 1) isEqualTo "ARRAY") then

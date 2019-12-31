@@ -24,7 +24,7 @@ if !([_playerObj, _playerKey] in (uiNamespace getVariable "EPOCH_vgsKeys"))exitW
 
 // Data is valid let's get the cars from db and send it to client
 _playerUID = getPlayerUID _playerObj;
-_response = ["VirtualGarage", _playerUID] call EPOCH_fnc_server_hiveGETRANGE;
+_response = [format["EPOCH_vgsOwnedVehs_%1", _playerUID], _playerUID] call EPOCH_fnc_server_hiveGET;
 _expiresVG = "expiresVirtualGarage" call VGS_fnc_vgsGetServerSetting;
 if isNil"_response" then { _response = [1,[[],[]]] };
 _vehData = _response select 1;
@@ -49,7 +49,7 @@ if ((_response select 0) isEqualTo 1) then
 				};
 			};
 			// Save changes to DB
-			_return = ["VirtualGarage", _playerUID, _expiresVG, [_vehsFriendly, _vehsRaw]] call EPOCH_fnc_server_hiveSETEX;
+			_return = [format["EPOCH_vgsOwnedVehs_%1", _playerUID], _playerUID, [_vehsFriendly, _vehsRaw]] call EPOCH_fnc_server_hiveSET;
 		};
 		if (count _vehsFriendly > _slots) then
 		{
@@ -62,7 +62,7 @@ if ((_response select 0) isEqualTo 1) then
 				};
 			};
 			// Save changes to DB
-			_return = ["VirtualGarage", _playerUID, _expiresVG, [_vehsFriendly, _vehsRaw]] call EPOCH_fnc_server_hiveSETEX;
+			_return = [format["EPOCH_vgsOwnedVehs_%1", _playerUID], _playerUID, [_vehsFriendly, _vehsRaw]] call EPOCH_fnc_server_hiveSET;
 		};
 		if not(isNull _playerObj) then
 		{

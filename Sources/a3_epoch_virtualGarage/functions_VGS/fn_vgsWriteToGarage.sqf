@@ -55,8 +55,8 @@ _fuel = fuel _vehObj;
 _hitpoints = (getAllHitPointsDamage _vehObj) param [2,[]];
 
 // Get existing vehicles
-_response = ["VirtualGarage", _playerUID] call EPOCH_fnc_server_hiveGETRANGE;
-if((_response select 1) isEqualTo []) exitWith {diag_log format["[EPOCH VGS]: WriteToGarage Client DB entry error - data:%1m", _response]};
+_response = [format["EPOCH_vgsOwnedVehs_%1", _playerUID], _playerUID] call EPOCH_fnc_server_hiveGET;
+diag_log format["[EPOCH VGS]: WriteToGarage VG response:%1", _response];
 if ((_response select 0) isEqualTo 1) then
 {
 	if (typeName (_response select 1) isEqualTo "ARRAY") then
@@ -73,7 +73,7 @@ if ((_response select 0) isEqualTo 1) then
 			(_vehsRaw select _slot) pushBack _x
 		} forEach [_typeOf, [(getposATL _vehObj call EPOCH_precisionPos),vectordir _vehObj,vectorup _vehObj], damage _vehObj, _hitpoints, _fuel, _inventory, [true,magazinesAllTurrets _vehObj], _vehObj getVariable ["VEHICLE_TEXTURE",0], _vehObj getVariable ["VEHICLE_BASECLASS",""]];
 		_expiresVG = "expiresVirtualGarage" call VGS_fnc_vgsGetServerSetting;
-		_return = ["VirtualGarage", _playerUID, _expiresVG, [_vehsFriendly, _vehsRaw]] call EPOCH_fnc_server_hiveSETEX;
+		_return = [format["EPOCH_vgsOwnedVehs_%1", _playerUID], _playerUID, [_vehsFriendly, _vehsRaw]] call EPOCH_fnc_server_hiveSET;
 		{
 			moveOut _x;
 		} forEach (crew _vehObj);
