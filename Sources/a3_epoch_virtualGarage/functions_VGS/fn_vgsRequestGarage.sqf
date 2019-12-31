@@ -71,4 +71,6 @@ if ((_response select 0) isEqualTo 1) then
 			if (_debug isEqualTo 1) then {diag_log format["[EPOCH VGS] Client %1 requested his/her vehicles. Result: %2", name _playerObj, _vehsFriendly]};
 		};
 	};
+} else {
+	diag_log "[EPOCH VGS]: RequestGarage failed";
 };
