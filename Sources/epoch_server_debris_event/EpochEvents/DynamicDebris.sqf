@@ -44,7 +44,7 @@ _newDebrisCounter = 0;
 _worldSize = worldSize/2;
 _instanceID = call EPOCH_fn_InstanceID;
 
-_maxDebrisLimit = 500; // max total objects to spawn
+_maxDebrisLimit = 50; // max total objects to spawn
 _rngChance = 0.95; // Lower this to spawn more positions
 _scriptHiveKey = "EPOCH:DynamicDebris789"; // change this to force a new seed to be generated.
 
