@@ -61,7 +61,7 @@ if ((_response select 0) isEqualTo 1) then
 			_veh = _vehClass createVehicle _pos;
 			_veh allowDamage false;
 			_veh enableSimulationGlobal false;
-			_veh setvectorDirAndUp [_vectorDir,_vectorUp];
+			_veh setvectorDirAndUp [_vectorDir,surfaceNormal _pos];
 			_veh call EPOCH_server_setVToken;
 			_veh setFuel _fuel;
 			_veh setVehicleLock "LOCKEDPLAYER";
