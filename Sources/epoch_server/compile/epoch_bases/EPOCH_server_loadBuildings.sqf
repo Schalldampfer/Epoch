@@ -117,11 +117,9 @@ for "_i" from 0 to _this do {
 				};
 			};
 			if (_useworld) then {
-				if ((ASLToATL _pos) select 2 < 0) then {_pos = ATLToASL _pos;};
 				_baseObj setposworld _pos;
 			}
 			else {
-				if ((ATLToASL _pos) select 2 < 0) then {_pos set [2,0];_pos = ASLToATL _pos;};
 				_baseObj setposATL _pos;
 			};
 			_baseObj setVectorDirAndUp _vectordirup;

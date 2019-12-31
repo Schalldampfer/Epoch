@@ -191,7 +191,6 @@ if (!isNull _player) then {
 				_spawnpos = asltoatl _spawnpos;
 			};
 		};
-		if ((ATLToASL _spawnpos) select 2 < 0) then {_spawnpos set [2,0];_spawnpos = ASLToATL _spawnpos;};
 		_newPlyr = _group createUnit[_class, _spawnpos, [], 0, "CAN_COLLIDE"];
 		_newPlyr setposatl _spawnpos;
 		_newPlyr hideobjectglobal true;
