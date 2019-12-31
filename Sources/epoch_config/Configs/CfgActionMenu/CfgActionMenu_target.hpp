@@ -645,3 +645,10 @@ class Bank_menu
 	icon = "x\addons\a3_epoch_code\Data\UI\buttons\krypto.paa";
 	tooltip = "Bank teller Menu";
 };
+class VirtualGarage
+{
+	condition = "dyna_isTrader || dyna_cursorTarget in HSPV_HSBlackmarket";
+	action = "createDialog 'SC_vgsDiag'";
+	icon =  "a3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa";
+	tooltip = "Virtual Garage";
+};

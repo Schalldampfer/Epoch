@@ -52,10 +52,13 @@ if ((_response select 0) isEqualTo 1) then
 			_vehsRaw set [_slot, []];
 			_expiresVG = "expiresVirtualGarage" call VGS_fnc_vgsGetServerSetting;
 			_return = [format["EPOCH_vgsOwnedVehs_%1", _playerUID], _playerUID, [_vehsFriendly, _vehsRaw]] call EPOCH_fnc_server_hiveSET;
-			_veh = _vehClass createVehicle (position _playerObj);
-			//if(_veh isKindOf 'SHIP')then{
-			//	_safePOS = [_pos select 0,1,80,10,1,20,1] call BIS_fnc_findSafePos;
-			//};
+			_pos = position _playerObj;
+			//find helipad
+			_position = nearestObjects [_pos, ["Land_HelipadCivil_F","Land_HelipadCircle_F","Land_HelipadEmpty_F","Land_HelipadSquare_F","Land_JumpTarget_F"],50];
+			if(count _position > 0)then{
+				_pos = position (_position select 0);
+			};
+			_veh = _vehClass createVehicle _pos;
 			_veh allowDamage false;
 			_veh setvectorDirAndUp [_vectorDir,_vectorUp];
 			_veh call EPOCH_server_setVToken;
