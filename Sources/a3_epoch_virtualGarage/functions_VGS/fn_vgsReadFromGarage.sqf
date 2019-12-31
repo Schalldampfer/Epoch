@@ -60,6 +60,7 @@ if ((_response select 0) isEqualTo 1) then
 			};
 			_veh = _vehClass createVehicle _pos;
 			_veh allowDamage false;
+			_veh enableSimulationGlobal false;
 			_veh setvectorDirAndUp [_vectorDir,_vectorUp];
 			_veh call EPOCH_server_setVToken;
 			_veh setFuel _fuel;
@@ -69,7 +70,7 @@ if ((_response select 0) isEqualTo 1) then
 			clearItemCargoGlobal _veh;
 			clearBackpackCargoGlobal _veh;
 			[_veh,_gear] call EPOCH_server_CargoFill;
-			_veh setOwner (owner _playerObj);
+			_veh setPlateNumber "Epoch Mod";
 			
 			if (_persistentVics == 1) then {
 				_veh call EPOCH_server_setVToken;
@@ -136,6 +137,15 @@ if ((_response select 0) isEqualTo 1) then
 				};
 			};
 			
+			if (_veh isKindOf "Air") then
+			{
+				_veh enableSimulationGlobal true;
+			}
+			else
+			{
+				_veh enableDynamicSimulation true;
+			};
+			
 			_veh allowDamage true;
 			_allHitpoints = getAllHitPointsDamage _veh;
 			if !(_allHitpoints isEqualTo []) then{
@@ -147,6 +157,8 @@ if ((_response select 0) isEqualTo 1) then
 					} forEach _actualHitpoints;
 				};
 			};
+			
+			_veh setOwner (owner _playerObj);
 		
 			if (_persistentVics == 1) then {
 				_veh call EPOCH_server_save_vehicle;
