@@ -19,9 +19,6 @@ _blacklist = [
 	"B_MBT_01_cannon_F","B_MBT_01_TUSK_F","O_MBT_02_cannon_F","I_MBT_03_cannon_F",
 	"B_MBT_01_arty_F","O_MBT_02_arty_F","B_MBT_01_mlrs_F",
 	"B_Plane_CAS_01_dynamicLoadout_F","O_Plane_CAS_02_dynamicLoadout_F","I_Plane_Fighter_03_dynamicLoadout_F",
-
-
-
 	"Item_FieldPack_blk",
 	"Item_FieldPack_cbr",
 	"Item_FieldPack_khk",
