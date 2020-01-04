@@ -18,10 +18,10 @@ _blacklist = [
 	"B_APC_Tracked_01_AA_F","O_APC_Tracked_02_AA_F",
 	"B_MBT_01_cannon_F","B_MBT_01_TUSK_F","O_MBT_02_cannon_F","I_MBT_03_cannon_F",
 	"B_MBT_01_arty_F","O_MBT_02_arty_F","B_MBT_01_mlrs_F",
-	"B_Plane_CAS_01_dynamicLoadout_F","O_Plane_CAS_02_dynamicLoadout_F","I_Plane_Fighter_03_dynamicLoadout_F"
-];
+	"B_Plane_CAS_01_dynamicLoadout_F","O_Plane_CAS_02_dynamicLoadout_F","I_Plane_Fighter_03_dynamicLoadout_F",
 
-_notForSale = [
+
+
 	"Item_FieldPack_blk",
 	"Item_FieldPack_cbr",
 	"Item_FieldPack_khk",
@@ -1057,7 +1057,7 @@ _notForSale = [
 	"H_MM_Helmet_01",
 	"V_MM_Vest_01"
 ];
-_blacklist = _blacklist + _notForSale;
+
 //this is how vehicles spawn, 0 = player gets menu to decide, 1 = only allow saved vehicles, 2 = only allow rentals
 _vehiclespawnmode = 0;
 
