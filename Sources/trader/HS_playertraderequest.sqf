@@ -48,7 +48,7 @@ switch(_type)do{
 					_cost = ((_x select 1)/_damagepricereduction);
 					_return = _return + _cost;
 				}else{
-					if(_isrental > 0)then{
+					//if(_isrental > 0)then{
 						_message = _message + format[" || %1 'Rental' is OK to sell, dam: %2 pricemod: %3",_x select 4,damage _obj,_damagepricereduction];
 						removeFromRemainsCollector[_obj];
 						_obj setVariable["VEHICLE_SLOT","ABORT",true];
@@ -56,9 +56,9 @@ switch(_type)do{
 						_obj call HALV_PurgeObject;
 						_cost = ((_x select 1)/_damagepricereduction);
 						_return = _return + _cost;
-					}else{
-						_message = _message + format[" || - ERROR Attempt to sell %1 twice -",_x select 4,_player];
-					};
+					//}else{
+					//	_message = _message + format[" || - ERROR Attempt to sell %1 twice -",_x select 4,_player];
+					//};
 				};
 			}else{
 				_message = _message + format[" || %1 Not yours (get in as driver to sell)",_x select 4];
