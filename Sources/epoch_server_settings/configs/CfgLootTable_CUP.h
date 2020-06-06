@@ -204,15 +204,14 @@ class CfgLootTable_CUP
 				{ { "H_59_EPOCH", "item" }, 1 },
 				{ { "H_60_EPOCH", "item" }, 1 },
 				{ { "H_61_EPOCH", "item" }, 1 },
-				{ { "H_62_EPOCH", "item" }, 1 },
-				{ { "H_63_EPOCH", "item" }, 1 },
-				{ { "H_64_EPOCH", "item" }, 1 },
-				{ { "H_65_EPOCH", "item" }, 1 },
-				{ { "H_66_EPOCH", "item" }, 1 },
-				{ { "H_67_EPOCH", "item" }, 1 },
-				{ { "H_68_EPOCH", "item" }, 1 },
-				{ { "H_69_EPOCH", "item" }, 1 },
-				{ { "H_70_EPOCH", "item" }, 1 },
+				{ { "H_62_EPOCH", "item" }, 1, {"getDate", 2, "==", 1} },
+				{ { "H_63_EPOCH", "item" }, 1, {"getDate", 2, "==", 3} },
+				{ { "H_64_EPOCH", "item" }, 1, {"getDate", 2, "==", 5} },
+				{ { "H_65_EPOCH", "item" }, 1, {"getDate", 2, "==", 7} },
+				{ { "H_66_EPOCH", "item" }, 1, {"getDate", 2, "==", 9} },
+				{ { "H_67_EPOCH", "item" }, 1, {"getDate", 2, "==", 11} },
+				{ { "H_68_EPOCH", "item" }, 1, {"getDate", 2, "==", 13} },
+				{ { "H_69_EPOCH", "item" }, 1, {"getDate", 2, "==", 15} },
 				{ { "H_71_EPOCH", "item" }, 1 },
 				{ { "H_72_EPOCH", "item" }, 1 },
 				{ { "H_73_EPOCH", "item" }, 1 },
@@ -237,8 +236,8 @@ class CfgLootTable_CUP
 				{ { "H_92_EPOCH", "item" }, 1 },
 				{ { "H_104_EPOCH", "item" }, 1 },
                 { { "H_105_EPOCH", "item" }, 1 },
-				{ { "thor_mask_epoch", "item" }, 1, },
-				{ { "iron_mask_epoch", "item" }, 1, },
+				{ { "thor_mask_epoch", "item" }, 1, {"getDate", 1, "==", 12} },
+				{ { "iron_mask_epoch", "item" }, 1, {"getDate", 1, "==", 12} },
 				{ { "wolf_mask_epoch", "item" }, 1, {"getDate", 1, "==", 10} }, // only available in october
 				{ { "pkin_mask_epoch", "item" }, 1, {"getDate", 1, "==", 10} }, // only available in october
 				{ { "clown_mask_epoch", "item" }, 1, {"getDate", 1, "==", 10} }, // only available in october
@@ -288,17 +287,17 @@ class CfgLootTable_CUP
 				{ { "H_36_EPOCH", "item" }, 2 },
 				{ { "H_37_EPOCH", "item" }, 2 },
 				{ { "H_38_EPOCH", "item" }, 2 },
-				{ { "H_93_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_94_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_95_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_96_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_97_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_98_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_99_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_100_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_101_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_102_EPOCH", "item" }, 1 },		// Race Hemlet
-				{ { "H_103_EPOCH", "item" }, 1 }		// Race Hemlet
+				{ { "H_93_EPOCH", "item" }, 1, {"getDate", 2, "==", 2} },		// Race Hemlet
+				{ { "H_94_EPOCH", "item" }, 1, {"getDate", 2, "==", 4} },		// Race Hemlet
+				{ { "H_95_EPOCH", "item" }, 1, {"getDate", 2, "==", 6} },		// Race Hemlet
+				{ { "H_96_EPOCH", "item" }, 1, {"getDate", 2, "==", 8} },		// Race Hemlet
+				{ { "H_97_EPOCH", "item" }, 1, {"getDate", 2, "==", 10} },		// Race Hemlet
+				{ { "H_98_EPOCH", "item" }, 1, {"getDate", 2, "==", 12} },		// Race Hemlet
+				{ { "H_99_EPOCH", "item" }, 1, {"getDate", 2, "==", 14} },		// Race Hemlet
+				{ { "H_100_EPOCH", "item" }, 1, {"getDate", 2, "==", 16} },		// Race Hemlet
+				{ { "H_101_EPOCH", "item" }, 1, {"getDate", 2, "==", 18} },		// Race Hemlet
+				{ { "H_102_EPOCH", "item" }, 1, {"getDate", 2, "==", 20} },		// Race Hemlet
+				{ { "H_103_EPOCH", "item" }, 1, {"getDate", 2, "==", 22} }		// Race Hemlet
 		};
 	};
 	class Primitive
@@ -379,7 +378,7 @@ class CfgLootTable_CUP
 				{ { "ItemGPS", "item" }, 9 },
 				{ { "B_UavTerminal", "item" }, 5 },
 				{ { "NVG_EPOCH", "item" }, 5 },
-				{ { "Rangefinder", "weapon" }, 2 },
+				{ { "Rangefinder", "weapon" }, 1 },
 				{ { "EpochRadio0", "item" }, 2 },
 				{ { "EpochRadio1", "item" }, 2 },
 				{ { "EpochRadio2", "item" }, 2 },
@@ -427,8 +426,8 @@ class CfgLootTable_CUP
 				{ { "ItemDocument", "magazine" }, 20 },
 				{ { "ItemVehDoc1", "magazine" }, 20 },
 				{ { "ItemVehDoc2", "magazine" }, 15 },
-				{ { "ItemVehDoc3", "magazine" }, 5 },
-				{ { "ItemVehDoc4", "magazine" }, 2 }
+				{ { "ItemVehDoc3", "magazine" }, 8 },
+				{ { "ItemVehDoc4", "magazine" }, 5 }
 		};
 	};
 	class Seeds
@@ -496,7 +495,7 @@ class CfgLootTable_CUP
 	{
 		items[] = {
 				{ { "ItemDefibrillator", "magazine" }, 1 },
-				{ { "FAK", "magazine" }, 50 },
+				{ { "FAK", "magazine" }, 20 },
 				{ { "Soap_Epoch", "magazine" }, 3 },
 				{ { "atropine_epoch", "magazine" }, 6 },
 				{ { "adrenaline_epoch", "magazine" }, 5 },
@@ -590,13 +589,13 @@ class CfgLootTable_CUP
 	{
 		items[] = {
 				{ { "SatchelCharge_Remote_Mag", "magazine" }, 15 },
-				{ { "ATMine_Range_Mag", "magazine" }, 5 },
-				{ { "SLAMDirectionalMine_Wire_Mag", "magazine" }, 3 },
+				{ { "ATMine_Range_Mag", "magazine" }, 0 },
+				{ { "SLAMDirectionalMine_Wire_Mag", "magazine" }, 0 },
 				{ { "DemoCharge_Remote_Mag", "magazine" }, 6 },
-				{ { "ClaymoreDirectionalMine_Remote_Mag", "magazine" }, 10 },
-				{ { "APERSBoundingMine_Range_Mag", "magazine" }, 21 },
-				{ { "APERSTripMine_Wire_Mag", "magazine" }, 20 },
-				{ { "APERSMine_Range_Mag", "magazine" }, 20 }
+				{ { "ClaymoreDirectionalMine_Remote_Mag", "magazine" }, 0 },
+				{ { "APERSBoundingMine_Range_Mag", "magazine" }, 0 },
+				{ { "APERSTripMine_Wire_Mag", "magazine" }, 0 },
+				{ { "APERSMine_Range_Mag", "magazine" }, 0 }
 		};
 	};
 	class ShellFlares
@@ -1494,7 +1493,7 @@ class CfgLootTable_CUP
 				{ { "U_OG_Guerilla3_2", "item" }, 1 },
 				{ { "U_OG_leader", "item" }, 1 },
 				{ { "U_O_CombatUniform_ocamo", "item" }, 1 },
-				{ { "U_O_GhillieSuit", "item" }, 1 },
+				//{ { "U_O_GhillieSuit", "item" }, 0 },
 				{ { "U_O_PilotCoveralls", "item" }, 1 },
 				{ { "U_IG_Guerilla1_1", "item" }, 1 },
 				{ { "U_IG_leader", "item" }, 1 },
@@ -1509,7 +1508,7 @@ class CfgLootTable_CUP
 				{ { "U_I_HeliPilotCoveralls", "item" }, 1 },
 				{ { "U_I_pilotCoveralls", "item" }, 1 },
 				{ { "U_I_OfficerUniform", "item" }, 1 },
-				{ { "U_I_GhillieSuit", "item" }, 1 },
+				//{ { "U_I_GhillieSuit", "item" }, 0 },
 				{ { "U_I_CombatUniform_tshirt", "item" }, 1 },
 				{ { "U_O_OfficerUniform_ocamo", "item" }, 1 },
 				{ { "U_O_SpecopsUniform_ocamo", "item" }, 1 },
@@ -1704,9 +1703,9 @@ class CfgLootTable_CUP
 				{ { "U_CamoBrn_uniform", "item" }, 1 },
 				{ { "U_CamoBlue_uniform", "item" }, 1 },
 				{ { "U_Camo_uniform", "item" }, 1 },
-				{ { "U_ghillie1_uniform", "item" }, 1 },
-				{ { "U_ghillie2_uniform", "item" }, 1 },
-				{ { "U_ghillie3_uniform", "item" }, 1 },
+				//{ { "U_ghillie1_uniform", "item" }, 0 },
+				//{ { "U_ghillie2_uniform", "item" }, 0 },
+				//{ { "U_ghillie3_uniform", "item" }, 0 },
 				{ { "U_RadiationSuit_F_uniform", "item" }, 1 }
 		};
 	};
@@ -1720,31 +1719,36 @@ class CfgLootTable_CUP
 				{ { "V_3_EPOCH", "item" }, 1 },
 				{ { "V_4_EPOCH", "item" }, 1 },
 				{ { "V_5_EPOCH", "item" }, 1 },
+				{ { "V_10_EPOCH", "item" }, 1 },
+				{ { "V_11_EPOCH", "item" }, 1 },
+				{ { "V_12_EPOCH", "item" }, 1 },
+				{ { "V_17_EPOCH", "item" }, 1 },
+				{ { "V_18_EPOCH", "item" }, 1 },
+				{ { "V_21_EPOCH", "item" }, 1 },
+				{ { "V_24_EPOCH", "item" }, 1 },
+				{ { "V_29_EPOCH", "item" }, 1 },
+				{ { "V_30_EPOCH", "item" }, 1 },
+				{ { "V_31_EPOCH", "item" }, 1 },
+				{ { "V_32_EPOCH", "item" }, 1 }
+		};
+	};
+	class Vests_High_Vanilla
+	{
+		items[] = {
 				{ { "V_6_EPOCH", "item" }, 1 },
 				{ { "V_7_EPOCH", "item" }, 1 },
 				{ { "V_8_EPOCH", "item" }, 1 },
 				{ { "V_9_EPOCH", "item" }, 1 },
-				{ { "V_10_EPOCH", "item" }, 1 },
-				{ { "V_11_EPOCH", "item" }, 1 },
-				{ { "V_12_EPOCH", "item" }, 1 },
 				{ { "V_13_EPOCH", "item" }, 1 },
 				{ { "V_14_EPOCH", "item" }, 1 },
 				{ { "V_15_EPOCH", "item" }, 1 },
 				{ { "V_16_EPOCH", "item" }, 1 },
-				{ { "V_17_EPOCH", "item" }, 1 },
-				{ { "V_18_EPOCH", "item" }, 1 },
-				{ { "V_21_EPOCH", "item" }, 1 },
 				{ { "V_22_EPOCH", "item" }, 1 },
 				{ { "V_23_EPOCH", "item" }, 1 },
-				{ { "V_24_EPOCH", "item" }, 1 },
 				{ { "V_25_EPOCH", "item" }, 1 },
 				{ { "V_26_EPOCH", "item" }, 1 },
 				{ { "V_27_EPOCH", "item" }, 1 },
 				{ { "V_28_EPOCH", "item" }, 1 },
-				{ { "V_29_EPOCH", "item" }, 1 },
-				{ { "V_30_EPOCH", "item" }, 1 },
-				{ { "V_31_EPOCH", "item" }, 1 },
-				{ { "V_32_EPOCH", "item" }, 1 },
 				{ { "V_33_EPOCH", "item" }, 1 },
 				{ { "V_34_EPOCH", "item" }, 1 },
 				{ { "V_35_EPOCH", "item" }, 1 },
@@ -1752,18 +1756,6 @@ class CfgLootTable_CUP
 				{ { "V_38_EPOCH", "item" }, 1 },
 				{ { "V_39_EPOCH", "item" }, 1 },
 				{ { "V_40_EPOCH", "item" }, 1 }
-		};
-	};
-	class Vests_High_Vanilla
-	{
-		items[] = {
-				{ { "V_PlateCarrier1_tna_F", "item" }, 1 },
-				{ { "V_PlateCarrierSpec_tna_F", "item" }, 1 },
-				{ { "V_PlateCarrierSpec_blk", "item" }, 1 },
-				{ { "V_HarnessO_ghex_F", "item" }, 1 },
-				{ { "V_HarnessOGL_ghex_F", "item" }, 1 },
-				{ { "V_PlateCarroer2_tna_F", "item" }, 1 },
-				{ { "V_PlateCarrierGL_tna_F", "item" }, 1 }
 		};
 	};
 	class Vests_Rebreather_Epoch
@@ -1780,8 +1772,6 @@ class CfgLootTable_CUP
 				{ { "V_TacChestrig_grn_F", "item" }, 1 },
 				{ { "V_TacChestrig_oli_F", "item" }, 1 },
 				{ { "V_TacChestrig_cbr_F", "item" }, 1 },
-				{ { "V_TacChestrig_grn_F", "item" }, 1 },
-				{ { "V_TacChestrig_grn_F", "item" }, 1 },
 				{ { "V_TacChestrig_grn_F", "item" }, 1 }
 		};
 	};
@@ -1842,22 +1832,22 @@ class CfgLootTable_CUP
 				{ { "B_TacticalPack_rgr", "backpack" }, 2 },			// 480
 				{ { "ALICE_Pack_Epoch", "backpack" }, 2 },				// 480
 
-				{ { "US_Backpack_Epoch", "backpack" }, 2 },				// 500
+				//{ { "US_Backpack_Epoch", "backpack" }, 2 },				// 500
 
-				{ { "B_Kitbag_cbr", "backpack" }, 2 },					// 520
-				{ { "B_Kitbag_mcamo", "backpack" }, 2 },				// 520
-				{ { "B_Kitbag_rgr", "backpack" }, 2 },					// 520
-				{ { "B_Kitbag_sgg", "backpack" }, 2 },					// 520
-				{ { "CZ_Backpack_Epoch", "backpack" }, 1 },				// 520
+				//{ { "B_Kitbag_cbr", "backpack" }, 2 },					// 520
+				//{ { "B_Kitbag_mcamo", "backpack" }, 2 },				// 520
+				//{ { "B_Kitbag_rgr", "backpack" }, 2 },					// 520
+				//{ { "B_Kitbag_sgg", "backpack" }, 2 },					// 520
+				//{ { "CZ_Backpack_Epoch", "backpack" }, 1 },				// 520
 
-				{ { "B_Carryall_cbr", "backpack" }, 1 },				// 550
-				{ { "B_Carryall_khk", "backpack" }, 1 },				// 550
-				{ { "B_Carryall_mcamo", "backpack" }, 1 },				// 550
-				{ { "B_Carryall_ocamo", "backpack" }, 1 },				// 550
-				{ { "B_Carryall_oli", "backpack" }, 1 },				// 550
-				{ { "B_Carryall_oucamo", "backpack" }, 1 },				// 550
+				//{ { "B_Carryall_cbr", "backpack" }, 1 },				// 550
+				//{ { "B_Carryall_khk", "backpack" }, 1 },				// 550
+				//{ { "B_Carryall_mcamo", "backpack" }, 1 },				// 550
+				//{ { "B_Carryall_ocamo", "backpack" }, 1 },				// 550
+				//{ { "B_Carryall_oli", "backpack" }, 1 },				// 550
+				//{ { "B_Carryall_oucamo", "backpack" }, 1 },				// 550
 				
-				{ { "L_Gunbag_Epoch", "backpack" }, 3 },				// 580
+				//{ { "L_Gunbag_Epoch", "backpack" }, 3 },				// 580
 				
 				{ { "B_Parachute", "backpack" }, 1 }
 		};

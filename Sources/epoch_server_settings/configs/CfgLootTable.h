@@ -1761,18 +1761,6 @@ class CfgLootTable
 				{ { "V_40_EPOCH", "item" }, 1 }
 		};
 	};
-	class Vests_High_Vanilla
-	{
-		items[] = {
-				{ { "V_PlateCarrier1_tna_F", "item" }, 1 },
-				{ { "V_PlateCarrierSpec_tna_F", "item" }, 1 },
-				{ { "V_PlateCarrierSpec_blk", "item" }, 1 },
-				{ { "V_HarnessO_ghex_F", "item" }, 1 },
-				{ { "V_HarnessOGL_ghex_F", "item" }, 1 },
-				{ { "V_PlateCarrier2_tna_F", "item" }, 1 },
-				{ { "V_PlateCarrierGL_tna_F", "item" }, 1 }
-		};
-	};
 	class Vests_Rebreather_Epoch
 	{
 		items[] = {
