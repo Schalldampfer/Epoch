@@ -7,6 +7,8 @@
 */
 //this is to blacklist items you do not want in the blackmarket
 _blacklist = [
+	"CUP_LRTV",
+	"CUP_Verctor21Nite",
 	"ItemSafe_s",
 	"KitPlotPole_M",
 	"KitPlotPole_L",
@@ -48,6 +50,7 @@ _blacklist = [
 	"B_AssaultPack_tna_F",
 	"B_FieldPack_ghex_F",
 	"CircuitParts",
+	"ItemRadio",
 	"ItemGPS",
 	"EpochRadio0",
 	"EpochRadio1",
