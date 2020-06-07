@@ -31,6 +31,7 @@ _sigtexture = "trader\trader.jpg";
 switch(toLower worldName)do{
 	case "tanoa":{
 		_staticCoords = [
+			[[2087.3,3435.13,0.330088],25.582,true], // Bala Airstrip
 			[[10983.977,8501.3359,0],231.841,true],
 			[[7033.4590,9713.6484,0],19.4830,true]
 		];
