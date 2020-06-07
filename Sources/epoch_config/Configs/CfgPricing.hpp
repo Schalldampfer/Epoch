@@ -5122,7 +5122,27 @@ class CfgPricing
         price = 300;
 		tax = 0.9;
     };
+    class CUP_B_M1030_USA
+    {
+        price = 500;
+		tax = 0.9;
+    };
+    class CUP_C_TT650_CIV
+    {
+        price = 500;
+		tax = 0.9;
+    };
+    class CUP_C_TT650_TK_CIV
+    {
+        price = 500;
+		tax = 0.9;
+    };
     class CUP_C_Fishing_Boat_Chernarus
+    {
+        price = 800;
+		tax = 0.9;
+    };
+    class CUP_O_PBX_RU
     {
         price = 800;
 		tax = 0.9;
@@ -5135,6 +5155,41 @@ class CfgPricing
     class CUP_B_Zodiac_USMC
     {
         price = 800;
+		tax = 0.9;
+    };
+    class CUP_C_Lada_White_CIV
+    {
+        price = 800;
+		tax = 0.9;
+    };
+    class CUP_C_Lada_Red_CIV
+    {
+        price = 800;
+		tax = 0.9;
+    };
+    class CUP_C_Lada_GreenTK_CIV
+    {
+        price = 800;
+		tax = 0.9;
+    };
+    class CUP_LADA_LM_CIV
+    {
+        price = 7500;
+		tax = 0.9;
+    };
+    class CUP_C_Volha_Blue_TKCIV
+    {
+        price = 800;
+		tax = 0.9;
+    };
+    class CUP_C_Volha_Gray_TKCIV
+    {
+        price = 800;
+		tax = 0.9;
+    };
+    class CUP_C_Volha_Limo_TKCIV
+    {
+        price = 7500;
 		tax = 0.9;
     };
     class CUP_C_Skoda_Red_CIV
@@ -5162,6 +5217,16 @@ class CfgPricing
         price = 1500;
 		tax = 0.9;
     };
+	class CUP_B_M1151_NATO_T
+	{
+        price = 7500;
+		tax = 0.9;
+	};
+	class CUP_B_M1152_NATO_T
+	{
+        price = 7500;
+		tax = 0.9;
+	};
     class CUP_B_HMMWV_Transport_USA
     {
         price = 2500;
@@ -5272,12 +5337,27 @@ class CfgPricing
         price = 1200;
 		tax = 0.9;
     };
+    class CUP_C_Tractor_CIV
+    {
+        price = 800;
+		tax = 0.9;
+    };
+    class CUP_C_Tractor_Old_CIV
+    {
+        price = 800;
+		tax = 0.9;
+    };
     class CUP_B_TowingTractor_USMC
     {
         price = 800;
 		tax = 0.9;
     };
     class CUP_C_C47_CIV
+    {
+        price = 1600;
+		tax = 0.9;
+    };
+    class CUP_C_AN2_CIV
     {
         price = 1600;
 		tax = 0.9;
@@ -6550,113 +6630,102 @@ class CfgPricing
     class Land_Pod_Heli_Transport_04_repair_F  { price = 7500; };
     class Land_Pod_Heli_Transport_04_ammo_F    { price = 10000; };
 
-	class B_APC_Tracked_01_rcws_F
+    class CUP_B_Kamaz_Open_CDF
+    {
+        price = 1000;
+		tax = 0.9;
+    };
+    class CUP_B_Kamaz_CDF
+    {
+        price = 1000;
+		tax = 0.9;
+    };
+    class CUP_B_MTVR_USMC
+    {
+        price = 1000;
+		tax = 0.9;
+    };
+    class CUP_C_V3S_Open_TKC
+    {
+        price = 1000;
+		tax = 0.9;
+    };
+    class CUP_C_V3S_Covered_TKC
+    {
+        price = 1000;
+		tax = 0.9;
+    };
+    class CUP_O_Ural_Empty_SLA
+    {
+        price = 1000;
+		tax = 0.9;
+    };
+    class CUP_C_Ikarus_Chernarus
+    {
+        price = 1000;
+    };
+    class CUP_C_Ikarus_TKC
+    {
+        price = 1000;
+    };
+	class CUP_B_FENNEK_GER_Wdl
+	{
+        price = 10000;
+		tax = 0.9;
+	};
+
+	class CUP_O_MTLB_pk_WDL_RU
+	{
+		price = 30000;
+		tax = 0.9;
+	};
+
+    class CUP_C_MI6A_RU
+    {
+        price = 50000;
+		tax = 0.9;
+    };
+    class CUP_C_Mi17_VIV_RU
+    {
+        price = 20000;
+		tax = 0.9;
+    };
+    class CUP_C_Mi17_Civilian_RU
+    {
+        price = 20000;
+		tax = 0.9;
+    };
+    class CUP_C_SA330_Puma_HC1_ChernAvia
+    {
+        price = 20000;
+		tax = 0.9;
+    };
+    class CUP_B_MH6J_USA
+    {
+        price = 25000;
+		tax = 0.9;
+    };
+    class CUP_B_MH6M_USA
+    {
+        price = 25000;
+		tax = 0.9;
+    };
+    class CUP_B_UH60M_Unarmed_US
+    {
+        price = 20000;
+		tax = 0.9;
+    };
+	class CUP_B_MV22_USMC_RAMPGUN
 	{
 		price = 30000;
 		tax = 1;
 	};
-	class O_APC_Wheeled_02_rcws_F
+	class CUP_B_AC47_Spooky_USA
 	{
 		price = 30000;
 		tax = 1;
 	};
 
-	class B_APC_Tracked_01_CRV_F
-	{
-		price = 25000;
-		tax = 1;
-	};
-
-	class B_APC_Wheeled_01_cannon_F
-	{
-		price = 40000;
-		tax = 1;
-	};
-	class I_APC_tracked_03_cannon_F
-	{
-		price = 40000;
-		tax = 1;
-	};
-
-	class B_APC_Wheeled_03_cannon_F
-	{
-		price = 50000;
-		tax = 1;
-	};
-	class O_APC_Tracked_02_cannon_F
-	{
-		price = 50000;
-		tax = 1;
-	};
-	class I_APC_Wheeled_03_cannon_F
-	{
-		price = 50000;
-		tax = 1;
-	};
-
-	class B_APC_Tracked_01_AA_F
-	{
-		price = 75000;
-		tax = 1;
-	};
-	class O_APC_Tracked_02_AA_F
-	{
-		price = 75000;
-		tax = 1;
-	};
-
-	class B_MBT_01_cannon_F
-	{
-		price = 75000;
-		tax = 1;
-	};
-	class B_MBT_01_TUSK_F
-	{
-		price = 77500;
-		tax = 1;
-	};
-	class O_MBT_02_cannon_F
-	{
-		price = 77500;
-		tax = 1;
-	};
-	class I_MBT_03_cannon_F
-	{
-		price = 77500;
-		tax = 1;
-	};
-
-	class B_MBT_01_arty_F
-	{
-		price = 500000;
-		tax = 1;
-	};
-	class O_MBT_02_arty_F
-	{
-		price = 500000;
-		tax = 1;
-	};
-	class B_MBT_01_mlrs_F
-	{
-		price = 500000;
-		tax = 1;
-	};
-
-	class B_Plane_CAS_01_dynamicLoadout_F
-	{
-		price = 25000;
-		tax = 1;
-	};
-	class O_Plane_CAS_02_dynamicLoadout_F
-	{
-		price = 25000;
-		tax = 1;
-	};
-	class I_Plane_Fighter_03_dynamicLoadout_F
-	{
-		price = 25000;
-		tax = 1;
-	};
 };
 
 /*[[[end]]]*/
