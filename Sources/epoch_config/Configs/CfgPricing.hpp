@@ -1540,6 +1540,14 @@ class CfgPricing
     };
     class CUP_optic_PSO_3
     {
+        price = 1000;
+    };
+    class CUP_optic_1p63
+    {
+        price = 10;
+    };
+    class CUP_optic_ekp_8_02
+    {
         price = 10;
     };
     class CUP_optic_Kobra
@@ -1548,11 +1556,11 @@ class CfgPricing
     };
     class CUP_optic_GOSHAWK
     {
-        price = 10;
+        price = 100000;
     };
     class CUP_optic_NSPU
     {
-        price = 10;
+        price = 10000;
     };
     class CUP_optic_PechenegScope
     {
@@ -1560,13 +1568,33 @@ class CfgPricing
     };
     class CUP_optic_SB_3_12x50_PMII
     {
-        price = 10;
+        price = 1000;
     };
     class CUP_optic_AN_PAS_13c2
     {
-        price = 10;
+        price = 100000;
     };
     class CUP_optic_LeupoldMk4
+    {
+        price = 1000;
+    };
+    class CUP_optic_AC11704_Black
+    {
+        price = 10;
+    };
+    class CUP_optic_AC11704_Tan
+    {
+        price = 10;
+    };
+    class CUP_optic_AC11704_Coyote
+    {
+        price = 10;
+    };
+    class CUP_optic_AC11704_OD
+    {
+        price = 10;
+    };
+    class CUP_optic_AC11704_Jungle
     {
         price = 10;
     };
@@ -1602,15 +1630,39 @@ class CfgPricing
     {
         price = 10;
     };
-    class CUP_optic_CWS
+    class CUP_optic_ACOG2
     {
         price = 10;
+    };
+    class CUP_optic_ACOG_TA31_KF
+    {
+        price = 10;
+    };
+    class CUP_optic_ACOG_TA01B_Black
+    {
+        price = 10;
+    };
+    class CUP_optic_ACOG_TA01B_RMR_Black
+    {
+        price = 20;
+    };
+    class CUP_optic_ACOG_TA01NSN_RMR_Black
+    {
+        price = 20;
+    };
+    class CUP_optic_CWS
+    {
+        price = 100000;
     };
     class CUP_optic_Leupold_VX3
     {
         price = 10;
     };
     class CUP_optic_AN_PVS_10
+    {
+        price = 10000;
+    };
+    class CUP_optic_MicroT1
     {
         price = 10;
     };
@@ -1640,15 +1692,15 @@ class CfgPricing
     };
     class CUP_optic_LeupoldM3LR
     {
-        price = 15;
+        price = 1500;
     };
     class CUP_optic_LeupoldMk4_10x40_LRT_Desert
     {
-        price = 15;
+        price = 1500;
     };
     class CUP_optic_LeupoldMk4_10x40_LRT_Woodland
     {
-        price = 15;
+        price = 1500;
     };
     class CUP_optic_ElcanM145
     {
@@ -1656,23 +1708,35 @@ class CfgPricing
     };
     class CUP_optic_AN_PAS_13c1
     {
-        price = 10;
+        price = 100000;
     };
     class CUP_optic_LeupoldMk4_CQ_T
     {
-        price = 10;
+        price = 1000;
     };
     class CUP_optic_ELCAN_SpecterDR
     {
         price = 10;
     };
-    class CUP_optic_LeupoldMk4_MRT_tan
+    class CUP_optic_ELCAN_SpecterDR_RMR
+    {
+        price = 20;
+    };
+    class CUP_optic_Elcan
     {
         price = 10;
     };
+    class CUP_optic_Elcan_reflex
+    {
+        price = 20;
+    };
+    class CUP_optic_LeupoldMk4_MRT_tan
+    {
+        price = 1000;
+    };
     class CUP_optic_SB_11_4x20_PM
     {
-        price = 10;
+        price = 1000;
     };
     class CUP_optic_ZDDot
     {
@@ -1681,6 +1745,26 @@ class CfgPricing
     class CUP_optic_MRad
     {
         price = 10;
+    };
+    class CUP_optic_ZeissZPoint
+    {
+        price = 10;
+    };
+    class CUP_optic_HensoldtZO
+    {
+        price = 10;
+    };
+    class CUP_optic_HensoldtZO_low
+    {
+        price = 10;
+    };
+    class CUP_optic_HensoldtZO_RDS
+    {
+        price = 20;
+    };
+    class CUP_optic_HensoldtZO_low_RDS
+    {
+        price = 20;
     };
     class CUP_optic_TrijiconRx01_desert
     {
@@ -1692,7 +1776,71 @@ class CfgPricing
     };
     class CUP_optic_AN_PVS_4
     {
+        price = 10000;
+    };
+    class CUP_optic_AN_PVS_4_M14
+    {
+        price = 10000;
+    };
+    class CUP_optic_AN_PVS_4_M16
+    {
+        price = 10000;
+    };
+    class CUP_optic_VortexRazor_UH1_Black
+    {
         price = 10;
+    };
+    class CUP_optic_MARS
+    {
+        price = 10;
+    };
+    class CUP_optic_no23mk2
+    {
+        price = 500;
+    };
+    class CUP_optic_PEM
+    {
+        price = 500;
+    };
+    class CUP_optic_Remington
+    {
+        price = 500;
+    };
+    class CUP_optic_PGO7V
+    {
+        price = 500;
+    };
+    class CUP_optic_NSPU_RPG
+    {
+        price = 10000;
+    };
+    class CUP_optic_G33_HWS_BLK
+    {
+        price = 20;
+    };
+    class CUP_optic_AIMM_COMPM4_BLK
+    {
+        price = 20;
+    };
+    class CUP_optic_AIMM_COMPM2_BLK
+    {
+        price = 20;
+    };
+    class CUP_optic_AIMM_MICROT1_BLK
+    {
+        price = 20;
+    };
+    class CUP_optic_AIMM_ZDDOT_BLK
+    {
+        price = 20;
+    };
+    class CUP_optic_AIMM_MARS_BLK
+    {
+        price = 20;
+    };
+    class CUP_optic_AIMM_M68_BLK
+    {
+        price = 20;
     };
     class CUP_acc_Glock17_Flashlight
     {
@@ -1740,11 +1888,19 @@ class CfgPricing
     };
     class CUP_bipod_Harris_1A2_L
     {
-        price = 0;
+        price = 10;
     };
     class CUP_bipod_VLTOR_Modpod
     {
-        price = 0;
+        price = 10;
+    };
+    class CUP_bipod_FNFAL
+    {
+        price = 10;
+    };
+    class CUP_Bipod_G36
+    {
+        price = 10;
     };
     class CUP_Mxx_camo
     {
@@ -6726,6 +6882,46 @@ class CfgPricing
 		tax = 1;
 	};
 
+    class CUP_launch_M72A6
+    {
+        price = 500;
+        tax = 0.9;
+    };
+    class CUP_launch_M136
+    {
+        price = 750;
+        tax = 0.9;
+    };
+    class CUP_launch_RPG18
+    {
+        price = 500;
+        tax = 0.9;
+    };
+    class CUP_launch_RPG7V
+    {
+        price = 750;
+        tax = 0.9;
+    };
+    class CUP_launch_NLAW
+    {
+        price = 1500;
+        tax = 0.9;
+    };
+    class CUP_PG7V_M
+    {
+        price = 300;
+        tax = 0.9;
+    };
+    class CUP_PG7VR_M
+    {
+        price = 600;
+        tax = 0.9;
+    };
+    class CUP_OG7_M
+    {
+        price = 250;
+        tax = 0.9;
+    };
 };
 
 /*[[[end]]]*/
