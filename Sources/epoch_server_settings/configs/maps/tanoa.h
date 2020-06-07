@@ -293,9 +293,7 @@ class Tanoa : Default
 	staticNpcPos[] = {
 		// Temple Trader
         { "C_man_polo_2_F_asia", { 11071.1, 8468.06, 0 }, 142.262 },
-        { "C_man_p_fugitive_F_asia", { 11060.9, 8475.17, 0 }, 286 },
         { "C_man_shorts_1_F_asia", { 11063.5, 8467.39, 0 }, 221.15 },
-        { "C_man_hunter_1_F", { 11072.7, 8475.57, 0 }, 57.446 },
 		// Shrine
 		{ "C_man_shorts_4_F_asia", { 7031.77,9714.42,0 }, 44.484 }
 	};
