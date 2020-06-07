@@ -233,6 +233,10 @@ class Tanoa : Default
         { "TP_Booth_e_EPOCH", { 13.5127,0.410156,-10.3098, 90}, "", { 11779.6,13056.5,0 } }
 	};
 	propsPos[] = {
+		// La Rochelle Aerodrome
+        { "Transport_EPOCH", {11628.4,13124.7,0.151762}, {{0,1,0},{0,0,1}}, true },
+        { "Land_PhoneBooth_01_malden_F", {11614.8,13119.3,0.161092}, {{0.309017,0.951057,0},{0,0,1}}, true },
+        { "Land_HelipadEmpty_F", {11664.6,13138.4,0}, {{0,1,0},{0,0,1}}, true },
 		// Temple Trader
         { "Transport_EPOCH", {11068.167,8479.7549,0}, {{0,1,0},{0,0,1}}, true },
         { "ProtectionZone_Invisible_F", {11068.813,8473.416,0}, {{-0.000149552,1,0},{0,0,1}}, true },
@@ -291,6 +295,8 @@ class Tanoa : Default
         { "Land_Atm_01_F", {14349.2,8747.38,0.588572}, {{0.0485784,0.998819,0},{0,0,1}}, true }
 	};
 	staticNpcPos[] = {
+		// La Rochelle Aerodrome
+        { "C_man_hunter_1_F", { 11624.2,13126.5,0.154624 }, 155.756 },
 		// Temple Trader
         { "C_man_polo_2_F_asia", { 11071.1, 8468.06, 0 }, 142.262 },
         { "C_man_shorts_1_F_asia", { 11063.5, 8467.39, 0 }, 221.15 },
