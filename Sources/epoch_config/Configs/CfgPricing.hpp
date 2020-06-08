@@ -1656,7 +1656,7 @@ class CfgPricing
     };
     class CUP_optic_Leupold_VX3
     {
-        price = 10;
+        price = 1000;
     };
     class CUP_optic_AN_PVS_10
     {
@@ -1891,6 +1891,14 @@ class CfgPricing
         price = 10;
     };
     class CUP_bipod_VLTOR_Modpod
+    {
+        price = 10;
+    };
+    class CUP_bipod_G3
+    {
+        price = 10;
+    };
+    class CUP_bipod_G3SG1
     {
         price = 10;
     };
