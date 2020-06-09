@@ -6821,162 +6821,40 @@ class CfgPricing
     class Land_Pod_Heli_Transport_04_repair_F  { price = 7500; };
     class Land_Pod_Heli_Transport_04_ammo_F    { price = 10000; };
 
-    class CUP_B_Kamaz_Open_CDF
-    {
-        price = 1000;
-		tax = 0.9;
-    };
-    class CUP_B_Kamaz_CDF
-    {
-        price = 1000;
-		tax = 0.9;
-    };
-    class CUP_B_MTVR_USMC
-    {
-        price = 1000;
-		tax = 0.9;
-    };
-    class CUP_C_V3S_Open_TKC
-    {
-        price = 1000;
-		tax = 0.9;
-    };
-    class CUP_C_V3S_Covered_TKC
-    {
-        price = 1000;
-		tax = 0.9;
-    };
-    class CUP_O_Ural_Empty_SLA
-    {
-        price = 1000;
-		tax = 0.9;
-    };
-    class CUP_C_Ikarus_Chernarus
-    {
-        price = 1000;
-    };
-    class CUP_C_Ikarus_TKC
-    {
-        price = 1000;
-    };
-	class CUP_B_FENNEK_GER_Wdl
-	{
-        price = 10000;
-		tax = 0.9;
-	};
+    class CUP_B_Kamaz_Open_CDF {price = 1000;tax = 0.9;};
+    class CUP_B_Kamaz_CDF {price = 1000;tax = 0.9;};
+    class CUP_B_MTVR_USMC {price = 1000;tax = 0.9;};
+    class CUP_C_V3S_Open_TKC {price = 1000;tax = 0.9;};
+    class CUP_C_V3S_Covered_TKC {price = 1000;tax = 0.9;};
+    class CUP_O_Ural_Empty_SLA {price = 1000;tax = 0.9;};
+    class CUP_C_Ikarus_Chernarus {price = 1000;};
+    class CUP_C_Ikarus_TKC {price = 1000;};
+	class CUP_B_FENNEK_GER_Wdl {price = 1000;tax = 0.9;};
 
-	class CUP_O_MTLB_pk_WDL_RU
-	{
-		price = 30000;
-		tax = 0.9;
-	};
+	class CUP_O_MTLB_pk_WDL_RU {price = 30000;tax = 0.9;};
 
-    class CUP_C_MI6A_RU
-    {
-        price = 50000;
-		tax = 0.9;
-    };
-    class CUP_C_Mi17_VIV_RU
-    {
-        price = 20000;
-		tax = 0.9;
-    };
-    class CUP_C_Mi17_Civilian_RU
-    {
-        price = 20000;
-		tax = 0.9;
-    };
-    class CUP_C_SA330_Puma_HC1_ChernAvia
-    {
-        price = 20000;
-		tax = 0.9;
-    };
-    class CUP_B_MH6J_USA
-    {
-        price = 25000;
-		tax = 0.9;
-    };
-    class CUP_B_MH6M_USA
-    {
-        price = 25000;
-		tax = 0.9;
-    };
-    class CUP_B_UH60M_Unarmed_US
-    {
-        price = 20000;
-		tax = 0.9;
-    };
-	class CUP_B_MV22_USMC_RAMPGUN
-	{
-		price = 30000;
-		tax = 1;
-	};
-	class CUP_B_AC47_Spooky_USA
-	{
-		price = 30000;
-		tax = 1;
-	};
+    class CUP_C_MI6A_RU {price = 50000;tax = 0.9;};
+    class CUP_C_Mi17_VIV_RU {price = 20000;tax = 0.9;};
+    class CUP_C_Mi17_Civilian_RU {price = 20000;tax = 0.9;};
+    class CUP_C_SA330_Puma_HC1_ChernAvia {price = 20000;tax = 0.9;};
+    class CUP_B_MH6J_USA {price = 25000;tax = 0.9;};
+    class CUP_B_MH6M_USA {price = 25000;tax = 0.9;};
+    class CUP_B_UH60M_Unarmed_US {price = 20000;tax = 0.9;};
+	class CUP_B_MV22_USMC_RAMPGUN {price = 30000;tax = 1;};
+	class CUP_B_AC47_Spooky_USA {price = 30000;tax = 1;};
 
-    class CUP_launch_M72A6
-    {
-        price = 500;
-        tax = 0.9;
-    };
-    class CUP_launch_M136
-    {
-        price = 750;
-        tax = 0.9;
-    };
-    class CUP_launch_RPG18
-    {
-        price = 500;
-        tax = 0.9;
-    };
-    class CUP_launch_RPG7V
-    {
-        price = 750;
-        tax = 0.9;
-    };
-    class CUP_launch_NLAW
-    {
-        price = 1500;
-        tax = 0.9;
-    };
-    class CUP_launch_M72A6_Loaded
-    {
-        price = 500;
-        tax = 0.9;
-    };
-    class CUP_launch_M136_Loaded
-    {
-        price = 750;
-        tax = 0.9;
-    };
-    class CUP_launch_RPG18_Loaded
-    {
-        price = 500;
-        tax = 0.9;
-    };
-    class CUP_launch_NLAW_Loaded
-    {
-        price = 1500;
-        tax = 0.9;
-    };
-    class CUP_PG7V_M
-    {
-        price = 300;
-        tax = 0.9;
-    };
-    class CUP_PG7VR_M
-    {
-        price = 600;
-        tax = 0.9;
-    };
-    class CUP_OG7_M
-    {
-        price = 250;
-        tax = 0.9;
-    };
+    class CUP_launch_M72A6 {price = 500;tax = 0.9;};
+    class CUP_launch_M136 {price = 750;tax = 0.9;};
+    class CUP_launch_RPG18 {price = 500;tax = 0.9;};
+    class CUP_launch_RPG7V {price = 750;tax = 0.9;};
+    class CUP_launch_NLAW {price = 1500;tax = 0.9;};
+    class CUP_launch_M72A6_Loaded {price = 500;tax = 0.9;};
+    class CUP_launch_M136_Loaded {price = 750;tax = 0.9;};
+    class CUP_launch_RPG18_Loaded {price = 500;tax = 0.9;};
+    class CUP_launch_NLAW_Loaded {price = 1500;tax = 0.9;};
+    class CUP_PG7V_M {price = 300;tax = 0.9;};
+    class CUP_PG7VR_M {price = 600;tax = 0.9;};
+    class CUP_OG7_M {price = 500;tax = 0.9;};
 
 	class CUP_hgun_Glock17_blk {price = 25;};
 	class CUP_hgun_Glock17_tan {price = 25;};
@@ -7078,6 +6956,10 @@ class CfgPricing
     class CUP_1Rnd_SMOKERED_GP25_M { price = 5; };
     class CUP_1Rnd_SMOKEGREEN_GP25_M { price = 5; };
     class CUP_1Rnd_SMOKEYELLOW_GP25_M { price = 5; };
+
+	class CUP_12Rnd_9x18_PMM_M {price = 3;tax = 0.9;};
+	class CUP_7Rnd_50AE_Deagle {price = 3;tax = 0.9;};
+	class CUP_12Rnd_45ACP_mk23 {price = 3;tax = 0.9;};
 	class CUP_20Rnd_762x51_G3 {price = 5;tax = 0.9;};
 	class CUP_20Rnd_TE1_Red_Tracer_762x51_G3 {price = 5;tax = 0.9;};
 	class CUP_20Rnd_TE1_Green_Tracer_762x51_G3 {price = 5;tax = 0.9;};
@@ -7109,8 +6991,10 @@ class CfgPricing
 	class CUP_10Rnd_762x39_SKS_M {price = 5;tax = 0.9;};
 	class CUP_30Rnd_680x43_Stanag {price = 6;tax = 0.9;};
 	class CUP_30Rnd_45ACP_MAC10_M {price = 4;tax = 0.9;};
+	class CUP_32Rnd_9x19_TEC9 {price = 3;tax = 0.9;};
 	class CUP_10Rnd_9x19_Saiga9 {price = 3;tax = 0.9;};
-	class CUP_40Rnd_46x30_MP7 {price = 6;tax = 0.9;};
+	class CUP_40Rnd_46x30_MP7 {price = 5;tax = 0.9;};
+	class CUP_20Rnd_46x30_MP7 {price = 3;tax = 0.9;};
 	class CUP_1Rnd_B_CZ584_74Slug {price = 1;tax = 0.9;};
 	class CUP_1Rnd_B_CZ584_74Pellets {price = 1;tax = 0.9;};
 
