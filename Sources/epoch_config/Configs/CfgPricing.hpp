@@ -6942,6 +6942,26 @@ class CfgPricing
         price = 1500;
         tax = 0.9;
     };
+    class CUP_launch_M72A6_Loaded
+    {
+        price = 500;
+        tax = 0.9;
+    };
+    class CUP_launch_M136_Loaded
+    {
+        price = 750;
+        tax = 0.9;
+    };
+    class CUP_launch_RPG18_Loaded
+    {
+        price = 500;
+        tax = 0.9;
+    };
+    class CUP_launch_NLAW_Loaded
+    {
+        price = 1500;
+        tax = 0.9;
+    };
     class CUP_PG7V_M
     {
         price = 300;
@@ -7000,6 +7020,7 @@ class CfgPricing
 	class CUP_arifle_Sa58P_frontris {price = 75;};
 	class CUP_Famas_F1_Rail {price = 75;};
 	class CUP_arifle_ACR_blk_556 {price = 75;};
+	class CUP_arifle_ACR_blk_68 {price = 85;};
 	class CUP_arifle_Galil_556_black {price = 75;};
 	class CUP_arifle_Galil_SAR_black {price = 75;};
 	class CUP_arifle_X95 {price = 75;};
@@ -7009,6 +7030,7 @@ class CfgPricing
 	class CUP_arifle_FNFAL_OSW_railed {price = 80;};
 	class CUP_arifle_HK417_12 {price = 80;};
 	class CUP_arifle_G3A3_ris {price = 80;};
+	class CUP_arifle_G3A3_modern_ris {price = 80;};
 	class CUP_arifle_FNFAL5061_wooden_railed {price = 80;};
 	class CUP_arifle_AKM_GL {price = 80;};
 	class CUP_arifle_AK47_GL {price = 80;};
@@ -7057,6 +7079,8 @@ class CfgPricing
     class CUP_1Rnd_SMOKEGREEN_GP25_M { price = 5; };
     class CUP_1Rnd_SMOKEYELLOW_GP25_M { price = 5; };
 	class CUP_20Rnd_762x51_G3 {price = 5;tax = 0.9;};
+	class CUP_20Rnd_TE1_Red_Tracer_762x51_G3 {price = 5;tax = 0.9;};
+	class CUP_20Rnd_TE1_Green_Tracer_762x51_G3 {price = 5;tax = 0.9;};
 	class CUP_20Rnd_762x51_DMR {price = 5;tax = 0.9;};
 	class CUP_20Rnd_762x51_L129_M {price = 5;tax = 0.9;};
 	class CUP_20Rnd_762x51_HK417 {price = 5;tax = 0.9;};
