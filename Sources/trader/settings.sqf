@@ -7,6 +7,15 @@
 */
 //this is to blacklist items you do not want in the blackmarket
 _blacklist = [
+	"CUP_launch_M72A6_Loaded",
+	"CUP_launch_M136_Loaded",
+	"CUP_launch_RPG18_Loaded",
+	"CUP_launch_NLAW_Loaded",
+	"CUP_srifle_AS50",
+	"CUP_srifle_M107_Base",
+	"CUP_srifle_ksvk",
+	"CUP_20Rnd_762x51_CZ805B",
+	"CUP_30Rnd_762x39_CZ807",
 	"CUP_5Rnd_127x99_as50_M",
 	"CUP_10Rnd_127x99_m107",
 	"CUP_muzzle_snds_M110",
