@@ -6838,11 +6838,26 @@ class CfgPricing
     class CUP_O_Ural_Empty_SLA {price = 10000;tax = 0.9;};
     class CUP_C_Ikarus_Chernarus {price = 10000;};
     class CUP_C_Ikarus_TKC {price = 10000;};
-	class CUP_B_FENNEK_GER_Wdl {price = 10000;tax = 0.9;};
-
-	class CUP_O_Hilux_armored_unarmed_TK_INS {price = 12000;};
-	
+	class CUP_B_FENNEK_GER_Wdl {price = 15000;tax = 0.9;};
+	class CUP_I_FENNEK_ION {price = 15000;tax = 0.9;};
+	class CUP_O_BTR40_MG_TKM {price = 30000;tax = 0.9;};
+	class CUP_I_SUV_Armored_ION {price = 22000;tax = 0.9;};
+	class CUP_O_Hilux_armored_unarmed_TK_INS {price = 10000;};
+	class CUP_I_Hilux_armored_DSHKM_TK {price = 22000;tax = 0.9;};
+	class CUP_O_Hilux_DSHKM_TK_INS {price = 20000;tax = 0.9;};
+	class CUP_O_Hilux_M2_TK_INS {price = 20000;tax = 0.9;};
+	class CUP_O_Hilux_btr60_TK_INS {price = 35000;tax = 0.9;};
+	class CUP_B_LR_MG_GB_W {price = 25000;tax = 0.9;};
+	class CUP_O_LR_MG_TKM {price = 25000;tax = 0.9;};
+	class CUP_O_UAZ_MG_RU {price = 20000;tax = 0.9;};
 	class CUP_O_MTLB_pk_WDL_RU {price = 100000;tax = 0.9;};
+	class CUP_B_MTLB_pk_FIA {price = 100000;tax = 0.9;};
+	class CUP_I_MTLB_pk_SYNDIKAT {price = 100000;tax = 0.9;};
+	class CUP_I_M113_Med_AAF {price = 12000;tax = 0.9;};
+	class CUP_B_M113_USA {price = 150000;tax = 0.9;};
+	class CUP_I_M113_AAF {price = 150000;tax = 0.9;};
+	class CUP_O_GAZ_Vodnik_PK_RU {price = 120000;tax = 0.9;};
+	class CUP_O_GAZ_Vodnik_AGS_RU {price = 130000;tax = 0.9;};
 
     class CUP_C_MI6A_RU {price = 150000;tax = 0.9;};
     class CUP_C_Mi17_VIV_RU {price = 70000;tax = 0.9;};
@@ -6853,6 +6868,10 @@ class CfgPricing
     class CUP_B_UH60M_Unarmed_US {price = 70000;tax = 0.9;};
 	class CUP_B_MV22_USMC_RAMPGUN {price = 300000;tax = 1;};
 	class CUP_B_AC47_Spooky_USA {price = 300000;tax = 1;};
+	class CUP_B_AH6M_Cannons_USA {price = 300000;tax = 1;};
+	class CUP_B_AH6J_Cannons_USA {price = 300000;tax = 1;};
+	class CUP_O_UH1H_armed_TKA {price = 400000;tax = 1;};
+	class CUP_O_UH1H_armed_SLA {price = 400000;tax = 1;};
 
     class CUP_launch_M72A6 {price = 500;tax = 0.9;};
     class CUP_launch_M136 {price = 750;tax = 0.9;};
