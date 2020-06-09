@@ -2597,6 +2597,7 @@ class CfgPricing
         price = 5;
     };
 
+/*
     class UGL_FlareWhite_F
     {
         price = 2;
@@ -2649,7 +2650,6 @@ class CfgPricing
     {
         price = 3;
     };
-/*
     class 3Rnd_HE_Grenade_shell
     {
         price = 10;
@@ -2927,11 +2927,13 @@ class CfgPricing
         price = 5;
         tax = 0.9;
     };
+*/
 	class 50Rnd_570x28_SMG_03{
 		price = 5;
 		tax = 0.9;
 	};
-    class 20rnd_762_magazine
+/*
+	class 20rnd_762_magazine
     {
         price = 5;
         tax = 0.9;
@@ -3116,7 +3118,6 @@ class CfgPricing
     {
         price = 15;
     };
-/*
     class 16Rnd_9x21_Mag
     {
         price = 2;
@@ -3127,6 +3128,7 @@ class CfgPricing
         price = 3;
         tax = 0.9;
     };
+/*
     class 9Rnd_45ACP_Mag
     {
         price = 2;
@@ -6671,6 +6673,7 @@ class CfgPricing
     ///////////////////////////////////////////////////////////////////////////////
     // Apex Items & Weapons
     ///////////////////////////////////////////////////////////////////////////////
+/*
     class hgun_Pistol_01_F            { price = 65;  };
     class hgun_P07_khk_F              { price = 65;  };
     class SMG_05_F					  { price = 150;  };
@@ -6763,6 +6766,7 @@ class CfgPricing
     class 200Rnd_556x45_Box_Tracer_F                { price = 9;  };
     class 200Rnd_556x45_Box_Tracer_Red_F            { price = 9;  };
     class 10Rnd_9x21_Mag							{ price = 2;  };
+*/
     class B_Bergen_mcamo_F                  {  price = 40; };
     class B_Bergen_dgtl_F                   {  price = 40; };
     class B_Bergen_hex_F                    {  price = 40; };
