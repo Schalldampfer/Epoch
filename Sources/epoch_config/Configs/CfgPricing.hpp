@@ -460,6 +460,7 @@ class CfgPricing
     {
         price = 5;
     };
+/*
     class srifle_EBR_F
     {
         price = 150;
@@ -476,11 +477,13 @@ class CfgPricing
     {
         price = 200;
     };
+*/
     class 20Rnd_762x51_Mag
     {
         price = 4;
         tax = 0.9;
     };
+/*
     class 5Rnd_127x108_Mag
     {
         price = 3;
@@ -526,6 +529,7 @@ class CfgPricing
         price = 2;
         tax = 0.9;
     };
+*/
     class CUP_hgun_Compact
     {
         price = 20;
@@ -2335,6 +2339,7 @@ class CfgPricing
 	{
         price = 20;
     };
+/*
     class sr25_epoch
     {
         price = 50;
@@ -2379,10 +2384,12 @@ class CfgPricing
     {
         price = 50;
     };
+*/
     class arifle_SDAR_F
     {
         price = 50;
     };
+/*
     class arifle_TRG21_F
     {
         price = 50;
@@ -2495,10 +2502,12 @@ class CfgPricing
     {
         price = 50;
     };
+*/
     class Rollins_F
     {
         price = 50;
     };
+/*
     class 30Rnd_65x39_caseless_green
     {
         price = 3;
@@ -2519,6 +2528,7 @@ class CfgPricing
         price = 4;
         tax = 0.9;
     };
+*/
     class 20Rnd_556x45_UW_mag
     {
         price = 3;
@@ -2544,6 +2554,7 @@ class CfgPricing
         price = 4;
         tax = 0.9;
     };
+/*
     class 30Rnd_45ACP_Mag_SMG_01
     {
         price = 2;
@@ -2554,6 +2565,7 @@ class CfgPricing
         price = 3;
         tax = 0.9;
     };
+*/
     class 5Rnd_rollins_mag
     {
         price = 2;
@@ -2637,6 +2649,7 @@ class CfgPricing
     {
         price = 3;
     };
+/*
     class 3Rnd_HE_Grenade_shell
     {
         price = 10;
@@ -2829,7 +2842,7 @@ class CfgPricing
     {
         price = 100;
     };
-
+*/
     class pvcrifle_01_F
     {
         price = 100;
@@ -2846,7 +2859,7 @@ class CfgPricing
     {
         price = 20;
     };
-	
+/*
 	// A2 Weapons
     class a2_ak47s_gold_EPOCH
     {
@@ -3020,7 +3033,7 @@ class CfgPricing
         price = 5;
         tax = 0.9;
     };
-
+*/
     class Rangefinder
     {
         price = 4;
@@ -3029,6 +3042,7 @@ class CfgPricing
     {
         price = 4;
     };
+/*
     class hgun_ACPC2_F
     {
         price = 20;
@@ -3057,6 +3071,7 @@ class CfgPricing
     {
         price = 6;
     };
+*/
     class hgun_Pistol_Signal_F
     {
         price = 20;
@@ -3101,6 +3116,7 @@ class CfgPricing
     {
         price = 15;
     };
+/*
     class 16Rnd_9x21_Mag
     {
         price = 2;
@@ -3136,6 +3152,7 @@ class CfgPricing
         price = 2;
         tax = 0.9;
     };
+*/
     class 6Rnd_GreenSignal_F
     {
         price = 2;
@@ -3166,6 +3183,7 @@ class CfgPricing
         price = 30;
         tax = 0.9;
     };
+/*
     class optic_Arco
     {
         price = 10;
@@ -3214,10 +3232,12 @@ class CfgPricing
     {
         price = 10;
     };
+*/
     class optic_MRD
     {
         price = 10;
     };
+/*
     class optic_LRPS
     {
         price = 20;
@@ -3306,6 +3326,7 @@ class CfgPricing
     {
         price = 10;
     };
+*/
     class muzzle_snds_H
     {
         price = 5;
@@ -3348,6 +3369,7 @@ class CfgPricing
     {
         price = 2;
     };
+/*
     class muzzle_snds_338_black
     {
         price = 5;
@@ -3372,6 +3394,7 @@ class CfgPricing
     {
         price = 5;
     };
+*/
     class PartOreGold
     {
         price = 70;
