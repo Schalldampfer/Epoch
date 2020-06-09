@@ -7,6 +7,8 @@
 */
 //this is to blacklist items you do not want in the blackmarket
 _blacklist = [
+	"C_Boat_Civil_01_police_EPOCH",
+	"C_Boat_Civil_01_rescue_EPOCH",
 	"CUP_launch_M72A6_Loaded",
 	"CUP_launch_M136_Loaded",
 	"CUP_launch_RPG18_Loaded",
