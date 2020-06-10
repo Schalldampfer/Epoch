@@ -23,32 +23,32 @@ _geararr = [
 	[
 //this is the array of secondary weapons the player can choose from, this has to be "weapon" type items
 		[
-			"hgun_ACPC2_F","ruger_pistol_epoch","1911_pistol_epoch","hgun_P07_F","hgun_Pistol_heavy_01_F","hgun_Pistol_heavy_02_F","hgun_Rook40_F",
-			"hgun_Pistol_Signal_F","Hatchet"//,"ChainSaw"
+			"CUP_hgun_Compact","CUP_hgun_Makarov","CUP_hgun_Colt1911","CUP_hgun_TaurusTracker455",
+			"hgun_Pistol_tranq_01","hgun_Pistol_Signal_F","Hatchet","CrudeHatchet"
 		],
 //this is how many magazines is added for secondary weapon
-		4
+		3
 	], 
 	[
 //this is the array of primary weapons the player can choose from, this has to be "weapon" type items
 		[
-			"a2_leeenfield_epoch","Rollins_F","speargun_epoch","AKM_EPOCH","a2_G36_C_epoch"
+			"CUP_arifle_AK47","CUP_arifle_TYPE_56_2","CUP_arifle_M16A1","CUP_arifle_Sa58P_frontris"
 		],
 //this is how many magazines is added for primary weapon
-		3
+		2
 	],
 	[
 //this is the array for "tool" items the player can choose from, this has to be "item" type items
 		[
-			"FAK","FAK","Heal_EPOCH","Defib_EPOCH","Repair_EPOCH","MeleeSledge","Plunger"
+			"CUP_optic_MRad","CUP_optic_Kobra","Item_acc_flashlight","Item_acc_pointer_IR"
 		],
 //this is how many "tool" items the player is allowed to choose
-		2
+		1
 	],
 //this is the array of "weapon" items the player can choose from, this has to be "weapon" type items
 	[
 		[
-			"ItemCompass","ItemWatch","Binocular","NVG_EPOCH"
+			"ItemCompass","ItemWatch","Binocular","NVG_EPOCH","ItemMap"
 		],
 //this is how many "weapon" items the player is allowed to choose
 		2
