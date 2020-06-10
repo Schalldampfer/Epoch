@@ -1024,7 +1024,7 @@ HS_confirmtrade = {
 			}forEach HS_BUYSELLARRAY;
 			if(count _isNOTOK > 0)then{
 				_pos = getPos player;
-				_pos set [2,0];
+				_pos set [2,0.3];
 				_WH = createVehicle["groundWeaponHolder",_pos,[],0,"CAN_COLLIDE"];
 				_cluttercutter = createVehicle ["Land_ClutterCutter_medium_F", _pos, [], 0, "CAN_COLLIDE"];
 				[_WH,_cluttercutter]spawn{
