@@ -2502,12 +2502,10 @@ class CfgPricing
     {
         price = 50;
     };
-*/
     class Rollins_F
     {
         price = 50;
     };
-/*
     class 30Rnd_65x39_caseless_green
     {
         price = 3;
@@ -2565,12 +2563,12 @@ class CfgPricing
         price = 3;
         tax = 0.9;
     };
-*/
     class 5Rnd_rollins_mag
     {
         price = 2;
         tax = 0.9;
     };
+*/
 
     class NL_pvc_bb_mag 
     {
@@ -5271,11 +5269,13 @@ class CfgPricing
         price = 100000;
 		tax = 0.9;
     };
+/*
     class B_Heli_Transport_03_unarmed_EPOCH
     {
         price = 100000;
 		tax = 0.9;
     };
+*/
     class I_UAV_01_F
     {
         price = 500;
