@@ -43,7 +43,7 @@ _addgear = false;
 _removedefault = false;
 
 //if true, it will always adds a map to the player on spawn (else player will not have a map, if not added to list)
-_addmap = true;
+_addmap = false;
 
 //////////////////////////paintshop settings//////////////////////////
 //if you do not have the paintshop on your server, just set it to false below
