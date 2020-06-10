@@ -4891,19 +4891,19 @@ class CfgPricing
     class hoverboard_epoch_1
     {
         price = 1000;
-		tax = 0.9;
+		//tax = 0.9;
     };
 	class hoverboard_epoch_bttf: hoverboard_epoch_1{};
 	class hoverboard_epoch_a3: hoverboard_epoch_1{};
     class hoverboard_epoch_cargo
     {
         price = 1200;
-		tax = 0.9;
+		//tax = 0.9;
     };
     class MBK_01_EPOCH
     {
-        price = 1250;
-		tax = 0.9;
+        price = 750;
+		//tax = 0.9;
     };
     class C_Quadbike_01_EPOCH
     {
@@ -5293,7 +5293,7 @@ class CfgPricing
     class mosquito_epoch
     {
         price = 1500;
-		tax = 0.9;
+		//tax = 0.9;
     };
     class K01
     {
