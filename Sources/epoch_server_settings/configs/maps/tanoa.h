@@ -239,15 +239,16 @@ class Tanoa : Default
         { "Land_HelipadEmpty_F", {11664.6,13138.4,0}, {{0,1,0},{0,0,1}}, true },
 		// Temple Trader
         { "Transport_EPOCH", {11068.167,8479.7549,0}, {{0,1,0},{0,0,1}}, true },
-        { "ProtectionZone_Invisible_F", {11068.813,8473.416,0}, {{-0.000149552,1,0},{0,0,1}}, true },
-        { "ProtectionZone_Invisible_F", {10986.084,8502.8975,0}, {{-0,6.2830358,0},{0,0,1}}, true },
+        { "ProtectionZone_Invisible_F", {11068.813,8473.416,0}, {{0,1,0},{0,0,1}}, true },
+        //{ "ProtectionZone_Invisible_F", {10986.084,8502.8975,0}, {{-0,6.2830358,0},{0,0,1}}, true },
         //{ "ProtectionZone_Invisible_F", {10945,8424.7,0}, {{0.986009,-0.163005,0.0348656},{-0.047946,-0.0770124,0.995877}}, true },
         //{ "ProtectionZone_Invisible_F", {11115.3,8413.95,0}, {{-0.816928,0.208585,-0.537699},{-0.527758,0.105632,0.842801}}, true },
         //{ "ProtectionZone_Invisible_F", {11032.8,8398.94,0}, {{-0.330782,-0.872144,-0.360482},{-0.384094,-0.224494,0.895586}}, true },
         { "FirePlaceOn_EPOCH", {11071.8,8472.71,0.837112}, {{0,0.998078,-0.0619733},{0.191072,0.0608315,0.979689}}, false, true },
         { "Land_Atm_01_F", {11020.3,8517.89,0}, {{-0.016737,-0.99986,0},{0,0,1}}, true },
         { "Land_PhoneBooth_02_F", {11023.5,8518.31,0}, {{0.558135,-0.82975,0},{0,0,1}}, true },
-        { "Land_HelipadEmpty_F", {10981.035,8497.8994,0}, {{0,1,0},{0,0,1}}, true },
+        //{ "Land_HelipadEmpty_F", {10981.035,8497.8994,0}, {{0,1,0},{0,0,1}}, true },
+        { "Land_HelipadEmpty_F", {11053.2,8435.33,0}, {{0,1,0},{0,0,1}}, true },
 		// Shrine
         { "ProtectionZone_Invisible_F", {7036.1,9717.01,0}, {{0.0449526,-0.998989,0},{0,0,1}}, true },
         { "Transport_EPOCH", {7038.15,9717.19,0}, {{0,1,0},{0,0,1}}, true },
@@ -257,6 +258,7 @@ class Tanoa : Default
 		// Bala Airstrip
         { "Land_HelipadEmpty_F", {2082.88,3460.44,0}, {{0,1,0},{0,0,1}}, true },
         { "Transport_EPOCH", {2088.83,3432.68,0.32903}, {{0,1,0},{0,0,1}}, true },
+        { "ProtectionZone_Invisible_F", {2092.34,3444.15,0}, {{0,1,0},{0,0,1}}, true },
 		// Roadblocks
         { "Land_CncBarrierMedium4_F", {11306.7,5895.17,0}, {{0.119186,-0.992872,0},{0,0,1}}, true },
         { "Land_CncBarrierMedium4_F", {11314.1,5896.04,0}, {{0.099447,-0.995043,0},{0,0,1}}, true },
@@ -297,9 +299,10 @@ class Tanoa : Default
 	staticNpcPos[] = {
 		// La Rochelle Aerodrome
         { "C_man_hunter_1_F", { 11624.2,13126.5,0.154624 }, 155.756 },
+		// Bala Airstrip
+        { "C_Man_casual_2_F_asia", { 2089.81,3435.82,0.328 }, 327.459 },
 		// Temple Trader
         { "C_man_polo_2_F_asia", { 11071.1, 8468.06, 0 }, 142.262 },
-        { "C_man_shorts_1_F_asia", { 11063.5, 8467.39, 0 }, 221.15 },
 		// Shrine
 		{ "C_man_shorts_4_F_asia", { 7031.77,9714.42,0 }, 44.484 }
 	};
