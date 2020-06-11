@@ -41,7 +41,7 @@ switch(toLower worldName)do{
 	case "malden":{
 		_staticCoords = [
 			[[678.363,12137.1,0.319944],318.075,true],//Moray airport
-			[[5545.04,7861.76,3.0629],117.591,true]
+			[[5545.04,7861.76,3.0629],117.591,true]//Arudy-Larche
 		];
 		_blacklistedAreas = [[[0,0,0],0]];
 		_spawnarea = 12500;
