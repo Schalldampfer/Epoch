@@ -28,7 +28,7 @@ _alltext = [
 		"Main Rules :",
 		"#0096ff", //Blue Light
 		[
-			"[F10] to open your smartphone","Keep pressing [Space] to open 'Dyna Menu'"
+			"[F10] to open your smartphone","Keep pressing [Space] to open 'Dyna Menu'","[F4] for Earplug"
 		]
 	],
 	[
