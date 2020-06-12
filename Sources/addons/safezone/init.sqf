@@ -12,6 +12,8 @@ _SafeZones = switch(toLower worldName)do{
 	};
 	case "malden":{
 		[
+			[[682,12140,0],35,"Airport Trader"],
+			[[8055,9700,0],35,"Airport Trader"],
 			[[5551.48,7882.33,0],100,"Main Trader"],
 			[[2538.51,5710.60,0],50,"Trader"],
 			[[6262.85,4745.89,0],50,"Trader"]
