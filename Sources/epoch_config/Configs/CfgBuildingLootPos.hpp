@@ -7512,7 +7512,7 @@ class CfgBuildingLootPos
 		};
 	};	
 	class Land_PillboxBunker_01_hex_F : Default {
-		lootBias = 50;
+		GroundSpawnChance = 100;
 		lootType = "mil";
 	    pelicanPos[] = {
 	        {{-2.96631,-1.45508,-0.692844}, 30}
@@ -7522,7 +7522,7 @@ class CfgBuildingLootPos
 	    };
 	};
 	class Land_PillboxBunker_01_big_F : Default {
-		lootBias = 100;
+		GroundSpawnChance = 100;
 		lootType = "mil";
 	    pelicanPos[] = {
 	        {{-2.8584,6.88379,-0.636112}, -20}
@@ -7532,7 +7532,7 @@ class CfgBuildingLootPos
 	    };
 	};
 	class Land_PillboxBunker_01_rectangle_F : Default {
-		lootBias = 50;
+		GroundSpawnChance = 100;
 		lootType = "mil";
 	    pelicanPos[] = {
 	        {{-3.02246,-2.47461,0.370506}, 0}
