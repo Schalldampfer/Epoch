@@ -6843,7 +6843,7 @@ class CfgPricing
 	class CUP_O_BTR40_MG_TKM {price = 30000;tax = 0.9;};
 	class CUP_I_SUV_Armored_ION {price = 22000;tax = 0.9;};
 	class CUP_O_Hilux_armored_unarmed_TK_INS {price = 10000;};
-	class CUP_I_Hilux_armored_DSHKM_TK {price = 22000;tax = 0.9;};
+	class CUP_O_Hilux_armored_DSHKM_TK_INS {price = 22000;tax = 0.9;};
 	class CUP_O_Hilux_DSHKM_TK_INS {price = 20000;tax = 0.9;};
 	class CUP_O_Hilux_M2_TK_INS {price = 20000;tax = 0.9;};
 	class CUP_O_Hilux_btr60_TK_INS {price = 35000;tax = 0.9;};
