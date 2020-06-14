@@ -7051,6 +7051,39 @@ class CfgPricing
 	class CUP_optic_PSO_1_1 { price = 1000; };
 	class CUP_optic_TrijiconRx01_kf_black { price = 10; };
 
+	class U_B_GEN_Soldier_F { price = 7; };
+	class U_B_GEN_Commander_F { price = 7; };
+	class CUP_U_C_Suit_01 { price = 10; };
+	class CUP_U_C_Suit_02 { price = 10; };
+	class CUP_U_C_Suit_03 { price = 10; };
+	class CUP_U_C_Priest_01 { price = 5; };
+
+	class V_Safety_blue_F { price = 5; };
+	class V_Safety_orange_F { price = 5; };
+	class V_Safety_yellow_F { price = 5; };
+	class V_TacVest_gen_F { price = 10; };
+	class V_EOD_blue_F { price = 10; tax = 0.4;};
+	class V_EOD_IDAP_blue_F { price = 10; tax = 0.4;};
+	class V_EOD_coyote_F { price = 10; tax = 0.4;};
+	class V_EOD_olive_F { price = 10; tax = 0.4;};
+	class CUP_V_B_BAF_DDPM_Osprey_Mk3_Empty { price = 10; tax = 0.4;};
+	class CUP_V_B_BAF_DPM_Osprey_Mk3_Empty { price = 10; tax = 0.4;};
+
+	class H_Construction_basic_black_F { price = 5; };
+	class H_Construction_basic_orange_F { price = 5; };
+	class H_Construction_basic_red_F { price = 5; };
+	class H_Construction_basic_vrana_F { price = 5; };
+	class H_Construction_basic_white_F { price = 5; };
+	class H_Construction_basic_yellow_F { price = 5; };
+	class H_PASGT_basic_blue_press_F { price = 7; };
+	class H_PASGT_neckprot_blue_press_F { price = 8; };
+	class H_HelmetLeaderO_ghex_F { price = 20; };
+	class H_HelmetLeaderO_ocamo { price = 20; };
+	class H_HelmetLeaderO_oucamo { price = 20; };
+	class CUP_H_RUS_K6_3_Shield_Down { price = 20;tax = 0.9; };
+	class CUP_H_RUS_K6_3_Shield_Down_black { price = 20;tax = 0.9; };
+	class CUP_H_RUS_K6_3_Shield_Down_khaki { price = 20;tax = 0.9; };
+
 };
 
 /*[[[end]]]*/
