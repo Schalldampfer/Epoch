@@ -5244,30 +5244,30 @@ class CfgPricing
 */
     class C_Heli_Light_01_civil_EPOCH
     {
-        price = 25000;
-		tax = 0.9;
+        price = 20000;
+		tax = 0.4;
     };
 	class C_Heli_Light_01_civil_2seat_EPOCH: C_Heli_Light_01_civil_EPOCH {};
 	class C_Heli_Light_01_civil_4seat_EPOCH: C_Heli_Light_01_civil_EPOCH {};
     class O_Heli_Transport_04_EPOCH
     {
         price = 100000;
-		tax = 0.9;
+		tax = 0.4;
     };
     class O_Heli_Transport_04_bench_EPOCH
     {
         price = 100000;
-		tax = 0.9;
+		tax = 0.4;
     };
     class O_Heli_Transport_04_box_EPOCH
     {
         price = 100000;
-		tax = 0.9;
+		tax = 0.4;
     };
     class O_Heli_Transport_04_covered_EPOCH
     {
         price = 100000;
-		tax = 0.9;
+		tax = 0.4;
     };
 /*
     class B_Heli_Transport_03_unarmed_EPOCH
@@ -5293,7 +5293,7 @@ class CfgPricing
     class mosquito_epoch
     {
         price = 1500;
-		//tax = 0.9;
+		tax = 0.9;
     };
     class K01
     {
@@ -6859,19 +6859,19 @@ class CfgPricing
 	class CUP_O_GAZ_Vodnik_PK_RU {price = 120000;tax = 0.9;};
 	class CUP_O_GAZ_Vodnik_AGS_RU {price = 130000;tax = 0.9;};
 
-    class CUP_C_MI6A_RU {price = 150000;tax = 0.9;};
-    class CUP_C_Mi17_VIV_RU {price = 70000;tax = 0.9;};
-    class CUP_C_Mi17_Civilian_RU {price = 70000;tax = 0.9;};
-    class CUP_C_SA330_Puma_HC1_ChernAvia {price = 50000;tax = 0.9;};
-    class CUP_B_MH6J_USA {price = 50000;tax = 0.9;};
-    class CUP_B_MH6M_USA {price = 50000;tax = 0.9;};
-    class CUP_B_UH60M_Unarmed_US {price = 70000;tax = 0.9;};
-	class CUP_B_MV22_USMC_RAMPGUN {price = 300000;tax = 1;};
-	class CUP_B_AC47_Spooky_USA {price = 300000;tax = 1;};
-	class CUP_B_AH6M_Cannons_USA {price = 300000;tax = 1;};
-	class CUP_B_AH6J_Cannons_USA {price = 300000;tax = 1;};
-	class CUP_O_UH1H_armed_TKA {price = 400000;tax = 1;};
-	class CUP_O_UH1H_armed_SLA {price = 400000;tax = 1;};
+    class CUP_C_MI6A_RU {price = 150000;tax = 0.4;};
+    class CUP_C_Mi17_VIV_RU {price = 70000;tax = 0.4;};
+    class CUP_C_Mi17_Civilian_RU {price = 70000;tax = 0.4;};
+    class CUP_C_SA330_Puma_HC1_ChernAvia {price = 50000;tax = 0.4;};
+    class CUP_B_MH6J_USA {price = 50000;tax = 0.4;};
+    class CUP_B_MH6M_USA {price = 50000;tax = 0.4;};
+    class CUP_B_UH60M_Unarmed_US {price = 70000;tax = 0.4;};
+	class CUP_B_MV22_USMC_RAMPGUN {price = 300000;tax = 0.9;};
+	class CUP_B_AC47_Spooky_USA {price = 300000;tax = 0.9;};
+	class CUP_B_AH6M_Cannons_USA {price = 300000;tax = 0.9;};
+	class CUP_B_AH6J_Cannons_USA {price = 300000;tax = 0.9;};
+	class CUP_O_UH1H_armed_TKA {price = 400000;tax = 0.9;};
+	class CUP_O_UH1H_armed_SLA {price = 400000;tax = 0.9;};
 
     class CUP_launch_M72A6 {price = 500;tax = 0.9;};
     class CUP_launch_M136 {price = 750;tax = 0.9;};
