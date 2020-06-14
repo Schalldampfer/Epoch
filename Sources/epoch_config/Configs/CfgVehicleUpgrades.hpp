@@ -112,7 +112,6 @@ class CfgVehicleUpgrades
 		};
 	};
 	
-
 	class CUP_C_UAZ_Open_TK_CIV {
 		upgradeToVehicle[] = {"CUP_C_UAZ_Unarmed_TK_CIV"};
 		class CUP_C_UAZ_Unarmed_TK_CIV
