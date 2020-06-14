@@ -121,9 +121,11 @@ if (isnil "IL_Variables") then
 	
 	// Supported vehicles
 	IL_Supported_Vehicles_OFFROAD = ["C_Offroad_01_F", "B_G_Offroad_01_F",
-									"C_Offroad_01_EPOCH","C_Offroad_01_EPOCH1","C_Offroad_01_EPOCH2","C_Offroad_01_EPOCH3","C_Offroad_01_EPOCH4","C_Offroad_02_EPOCH", "C_Offroad_03_EPOCH", "C_Offroad_04_EPOCH"];
+									"C_Offroad_01_EPOCH","C_Offroad_01_EPOCH1","C_Offroad_01_EPOCH2","C_Offroad_01_EPOCH3","C_Offroad_01_EPOCH4","C_Offroad_02_EPOCH", "C_Offroad_03_EPOCH", "C_Offroad_04_EPOCH",
+									"CUP_C_LR_Transport_CTK","CUP_B_LR_Transport_CZ_D","CUP_B_LR_Transport_CZ_D","CUP_C_Datsun_4seat","CUP_C_Datsun_Tubeframe","CUP_C_Datsun_Plain","CUP_C_Datsun_Covered","CUP_C_Datsun",
+									"CUP_B_LR_Transport_CZ_W","CUP_O_Hilux_unarmed_TK_INS","CUP_O_Hilux_armored_unarmed_TK_INS"];//,""
 	IL_Supported_Vehicles_SDV = ["B_SDV_01_EPOCH","B_SDV_02_EPOCH","B_SDV_03_EPOCH","O_SDV_01_F","I_SDV_01_F","B_SDV_01_F"];  //B_SDV_01_F
-	IL_Supported_Vehicles_VAN = ["C_Van_01_box_F", "B_G_Van_01_transport_F", "C_Van_01_transport_F", 
+	IL_Supported_Vehicles_VAN = ["C_Van_01_box_F", "B_G_Van_01_transport_F", "C_Van_01_transport_F", "CUP_O_BTR40_MG_TKM",
 								"C_Van_01_box_EPOCH", "C_Van_01_box_EPOCH1", "C_Van_01_box_EPOCH2", "C_Van_01_box_EPOCH3", "C_Van_01_box_EPOCH4", 
 								"C_Van_01_transport_EPOCH","C_Van_01_transport_EPOCH1","C_Van_01_transport_EPOCH2","C_Van_01_transport_EPOCH3","C_Van_01_transport_EPOCH4"];
 	IL_Supported_Vehicles_HEMTT = ["B_Truck_01_transport_EPOCH","B_Truck_01_transport_EPOCH1","B_Truck_01_transport_EPOCH2","B_Truck_01_transport_EPOCH3","B_Truck_01_transport_EPOCH4",
@@ -131,15 +133,17 @@ if (isnil "IL_Variables") then
 									"B_Truck_01_box_EPOCH","B_Truck_01_box_EPOCH1","B_Truck_01_box_EPOCH2","B_Truck_01_box_EPOCH3","B_Truck_01_box_EPOCH4"];
 	IL_Supported_Vehicles_KAMAZ =  ["O_Truck_02_transport_EPOCH","O_Truck_02_transport_EPOCH1","O_Truck_02_transport_EPOCH2","O_Truck_02_transport_EPOCH3","O_Truck_02_transport_EPOCH4",
 									"O_Truck_02_covered_EPOCH","O_Truck_02_covered_EPOCH1","O_Truck_02_covered_EPOCH2","O_Truck_02_covered_EPOCH3","O_Truck_02_covered_EPOCH4",
-									"O_Truck_02_box_EPOCH","O_Truck_02_box_EPOCH1","O_Truck_02_box_EPOCH2","O_Truck_02_box_EPOCH3","O_Truck_02_box_EPOCH4"];
+									"O_Truck_02_box_EPOCH","O_Truck_02_box_EPOCH1","O_Truck_02_box_EPOCH2","O_Truck_02_box_EPOCH3","O_Truck_02_box_EPOCH4",
+									"CUP_B_Kamaz_Open_CDF","CUP_B_Kamaz_CDF","CUP_B_MTVR_USMC","CUP_C_V3S_Open_TKC","CUP_C_V3S_Covered_TKC","CUP_O_Ural_Empty_SLA","CUP_B_Ural_Empty_CDF",
+									"CUP_C_Ural_Open_Civ_02","CUP_B_Ural_Open_CDF","CUP_B_Ural_CDF","CUP_C_Ural_Open_Civ_01","CUP_C_Ural_Civ_01","CUP_C_Ural_Civ_02","CUP_C_Ural_Open_Civ_03","CUP_C_Ural_Civ_03"];
 	IL_Supported_Vehicles_TEMPEST = ["O_Truck_03_transport_EPOCH","O_Truck_03_transport_EPOCH1","O_Truck_03_transport_EPOCH2","O_Truck_03_transport_EPOCH3","O_Truck_03_transport_EPOCH4",
 									 "O_Truck_03_covered_EPOCH","O_Truck_03_covered_EPOCH1","O_Truck_03_covered_EPOCH2","O_Truck_03_covered_EPOCH3","O_Truck_03_covered_EPOCH4"];
-	IL_Supported_Vehicles_MOHAWK = ["I_Heli_Transport_02_F", "CH49_Mohawk_FG", "I_Heli_Transport_02_EPOCH"];
+	IL_Supported_Vehicles_MOHAWK = ["I_Heli_Transport_02_F", "CH49_Mohawk_FG", "I_Heli_Transport_02_EPOCH","CUP_O_UH1H_armed_TKA","CUP_O_UH1H_armed_SLA","CUP_B_UH60M_Unarmed_US"];
 	IL_Supported_Vehicles_CHINOOK = ["CH_147F", "CH_47F", "B_Heli_Transport_03_unarmed_EPOCH"];
 	IL_Supported_Vehicles_MH9 = ["B_Heli_Light_01_F", "B_mas_mar_Heli_Light_01_F"];
 	IL_Supported_Vehicles_C130J = ["C130J_Cargo", "C130J"];
 	IL_Supported_Vehicles_C17 = ["globemaster_c17_altus", "globemaster_c17_701", "globemaster_c17_703", "globemaster_c17_704", "globemaster_c17_705", "globemaster_c17_dover", "globemaster_c17_edwards", "globemaster_c17_Elmendorf", "globemaster_c17", "globemaster_c17_hickam", "globemaster_c17_IAF", "globemaster_c17_March", "globemaster_c17_mcchord", "globemaster_c17_McGuire", "globemaster_c17_Mississipi", "globemaster_c17_NATO", "globemaster_c17_natoPAPA", "globemaster_c17_Qatar", "globemaster_c17_RAAF", "globemaster_c17_ZZ172_RAF", "globemaster_c17_RCAF", "globemaster_c17_Stewart", "globemaster_c17_therock", "globemaster_c17_travis", "globemaster_c17_UAE", "globemaster_c17_wright_patt"];
-	IL_Supported_Vehicles_Y32 = ["O_T_VTOL_02_vehicle_grey_EPOCH", "O_T_VTOL_02_infantry_EPOCH","O_T_VTOL_02_infantry_F", "O_T_VTOL_02_vehicle_F", "O_T_VTOL_02_infantry_dynamicLoadout_F", "O_T_VTOL_02_vehicle_dynamicLoadout_F", "O_T_VTOL_02_infantry_hex_F", "O_T_VTOL_02_infantry_ghex_F", "O_T_VTOL_02_infantry_grey_F", "O_T_VTOL_02_vehicle_hex_F", "O_T_VTOL_02_vehicle_ghex_F", "O_T_VTOL_02_vehicle_grey_F"];
+	IL_Supported_Vehicles_Y32 = ["O_T_VTOL_02_vehicle_grey_EPOCH", "O_T_VTOL_02_infantry_EPOCH","O_T_VTOL_02_infantry_F", "O_T_VTOL_02_vehicle_F", "O_T_VTOL_02_infantry_dynamicLoadout_F", "O_T_VTOL_02_vehicle_dynamicLoadout_F", "O_T_VTOL_02_infantry_hex_F", "O_T_VTOL_02_infantry_ghex_F", "O_T_VTOL_02_infantry_grey_F", "O_T_VTOL_02_vehicle_hex_F", "O_T_VTOL_02_vehicle_ghex_F", "O_T_VTOL_02_vehicle_grey_F","CUP_B_MV22_USMC_RAMPGUN","CUP_B_AC47_Spooky_USA","CUP_C_DC3_CIV","CUP_C_C47_CIV","CUP_C_AN2_CIV"];
 	
 	IL_Supported_Vehicles_All = IL_Supported_Vehicles_C130J + IL_Supported_Vehicles_C17 + IL_Supported_Vehicles_MH9 + IL_Supported_Vehicles_MOHAWK + IL_Supported_Vehicles_KAMAZ + IL_Supported_Vehicles_TEMPEST + IL_Supported_Vehicles_HEMTT + IL_Supported_Vehicles_VAN + IL_Supported_Vehicles_OFFROAD + IL_Supported_Vehicles_SDV + IL_Supported_Vehicles_CHINOOK + IL_Supported_Vehicles_Y32;
 
@@ -152,21 +156,21 @@ if (isnil "IL_Variables") then
 	IL_Supported_TEMPEST = IL_Supported_Vehicles_TEMPEST;
 	IL_Supported_VAN = IL_Supported_Vehicles_VAN;
 	IL_Supported_OFFROAD =IL_Supported_Vehicles_OFFROAD;	
-	IL_Supported_Strider = ["I_MRAP_03_F", "I_MRAP_03_gmg_F", "I_MRAP_03_hmg_F", "I_MRAP_03_EPOCH","I_MRAP_03_EPOCH1","I_MRAP_03_EPOCH2","I_MRAP_03_EPOCH3","I_MRAP_03_EPOCH4"];
+	IL_Supported_Strider = ["I_MRAP_03_F", "I_MRAP_03_gmg_F", "I_MRAP_03_hmg_F", "I_MRAP_03_EPOCH","I_MRAP_03_EPOCH1","I_MRAP_03_EPOCH2","I_MRAP_03_EPOCH3","I_MRAP_03_EPOCH4","CUP_B_FENNEK_GER_Wdl","CUP_I_FENNEK_ION"];
 	IL_Supported_Hunter = ["B_MRAP_01_F", "B_MRAP_01_gmg_F", "B_MRAP_01_hmg_F","B_MRAP_01_EPOCH","B_MRAP_01_EPOCH1","B_MRAP_01_EPOCH2","B_MRAP_01_EPOCH3","B_MRAP_01_EPOCH4"];
 	IL_Supported_Ifrit = ["O_MRAP_02_F", "O_MRAP_02_gmg_F", "O_MRAP_02_hmg_F","O_MRAP_02_EPOCH","O_MRAP_02_EPOCH1","O_MRAP_02_EPOCH2","O_MRAP_02_EPOCH3","O_MRAP_02_EPOCH4"];
 	IL_Supported_UGV = ["B_UGV_01_rcws_F", "B_UGV_01_F", "O_UGV_01_rcws_F", "O_UGV_01_F", "I_UGV_01_rcws_F", "I_UGV_01_F"];
-	IL_Supported_SUV = ["C_SUV_01_F", "C_SUV_01_EPOCH","C_SUV_01_EPOCH1","C_SUV_01_EPOCH2","C_SUV_01_EPOCH3","C_SUV_01_EPOCH4","C_SUV_01_EPOCH2","C_SUV_01_EPOCH3","C_SUV_01_EPOCH4"];
+	IL_Supported_SUV = ["C_SUV_01_F", "C_SUV_01_EPOCH","C_SUV_01_EPOCH1","C_SUV_01_EPOCH2","C_SUV_01_EPOCH3","C_SUV_01_EPOCH4","C_SUV_01_EPOCH2","C_SUV_01_EPOCH3","C_SUV_01_EPOCH4","CUP_I_SUV_Armored_ION","CUP_C_SUV_CIV","CUP_C_SUV_TK"];
 	IL_Supported_Hatchback = ["C_Hatchback_01_F", "C_Hatchback_01_sport_F", 
 							"C_Hatchback_02_EPOCH", "C_Hatchback_02_EPOCH1","C_Hatchback_02_EPOCH2","C_Hatchback_02_EPOCH3","C_Hatchback_02_EPOCH4",
 							"C_Hatchback_01_EPOCH","C_Hatchback_01_EPOCH1","C_Hatchback_01_EPOCH2","C_Hatchback_01_EPOCH3","C_Hatchback_01_EPOCH4"];
     IL_Supported_Prowler = ["B_CTRG_LSV_01_light_F","B_LSV_01_unarmed_F"];							
 	IL_Supported_Qilin = ["O_LSV_02_unarmed_F","O_T_LSV_02_unarmed_F"];
 	IL_Supported_M4WB = ["C_Offroad_02_unarmed_F","I_C_Offroad_02_unarmed_F"];
-	IL_Supported_Hummvee = ["rc_hmmwv", "HMMWV2", "HMMWV_M1035", "M1114_AGS_ACR", "HMMWV_M1151_M2", "HMMWV2_M2", "HMMWV2_MK19", "HMMWV2_TOW", "HMMWV", "HMMWV_M2", "HMMWV_MK19", "HMMWV_TOW"];
+	IL_Supported_Hummvee = ["rc_hmmwv", "HMMWV2", "HMMWV_M1035", "M1114_AGS_ACR", "HMMWV_M1151_M2", "HMMWV2_M2", "HMMWV2_MK19", "HMMWV2_TOW", "HMMWV", "HMMWV_M2", "HMMWV_MK19", "HMMWV_TOW","CUP_B_M1151_NATO_T","CUP_B_M1152_NATO_T","CUP_B_HMMWV_Transport_USA","CUP_B_HMMWV_Unarmed_USA","CUP_B_HMMWV_Ambulance_USA"];
 	IL_Supported_Bicycles = ["MBK_01_EPOCH"];
 	IL_Supported_Hoverboards = ["hoverboard_epoch_1","hoverboard_epoch_bttf","hoverboard_epoch_a3","hoverboard_epoch_cargo"];
-	IL_Supported_Motorcycles = ["ebike_epoch"];
+	IL_Supported_Motorcycles = ["ebike_epoch","CUP_B_M1030_USA","CUP_C_TT650_CIV","CUP_C_TT650_TK_CIV","CUP_B_M1030"];
 	IL_Supported_Jetskis = ["jetski_epoch"];
 	IL_Supported_Karts = ["K01", "K02", "K03", "K04"];
 	IL_Supported_Quadbike = ["I_Quadbike_01_F", "C_Quadbike_01_F", "O_Quadbike_01_F", "B_G_Quadbike_01_F", "B_Quadbike_01_F", "C_Quadbike_01_EPOCH"];
@@ -175,7 +179,7 @@ if (isnil "IL_Variables") then
 	IL_Supported_Veh_Ammo = ["Box_NATO_AmmoVeh_F", "Box_East_AmmoVeh_F", "Box_IND_AmmoVeh_F", "Land_CargoBox_V1_F", "ASC_B_box"];
 	IL_Supported_Barrel = ["Land_BarrelEmpty_F", "Land_BarrelEmpty_grey_F", "Land_BarrelSand_F", "Land_BarrelSand_grey_F", "Land_BarrelTrash_F", "Land_BarrelTrash_grey_F", "Land_BarrelWater_F", "Land_BarrelWater_grey_F", "Land_MetalBarrel_F"];//, "Land_MetalBarrel_empty_F", "MetalBarrel_burning_F"];
 	IL_Supported_Tank = ["Land_WaterBarrel_F", "Land_WaterTank_F"];
-	IL_Supported_Rubberboat = ["I_Boat_Transport_01_F", "O_Boat_Transport_01_F", "B_G_Boat_Transport_01_F", "B_Boat_Transport_01_F", "C_Rubberboat", "O_Lifeboat", "B_Lifeboat", "Marinir_duck_base_F", "B_mas_mar_Boat_Transport_01_F"];
+	IL_Supported_Rubberboat = ["I_Boat_Transport_01_F", "O_Boat_Transport_01_F", "B_G_Boat_Transport_01_F", "B_Boat_Transport_01_F", "C_Rubberboat", "O_Lifeboat", "B_Lifeboat", "Marinir_duck_base_F", "B_mas_mar_Boat_Transport_01_F","CUP_O_PBX_RU","CUP_B_Zodiac_USMC"];
 	IL_Supported_SDV = ["B_SDV_01_EPOCH","I_SDV_01_F", "O_SDV_01_F", "B_SDV_01_F"];
 	IL_Supported_Box_H1 = ["Box_NATO_Wps_F", "Box_East_Wps_F", "Box_IND_Wps_F", "Box_East_WpsLaunch_F", "Box_NATO_WpsLaunch_F", "Box_IND_WpsLaunch_F", "Box_IND_WpsSpecial_F", "Box_East_WpsSpecial_F", "Box_NATO_WpsSpecial_F", "Box_mas_all_rifle_Wps_F", "Box_mas_us_rifle_Wps_F", "Box_mas_ru_rifle_Wps_F", "Box_mas_mar_NATO_equip_F", "Box_mas_mar_NATO_Wps_F"];
 	IL_Supported_Box_H2 = ["Box_FIA_Wps_F","Box_FIA_Support_F","Box_FIA_Ammo_F","Box_NATO_AmmoOrd_F", "Box_East_AmmoOrd_F", "Box_IND_AmmoOrd_F", "Box_NATO_Grenades_F", "Box_East_Grenades_F", "Box_IND_Grenades_F", "Box_NATO_Ammo_F", "Box_East_Ammo_F", "Box_IND_Ammo_F", "Box_IND_Support_F", "Box_East_Support_F", "Box_NATO_Support_F"];
