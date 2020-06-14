@@ -112,6 +112,34 @@ class CfgVehicleUpgrades
 		};
 	};
 	
+
+	class CUP_C_UAZ_Open_TK_CIV {
+		upgradeToVehicle[] = {"CUP_C_UAZ_Unarmed_TK_CIV"};
+		class CUP_C_UAZ_Unarmed_TK_CIV
+		{
+			ReqMaterials[] = {{3,"ItemBurlap"}};
+		};
+	};
+	class CUP_O_Hilux_unarmed_TK_INS {
+		upgradeToVehicle[] = {"CUP_O_Hilux_armored_unarmed_TK_INS"};
+		class CUP_O_Hilux_armored_unarmed_TK_INS
+		{
+			ReqMaterials[] = {{4,"ItemCorrugatedLg"}};
+		};
+		class CUP_O_Hilux_DSHKM_TK_INS: CUP_O_Hilux_unarmed_TK_INS {};
+		class CUP_O_Hilux_M2_TK_INS: CUP_O_Hilux_unarmed_TK_INS {};
+		class CUP_O_Hilux_AGS30_TK_INS: CUP_O_Hilux_unarmed_TK_INS {};
+		class CUP_O_Hilux_SPG9_TK_INS: CUP_O_Hilux_unarmed_TK_INS {};
+		class CUP_O_Hilux_btr60_TK_INS: CUP_O_Hilux_unarmed_TK_INS {};
+		class CUP_O_Hilux_BMP1_TK_INS: CUP_O_Hilux_unarmed_TK_INS {};
+	};
+	class CUP_O_Hilux_DSHKM_TK_INS: CUP_O_Hilux_unarmed_TK_INS {upgradeToVehicle[] = {"CUP_O_Hilux_armored_DSHKM_TK_INS"};};
+	class CUP_O_Hilux_M2_TK_INS: CUP_O_Hilux_unarmed_TK_INS {upgradeToVehicle[] = {"CUP_O_Hilux_armored_M2_TK_INS"};};
+	class CUP_O_Hilux_AGS30_TK_INS: CUP_O_Hilux_unarmed_TK_INS {upgradeToVehicle[] = {"CUP_O_Hilux_armored_AGS30_TK_INS"};};
+	class CUP_O_Hilux_SPG9_TK_INS: CUP_O_Hilux_unarmed_TK_INS {upgradeToVehicle[] = {"CUP_O_Hilux_armored_SPG9_TK_INS"};};
+	class CUP_O_Hilux_btr60_TK_INS: CUP_O_Hilux_unarmed_TK_INS {upgradeToVehicle[] = {"CUP_O_Hilux_armored_BTR60_TK_INS"};};
+	class CUP_O_Hilux_BMP1_TK_INS: CUP_O_Hilux_unarmed_TK_INS {upgradeToVehicle[] = {"CUP_O_Hilux_armored_BMP1_TK_INS"};};
+
 /*
 ############ Examples ############
 
