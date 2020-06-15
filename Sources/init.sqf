@@ -11,4 +11,4 @@ execVM "addons\taru_pods\taru_init.sqf";
 if(hasInterface) then{
 	execVM "IgiLoad\IgiLoadInit.sqf";
 };
-Deploy_Type="hoverboard_epoch_1";
+Deploy_Type="MBK_01_EPOCH";
