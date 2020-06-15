@@ -460,7 +460,6 @@ class CfgPricing
     {
         price = 5;
     };
-/*
     class srifle_EBR_F
     {
         price = 150;
@@ -477,13 +476,11 @@ class CfgPricing
     {
         price = 200;
     };
-*/
     class 20Rnd_762x51_Mag
     {
         price = 4;
         tax = 0.9;
     };
-/*
     class 5Rnd_127x108_Mag
     {
         price = 3;
@@ -529,7 +526,6 @@ class CfgPricing
         price = 2;
         tax = 0.9;
     };
-*/
     class CUP_hgun_Compact
     {
         price = 20;
@@ -2339,7 +2335,6 @@ class CfgPricing
 	{
         price = 20;
     };
-/*
     class sr25_epoch
     {
         price = 50;
@@ -2384,12 +2379,10 @@ class CfgPricing
     {
         price = 50;
     };
-*/
     class arifle_SDAR_F
     {
         price = 50;
     };
-/*
     class arifle_TRG21_F
     {
         price = 50;
@@ -2526,7 +2519,6 @@ class CfgPricing
         price = 4;
         tax = 0.9;
     };
-*/
     class 20Rnd_556x45_UW_mag
     {
         price = 3;
@@ -2552,7 +2544,6 @@ class CfgPricing
         price = 4;
         tax = 0.9;
     };
-/*
     class 30Rnd_45ACP_Mag_SMG_01
     {
         price = 2;
@@ -2568,7 +2559,6 @@ class CfgPricing
         price = 2;
         tax = 0.9;
     };
-*/
 
     class NL_pvc_bb_mag 
     {
@@ -2595,7 +2585,6 @@ class CfgPricing
         price = 5;
     };
 
-/*
     class UGL_FlareWhite_F
     {
         price = 2;
@@ -2840,7 +2829,6 @@ class CfgPricing
     {
         price = 100;
     };
-*/
     class pvcrifle_01_F
     {
         price = 100;
@@ -2857,7 +2845,6 @@ class CfgPricing
     {
         price = 20;
     };
-/*
 	// A2 Weapons
     class a2_ak47s_gold_EPOCH
     {
@@ -2925,12 +2912,10 @@ class CfgPricing
         price = 5;
         tax = 0.9;
     };
-*/
 	class 50Rnd_570x28_SMG_03{
 		price = 5;
 		tax = 0.9;
 	};
-/*
 	class 20rnd_762_magazine
     {
         price = 5;
@@ -3033,7 +3018,6 @@ class CfgPricing
         price = 5;
         tax = 0.9;
     };
-*/
     class Rangefinder
     {
         price = 4;
@@ -3042,7 +3026,6 @@ class CfgPricing
     {
         price = 4;
     };
-/*
     class hgun_ACPC2_F
     {
         price = 20;
@@ -3071,7 +3054,6 @@ class CfgPricing
     {
         price = 6;
     };
-*/
     class hgun_Pistol_Signal_F
     {
         price = 20;
@@ -3126,7 +3108,6 @@ class CfgPricing
         price = 3;
         tax = 0.9;
     };
-/*
     class 9Rnd_45ACP_Mag
     {
         price = 2;
@@ -3152,7 +3133,6 @@ class CfgPricing
         price = 2;
         tax = 0.9;
     };
-*/
     class 6Rnd_GreenSignal_F
     {
         price = 2;
@@ -3183,7 +3163,6 @@ class CfgPricing
         price = 30;
         tax = 0.9;
     };
-/*
     class optic_Arco
     {
         price = 10;
@@ -3232,12 +3211,10 @@ class CfgPricing
     {
         price = 10;
     };
-*/
     class optic_MRD
     {
         price = 10;
     };
-/*
     class optic_LRPS
     {
         price = 20;
@@ -3326,7 +3303,6 @@ class CfgPricing
     {
         price = 10;
     };
-*/
     class muzzle_snds_H
     {
         price = 5;
@@ -3369,7 +3345,6 @@ class CfgPricing
     {
         price = 2;
     };
-/*
     class muzzle_snds_338_black
     {
         price = 5;
@@ -3394,7 +3369,6 @@ class CfgPricing
     {
         price = 5;
     };
-*/
     class PartOreGold
     {
         price = 70;
@@ -4937,7 +4911,6 @@ class CfgPricing
 	class C_SUV_01_EPOCH2: C_SUV_01_EPOCH{};
 	class C_SUV_01_EPOCH3: C_SUV_01_EPOCH{};
 	class C_SUV_01_EPOCH4: C_SUV_01_EPOCH{};
-/*
 	class A2_Golf_EPOCH
 	{
         price = 7500;
@@ -4998,7 +4971,6 @@ class CfgPricing
         price = 7500;
 		tax = 0.9;
 	};
-*/
     class C_Rubberboat_EPOCH
     {
         price = 500;
@@ -5062,7 +5034,6 @@ class CfgPricing
         price = 10000;
 		tax = 0.9;
     };
-/*
     class B_MRAP_01_EPOCH
     {
         price = 45000;
@@ -5241,7 +5212,6 @@ class CfgPricing
         price = 25000;
 		tax = 0.9;
     };
-*/
     class C_Heli_Light_01_civil_EPOCH
     {
         price = 20000;
@@ -5269,13 +5239,11 @@ class CfgPricing
         price = 100000;
 		tax = 0.4;
     };
-/*
     class B_Heli_Transport_03_unarmed_EPOCH
     {
         price = 100000;
 		tax = 0.9;
     };
-*/
     class I_UAV_01_F
     {
         price = 500;
@@ -5655,7 +5623,6 @@ class CfgPricing
         price = 3500;
 		tax = 0.9;
     };
-/*
     class B_T_LSV_01_unarmed_F
     {
         price = 4400;
@@ -5681,7 +5648,6 @@ class CfgPricing
         price = 4600;
 		tax = 0.9;
     };
-*/
     class C_Plane_Civil_01_F
     {
         price = 5000;
@@ -5697,7 +5663,6 @@ class CfgPricing
         price = 5000;
 		tax = 0.9;
     };
-/*
     class B_CTRG_LSV_01_light_F
     {
         price = 4400;
@@ -5720,7 +5685,6 @@ class CfgPricing
 		tax = 0.9;
 	};
 	class O_T_VTOL_02_vehicle_grey_EPOCH: O_T_VTOL_02_infantry_EPOCH {};
-*/
     class B_UavTerminal
     {
         price = 10;
@@ -6681,7 +6645,6 @@ class CfgPricing
     ///////////////////////////////////////////////////////////////////////////////
     // Apex Items & Weapons
     ///////////////////////////////////////////////////////////////////////////////
-/*
     class hgun_Pistol_01_F            { price = 65;  };
     class hgun_P07_khk_F              { price = 65;  };
     class SMG_05_F					  { price = 150;  };
@@ -6774,7 +6737,6 @@ class CfgPricing
     class 200Rnd_556x45_Box_Tracer_F                { price = 9;  };
     class 200Rnd_556x45_Box_Tracer_Red_F            { price = 9;  };
     class 10Rnd_9x21_Mag							{ price = 2;  };
-*/
     class B_Bergen_mcamo_F                  {  price = 40; };
     class B_Bergen_dgtl_F                   {  price = 40; };
     class B_Bergen_hex_F                    {  price = 40; };
