@@ -13,7 +13,7 @@
     https://github.com/EpochModTeam/Epoch/tree/release/Sources/epoch_config/Configs/CfgEpochClient/Malden.hpp
 */
 class Malden {
-	blockedArea[] = {};
+	blockedArea[] = { {{5551.5,7882.3,0},100} };
 	// main config
 	TrashClasses[] = { "Trash", "TrashSmall", "TrashVehicle", "PumpkinPatch", "TrashFood", "HempFiber" };
 };
