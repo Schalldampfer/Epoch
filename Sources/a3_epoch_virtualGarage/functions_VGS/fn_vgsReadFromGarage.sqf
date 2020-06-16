@@ -60,9 +60,7 @@ if ((_response select 0) isEqualTo 1) then
 			} else {
 				private ["_size","_dist","_cnt"];
 				//find safePos
-				_veh = _vehClass createVehicleLocal [0,0,0];
-				_size= sizeOf _veh;
-				deleteVehicle _veh;
+				_size= sizeOf _vehClass;
 				_dist= 20;
 				_cnt = 0;
 				while {count _pos > 2 && _cnt < 20} do {
