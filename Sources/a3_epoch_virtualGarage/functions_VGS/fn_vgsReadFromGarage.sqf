@@ -57,6 +57,20 @@ if ((_response select 0) isEqualTo 1) then
 			_position = nearestObjects [_pos, ["Land_HelipadCivil_F","Land_HelipadCircle_F","Land_HelipadEmpty_F","Land_HelipadSquare_F","Land_JumpTarget_F"],50];
 			if(count _position > 0)then{
 				_pos = position (_position select 0);
+			} else {
+				private ["_size","_dist","_cnt"];
+				//find safePos
+				_veh = _vehClass createVehicleLocal [0,0,0];
+				_size= sizeOf _veh;
+				deleteVehicle _veh;
+				_dist= 20;
+				_cnt = 0;
+				while {count _pos > 2 && _cnt < 20} do {
+					_pos = [position _playerObj, 0, _dist, _size + 3, 1, 400, 0] call BIS_fnc_findSafePos;
+					_dist= _dist + 10;
+					_cnt = _cnt + 1;
+				};
+				if (count _pos > 2) then {_pos = position _playerObj;};
 			};
 			_veh = _vehClass createVehicle _pos;
 			_veh allowDamage false;
