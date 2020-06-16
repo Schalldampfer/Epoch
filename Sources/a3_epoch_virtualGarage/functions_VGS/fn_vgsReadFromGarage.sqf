@@ -70,7 +70,7 @@ if ((_response select 0) isEqualTo 1) then
 					_dist= _dist + 10;
 					_cnt = _cnt + 1;
 				};
-				if (count _pos > 2) then {_pos = position _playerObj;};
+				if (count _pos > 2) then {_pos = position _playerObj;} else {_pos set [2,0];};
 			};
 			_veh = _vehClass createVehicle _pos;
 			_veh allowDamage false;
@@ -84,7 +84,7 @@ if ((_response select 0) isEqualTo 1) then
 			clearItemCargoGlobal _veh;
 			clearBackpackCargoGlobal _veh;
 			[_veh,_gear] call EPOCH_server_CargoFill;
-			_veh setPlateNumber "Epoch Mod";
+			_veh setPlateNumber (name _playerObj);
 			
 			if (_persistentVics == 1) then {
 				_veh call EPOCH_server_setVToken;
