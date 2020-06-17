@@ -5685,6 +5685,10 @@ class CfgPricing
 		tax = 0.9;
 	};
 	class O_T_VTOL_02_vehicle_grey_EPOCH: O_T_VTOL_02_infantry_EPOCH {};
+    class I_UavTerminal
+    {
+        price = 10;
+    };
     class B_UavTerminal
     {
         price = 10;
