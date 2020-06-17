@@ -191,6 +191,8 @@ if ((_response select 0) isEqualTo 1) then
 					};
 				};
 			};
+			
+			_veh setVehicleLock "UNLOCKED";
 		};
 	};
 };
