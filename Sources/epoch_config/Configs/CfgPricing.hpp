@@ -5688,14 +5688,17 @@ class CfgPricing
     class I_UavTerminal
     {
         price = 10;
+		tax = 9.9;
     };
     class B_UavTerminal
     {
         price = 10;
+		tax = 9.9;
     };
     class O_UavTerminal
     {
         price = 10;
+		tax = 9.9;
     };
 	class 500Rnd_127x99_mag
 	{
