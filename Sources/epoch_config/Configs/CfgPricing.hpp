@@ -6640,7 +6640,15 @@ class CfgPricing
     };
 	class radiation_mask_epoch
     {
-        price = 75;
+        price = 750;
+    };
+	class MineDetector
+    {
+        price = 2500;
+    };
+	class ToolKit
+    {
+        price = 5000;
     };
     ///////////////////////////////////////////////////////////////////////////////
     // Apex Items & Weapons
