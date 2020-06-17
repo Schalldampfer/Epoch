@@ -76,7 +76,7 @@ if ((_response select 0) isEqualTo 1) then
 			_veh setvectorDirAndUp [_vectorDir,surfaceNormal _pos];
 			_veh call EPOCH_server_setVToken;
 			_veh setFuel _fuel;
-			_veh setVehicleLock "LOCKEDPLAYER";
+			_veh setVehicleLock "UNLOCKED";
 			clearWeaponCargoGlobal _veh;
 			clearMagazineCargoGlobal _veh;
 			clearItemCargoGlobal _veh;
@@ -191,8 +191,6 @@ if ((_response select 0) isEqualTo 1) then
 					};
 				};
 			};
-			
-			_veh setVehicleLock "UNLOCKED";
 		};
 	};
 };
