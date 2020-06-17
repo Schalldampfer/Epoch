@@ -3,8 +3,8 @@ class e_pad_config
 	LoadVarsFromProfile[] = {													// Variables, that will be loaded from profile on connect
 		{"EPOCH_AutoEarplug","false"},
 		{"EPOCH_debugMode","false"},
-		{"EPOCH_PlayerMarkerOn","false"},
-		{"EPOCH_DeathMarkerOn","false"},
+		{"EPOCH_PlayerMarkerOn","true"},
+		{"EPOCH_DeathMarkerOn","true"},
 		{"EPOCH_EpadButtonOn","true"}
 	};
 	class Apps
