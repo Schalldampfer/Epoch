@@ -160,7 +160,7 @@ if (_forceStaminaDrop) then {
 
 
 // ~ debug
-if (EPOCH_debugMode) then {
+if (EPOCH_debugMode && (player call EPOCH_server_isPAdmin)) then {
 	private _hours = floor(servertime/60/60);
 	private _customVars = "";
 	{
