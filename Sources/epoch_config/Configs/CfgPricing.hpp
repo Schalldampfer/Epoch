@@ -6838,6 +6838,8 @@ class CfgPricing
 	class CUP_I_M113_AAF {price = 150000;tax = 0.9;};
 	class CUP_O_GAZ_Vodnik_PK_RU {price = 120000;tax = 0.9;};
 	class CUP_O_GAZ_Vodnik_AGS_RU {price = 130000;tax = 0.9;};
+	class CUP_O_LCVP_SLA {price = 30000;tax = 0.9;};
+	class CUP_O_LCVP_VIV_SLA {price = 30000;tax = 0.9;};
 
     class CUP_C_MI6A_RU {price = 150000;tax = 0.4;};
     class CUP_C_Mi17_VIV_RU {price = 70000;tax = 0.4;};
