@@ -158,7 +158,7 @@ class CfgEpochClient
 		{"Immunity",0,{100,0}},
 		{"Toxicity",0,{100,0,35,55,-1,-1}},
 		{"Stamina",100,{"EPOCH_playerStaminaMax",0}},
-		{"Crypto",0,{1000000,0}},
+		{"Crypto",0,{5000000,0}},
 		{"HitPoints",{0,0,0,0},{1,0,0.5,1,-1,-1}}, // limits here only used for HUD.
 		{"BloodP",100,{190,0,120,140,70,50}},
 		{"SpawnArray",{},{}},

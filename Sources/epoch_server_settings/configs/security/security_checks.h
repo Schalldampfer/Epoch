@@ -79,6 +79,11 @@ class CfgSecConf
         mode = "Standard";
     };
 
+    class limits
+    {
+        playerCrypto = 5000000;
+    };
+
     class addEventHandler {
         checks[] = {"Fired","InventoryClosed","InventoryOpened","Killed","HandleHeal","Dammaged","Hit","HitPart"};
     };
