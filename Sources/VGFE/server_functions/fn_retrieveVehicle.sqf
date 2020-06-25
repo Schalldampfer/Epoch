@@ -20,7 +20,7 @@ if !(EPOCH_VehicleSlots isEqualTo []) then
 	_vehicleData params ["_className","_location","_condition","_inventory","_textures","_loadout","_nickname","_vehicleLockState"];
 
 	//find helipad
-	_objs = nearestObjects [position _playerObj, ["Land_HelipadCivil_F","Land_HelipadCircle_F","Land_HelipadEmpty_F","Land_HelipadSquare_F","Land_JumpTarget_F"],50];
+	_objs = nearestObjects [position _player, ["Land_HelipadCivil_F","Land_HelipadCircle_F","Land_HelipadEmpty_F","Land_HelipadSquare_F","Land_JumpTarget_F"],50];
 	if(count _objs > 0)then{
 		_location = position (_objs select 0);
 	};
