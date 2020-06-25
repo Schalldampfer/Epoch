@@ -649,7 +649,7 @@ class Bank_menu
 class VGFE_GarageAtGarage
 {
 	condition = "dyna_isTrader || dyna_cursorTarget in HSPV_HSBlackmarket";
-	action = "['player'] call VGFE_fnc_client_accessVehicleGarage";
+	action = "['jammer'] call VGFE_fnc_client_accessVehicleGarage";
 	icon =  "a3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa";
 	tooltip = "Access the Virtual Garage";
 };

@@ -1,18 +1,18 @@
 
 #include "VGFE_dialogs.hpp"
 class CfgVGFE {
-	useDynamenu = 0;  // set to 1 to use the dynamenu to access specific vehicles, or 0 to open a dialog with vehicles in VG and locally listed.
+	useDynamenu = 1;  // set to 1 to use the dynamenu to access specific vehicles, or 0 to open a dialog with vehicles in VG and locally listed.
 	requirePlotpolNearby = 1;  //  Applies to use of virtual garage but not virtual hanger or virtual boat rack
 	vehicleSearchDistance = 250;
-	vgfeExpiresAt = "604048";
+	vgfeExpiresAt = "2592000";
 	virtualGargageObject = "";
 	virtualHangerObject = "Land_JetEngineStarter_01_F";
 	virtualDockObject = "Land_Destroyer_01_Boat_Rack_01_F";	
 	use3Dmarker = 1;
-	3DmarkerDisplayTime = 30;
+	3DmarkerDisplayTime = 15;
 	lockOnRetrieval = 0;
 	movePlayerToDriver = 0;
-	maxStorage = 15; // Want to encourage use of VG to save server performance.
+	maxStorage = 20; // Want to encourage use of VG to save server performance.
 	storageCost = 0;  // set to 0 to disable requirment for cypto for storage
 	reapplyFuel = 1;
 	reapplyDamage = 1;	
