@@ -645,10 +645,33 @@ class Bank_menu
 	icon = "x\addons\a3_epoch_code\Data\UI\buttons\krypto.paa";
 	tooltip = "Bank teller Menu";
 };
-class VirtualGarage
+//  Virtual Garage / Hanger / Dock
+class VGFE_GarageAtGarage
 {
 	condition = "dyna_isTrader || dyna_cursorTarget in HSPV_HSBlackmarket";
-	action = "createDialog 'SC_vgsDiag'";
+	action = "['player'] call VGFE_fnc_client_accessVehicleGarage";
 	icon =  "a3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa";
-	tooltip = "Virtual Garage";
+	tooltip = "Access the Virtual Garage";
+};
+class VGFE_GarageAtJammer 
+{
+	condition = "dyna_AtHome && dyna_cursorTargetType in (call EPOCH_JammerClasses) && (damage dyna_cursorTarget < 1) && (getNumber(missionConfigFile >> 'CfgVGFE' >> 'useDynamenu') == 0)";
+	action = "['jammer'] call VGFE_fnc_client_accessVehicleGarage";
+	//icon = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Land_Addon_05_F.jpg";
+	icon = "\A3\Soft_F_Exp\Offroad_01\Data\UI\map_Offroad_01_gen_CA.paa";
+	toolTip = "Access the Virtual Garage";
+};
+class VGFE_Hanger
+{
+	condition = "(dyna_cursorTargetType isEqualTo getText(missionConfigFile >> 'CfgVGFE' >> 'virtualHangerObject')) and (getNumber(missionConfigFile >> 'CfgVGFE' >> 'useDynamenu') == 0)";
+	action = "['hanger'] call VGFE_fnc_client_accessVehicleGarage";
+	icon = "\A3\Air_F_EPC\Plane_CAS_01\Data\UI\Map_Plane_CAS_01_CA.paa";
+	tooltip = "Access the Virtual Hanger";
+};
+class VGFE_Dock  
+{
+	condition = "(dyna_cursorTargetType isEqualTo getText(missionConfigFile >> 'CfgVGFE' >> 'virtualDockObject')) and (getNumber(missionConfigFile >> 'CfgVGFE' >> 'useDynamenu') == 0)";
+	action = "['dock'] call VGFE_fnc_client_accessVehicleGarage";
+	icon = "\A3\boat_f\Boat_Armed_01\data\ui\map_boat_armed_01_minigun.paa";
+	tooltip = "Access the Virtual Dock";
 };

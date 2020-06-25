@@ -366,27 +366,7 @@ class CfgRemoteExec
             allowedTargets = 2;
             jip = 0;
         };
-		class VGS_fnc_vgsWriteToGarage
-		{
-			allowedTargets = 2;
-			jip = 0;
-		};
-		class VGS_fnc_vgsReadFromGarage
-		{
-			allowedTargets = 2;
-			jip = 0;
-		};
-		class VGS_fnc_vgsTrashFromGarage
-		{
-			allowedTargets = 2;
-			jip = 0;
-		};
-		class VGS_fnc_vgsRequestGarage
-		{
-			allowedTargets = 2;
-			jip = 0;
-		};
-		class VGS_fnc_vgsRequestKey
+		class vgfe_fnc_handleclientrequest
 		{
 			allowedTargets = 2;
 			jip = 0;

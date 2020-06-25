@@ -1,0 +1,1 @@
+diag_log "VGFE: pre-Initialization for Virtual VehicleStorage for Epoch";

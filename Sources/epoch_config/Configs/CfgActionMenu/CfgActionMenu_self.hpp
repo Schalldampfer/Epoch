@@ -283,10 +283,10 @@ class Deploy_deploy
 	icon = "x\addons\a3_epoch_code\Data\UI\buttons\repair.paa";
 	tooltip = "Deploy Bike";
 };
-class VirtualGarage
+class VGFE_Garage
 {
-	condition = "call SC_fnc_dynaMenuCondition";
-	action = "createDialog 'SC_vgsDiag'";
-	icon =  "a3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa";
-	tooltip = "Virtual Garage";
+	condition = "dyna_AtHome && (getNumber(missionConfigFile >> 'CfgVGFE' >> 'useDynamenu') == 0)";
+	action = "['jammer'] call VGFE_fnc_client_accessVehicleGarage";
+	icon = "\A3\Soft_F_Exp\Offroad_01\Data\UI\map_Offroad_01_gen_CA.paa";
+	toolTip = "Access the Virtual Garage";
 };
