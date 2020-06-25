@@ -18,24 +18,11 @@ if !(EPOCH_VehicleSlots isEqualTo []) then
 	private _vgfeSlot = _vgfe select _index;
 	_vgfeSlot params["_key","_accessPoint","_vehicleData"];
 	_vehicleData params ["_className","_location","_condition","_inventory","_textures","_loadout","_nickname","_vehicleLockState"];
+
 	//find helipad
-	_pos = position _playerObj;
-	_objs = nearestObjects [_pos, ["Land_HelipadCivil_F","Land_HelipadCircle_F","Land_HelipadEmpty_F","Land_HelipadSquare_F","Land_JumpTarget_F"],50];
+	_objs = nearestObjects [position _playerObj, ["Land_HelipadCivil_F","Land_HelipadCircle_F","Land_HelipadEmpty_F","Land_HelipadSquare_F","Land_JumpTarget_F"],50];
 	if(count _objs > 0)then{
 		_location = position (_objs select 0);
-	} else {
-		private ["_size","_dist","_cnt"];
-		//find safePos
-		_size= sizeOf _vehClass;
-		_dist= 20;
-		_cnt = 0;
-		while {count _pos > 2 && _cnt < 20} do {
-			_pos = [position _playerObj, 0, _dist, _size + 3, 1, 400, 0] call BIS_fnc_findSafePos;
-			_dist= _dist + 10;
-			_cnt = _cnt + 1;
-		};
-		if (count _pos > 2) then {_pos = _location;} else {_pos set [2,0];};
-		_location = _pos;
 	};
 
 	/*
