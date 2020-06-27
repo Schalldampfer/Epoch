@@ -15,7 +15,6 @@ if ((_querry select 0) == 1 && (_querry select 1) isEqualType []) then
 		/* The player has logged on so lets be sure we update the expiresAt time */
 		private _expiresAt = getText(missionConfigFile >> "CfgVGFE" >> "vgfeExpiresAt");
 		["VGFE_DATA",_uid,_expiresAt] call EPOCH_fnc_server_hiveEXPIRE;
-		diag_log format["CfgVGFE _fnc_onPlayerJoined: _expiresAt = %1",_expiresAt];
 	};
 } else {
 	/*  some sort of error occured */
