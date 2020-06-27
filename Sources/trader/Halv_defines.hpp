@@ -557,6 +557,7 @@ class HALV_RscMapControl
 		color[] = {0, 0, 0, 1};
 	};
 	// Added for new map line function in 
+	class LineMarker 
 	{
 
 		lineDistanceMin = 3e-005;
