@@ -22,7 +22,7 @@ if !(EPOCH_VehicleSlots isEqualTo []) then
 	//find helipad
 	_objs = nearestObjects [position _player, ["Land_HelipadCivil_F","Land_HelipadCircle_F","Land_HelipadEmpty_F","Land_HelipadSquare_F","Land_JumpTarget_F"],50];
 	if(count _objs > 0)then{
-		_location = position (_objs select 0);
+		_location = [getPosATL (_objs select 0), _location select 1];
 	};
 
 	/*
