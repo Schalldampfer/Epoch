@@ -18,39 +18,39 @@ class CfgLootTable_CUP
 	class Scopes
 	{
 		items[] = {
-				{ { "Scopes_Vanilla", "CfgLootTable" }, 5 },
-				{ { "Scopes_MarkDLC", "CfgLootTable" }, 1 },
-				{ { "Scopes_CUP", "CfgLootTable" }, 3 }
+				{ { "Scopes_Vanilla", "CfgLootTable" }, 0 },
+				{ { "Scopes_MarkDLC", "CfgLootTable" }, 0 },
+				{ { "Scopes_CUP", "CfgLootTable" }, 9 }
 		};
 	};
 	class Bipods
 	{
 		items[] = {
-				{ { "Bipods_Vanilla", "CfgLootTable" }, 5 },
-				{ { "Bipods_CUP", "CfgLootTable" }, 3 }
+				{ { "Bipods_Vanilla", "CfgLootTable" }, 1 },
+				{ { "Bipods_CUP", "CfgLootTable" }, 7 }
 		};
 	};
 	class Muzzles
 	{
 		items[] = {
-				{ { "Muzzles_Vanilla", "CfgLootTable" }, 15 },
-				{ { "Muzzles_MarkDLC", "CfgLootTable" }, 8 },
-				{ { "Muzzles_CUP", "CfgLootTable" }, 10 },
+				{ { "Muzzles_Vanilla", "CfgLootTable" }, 5 },
+				{ { "Muzzles_MarkDLC", "CfgLootTable" }, 0 },
+				{ { "Muzzles_CUP", "CfgLootTable" }, 28 },
 				{ { "Muzzles_MultiGun", "CfgLootTable" }, 1 }
 		};
 	};
 	class WpnFlashLights
 	{
 		items[] = {
-				{ { "WpnFlashLights_Vanilla", "CfgLootTable" }, 5 },
-				{ { "WpnFlashLights_CUP", "CfgLootTable" }, 3 },
+				{ { "WpnFlashLights_Vanilla", "CfgLootTable" }, 4 },
+				{ { "WpnFlashLights_CUP", "CfgLootTable" }, 4 },
 				{ { "SniperCamo_CUP", "CfgLootTable" }, 1 }
 		};
 	};
 	class Pistols
 	{
 		items[] = {
-				{ { "Pistols_Vanilla", "CfgLootTable" }, 20 },
+				{ { "Pistols_Vanilla", "CfgLootTable" }, 0 },
 				{ { "NL_Pistols", "CfgLootTable" }, 2 },
 				{ { "Pistols_CUP", "CfgLootTable" }, 15 },
 				{ { "Pistols_MAD", "CfgLootTable" }, 0 }
@@ -59,7 +59,7 @@ class CfgLootTable_CUP
 	class PistolAmmo
 	{
 		items[] = {
-				{ { "PistolAmmo_Vanilla", "CfgLootTable" }, 15 },
+				{ { "PistolAmmo_Vanilla", "CfgLootTable" }, 0 },
 				{ { "NL_PistolAmmo", "CfgLootTable" }, 3 },
 				{ { "PistolAmmo_CUP", "CfgLootTable" }, 10 }
 		};
@@ -67,53 +67,53 @@ class CfgLootTable_CUP
 	class Rifle
 	{
 		items[] = {
-				{ { "Rifle_Vanilla", "CfgLootTable" }, 10 },
-				{ { "A2_Rifle", "CfgLootTable" }, 10 },
+				{ { "Rifle_Vanilla", "CfgLootTable" }, 0 },
+				{ { "A2_Rifle", "CfgLootTable" }, 0 },
 				{ { "NL_Rifle", "CfgLootTable" }, 2 },
-				{ { "Rifle_CUP", "CfgLootTable" }, 10 },
+				{ { "Rifle_CUP", "CfgLootTable" }, 30 },
 				{ { "Rifle_MAD", "CfgLootTable" }, 0 }
 		};
 	};
 	class RifleAmmo
 	{
 		items[] = {
-				{ { "RifleAmmo_Vanilla", "CfgLootTable" }, 20 },
+				{ { "RifleAmmo_Vanilla", "CfgLootTable" }, 0 },
 				{ { "NL_RifleAmmo", "CfgLootTable" }, 6 },
-				{ { "A2_RifleAmmo", "CfgLootTable" }, 20 },
-				{ { "RifleAmmo_CUP", "CfgLootTable" }, 20 },
+				{ { "A2_RifleAmmo", "CfgLootTable" }, 0 },
+				{ { "RifleAmmo_CUP", "CfgLootTable" }, 60 },
 				{ { "RifleAmmo_MAD", "CfgLootTable" }, 0 }
 		};
 	};
 	class SniperRifle
 	{
 		items[] = {
-				{ { "SniperRifle_Vanilla", "CfgLootTable" }, 5 },
-				{ { "SniperRifleMarkDLC", "CfgLootTable" }, 1 },
-				{ { "SniperRifle_CUP", "CfgLootTable" }, 5 }
+				{ { "SniperRifle_Vanilla", "CfgLootTable" }, 0 },
+				{ { "SniperRifleMarkDLC", "CfgLootTable" }, 0 },
+				{ { "SniperRifle_CUP", "CfgLootTable" }, 10 }
 		};
 	};
 	class SniperRifleAmmo
 	{
 		items[] = {
-				{ { "SniperRifleAmmo_Vanilla", "CfgLootTable" }, 5 },
-				{ { "SniperRifleAmmoMarkDLC", "CfgLootTable" }, 1 },
-				{ { "SniperRifleAmmo_CUP", "CfgLootTable" }, 5 }
+				{ { "SniperRifleAmmo_Vanilla", "CfgLootTable" }, 0 },
+				{ { "SniperRifleAmmoMarkDLC", "CfgLootTable" }, 0 },
+				{ { "SniperRifleAmmo_CUP", "CfgLootTable" }, 10 }
 		};
 	};
 	class Machinegun
 	{
 		items[] = {
-				{ { "Machinegun_Vanilla", "CfgLootTable" }, 5 },
-				{ { "MachinegunMarkDLC", "CfgLootTable" }, 1 },
-				{ { "Machinegun_CUP", "CfgLootTable" }, 5 }
+				{ { "Machinegun_Vanilla", "CfgLootTable" }, 0 },
+				{ { "MachinegunMarkDLC", "CfgLootTable" }, 0 },
+				{ { "Machinegun_CUP", "CfgLootTable" }, 10 }
 		};
 	};
 	class MachinegunAmmo
 	{
 		items[] = {
-				{ { "MachinegunAmmo_Vanilla", "CfgLootTable" }, 5 },
-				{ { "MachinegunAmmoMarkDLC", "CfgLootTable" }, 1 },
-				{ { "MachinegunAmmo_CUP", "CfgLootTable" }, 5 }
+				{ { "MachinegunAmmo_Vanilla", "CfgLootTable" }, 0 },
+				{ { "MachinegunAmmoMarkDLC", "CfgLootTable" }, 0 },
+				{ { "MachinegunAmmo_CUP", "CfgLootTable" }, 10 }
 		};
 	};
 	class Uniforms_Male_Civ
@@ -149,7 +149,7 @@ class CfgLootTable_CUP
 	class Vests_Low
 	{
 		items[] = {
-				{ { "Vests_Low_Vanilla", "CfgLootTable" }, 1 }
+				{ { "Vests_Low_Vanilla", "CfgLootTable" }, 2 }
 		};
 	};
 	class Vests_High
@@ -601,42 +601,35 @@ class CfgLootTable_CUP
 	class ShellFlares
 	{
 		items[] = {
-				{ { "3Rnd_UGL_FlareWhite_F", "magazine" }, 1 },
-				{ { "3Rnd_UGL_FlareGreen_F", "magazine" }, 1 },
-				{ { "3Rnd_UGL_FlareRed_F", "magazine" }, 1 },
-				{ { "3Rnd_UGL_FlareYellow_F", "magazine" }, 1 },
-				{ { "3Rnd_UGL_FlareCIR_F", "magazine" }, 1 },
-				{ { "UGL_FlareWhite_F", "magazine" }, 1 },
-				{ { "UGL_FlareGreen_F", "magazine" }, 1 },
-				{ { "UGL_FlareRed_F", "magazine" }, 1 },
-				{ { "UGL_FlareYellow_F", "magazine" }, 1 },
-				{ { "UGL_FlareCIR_F", "magazine" }, 1 }
+				{ { "CUP_FlareWhite_M203", "magazine" }, 1 },
+				{ { "CUP_FlareGreen_M203", "magazine" }, 1 },
+				{ { "CUP_FlareRed_M203", "magazine" }, 1 },
+				{ { "CUP_FlareYellow_M203", "magazine" }, 1 },
+				{ { "CUP_FlareWhite_GP25_M", "magazine" }, 1 },
+				{ { "CUP_FlareGreen_GP25_M", "magazine" }, 1 },
+				{ { "CUP_FlareRed_GP25_M", "magazine" }, 1 },
+				{ { "CUP_FlareYellow_GP25_M", "magazine" }, 1 }
 		};
 	};
 	class ShellSmokes
 	{
 		items[] = {
-				{ { "1Rnd_Smoke_Grenade_shell", "magazine" }, 1 },
-				{ { "1Rnd_SmokeRed_Grenade_shell", "magazine" }, 1 },
-				{ { "1Rnd_SmokeGreen_Grenade_shell", "magazine" }, 1 },
-				{ { "1Rnd_SmokeYellow_Grenade_shell", "magazine" }, 1 },
-				{ { "1Rnd_SmokePurple_Grenade_shell", "magazine" }, 1 },
-				{ { "1Rnd_SmokeBlue_Grenade_shell", "magazine" }, 1 },
-				{ { "1Rnd_SmokeOrange_Grenade_shell", "magazine" }, 1 },
-				{ { "3Rnd_Smoke_Grenade_shell", "magazine" }, 1 },
-				{ { "3Rnd_SmokeRed_Grenade_shell", "magazine" }, 1 },
-				{ { "3Rnd_SmokeGreen_Grenade_shell", "magazine" }, 1 },
-				{ { "3Rnd_SmokeYellow_Grenade_shell", "magazine" }, 1 },
-				{ { "3Rnd_SmokePurple_Grenade_shell", "magazine" }, 1 },
-				{ { "3Rnd_SmokeBlue_Grenade_shell", "magazine" }, 1 },
-				{ { "3Rnd_SmokeOrange_Grenade_shell", "magazine" }, 1 }
+				{ { "CUP_1Rnd_Smoke_M203", "magazine" }, 1 },
+				{ { "CUP_1Rnd_SmokeRed_M203", "magazine" }, 1 },
+				{ { "CUP_1Rnd_SmokeGreen_M203", "magazine" }, 1 },
+				{ { "CUP_1Rnd_SmokeYellow_M203", "magazine" }, 1 },
+				{ { "CUP_1Rnd_SMOKE_GP25_M", "magazine" }, 1 },
+				{ { "CUP_1Rnd_SMOKERED_GP25_M", "magazine" }, 1 },
+				{ { "CUP_1Rnd_SMOKEGREEN_GP25_M", "magazine" }, 1 },
+				{ { "CUP_1Rnd_SMOKEYELLOW_GP25_M", "magazine" }, 1 }
 		};
 	};
 	class ShellExplosives
 	{
 		items[] = {
-				{ { "1Rnd_HE_Grenade_shell", "magazine" }, 1 },
-				{ { "3Rnd_HE_Grenade_shell", "magazine" }, 1 }
+				{ { "CUP_1Rnd_HE_GP25_M", "magazine" }, 1 },
+				{ { "CUP_1Rnd_HE_M203", "magazine" }, 1 },
+				{ { "CUP_1Rnd_HEDP_M203", "magazine" }, 1 }
 		};
 	};
 
@@ -681,37 +674,50 @@ class CfgLootTable_CUP
 	class Scopes_CUP
 	{
 		items[] = {
+				{ { "CUP_optic_no23mk2", "item" }, 1 },
+				{ { "CUP_optic_PEM", "item" }, 1 },
+				{ { "CUP_optic_Remington", "item" }, 1 },
 				{ { "CUP_optic_PSO_1", "item" }, 1 },
 				{ { "CUP_optic_PSO_3", "item" }, 1 },
 				{ { "CUP_optic_Kobra", "item" }, 1 },
-				{ { "CUP_optic_GOSHAWK", "item" }, 1 },
+				{ { "CUP_optic_ekp_8_02", "item" }, 1 },
+				{ { "CUP_optic_GOSHAWK", "item" }, 0 },
 				{ { "CUP_optic_NSPU", "item" }, 1 },
 				{ { "CUP_optic_PechenegScope", "item" }, 1 },
 				{ { "CUP_optic_SB_3_12x50_PMII", "item" }, 1 },
-				{ { "CUP_optic_AN_PAS_13c2", "item" }, 1 },
+				{ { "CUP_optic_AN_PAS_13c2", "item" }, 0 },
 				{ { "CUP_optic_LeupoldMk4", "item" }, 1 },
 				{ { "CUP_optic_HoloBlack", "item" }, 1 },
 				{ { "CUP_optic_HoloWdl", "item" }, 1 },
 				{ { "CUP_optic_HoloDesert", "item" }, 1 },
 				{ { "CUP_optic_Eotech533", "item" }, 1 },
+				{ { "CUP_optic_Eotech553_Black", "item" }, 1 },
 				{ { "CUP_optic_Eotech533Grey", "item" }, 1 },
 				{ { "CUP_optic_CompM4", "item" }, 1 },
 				{ { "CUP_optic_SUSAT", "item" }, 1 },
 				{ { "CUP_optic_ACOG", "item" }, 1 },
-				{ { "CUP_optic_CWS", "item" }, 1 },
+				{ { "CUP_optic_ACOG2", "item" }, 1 },
+				{ { "CUP_optic_ACOG_TA01B_Black", "item" }, 1 },
+				{ { "CUP_optic_HensoldtZO", "item" }, 1 },
+				{ { "CUP_optic_HensoldtZO_low", "item" }, 1 },
+				{ { "CUP_optic_CWS", "item" }, 0 },
 				{ { "CUP_optic_Leupold_VX3", "item" }, 1 },
 				{ { "CUP_optic_AN_PVS_10", "item" }, 1 },
 				{ { "CUP_optic_CompM2_Black", "item" }, 1 },
 				{ { "CUP_optic_CompM2_Woodland", "item" }, 1 },
 				{ { "CUP_optic_CompM2_Woodland2", "item" }, 1 },
 				{ { "CUP_optic_CompM2_Desert", "item" }, 1 },
+				{ { "CUP_optic_CompM2_low", "item" }, 1 },
+				{ { "CUP_optic_MicroT1", "item" }, 1 },
+				{ { "CUP_optic_MARS", "item" }, 1 },
+				{ { "CUP_optic_AC11704_Black", "item" }, 1 },
 				{ { "CUP_optic_RCO", "item" }, 1 },
 				{ { "CUP_optic_RCO_desert", "item" }, 1 },
 				{ { "CUP_optic_LeupoldM3LR", "item" }, 1 },
 				{ { "CUP_optic_LeupoldMk4_10x40_LRT_Desert", "item" }, 1 },
 				{ { "CUP_optic_LeupoldMk4_10x40_LRT_Woodland", "item" }, 1 },
 				{ { "CUP_optic_ElcanM145", "item" }, 1 },
-				{ { "CUP_optic_AN_PAS_13c1", "item" }, 1 },
+				{ { "CUP_optic_AN_PAS_13c1", "item" }, 0 },
 				{ { "CUP_optic_LeupoldMk4_CQ_T", "item" }, 1 },
 				{ { "CUP_optic_ELCAN_SpecterDR", "item" }, 1 },
 				{ { "CUP_optic_LeupoldMk4_MRT_tan", "item" }, 1 },
@@ -720,6 +726,8 @@ class CfgLootTable_CUP
 				{ { "CUP_optic_MRad", "item" }, 1 },
 				{ { "CUP_optic_TrijiconRx01_desert", "item" }, 1 },
 				{ { "CUP_optic_TrijiconRx01_black", "item" }, 1 },
+				{ { "CUP_optic_ZeissZPoint", "item" }, 1 },
+				{ { "CUP_optic_VortexRazor_UH1_Black", "item" }, 1 },
 				{ { "CUP_optic_AN_PVS_4", "item" }, 1 }
 		};
 	};
@@ -746,13 +754,15 @@ class CfgLootTable_CUP
 	class Muzzles_Vanilla
 	{
 		items[] = {
-				{ { "muzzle_sr25S_epoch", "item" }, 1 },
-				{ { "muzzle_snds_H", "item" }, 1 },
+			/*
+				{ { "muzzle_sr25S_epoch", "item" }, 0 },
+				{ { "muzzle_snds_H", "item" }, 0 },
 				{ { "muzzle_snds_M", "item" }, 1 },
 				{ { "muzzle_snds_L", "item" }, 1 },
 				{ { "muzzle_snds_B", "item" }, 1 },
-				{ { "muzzle_snds_H_MG", "item" }, 1 },
+				{ { "muzzle_snds_H_MG", "item" }, 0 },
 				{ { "muzzle_snds_acp", "item" }, 1 },
+			*/
 				{ { "Muzzles_MultiGun", "CfgLootTable" }, 1 }
 		};
 	};
@@ -770,6 +780,12 @@ class CfgLootTable_CUP
 	class Muzzles_CUP
 	{
 		items[] = {
+				{ { "CUP_muzzle_mfsup_Flashhider_545x39_Black", "item" }, 1 },
+				{ { "CUP_muzzle_mfsup_Flashhider_762x39_Black", "item" }, 1 },
+				{ { "CUP_muzzle_mfsup_Flashhider_PK_Black", "item" }, 1 },
+				{ { "CUP_muzzle_mfsup_Flashhider_556x45_Black", "item" }, 1 },
+				{ { "CUP_muzzle_mfsup_Flashhider_762x51_Black", "item" }, 1 }
+			/*,
 				{ { "CUP_muzzle_snds_M110", "item" }, 1 },
 				{ { "CUP_muzzle_snds_M14", "item" }, 1 },
 				{ { "CUP_muzzle_PBS4", "item" }, 1 },
@@ -788,6 +804,7 @@ class CfgLootTable_CUP
 				{ { "CUP_muzzle_snds_SCAR_H", "item" }, 1 },
 				{ { "CUP_muzzle_mfsup_SCAR_H", "item" }, 1 },
 				{ { "CUP_muzzle_snds_XM8", "item" }, 1 }
+			*/
 		};
 	};
 	class Muzzles_MultiGun
@@ -812,6 +829,7 @@ class CfgLootTable_CUP
 				{ { "CUP_acc_Glock17_Flashlight", "item" }, 1 },
 				{ { "CUP_acc_ANPEQ_15", "item" }, 1 },
 				{ { "CUP_acc_ANPEQ_2", "item" }, 1 },
+				{ { "CUP_acc_MLPLS_Laser", "item" }, 1 },
 				{ { "CUP_acc_Flashlight", "item" }, 1 },
 				{ { "CUP_acc_Flashlight_wdl", "item" }, 1 },
 				{ { "CUP_acc_Flashlight_desert", "item" }, 1 },
@@ -837,7 +855,6 @@ class CfgLootTable_CUP
 	class Pistols_Vanilla
 	{
 		items[] = {
-				{ { "hgun_Pistol_Signal_F", "weapon" }, 4 },
 				{ { "MultiGun", "weapon" }, 5 },
 				{ { "hgun_Pistol_heavy_01_F", "weapon" }, 9 },
 				{ { "hgun_P07_F", "weapon" }, 10 },
@@ -851,15 +868,13 @@ class CfgLootTable_CUP
 	class NL_Pistols
 	{
 		items[] = {
+				{ { "hgun_Pistol_Signal_F", "weapon" }, 4 },
 				{ { "hgun_Pistol_tranq_01", "weapon" }, 1 }
 		};
 	};
 	class PistolAmmo_Vanilla
 	{
 		items[] = {
-				{ { "EnergyPack", "magazine" }, 4 },
-				{ { "6Rnd_RedSignal_F", "magazine" }, 2 },
-				{ { "6Rnd_GreenSignal_F", "magazine" }, 2 },
 				{ { "30Rnd_9x21_Mag", "magazine" }, 10 },
 				{ { "6Rnd_45ACP_Cylinder", "magazine" }, 11 },
 				{ { "16Rnd_9x21_Mag", "magazine" }, 11 },
@@ -872,6 +887,9 @@ class CfgLootTable_CUP
 	class NL_PistolAmmo
 	{
 		items[] = {
+				{ { "EnergyPack", "magazine" }, 4 },
+				{ { "6Rnd_RedSignal_F", "magazine" }, 2 },
+				{ { "6Rnd_GreenSignal_F", "magazine" }, 2 },
 				{ { "tranq_dart_mag", "magazine" }, 1 }
 		};
 	};
@@ -882,11 +900,16 @@ class CfgLootTable_CUP
 				{ { "CUP_hgun_Duty", "weapon" }, 1 },
 				{ { "CUP_hgun_Phantom", "weapon" }, 1 },
 				{ { "CUP_hgun_Glock17", "weapon" }, 1 },
+				{ { "CUP_hgun_Glock17_blk", "weapon" }, 1 },
+				{ { "CUP_hgun_Glock17_tan", "weapon" }, 1 },
 				{ { "CUP_hgun_Makarov", "weapon" }, 1 },
+				{ { "CUP_hgun_PMM", "weapon" }, 1 },
 				{ { "CUP_hgun_MicroUzi", "weapon" }, 1 },
 				{ { "CUP_hgun_TaurusTracker455", "weapon" }, 1 },
 				{ { "CUP_hgun_PB6P9", "weapon" }, 1 },
 				{ { "CUP_hgun_SA61", "weapon" }, 1 },
+				{ { "CUP_hgun_Mac10", "weapon" }, 1 },
+				{ { "CUP_hgun_TEC9", "weapon" }, 1 },
 				{ { "CUP_hgun_M9", "weapon" }, 1 },
 				{ { "CUP_hgun_TaurusTracker455_gold", "weapon" }, 1 },
 				{ { "CUP_hgun_Colt1911", "weapon" }, 1 }
@@ -903,6 +926,8 @@ class CfgLootTable_CUP
 				{ { "CUP_30Rnd_9x19_UZI", "magazine" }, 1 },
 				{ { "CUP_6Rnd_45ACP_M", "magazine" }, 3 },
 				{ { "CUP_20Rnd_B_765x17_Ball_M", "magazine" }, 1 },
+				{ { "CUP_30Rnd_45ACP_MAC10_M", "magazine" }, 1 },
+				{ { "CUP_32Rnd_9x19_TEC9", "magazine" }, 1 },
 				{ { "CUP_15Rnd_9x19_M9", "magazine" }, 1 },
 				{ { "CUP_7Rnd_45ACP_1911", "magazine" }, 2 }
 		};
@@ -974,8 +999,7 @@ class CfgLootTable_CUP
 				{ { "SMG_03C_khaki", "weapon" }, 1 },
 				{ { "SMG_03C_hex", "weapon" }, 1 },
 
-				{ { "hgun_PDW2000_F", "weapon" }, 10 },
-				{ { "speargun_epoch", "weapon" }, 5 }
+				{ { "hgun_PDW2000_F", "weapon" }, 10 }
 		};
 	};
 	class RifleAmmo_Vanilla
@@ -1000,9 +1024,7 @@ class CfgLootTable_CUP
 
 				{ { "30Rnd_9x21_Mag", "magazine" }, 10 },
 				{ { "5Rnd_rollins_mag", "magazine" }, 10 },
-				{ { "50Rnd_570x28_SMG_03", "magazine" }, 10 },
-				
-				{ { "spear_magazine", "magazine" }, 2 }
+				{ { "50Rnd_570x28_SMG_03", "magazine" }, 10 }
 		};
 	};
 	class NL_RifleAmmo
@@ -1012,7 +1034,8 @@ class CfgLootTable_CUP
 				{ { "NL_shot_bb_mag", "magazine" }, 5 },
 				{ { "xbow_mag_bolt", "magazine" }, 5 },
 				{ { "xbow_mag_tranq", "magazine" }, 5 },
-				{ { "xbow_mag_exp", "magazine" }, 2 }
+				{ { "xbow_mag_exp", "magazine" }, 2 },
+				{ { "spear_magazine", "magazine" }, 2 }
 		};
 	};
 	class A2_Rifle
@@ -1040,7 +1063,8 @@ class CfgLootTable_CUP
 		items[] = {
 				{ { "pvcrifle_01_F", "weapon" }, 1 },
 				{ { "nl_Shotgun", "weapon" }, 1 },
-				{ { "nl_auto_xbow", "weapon" }, 1 }
+				{ { "nl_auto_xbow", "weapon" }, 1 },
+				{ { "speargun_epoch", "weapon" }, 5 }
 		};
 	};
 	class A2_RifleAmmo
@@ -1061,12 +1085,19 @@ class CfgLootTable_CUP
 		items[] = {
 			{ { "CUP_smg_bizon", "weapon" }, 1 },
 			{ { "CUP_smg_EVO", "weapon" }, 1 },
+			{ { "CUP_smg_PS90_olive", "weapon" }, 1 },
 			{ { "CUP_smg_MP5SD6", "weapon" }, 1 },
 			{ { "CUP_smg_MP5A5", "weapon" }, 1 },
+			{ { "CUP_smg_MP5A5_flashlight", "weapon" }, 1 },
 
 			{ { "CUP_sgun_AA12", "weapon" }, 1 },
 			{ { "CUP_sgun_M1014", "weapon" }, 1 },
 			{ { "CUP_sgun_Saiga12K", "weapon" }, 1 },
+			{ { "CUP_sgun_SPAS12", "weapon" }, 1 },
+			{ { "CUP_SKS", "weapon" }, 1 },
+			{ { "CUP_SKS_rail", "weapon" }, 1 },
+			{ { "CUP_arifle_SAIGA_MK03_top_rail", "weapon" }, 1 },
+			{ { "CUP_arifle_SIAGE_MK03_Wood_top_rail", "weapon" }, 1 },
 
 			{ { "CUP_arifle_AK74", "weapon" }, 1 },
 			{ { "CUP_arifle_AK74M", "weapon" }, 1 },
@@ -1080,6 +1111,8 @@ class CfgLootTable_CUP
 			{ { "CUP_arifle_AK107", "weapon" }, 1 },
 			{ { "CUP_arifle_AK107_GL", "weapon" }, 1 },
 			{ { "CUP_arifle_AKM", "weapon" }, 1 },
+			{ { "CUP_arifle_AKMS", "weapon" }, 1 },
+			{ { "CUP_arifle_AK47", "weapon" }, 1 },
 
 			{ { "CUP_arifle_CZ805_A1", "weapon" }, 1 },
 			{ { "CUP_arifle_CZ805_GL", "weapon" }, 1 },
@@ -1147,6 +1180,7 @@ class CfgLootTable_CUP
 			{ { "CUP_arifle_Mk17_STD_EGLM", "weapon" }, 1 },
 			
 			{ { "CUP_arifle_Mk20", "weapon" }, 1 },
+			{ { "CUP_arifle_AUG_A1", "weapon" }, 1 },
 			
 			{ { "CUP_arifle_XM8_Carbine", "weapon" }, 1 },
 			{ { "CUP_arifle_XM8_Carbine_GL", "weapon" }, 1 },
@@ -1169,6 +1203,9 @@ class CfgLootTable_CUP
 	class RifleAmmo_CUP
 	{
 		items[] = {
+				{ { "50Rnd_570x28_SMG_03", "magazine" }, 10 },
+				{ { "30Rnd_9x21_Mag", "magazine" }, 10 },
+
 				{ { "CUP_30Rnd_545x39_AK_M", "magazine" }, 1 },
 				{ { "CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M", "magazine" }, 1 },
 				{ { "CUP_30Rnd_TE1_Red_Tracer_545x39_AK_M", "magazine" }, 1 },
@@ -1202,10 +1239,13 @@ class CfgLootTable_CUP
 				{ { "CUP_30Rnd_Sa58_M_TracerR", "magazine" }, 1 },
 				{ { "CUP_30Rnd_Sa58_M_TracerY", "magazine" }, 1 },
 				{ { "CUP_30Rnd_Sa58_M", "magazine" }, 1 },
+				{ { "CUP_30Rnd_556x45_AUG", "magazine" }, 1 },
 				
+				{ { "CUP_10Rnd_762x39_SKS_M", "magazine" }, 1 },
+				{ { "CUP_10Rnd_762x39_SaigaMk03_M", "magazine" }, 1 },
 				{ { "CUP_20Rnd_B_AA12_Pellets", "magazine" }, 3 },
 				{ { "CUP_20Rnd_B_AA12_74Slug", "magazine" }, 2 },
-				{ { "CUP_20Rnd_B_AA12_HE", "magazine" }, 1 },
+				{ { "CUP_20Rnd_B_AA12_HE", "magazine" }, 0 },
 				{ { "CUP_8Rnd_B_Beneli_74Slug", "magazine" }, 2 },
 				{ { "CUP_8Rnd_B_Beneli_74Pellets", "magazine" }, 3 },
 				{ { "CUP_8Rnd_B_Saiga12_74Slug_M", "magazine" }, 2 },
@@ -1285,17 +1325,20 @@ class CfgLootTable_CUP
 	class SniperRifle_CUP
 	{
 		items[] = {
-				{ { "CUP_srifle_AS50", "weapon" }, 1 },
+				{ { "CUP_srifle_AS50", "weapon" }, 0 },
 				{ { "CUP_srifle_LeeEnfield", "weapon" }, 1 },
 				{ { "CUP_srifle_LeeEnfield_rail", "weapon" }, 1 },
-				{ { "CUP_srifle_M107_Base", "weapon" }, 1 },
+				{ { "CUP_srifle_Mosin_Nagant", "weapon" }, 1 },
+				{ { "CUP_srifle_Remington700", "weapon" }, 1 },
+				{ { "CUP_srifle_M107_Base", "weapon" }, 0 },
 				{ { "CUP_srifle_M110", "weapon" }, 1 },
+				{ { "CUP_srifle_m110_kac", "weapon" }, 1 },
 				{ { "CUP_srifle_M14", "weapon" }, 1 },
 				{ { "CUP_srifle_M14_DMR", "weapon" }, 1 },
 				{ { "CUP_srifle_Mk12SPR", "weapon" }, 1 },
 				{ { "CUP_srifle_M24_des", "weapon" }, 1 },
 				{ { "CUP_srifle_M40A3", "weapon" }, 1 },
-				{ { "CUP_srifle_ksvk", "weapon" }, 1 },
+				{ { "CUP_srifle_ksvk", "weapon" }, 0 },
 				{ { "CUP_srifle_SVD", "weapon" }, 1 },
 				{ { "CUP_srifle_VSSVintorez", "weapon" }, 1 },
 				{ { "CUP_srifle_CZ750", "weapon" }, 1 },
@@ -1311,9 +1354,11 @@ class CfgLootTable_CUP
 	class SniperRifleAmmo_CUP
 	{
 		items[] = {
-				{ { "CUP_5Rnd_127x99_as50_M", "magazine" }, 1 },
+				{ { "CUP_5Rnd_127x99_as50_M", "magazine" }, 0 },
 				{ { "CUP_10x_303_M", "magazine" }, 1 },
-				{ { "CUP_10Rnd_127x99_m107", "magazine" }, 1 },
+				{ { "CUP_5Rnd_762x54_Mosin_M", "magazine" }, 1 },
+				{ { "CUP_6Rnd_762x51_R700", "magazine" }, 1 },
+				{ { "CUP_10Rnd_127x99_m107", "magazine" }, 0 },
 				{ { "CUP_20Rnd_762x51_B_M110", "magazine" }, 1 },
 				{ { "CUP_20Rnd_TE1_Yellow_Tracer_762x51_M110", "magazine" }, 1 },
 				{ { "CUP_20Rnd_TE1_Red_Tracer_762x51_M110", "magazine" }, 1 },
@@ -1335,7 +1380,7 @@ class CfgLootTable_CUP
 				{ { "CUP_100Rnd_TE1_Green_Tracer_556x45_BetaCMag", "magazine" }, 1 },
 				{ { "CUP_100Rnd_TE1_Yellow_Tracer_556x45_BetaCMag", "magazine" }, 1 },
 				{ { "CUP_5Rnd_762x51_M24", "magazine" }, 1 },
-				{ { "CUP_5Rnd_127x108_KSVK_M", "magazine" }, 1 },
+				{ { "CUP_5Rnd_127x108_KSVK_M", "magazine" }, 0 },
 				{ { "CUP_10Rnd_762x54_SVD_M", "magazine" }, 1 },
 				{ { "CUP_10Rnd_9x39_SP5_VSS_M", "magazine" }, 1 },
 				{ { "CUP_20Rnd_9x39_SP5_VSS_M", "magazine" }, 1 },
@@ -1406,11 +1451,13 @@ class CfgLootTable_CUP
 				{ { "CUP_lmg_m249_pip4", "weapon" }, 1 },
 				{ { "CUP_lmg_L7A2", "weapon" }, 1 },
 				{ { "CUP_lmg_PKM", "weapon" }, 1 },
+				{ { "CUP_lmg_PKMN", "weapon" }, 1 },
 				{ { "CUP_lmg_Pecheneg", "weapon" }, 1 },
 				{ { "CUP_lmg_UK59", "weapon" }, 1 },
 				{ { "CUP_lmg_m249_pip2", "weapon" }, 1 },
 				{ { "CUP_lmg_m249_pip3", "weapon" }, 1 },
-				{ { "CUP_lmg_m249_SQuantoon", "weapon" }, 1 },
+				{ { "CUP_lmg_M249_E2", "weapon" }, 1 },
+				{ { "CUP_lmg_M60", "weapon" }, 1 },
 				{ { "CUP_lmg_M60E4", "weapon" }, 1 },
 				{ { "CUP_lmg_Mk48_des", "weapon" }, 1 },
 				{ { "CUP_lmg_Mk48_wdl", "weapon" }, 1 }
