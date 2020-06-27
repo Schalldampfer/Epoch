@@ -4,7 +4,7 @@ class CfgVGFE {
 	useDynamenu = 0;  // set to 1 to use the dynamenu to access specific vehicles, or 0 to open a dialog with vehicles in VG and locally listed.
 	requirePlotpolNearby = 1;  //  Applies to use of virtual garage but not virtual hanger or virtual boat rack
 	vehicleSearchDistance = 250;
-	vgfeExpiresAt = "2592000";
+	vgfeExpiresAt = "604048";
 	virtualGargageObject = "";
 	virtualHangerObject = "Land_JetEngineStarter_01_F";
 	virtualDockObject = "Land_Destroyer_01_Boat_Rack_01_F";	
