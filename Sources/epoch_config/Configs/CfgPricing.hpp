@@ -6794,6 +6794,9 @@ class CfgPricing
 	class C_IDAP_UAV_06_antimine_backpack_F {  price = 40; };
 	class B_UAV_06_medical_backpack_F		{  price = 40; };
 
+	class CUP_B_HikingPack_Civ				{ price = 25; };
+	class CUP_B_CivPack_WDL 				{ price = 20; };
+
 		// MAD ARMA
     class revolver01                        { price = 55; };
     class VG_sawed_off_01                   { price = 120; };
@@ -7049,6 +7052,40 @@ class CfgPricing
 	class CUP_U_C_Suit_02 { price = 10; };
 	class CUP_U_C_Suit_03 { price = 10; };
 	class CUP_U_C_Priest_01 { price = 5; };
+	class CUP_U_C_Citizen_02 { price = 5; };
+	class CUP_U_C_Citizen_01 { price = 5; };
+	class CUP_U_C_Citizen_03 { price = 5; };
+	class CUP_U_C_Citizen_04 { price = 5; };
+	class CUP_U_C_Policeman_01 { price = 7; };
+	class CUP_U_C_Pilot_01 { price = 5; };
+	class CUP_U_C_Fireman_01 { price = 7; };
+	class CUP_U_C_Rescuer_01 { price = 7; };
+	class CUP_U_C_Labcoat_01 { price = 7; };
+	class CUP_U_C_Labcoat_02 { price = 7; };
+	class CUP_U_C_Labcoat_03 { price = 7; };
+	class CUP_U_C_Mechanic_01 { price = 7; };
+	class CUP_U_C_Mechanic_02 { price = 7; };
+	class CUP_U_C_Mechanic_03 { price = 7; };
+	class CUP_U_C_Profiteer_01 { price = 5; };
+	class CUP_U_C_Profiteer_02 { price = 5; };
+	class CUP_U_C_Profiteer_03 { price = 5; };
+	class CUP_U_C_Profiteer_04 { price = 5; };
+	class CUP_U_C_Rocker_01 { price = 5; };
+	class CUP_U_C_Rocker_02 { price = 5; };
+	class CUP_U_C_Rocker_03 { price = 5; };
+	class CUP_U_C_Rocker_04 { price = 5; };
+	class CUP_U_C_Villager_01 { price = 5; };
+	class CUP_U_C_Villager_02 { price = 5; };
+	class CUP_U_C_Villager_03 { price = 5; };
+	class CUP_U_C_Villager_04 { price = 5; };
+	class CUP_U_C_Woodlander_01 { price = 5; };
+	class CUP_U_C_Woodlander_02 { price = 5; };
+	class CUP_U_C_Woodlander_03 { price = 5; };
+	class CUP_U_C_Woodlander_04 { price = 5; };
+	class CUP_U_C_Worker_01 { price = 5; };
+	class CUP_U_C_Worker_02 { price = 5; };
+	class CUP_U_C_Worker_03 { price = 5; };
+	class CUP_U_C_Worker_04 { price = 5; };
 
 	class V_Safety_blue_F { price = 5; };
 	class V_Safety_orange_F { price = 5; };
@@ -7060,6 +7097,8 @@ class CfgPricing
 	class V_EOD_olive_F { price = 10; tax = 0.4;};
 	class CUP_V_B_BAF_DDPM_Osprey_Mk3_Empty { price = 10; tax = 0.4;};
 	class CUP_V_B_BAF_DPM_Osprey_Mk3_Empty { price = 10; tax = 0.4;};
+	class CUP_V_I_Carrier_Belt { price = 5; };
+	class CUP_V_I_Guerilla_Jacket { price = 5; };
 
 	class H_Construction_basic_black_F { price = 5; };
 	class H_Construction_basic_orange_F { price = 5; };
