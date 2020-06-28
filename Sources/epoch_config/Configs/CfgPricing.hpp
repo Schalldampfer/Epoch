@@ -4862,6 +4862,11 @@ class CfgPricing
 	class C_Offroad_01_EPOCH3: C_Offroad_01_EPOCH{};
 	class C_Offroad_01_EPOCH4: C_Offroad_01_EPOCH{};
 	class C_Offroad_01_EPOCH5: C_Offroad_01_EPOCH{};
+    class B_GEN_Offroad_01_gen_F
+    {
+        price = 7500;
+		tax = 1.4;
+    };
     class hoverboard_epoch_1
     {
         price = 1000;
@@ -5009,6 +5014,11 @@ class CfgPricing
 	class C_Van_01_transport_EPOCH2: C_Van_01_transport_EPOCH{};
 	class C_Van_01_transport_EPOCH3: C_Van_01_transport_EPOCH{};
 	class C_Van_01_transport_EPOCH4: C_Van_01_transport_EPOCH{};
+    class B_GEN_Van_02_transport_EPOCH
+    {
+        price = 10000;
+		tax = 1.4;
+    };
     class C_Boat_Civil_01_EPOCH
     {
         price = 7500;
