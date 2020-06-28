@@ -6904,6 +6904,8 @@ class CfgPricing
 	class CUP_SKS_rail {price = 100;};
 	class CUP_arifle_AKMS {price = 75;};
 	class CUP_arifle_TYPE_56_2_Early {price = 75;};
+	class CUP_arifle_TYPE_56_2 {price = 75;};
+	class CUP_arifle_TYPE_56_2_top_rail {price = 75;};
 	class CUP_arifle_AKS74U_railed {price = 75;};
 	class CUP_arifle_AK74M_camo {price = 75;};
 	class CUP_arifle_AK74M_top_rail {price = 80;};
