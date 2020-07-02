@@ -26,8 +26,8 @@ class CfgPatches {
 class CfgBuild {
     class VVS {
         build = 1;
-        version = 0.3;
-        date = "6-23-20";
+        version = 0.4;
+        date = "7-1-20";
     };
 };
 

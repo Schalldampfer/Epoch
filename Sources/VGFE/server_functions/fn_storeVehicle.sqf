@@ -28,7 +28,8 @@ if !(_vehSlot isEqualTo "ABORT") then
 		getObjectTextures _vehicle,
 		[_vehicle] call VGFE_fnc_getVehicleLoadout,
 		getPlateNumber _vehicle,
-		locked _vehicle
+		locked _vehicle,
+		_vehicle getVariable["VEHICLE_BASECLASS",""]
 	];
 
 	/* we can only process one client request at a time so add a check for a pendiing request to access VG */

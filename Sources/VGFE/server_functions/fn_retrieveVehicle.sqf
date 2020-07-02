@@ -4,8 +4,6 @@
 */
 
 params["_vgfe","_key","_player"];
-//diag_log format["_fnc_retriveVehicle: _player = %1 | _key = %2 | _vgfe = %3",_player,_key,_vgfe];
-/* we can only process one client request at a time so add a check for a pendiing request to access VG */
 
 private _vgfeSlot = [];
 private _index = -1;
@@ -17,20 +15,16 @@ if !(EPOCH_VehicleSlots isEqualTo []) then
 	} forEach _vgfe;
 	private _vgfeSlot = _vgfe select _index;
 	_vgfeSlot params["_key","_accessPoint","_vehicleData"];
-	_vehicleData params ["_className","_location","_condition","_inventory","_textures","_loadout","_nickname","_vehicleLockState"];
-
-	//find helipad
-	_objs = nearestObjects [position _player, ["Land_HelipadCivil_F","Land_HelipadCircle_F","Land_HelipadEmpty_F","Land_HelipadSquare_F","Land_JumpTarget_F"],50];
-	if(count _objs > 0)then{
-		_location = [getPosATL (_objs select 0), _location select 1];
-	};
+	_vehicleData params ["_className","_location","_condition","_inventory","_textures","_loadout","_nickname","_vehicleLockState",["_baseclass",""]];
 
 	/*
 		The code below was adapted from files in epoch_server.
-		Credit: EpodhMod Development Team 
+		Credit: EpochMod Development Team 
 		https://github.com/EpochModTeam/Epoch
 	*/	
 		/* Spawn and configure the vehicle */
+
+	private _safeSpawn = getNumber(missionConfigFile >> "CfgVGFE" >> "preciseSpawnLocation");
 	
 	// [type, position, markers, placement, special]: 
 	private _vehicle = createVehicle[_classname,[0,0,0],[],20,"NONE"];
@@ -39,7 +33,11 @@ if !(EPOCH_VehicleSlots isEqualTo []) then
 	{
 		_vehicle allowDamage false;
 		_vehicle call EPOCH_server_setVToken;
-		[_vehicle,_location] call VGFE_fnc_setVehicleLocation;
+
+		if (_safeSpawn == 0) then 
+		{
+			[_vehicle,_location] call VGFE_fnc_setVehicleLocation;
+		};
 
 		// set fuel, damage and hitpoints
 		[_vehicle,_condition] call VGFE_fnc_setVehicleCondition;
@@ -80,7 +78,7 @@ if !(EPOCH_VehicleSlots isEqualTo []) then
 		// Lock vehicle for owner
 		private _lockOwner = getPlayerUID _player;
 		private _playerGroup = _player getVariable["GROUP", ""];
-		if (_playerGroup isEqualTo "") then {
+		if !(_playerGroup isEqualTo "") then {
 			_lockOwner = _playerGroup;
 		};	
 
@@ -118,6 +116,10 @@ if !(EPOCH_VehicleSlots isEqualTo []) then
 
 		// Set slot used by vehicle
 		_vehicle setVariable["VEHICLE_SLOT", _slot, true];
+
+		// Set BASECLASS if applicable 
+		_vehicle setVariable["VEHICLE_BASECLASS",_baseclass];
+
 		// SAVE VEHICLE
 		_vehicle call EPOCH_server_save_vehicle;
 
@@ -188,5 +190,4 @@ if !(EPOCH_VehicleSlots isEqualTo []) then
 	["Insufficient Room on Server to Retrieve Vehicle: Contact Server Owner"] remoteExec["diag_log",owner _player];
 };
 
-MyVGFEstate = 1;
 

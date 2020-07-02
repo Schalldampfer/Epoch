@@ -4,7 +4,8 @@ class CfgVGFE {
 	useDynamenu = 0;  // set to 1 to use the dynamenu to access specific vehicles, or 0 to open a dialog with vehicles in VG and locally listed.
 	requirePlotpolNearby = 1;  //  Applies to use of virtual garage but not virtual hanger or virtual boat rack
 	vehicleSearchDistance = 250;
-	vgfeExpiresAt = "604048";
+	preciseSpawnLocation = 1;  // set to 0 to spawn the retrieved vehicle where it was left; set to 1 to allow the server to find a safe spot to spawn the vehicle within 20 meters. 
+	vgfeExpiresAt = "2416192";  //  4 weeks where 1 week = "604048";
 	virtualGargageObject = "";
 	virtualHangerObject = "Land_JetEngineStarter_01_F";
 	virtualDockObject = "Land_Destroyer_01_Boat_Rack_01_F";	
