@@ -650,7 +650,7 @@ class VGFE_GarageAtGarage
 {
 	condition = "dyna_isTrader || dyna_cursorTarget in HSPV_HSBlackmarket";
 	action = "['jammer'] call VGFE_fnc_client_accessVehicleGarage";
-	icon =  "a3\ui_f\data\GUI\Rsc\RscDisplayArsenal\spaceGarage_ca.paa";
+	icon = "\A3\Soft_F_Exp\Offroad_01\Data\UI\map_Offroad_01_gen_CA.paa";
 	tooltip = "Access the Virtual Garage";
 };
 class VGFE_GarageAtJammer 
