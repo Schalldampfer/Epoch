@@ -6,14 +6,6 @@
 params["_vgfe","_vgfeKey","_accessPoint","_vehicle","_player"];
 
 private _vehSlot = _vehicle getVariable ["VEHICLE_SLOT", "ABORT"];
-
-if ((_vehSlot isEqualTo "ABORT") && !(EPOCH_VehicleSlots isEqualTo [])) then {
-	// Set slot used by vehicle
-	_vehSlot = EPOCH_VehicleSlots deleteAt 0;
-	missionNamespace setVariable ['EPOCH_VehicleSlotCount', count EPOCH_VehicleSlots, true];
-	_vehicle setVariable["VEHICLE_SLOT", _vehSlot, true];
-};
-
 if !(_vehSlot isEqualTo "ABORT") then 
 {  //  So we do not store temporary vehicles
 	_vgfeKey = _vgfeKey + 1;
