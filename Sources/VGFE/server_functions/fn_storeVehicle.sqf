@@ -8,10 +8,14 @@ params["_vgfe","_vgfeKey","_accessPoint","_vehicle","_player"];
 private _vehSlot = _vehicle getVariable ["VEHICLE_SLOT", "ABORT"];
 if !(_vehSlot isEqualTo "ABORT") then 
 {  //  So we do not store temporary vehicles
+	private "_expiresAt";
 	_vgfeKey = _vgfeKey + 1;
+	_expiresAt = "999999";
+	if (isText(missionConfigFile >> "CfgVGFE" >> "vgfeExpiresAt")) then 
+	{
+		_expiresAt = getText(missionConfigFile >> "CfgVGFE" >> "vgfeExpiresAt"));
+	};
 
-	private _expiresAt = getNumber(missionConfigFile >> "CfgVGFE" >> "vgfeExpires");
-	//private _inventory = [_vehicle] call VGFE_fnc_getVehicleInventory;
 	private _vehicleData = [
 		typeOf _vehicle,
 		[getPosATL _vehicle,[vectordir _vehicle,vectorup _vehicle]],
