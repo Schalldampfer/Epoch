@@ -13,7 +13,7 @@ switch (_state) do
 
 if !(_stateMessage isEqualTo "") then 
 {
-	diag_log format["[VSFE] <%1>  %2",_stateMessage,_message];
+	diag_log format["[VSFE] ,%1>  %2",_stateMessage,_message];
 } else {
 	diag_log format["[VSFE] %1",_message];
 };
