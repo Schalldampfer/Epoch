@@ -58,7 +58,6 @@ if !(EPOCH_VehicleSlots isEqualTo []) then
 		//  Handle some special conditions like moving player into drivers seat and vehicle lock state
 		private _moveIntoVehicle = getNumber(missionConfigFile >> "CfgVGFE" >> "movePlayerToDriver");
 		private _lockOnRetrieval = getNumber(missionConfigFile >> "CfgVGFE" >> "lockOnRetrieval");
-		//diag_log format["_fnc_retrieveVehicle: _moveIntoVehicle = %1 | _lockOnRetrieval = %2 | _vehicleLockState = %3",_moveIntoVehicle,_lockOnRetrieval,_vehicleLockState];
 		if (_moveIntoVehicle == 1) then 
 		{
 			_vehicle lock 0;
@@ -160,7 +159,7 @@ if !(EPOCH_VehicleSlots isEqualTo []) then
 		private _playerUID = getPlayerUID _player;
 
 		/* pull this from configs */ 
-		private _expiresAt = getNumber(missionConfigFile >> "CfgVGFE" >> "vgfeExpiresAt");
+		private _expiresAt = getText(missionConfigFile >> "CfgVGFE" >> "vgfeExpiresAt");
 		["VGFE_DATA",_playerUID,_expiresAt,_vgfe] call EPOCH_fnc_server_hiveSETEX;
 
 		/* Tell the server a request can be processed */
@@ -169,17 +168,16 @@ if !(EPOCH_VehicleSlots isEqualTo []) then
 		/* tell the player the vehicle was retrieved successfully */
 		private _displayName = getText(configFile >> "CfgVehicles" >> _className >> "displayName");
 		private _m = format["%1 has been retrieved from storage",_displayName];
-		[_m] remoteExec["systemChat",owner _player];
-		//[_m] remoteExec["diag_log",owner _player];
-		[_m,5] remoteExec["EPOCH_Message",owner _player];
-		[_vehicle] remoteExec["VGFE_fnc_client_vehicleRetrieved",owner _player];
+		[_m] remoteExec["systemChat",_player];
+		[_m,5] remoteExec["EPOCH_Message",_player];
+		[_vehicle] remoteExec["VGFE_fnc_client_vehicleRetrieved",_player];
 	} else {
 		/* tell the player something went wrong */
 		private _displayName = getText(configFile >> "CfgVehicles" >> _className >> "displayName");
 		_m = format["Unable to retrieve %1 from storage",_displayName];
-		[_m] remoteExec["systemChat",owner _player];
-		[_m] remoteExec["diag_log",owner _player];
-		[_m] remoteExec["EPOCH_Message",owner _player];		
+		[_m] remoteExec["systemChat",_player];
+		[_m] remoteExec["diag_log",_player];
+		[_m] remoteExec["EPOCH_Message",_player];		
 	};
 } else {
 	/*

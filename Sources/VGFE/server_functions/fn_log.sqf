@@ -3,17 +3,12 @@
 	Copyright 2020 by Ghostrider-GRG-
 */
 
-params["_msessage",['_state",""]']];
+params["_message",["_state",""]];
 private "_stateMessage";
-switch (_state) do 
-{
 
-	default {_stateMessage = ""};
-};
-
-if !(_stateMessage isEqualTo "") then 
+if (_state isEqualTo "") then 
 {
-	diag_log format["[VSFE] ,%1>  %2",_stateMessage,_message];
+	diag_log format["[VGFE] %1",_message];
 } else {
-	diag_log format["[VSFE] %1",_message];
+	diag_log format["[VGFE] <%1>  %2",_stateMessage,_message];
 };

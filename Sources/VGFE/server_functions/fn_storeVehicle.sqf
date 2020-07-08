@@ -6,12 +6,12 @@
 params["_vgfe","_vgfeKey","_accessPoint","_vehicle","_player"];
 
 private _vehSlot = _vehicle getVariable ["VEHICLE_SLOT", "ABORT"];
+
 if !(_vehSlot isEqualTo "ABORT") then 
 {  //  So we do not store temporary vehicles
 	_vgfeKey = _vgfeKey + 1;
 
-	private _expiresAt = getNumber(missionConfigFile >> "CfgVGFE" >> "vgfeExpires");
-	//private _inventory = [_vehicle] call VGFE_fnc_getVehicleInventory;
+
 	private _vehicleData = [
 		typeOf _vehicle,
 		[getPosATL _vehicle,[vectordir _vehicle,vectorup _vehicle]],
@@ -35,7 +35,12 @@ if !(_vehSlot isEqualTo "ABORT") then
 	MyVGFEkey = _vgfeKey;
 	(owner _player) publicVariableClient "MyVGFE";
 	(owner _player) publicVariableClient "MyVGFEkey";
-	private _expiresAt = getNumber(missionConfigFile >> "CfgVGFE" >> "vgfeExpiresAt");
+	private _expiresAt = "999999";	
+	if (isText(missionConfigFile >> "CfgVGFE" >> "vgfeExpiresAt")) then 
+	{
+		_expiresAt = getText(missionConfigFile >> "CfgVGFE" >> "vgfeExpiresAt");
+	};
+	//[format["fn_storeVehicle: _expiresAt = %1",_expiresAt]] call VGFE_fnc_log;
 	["VGFE_DATA", getPlayerUID _player, _expiresAt, MyVGFE] call EPOCH_fnc_server_hiveSETEX;
 	["VGFE_KEY",getPlayerUID _player,_expiresAt,[MyVGFEkey]] call EPOCH_fnc_server_hiveSETEX;
 
@@ -60,17 +65,14 @@ if !(_vehSlot isEqualTo "ABORT") then
 	["Vehicle", _vehHiveKey] call EPOCH_fnc_server_hiveDEL;
 	EPOCH_VehicleSlots pushBackUnique _vehSlot;
 	missionNamespace setVariable ['EPOCH_VehicleSlotCount', count EPOCH_VehicleSlots, true];
-	[format["Vehicle Stored"]] remoteExec["systemChat",owner _player];
-	["Vehicle Stored",5] remoteExec["Epoch_Message",owner player];
-	//[format["Vehicle Stored | _key updated to %1",MyVGFEkey]] remoteExec["diag_log",owner _player];
+	[format["Vehicle Stored"]] remoteExec["systemChat",_player];
+	["Vehicle Stored",5] remoteExec["Epoch_Message",_player];
 } else {
 	private _error = format["ERROR: %1 is a temporary vehicle and can not be stored",getText(configFile >> "CfgVehicles" >> typeOf _vehicle >> "displayName")];
-	[_error] remoteExec["systemChat",(owner _player)];
-	[_error,5] remoteExec["EPOCH_Message",(owner _player)];
-	[_error] remoteExec["diag_log",(owner _player)];
+	[_error] remoteExec["systemChat",_player];
+	[_error,5] remoteExec["EPOCH_Message",_player];
+	[_error] remoteExec["diag_log",_player];
 };
-
-/*  TODO: Add error condition when vehicle can not be stored - message player  */
 
 /* tell the server the VG is ready to handle other requests */
 MyVGFEstate = 1;
