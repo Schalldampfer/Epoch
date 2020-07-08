@@ -7,6 +7,7 @@
 //#include "trader\Halv_defines.hpp"
 #include "trader\tradedialog.hpp"
 #include "addons\VGFE\CfgVGFE.hpp"
+#include "addons\CVFE\CfgCVFE.hpp"
 
 class RscTitles {
 	#include "addons\statusbar\statusBar.hpp"

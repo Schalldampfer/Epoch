@@ -371,6 +371,11 @@ class CfgRemoteExec
 			allowedTargets = 2;
 			jip = 0;
 		};
+		class cvfe_fnc_claimvehicle_server 
+		{
+			allowedTargets = 2;
+			jip = 0;	
+		};
 		class SA_Simulate_Towing { allowedTargets=0; };
 		class SA_Attach_Tow_Ropes { allowedTargets=0; };
 		class SA_Take_Tow_Ropes { allowedTargets=0; };
